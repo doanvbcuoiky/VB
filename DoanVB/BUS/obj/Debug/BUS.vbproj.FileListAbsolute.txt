@@ -1,0 +1,51 @@
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\BUS.dll
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\BUS.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\BUS.xml
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\DAO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\DTO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\DTO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\DTO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\DAO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\bin\Debug\DAO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\obj\Debug\BUS.vbprojResolveAssemblyReference.cache
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\obj\Debug\BUS.Resources.resources
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\obj\Debug\BUS.vbproj.GenerateResource.Cache
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\obj\Debug\BUS.dll
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\obj\Debug\BUS.xml
+D:\LTUDQL1\DACK\DoAnVBCS\DoanVB\BUS\obj\Debug\BUS.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\BUS\obj\Debug\BUS.vbprojResolveAssemblyReference.cache
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\BUS\obj\Debug\BUS.Resources.resources
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\BUS\obj\Debug\BUS.vbproj.GenerateResource.Cache
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\BUS\obj\Debug\BUS.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\BUS\obj\Debug\BUS.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\BUS\obj\Debug\BUS.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\obj\Debug\BUS.vbprojResolveAssemblyReference.cache
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\obj\Debug\BUS.Resources.resources
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\obj\Debug\BUS.vbproj.GenerateResource.Cache
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\BUS.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\BUS.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\BUS.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\DAO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\DTO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\DAO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\DAO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\DTO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\bin\Debug\DTO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\obj\Debug\BUS.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\obj\Debug\BUS.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\BUS\obj\Debug\BUS.pdb
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\BUS.dll
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\BUS.pdb
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\BUS.xml
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\DAO.dll
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\DTO.dll
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\DAO.pdb
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\DAO.xml
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\DTO.pdb
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\bin\Debug\DTO.xml
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\obj\Debug\BUS.vbprojResolveAssemblyReference.cache
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\obj\Debug\BUS.Resources.resources
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\obj\Debug\BUS.vbproj.GenerateResource.Cache
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\obj\Debug\BUS.dll
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\obj\Debug\BUS.xml
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\BUS\obj\Debug\BUS.pdb

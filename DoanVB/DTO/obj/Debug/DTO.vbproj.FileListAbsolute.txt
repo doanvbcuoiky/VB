@@ -1,0 +1,24 @@
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\bin\Debug\DTO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\bin\Debug\DTO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\bin\Debug\DTO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\obj\Debug\DTO.Resources.resources
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\obj\Debug\DTO.vbproj.GenerateResource.Cache
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\obj\Debug\DTO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\obj\Debug\DTO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\DoanVB\DTO\obj\Debug\DTO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\bin\Debug\DTO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\bin\Debug\DTO.pdb
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\bin\Debug\DTO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\obj\Debug\DTO.Resources.resources
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\obj\Debug\DTO.vbproj.GenerateResource.Cache
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\obj\Debug\DTO.dll
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\obj\Debug\DTO.xml
+D:\LTUDQL1\DACK\DoAnVBCS\New folder\New folder\DoanVB\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\bin\Debug\DTO.dll
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\bin\Debug\DTO.xml
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\obj\Debug\DTO.Resources.resources
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\obj\Debug\DTO.vbproj.GenerateResource.Cache
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\obj\Debug\DTO.dll
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\obj\Debug\DTO.xml
+C:\Users\Nguye\Desktop\DoanVB\DoanVB\DTO\obj\Debug\DTO.pdb

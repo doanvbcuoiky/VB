@@ -1,0 +1,107 @@
+﻿Imports System.Data.SqlClient
+Imports DTO
+
+Public Class PhieuChuyenKhoDAO
+    Public Function LoadDSPhieuChuyenKho() As DataTable
+        Dim con As Connect
+        Dim cn As SqlConnection
+        cn = con.connect()
+        Dim dt As DataTable
+        Dim cmd As New SqlCommand("LoadDSPhieuChuyenKho", cn)
+        cmd.CommandType = CommandType.StoredProcedure
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
+    Public Sub ThemPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
+        Dim con As Connect
+        Dim cn As SqlConnection
+        cn = con.connect()
+        Dim cmd As New SqlCommand("ThemPhieuChuyenKho", cn)
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.Add("@MaPhieuChuyen", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NgayChuyen", SqlDbType.DateTime)
+        cmd.Parameters.Add("@KhoXuat", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@KhoNhap", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiChuyen", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiNhan", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@GhiChu", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@TongTien", SqlDbType.Money)
+        cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
+
+        cmd.Parameters("@MaPhieuChuyen").Value = PCKDTO.MaPhieuChuyen1
+        cmd.Parameters("@NgayChuyen").Value = PCKDTO.NgayChuyen1
+        cmd.Parameters("@KhoXuat").Value = PCKDTO.KhoXuat1
+        cmd.Parameters("@KhoNhap").Value = PCKDTO.KhoNhap1
+        cmd.Parameters("@NguoiChuyen").Value = PCKDTO.NguoiChuyen1
+        cmd.Parameters("@NguoiNhan").Value = PCKDTO.NguoiNhan1
+        cmd.Parameters("@GhiChu").Value = PCKDTO.GhiChu1
+        cmd.Parameters("@TongTien").Value = PCKDTO.TongTien1
+        cmd.Parameters("@TinhTrang").Value = PCKDTO.TinhTrang1
+
+
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
+
+    Public Sub XoaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
+        Dim con As Connect
+        Dim cn As SqlConnection
+        cn = con.connect()
+        Dim cmd As New SqlCommand("XoaPhieuChuyenKho", cn)
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.Add("@MaPhieuChuyen", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NgayChuyen", SqlDbType.DateTime)
+        cmd.Parameters.Add("@KhoXuat", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@KhoNhap", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiChuyen", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiNhan", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@GhiChu", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@TongTien", SqlDbType.Money)
+        cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
+
+        cmd.Parameters("@MaPhieuChuyen").Value = PCKDTO.MaPhieuChuyen1
+        cmd.Parameters("@NgayChuyen").Value = PCKDTO.NgayChuyen1
+        cmd.Parameters("@KhoXuat").Value = PCKDTO.KhoXuat1
+        cmd.Parameters("@KhoNhap").Value = PCKDTO.KhoNhap1
+        cmd.Parameters("@NguoiChuyen").Value = PCKDTO.NguoiChuyen1
+        cmd.Parameters("@NguoiNhan").Value = PCKDTO.NguoiNhan1
+        cmd.Parameters("@GhiChu").Value = PCKDTO.GhiChu1
+        cmd.Parameters("@TongTien").Value = PCKDTO.TongTien1
+        cmd.Parameters("@TinhTrang").Value = PCKDTO.TinhTrang1
+
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
+
+    Public Sub SuaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
+        Dim con As Connect
+        Dim cn As SqlConnection
+        cn = con.connect()
+        Dim cmd As New SqlCommand("SuaPhieuChuyenKho", cn)
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.Add("@MaPhieuChuyen", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NgayChuyen", SqlDbType.DateTime)
+        cmd.Parameters.Add("@KhoXuat", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@KhoNhap", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiChuyen", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiNhan", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@GhiChu", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@TongTien", SqlDbType.Money)
+        cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
+
+        cmd.Parameters("@MaPhieuChuyen").Value = PCKDTO.MaPhieuChuyen1
+        cmd.Parameters("@NgayChuyen").Value = PCKDTO.NgayChuyen1
+        cmd.Parameters("@KhoXuat").Value = PCKDTO.KhoXuat1
+        cmd.Parameters("@KhoNhap").Value = PCKDTO.KhoNhap1
+        cmd.Parameters("@NguoiChuyen").Value = PCKDTO.NguoiChuyen1
+        cmd.Parameters("@NguoiNhan").Value = PCKDTO.NguoiNhan1
+        cmd.Parameters("@GhiChu").Value = PCKDTO.GhiChu1
+        cmd.Parameters("@TongTien").Value = PCKDTO.TongTien1
+        cmd.Parameters("@TinhTrang").Value = PCKDTO.TinhTrang1
+
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
+End Class

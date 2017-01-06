@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A33225E0-EFE4-4BAA-8FC1-851E031E8201}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoanVB</RootNamespace>
+    <AssemblyName>DoanVB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <StartupObject>DoanVB.Program</StartupObject>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DoanVB.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.8.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=12.8.0.6, Culture=neutral, PublicKeyToken=f90dc37c26666a67">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v16.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChucNang\frmBanHang.Designer.vb">
+      <DependentUpon>frmBanHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmBanHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmBaoCaoBanHang.Designer.vb">
+      <DependentUpon>frmBaoCaoBanHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmBaoCaoBanHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmBaoCaoKhoHang.Designer.vb">
+      <DependentUpon>frmBaoCaoKhoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmBaoCaoKhoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmChungTu.Designer.vb">
+      <DependentUpon>frmChungTu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmChungTu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmChuyenKho.Designer.vb">
+      <DependentUpon>frmChuyenKho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmChuyenKho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmTraTien.Designer.vb">
+      <DependentUpon>frmTraTien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmTraTien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmMuaHang.Designer.vb">
+      <DependentUpon>frmMuaHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmMuaHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmNhapSoDuDauKy.Designer.vb">
+      <DependentUpon>frmNhapSoDuDauKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmNhapSoDuDauKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmThuTien.Designer.vb">
+      <DependentUpon>frmThuTien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmThuTien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\frmTonKho.Designer.vb">
+      <DependentUpon>frmTonKho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\frmTonKho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhaCungCap.Designer.vb">
+      <DependentUpon>frmNhaCungCap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhaCungCap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmDoiMatKhau.Designer.vb">
+      <DependentUpon>frmDoiMatKhau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmDoiMatKhau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmNhatKyHeThong.Designer.vb">
+      <DependentUpon>frmNhatKyHeThong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmNhatKyHeThong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmPhanQuyen.Designer.vb">
+      <DependentUpon>frmPhanQuyen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmPhanQuyen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmPhucHoi.Designer.vb">
+      <DependentUpon>frmPhucHoi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmPhucHoi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmSaoLuu.Designer.vb">
+      <DependentUpon>frmSaoLuu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmSaoLuu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmSuaChua.Designer.vb">
+      <DependentUpon>frmSuaChua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmSuaChua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frmThongTin.Designer.vb">
+      <DependentUpon>frmThongTin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\frmThongTin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmBoPhan.Designer.vb">
+      <DependentUpon>frmBoPhan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmBoPhan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmDonViTinh.Designer.vb">
+      <DependentUpon>frmDonViTinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmDonViTinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmHangHoa.Designer.vb">
+      <DependentUpon>frmHangHoa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmHangHoa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmInMaVach.Designer.vb">
+      <DependentUpon>frmInMaVach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmInMaVach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmKhachHang.Designer.vb">
+      <DependentUpon>frmKhachHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmKhachHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmKhoHang.Designer.vb">
+      <DependentUpon>frmKhoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmKhoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmKhuVuc.Designer.vb">
+      <DependentUpon>frmKhuVuc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmKhuVuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhanVien.Designer.vb">
+      <DependentUpon>frmNhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhapDanhMucTuExel.Designer.vb">
+      <DependentUpon>frmNhapDanhMucTuExel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhapDanhMucTuExel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhomHang.Designer.vb">
+      <DependentUpon>frmNhomHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhomHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmTyGia.Designer.vb">
+      <DependentUpon>frmTyGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmTyGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="TroGiup\frmDangKy.Designer.vb">
+      <DependentUpon>frmDangKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TroGiup\frmDangKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TroGiup\frmLienHe.Designer.vb">
+      <DependentUpon>frmLienHe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TroGiup\frmLienHe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TroGiup\frmTTin.Designer.vb">
+      <DependentUpon>frmTTin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TroGiup\frmTTin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="ChucNang\frmBanHang.resx">
+      <DependentUpon>frmBanHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmBaoCaoBanHang.resx">
+      <DependentUpon>frmBaoCaoBanHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmBaoCaoKhoHang.resx">
+      <DependentUpon>frmBaoCaoKhoHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmChungTu.resx">
+      <DependentUpon>frmChungTu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmChuyenKho.resx">
+      <DependentUpon>frmChuyenKho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmMuaHang.resx">
+      <DependentUpon>frmMuaHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmNhapSoDuDauKy.resx">
+      <DependentUpon>frmNhapSoDuDauKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmThuTien.resx">
+      <DependentUpon>frmThuTien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmTonKho.resx">
+      <DependentUpon>frmTonKho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\frmTraTien.resx">
+      <DependentUpon>frmTraTien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmNhapDanhMucTuExel.resx">
+      <DependentUpon>frmNhapDanhMucTuExel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmNhatKyHeThong.resx">
+      <DependentUpon>frmNhatKyHeThong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmPhanQuyen.resx">
+      <DependentUpon>frmPhanQuyen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmPhucHoi.resx">
+      <DependentUpon>frmPhucHoi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmSaoLuu.resx">
+      <DependentUpon>frmSaoLuu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmSuaChua.resx">
+      <DependentUpon>frmSuaChua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frmThongTin.resx">
+      <DependentUpon>frmThongTin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmBoPhan.resx">
+      <DependentUpon>frmBoPhan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmDonViTinh.resx">
+      <DependentUpon>frmDonViTinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmHangHoa.resx">
+      <DependentUpon>frmHangHoa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmInMaVach.resx">
+      <DependentUpon>frmInMaVach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmKhoHang.resx">
+      <DependentUpon>frmKhoHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmKhuVuc.resx">
+      <DependentUpon>frmKhuVuc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmNhomHang.resx">
+      <DependentUpon>frmNhomHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmTyGia.resx">
+      <DependentUpon>frmTyGia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TroGiup\frmDangKy.resx">
+      <DependentUpon>frmDangKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TroGiup\frmLienHe.resx">
+      <DependentUpon>frmLienHe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TroGiup\frmTTin.resx">
+      <DependentUpon>frmTTin.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.vbproj">
+      <Project>{bbf1b99a-87e0-41af-9c00-f851ffa68570}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
