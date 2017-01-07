@@ -105,12 +105,14 @@ Partial Class frmKhuVuc
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'GridColumn1
         '
         Me.GridColumn1.Caption = "Mã"
+        Me.GridColumn1.FieldName = "MaKhuVuc"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
@@ -119,6 +121,7 @@ Partial Class frmKhuVuc
         'GridColumn2
         '
         Me.GridColumn2.Caption = "Tên"
+        Me.GridColumn2.FieldName = "TenKhuVuc"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
@@ -127,6 +130,7 @@ Partial Class frmKhuVuc
         'GridColumn3
         '
         Me.GridColumn3.Caption = "Ghi Chú"
+        Me.GridColumn3.FieldName = "GhiChu"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 2
@@ -136,6 +140,7 @@ Partial Class frmKhuVuc
         '
         Me.GridColumn4.Caption = "Còn Quản Lý"
         Me.GridColumn4.ColumnEdit = Me.RepositoryItemCheckEdit1
+        Me.GridColumn4.FieldName = "TinhTrang"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3

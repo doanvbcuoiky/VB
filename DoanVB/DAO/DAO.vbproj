@@ -94,6 +94,7 @@
     <Compile Include="NguoiDungDAO.vb" />
     <Compile Include="NhaCungCapDAO.vb" />
     <Compile Include="NhanVienDAO.vb" />
+    <Compile Include="NhatKyHeThongDAO.vb" />
     <Compile Include="NhomHangHoaDAO.vb" />
     <Compile Include="PhanQuyenDAO.vb" />
     <Compile Include="PhieuBanHangDAO.vb" />

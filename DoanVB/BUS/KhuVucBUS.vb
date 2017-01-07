@@ -2,11 +2,8 @@
 Imports DTO
 
 Public Class KhuVucBUS
-    Public Function LoadDSKhuVuc() As DataTable
-        Dim KVDAO As New KhuVucDAO
-        Dim dt As DataTable
-        dt = KVDAO.LoadDSKhuVuc()
-        Return dt
+    Public Shared Function LoadDSKhuVuc() As DataTable
+        Return KhuVucDAO.LoadDSKhuVuc()
     End Function
     Public Sub ThemKhuVuc(ByVal KVDTO As KhuVucDTO)
         Dim KVDAO As New KhuVucDAO

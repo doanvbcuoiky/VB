@@ -211,7 +211,7 @@ Partial Class frmHangHoa
         '
         'GridColumn1
         '
-        Me.GridColumn1.Caption = "GridColumn1"
+        Me.GridColumn1.Caption = "Mã hàng"
         Me.GridColumn1.FieldName = "MaHangHoa"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
@@ -219,7 +219,7 @@ Partial Class frmHangHoa
         '
         'GridColumn2
         '
-        Me.GridColumn2.Caption = "GridColumn2"
+        Me.GridColumn2.Caption = "Tên hàng"
         Me.GridColumn2.FieldName = "TenHangHoa"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
@@ -227,7 +227,7 @@ Partial Class frmHangHoa
         '
         'GridColumn3
         '
-        Me.GridColumn3.Caption = "GridColumn3"
+        Me.GridColumn3.Caption = "Kiểu hàng hóa"
         Me.GridColumn3.FieldName = "KieuHangHoa"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
@@ -235,7 +235,7 @@ Partial Class frmHangHoa
         '
         'GridColumn4
         '
-        Me.GridColumn4.Caption = "GridColumn4"
+        Me.GridColumn4.Caption = "Nhóm hàng"
         Me.GridColumn4.FieldName = "NhomHang"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
@@ -243,7 +243,7 @@ Partial Class frmHangHoa
         '
         'GridColumn5
         '
-        Me.GridColumn5.Caption = "GridColumn5"
+        Me.GridColumn5.Caption = "Mã Vạch"
         Me.GridColumn5.FieldName = "MaVach"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
@@ -251,7 +251,7 @@ Partial Class frmHangHoa
         '
         'GridColumn6
         '
-        Me.GridColumn6.Caption = "GridColumn6"
+        Me.GridColumn6.Caption = "Đơn vị"
         Me.GridColumn6.FieldName = "DonVi"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
@@ -259,7 +259,7 @@ Partial Class frmHangHoa
         '
         'GridColumn7
         '
-        Me.GridColumn7.Caption = "GridColumn7"
+        Me.GridColumn7.Caption = "Xuất xứ"
         Me.GridColumn7.FieldName = "XuatXu"
         Me.GridColumn7.Name = "GridColumn7"
         Me.GridColumn7.Visible = True
@@ -267,7 +267,7 @@ Partial Class frmHangHoa
         '
         'GridColumn8
         '
-        Me.GridColumn8.Caption = "GridColumn8"
+        Me.GridColumn8.Caption = "Tồn kho tối thiểu"
         Me.GridColumn8.FieldName = "TonKhoToiThieu"
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.Visible = True
@@ -275,7 +275,7 @@ Partial Class frmHangHoa
         '
         'GridColumn9
         '
-        Me.GridColumn9.Caption = "GridColumn9"
+        Me.GridColumn9.Caption = "Tồn hiện tại"
         Me.GridColumn9.FieldName = "TonHienTai"
         Me.GridColumn9.Name = "GridColumn9"
         Me.GridColumn9.Visible = True
@@ -283,7 +283,7 @@ Partial Class frmHangHoa
         '
         'GridColumn10
         '
-        Me.GridColumn10.Caption = "GridColumn10"
+        Me.GridColumn10.Caption = "Nhà cung cấp"
         Me.GridColumn10.FieldName = "NhaCungCap"
         Me.GridColumn10.Name = "GridColumn10"
         Me.GridColumn10.Visible = True
@@ -291,7 +291,7 @@ Partial Class frmHangHoa
         '
         'GridColumn11
         '
-        Me.GridColumn11.Caption = "GridColumn11"
+        Me.GridColumn11.Caption = "Giá mua"
         Me.GridColumn11.FieldName = "GiaMua"
         Me.GridColumn11.Name = "GridColumn11"
         Me.GridColumn11.Visible = True
@@ -299,7 +299,7 @@ Partial Class frmHangHoa
         '
         'GridColumn12
         '
-        Me.GridColumn12.Caption = "GridColumn12"
+        Me.GridColumn12.Caption = "Giá bản lẻ"
         Me.GridColumn12.FieldName = "GiaBanLe"
         Me.GridColumn12.Name = "GridColumn12"
         Me.GridColumn12.Visible = True
@@ -307,7 +307,7 @@ Partial Class frmHangHoa
         '
         'GridColumn13
         '
-        Me.GridColumn13.Caption = "GridColumn13"
+        Me.GridColumn13.Caption = "Giá bán sĩ"
         Me.GridColumn13.FieldName = "GiaBanSi"
         Me.GridColumn13.Name = "GridColumn13"
         Me.GridColumn13.Visible = True
@@ -315,7 +315,7 @@ Partial Class frmHangHoa
         '
         'GridColumn14
         '
-        Me.GridColumn14.Caption = "GridColumn14"
+        Me.GridColumn14.Caption = "Loại tiền"
         Me.GridColumn14.FieldName = "LoaiTien"
         Me.GridColumn14.Name = "GridColumn14"
         Me.GridColumn14.Visible = True
@@ -323,7 +323,7 @@ Partial Class frmHangHoa
         '
         'GridColumn15
         '
-        Me.GridColumn15.Caption = "GridColumn15"
+        Me.GridColumn15.Caption = "Tình trạng"
         Me.GridColumn15.FieldName = "TinhTrang"
         Me.GridColumn15.Name = "GridColumn15"
         Me.GridColumn15.Visible = True
