@@ -82,6 +82,7 @@ Partial Class frmDangNhap
         '
         Me.txtMatKhau.Location = New System.Drawing.Point(97, 98)
         Me.txtMatKhau.Name = "txtMatKhau"
+        Me.txtMatKhau.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtMatKhau.Size = New System.Drawing.Size(161, 20)
         Me.txtMatKhau.TabIndex = 5
         '
