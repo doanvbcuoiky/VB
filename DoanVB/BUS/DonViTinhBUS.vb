@@ -2,11 +2,8 @@
 Imports DTO
 
 Public Class DonViTinhBUS
-    Public Function LoadDSDonViTinh() As DataTable
-        Dim DVTDAO As New DonViTinhDAO
-        Dim dt As DataTable
-        dt = DVTDAO.LoadDSDonViTinh()
-        Return dt
+    Public Shared Function LoadDSDonViTinh() As DataTable
+        Return DonViTinhDAO.LoadDSDonViTinh()
     End Function
     Public Sub ThemDonViTinh(ByVal DVTDTO As DonViTinhDTO)
         Dim DVTDAO As New DonViTinhDAO

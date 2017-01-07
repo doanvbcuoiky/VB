@@ -89,12 +89,14 @@ Partial Class frmKhoHang
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'GridColumn1
         '
         Me.GridColumn1.Caption = "Mã"
+        Me.GridColumn1.FieldName = "MaKhoHang"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
@@ -102,6 +104,7 @@ Partial Class frmKhoHang
         'GridColumn2
         '
         Me.GridColumn2.Caption = "Tên"
+        Me.GridColumn2.FieldName = "TenKhoHang"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
@@ -109,6 +112,7 @@ Partial Class frmKhoHang
         'GridColumn3
         '
         Me.GridColumn3.Caption = "Liên Hệ"
+        Me.GridColumn3.FieldName = "NguoiLienHe"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 2
@@ -116,6 +120,7 @@ Partial Class frmKhoHang
         'GridColumn4
         '
         Me.GridColumn4.Caption = "Địa Chỉ"
+        Me.GridColumn4.FieldName = "DiaChi"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
@@ -123,6 +128,7 @@ Partial Class frmKhoHang
         'GridColumn5
         '
         Me.GridColumn5.Caption = "Điện Thoại"
+        Me.GridColumn5.FieldName = "DienThoai"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
         Me.GridColumn5.VisibleIndex = 4
@@ -130,6 +136,7 @@ Partial Class frmKhoHang
         'GridColumn6
         '
         Me.GridColumn6.Caption = "Ký Hiệu"
+        Me.GridColumn6.FieldName = "KiHieu"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
         Me.GridColumn6.VisibleIndex = 5
@@ -137,6 +144,7 @@ Partial Class frmKhoHang
         'GridColumn7
         '
         Me.GridColumn7.Caption = "Ghi Chú"
+        Me.GridColumn7.FieldName = "DienGiai"
         Me.GridColumn7.Name = "GridColumn7"
         Me.GridColumn7.Visible = True
         Me.GridColumn7.VisibleIndex = 6
@@ -145,6 +153,7 @@ Partial Class frmKhoHang
         '
         Me.GridColumn8.Caption = "Còn Quản Lý"
         Me.GridColumn8.ColumnEdit = Me.RepositoryItemCheckEdit1
+        Me.GridColumn8.FieldName = "TinhTrang"
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.Visible = True
         Me.GridColumn8.VisibleIndex = 7
