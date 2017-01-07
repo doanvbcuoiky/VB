@@ -2,10 +2,8 @@
 Imports DTO
 
 Public Class KhachHangBUS
-    Public Function LoadDSKhachHang() As DataTable
-        Dim KHDAO As New KhachHangDAO
-        Dim dt As DataTable
-        dt = KHDAO.LoadDSKhachHang()
+    Public Shared Function LoadDSKhachHang() As DataTable
+        Dim dt As DataTable = KhachHangDAO.LoadDSKhachHang()
         Return dt
     End Function
     Public Sub ThemKhachHang(ByVal KHDTO As KhachHangDTO)
