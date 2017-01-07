@@ -40,22 +40,29 @@ Partial Class frmKhachHang
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn14 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.QuanLyBanHangDataSet1 = New DoanVB.QuanLyBanHangDataSet1()
+        Me.KHACHHANGBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KHACHHANGTableAdapter = New DoanVB.QuanLyBanHangDataSet1TableAdapters.KHACHHANGTableAdapter()
+        Me.colMaKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colTenKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colNguoiLienHe = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colDiaChi = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colLoaiKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colKhuVuc = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colDienThoai = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colFax = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colEmail = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colWebsite = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colMaSoThue = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colSoTaiKhoan = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colNganHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colTinhTrang = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelEx1.SuspendLayout()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QuanLyBanHangDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KHACHHANGBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelEx1
@@ -198,104 +205,133 @@ Partial Class frmKhachHang
         '
         'GridControl1
         '
-        Me.GridControl1.Location = New System.Drawing.Point(0, 3)
+        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(719, 367)
+        Me.GridControl1.Size = New System.Drawing.Size(722, 370)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10, Me.GridColumn11, Me.GridColumn12, Me.GridColumn14})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colMaKhachHang, Me.colTenKhachHang, Me.colNguoiLienHe, Me.colDiaChi, Me.colLoaiKhachHang, Me.colKhuVuc, Me.colDienThoai, Me.colFax, Me.colEmail, Me.colWebsite, Me.colMaSoThue, Me.colSoTaiKhoan, Me.colNganHang, Me.colTinhTrang})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         '
-        'GridColumn1
+        'QuanLyBanHangDataSet1
         '
-        Me.GridColumn1.Caption = "GridColumn1"
-        Me.GridColumn1.Name = "GridColumn1"
-        Me.GridColumn1.Visible = True
-        Me.GridColumn1.VisibleIndex = 0
+        Me.QuanLyBanHangDataSet1.DataSetName = "QuanLyBanHangDataSet1"
+        Me.QuanLyBanHangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'GridColumn2
+        'KHACHHANGBindingSource
         '
-        Me.GridColumn2.Caption = "GridColumn2"
-        Me.GridColumn2.Name = "GridColumn2"
-        Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 1
+        Me.KHACHHANGBindingSource.DataMember = "KHACHHANG"
+        Me.KHACHHANGBindingSource.DataSource = Me.QuanLyBanHangDataSet1
         '
-        'GridColumn3
+        'KHACHHANGTableAdapter
         '
-        Me.GridColumn3.Caption = "GridColumn3"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 2
+        Me.KHACHHANGTableAdapter.ClearBeforeFill = True
         '
-        'GridColumn4
+        'colMaKhachHang
         '
-        Me.GridColumn4.Caption = "GridColumn4"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 3
+        Me.colMaKhachHang.FieldName = "MaKhachHang"
+        Me.colMaKhachHang.Name = "colMaKhachHang"
+        Me.colMaKhachHang.Visible = True
+        Me.colMaKhachHang.VisibleIndex = 0
         '
-        'GridColumn5
+        'colTenKhachHang
         '
-        Me.GridColumn5.Caption = "GridColumn5"
-        Me.GridColumn5.Name = "GridColumn5"
-        Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 4
+        Me.colTenKhachHang.FieldName = "TenKhachHang"
+        Me.colTenKhachHang.Name = "colTenKhachHang"
+        Me.colTenKhachHang.Visible = True
+        Me.colTenKhachHang.VisibleIndex = 1
         '
-        'GridColumn7
+        'colNguoiLienHe
         '
-        Me.GridColumn7.Caption = "GridColumn7"
-        Me.GridColumn7.Name = "GridColumn7"
-        Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 5
+        Me.colNguoiLienHe.FieldName = "NguoiLienHe"
+        Me.colNguoiLienHe.Name = "colNguoiLienHe"
+        Me.colNguoiLienHe.Visible = True
+        Me.colNguoiLienHe.VisibleIndex = 2
         '
-        'GridColumn8
+        'colDiaChi
         '
-        Me.GridColumn8.Caption = "GridColumn8"
-        Me.GridColumn8.Name = "GridColumn8"
-        Me.GridColumn8.Visible = True
-        Me.GridColumn8.VisibleIndex = 6
+        Me.colDiaChi.FieldName = "DiaChi"
+        Me.colDiaChi.Name = "colDiaChi"
+        Me.colDiaChi.Visible = True
+        Me.colDiaChi.VisibleIndex = 3
         '
-        'GridColumn9
+        'colLoaiKhachHang
         '
-        Me.GridColumn9.Caption = "GridColumn9"
-        Me.GridColumn9.Name = "GridColumn9"
-        Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 7
+        Me.colLoaiKhachHang.FieldName = "LoaiKhachHang"
+        Me.colLoaiKhachHang.Name = "colLoaiKhachHang"
+        Me.colLoaiKhachHang.Visible = True
+        Me.colLoaiKhachHang.VisibleIndex = 4
         '
-        'GridColumn10
+        'colKhuVuc
         '
-        Me.GridColumn10.Caption = "GridColumn10"
-        Me.GridColumn10.Name = "GridColumn10"
-        Me.GridColumn10.Visible = True
-        Me.GridColumn10.VisibleIndex = 8
+        Me.colKhuVuc.FieldName = "KhuVuc"
+        Me.colKhuVuc.Name = "colKhuVuc"
+        Me.colKhuVuc.Visible = True
+        Me.colKhuVuc.VisibleIndex = 5
         '
-        'GridColumn11
+        'colDienThoai
         '
-        Me.GridColumn11.Caption = "GridColumn11"
-        Me.GridColumn11.Name = "GridColumn11"
-        Me.GridColumn11.Visible = True
-        Me.GridColumn11.VisibleIndex = 9
+        Me.colDienThoai.FieldName = "DienThoai"
+        Me.colDienThoai.Name = "colDienThoai"
+        Me.colDienThoai.Visible = True
+        Me.colDienThoai.VisibleIndex = 6
         '
-        'GridColumn12
+        'colFax
         '
-        Me.GridColumn12.Caption = "GridColumn12"
-        Me.GridColumn12.Name = "GridColumn12"
-        Me.GridColumn12.Visible = True
-        Me.GridColumn12.VisibleIndex = 10
+        Me.colFax.FieldName = "Fax"
+        Me.colFax.Name = "colFax"
+        Me.colFax.Visible = True
+        Me.colFax.VisibleIndex = 7
         '
-        'GridColumn14
+        'colEmail
         '
-        Me.GridColumn14.Caption = "GridColumn14"
-        Me.GridColumn14.Name = "GridColumn14"
-        Me.GridColumn14.Visible = True
-        Me.GridColumn14.VisibleIndex = 11
+        Me.colEmail.FieldName = "Email"
+        Me.colEmail.Name = "colEmail"
+        Me.colEmail.Visible = True
+        Me.colEmail.VisibleIndex = 8
+        '
+        'colWebsite
+        '
+        Me.colWebsite.FieldName = "Website"
+        Me.colWebsite.Name = "colWebsite"
+        Me.colWebsite.Visible = True
+        Me.colWebsite.VisibleIndex = 9
+        '
+        'colMaSoThue
+        '
+        Me.colMaSoThue.FieldName = "MaSoThue"
+        Me.colMaSoThue.Name = "colMaSoThue"
+        Me.colMaSoThue.Visible = True
+        Me.colMaSoThue.VisibleIndex = 10
+        '
+        'colSoTaiKhoan
+        '
+        Me.colSoTaiKhoan.FieldName = "SoTaiKhoan"
+        Me.colSoTaiKhoan.Name = "colSoTaiKhoan"
+        Me.colSoTaiKhoan.Visible = True
+        Me.colSoTaiKhoan.VisibleIndex = 11
+        '
+        'colNganHang
+        '
+        Me.colNganHang.FieldName = "NganHang"
+        Me.colNganHang.Name = "colNganHang"
+        Me.colNganHang.Visible = True
+        Me.colNganHang.VisibleIndex = 12
+        '
+        'colTinhTrang
+        '
+        Me.colTinhTrang.FieldName = "TinhTrang"
+        Me.colTinhTrang.Name = "colTinhTrang"
+        Me.colTinhTrang.Visible = True
+        Me.colTinhTrang.VisibleIndex = 13
         '
         'frmKhachHang
         '
@@ -313,6 +349,8 @@ Partial Class frmKhachHang
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QuanLyBanHangDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KHACHHANGBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -336,16 +374,21 @@ Partial Class frmKhachHang
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
     Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents QuanLyBanHangDataSet1 As DoanVB.QuanLyBanHangDataSet1
+    Friend WithEvents KHACHHANGBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents KHACHHANGTableAdapter As DoanVB.QuanLyBanHangDataSet1TableAdapters.KHACHHANGTableAdapter
+    Friend WithEvents colMaKhachHang As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colTenKhachHang As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colNguoiLienHe As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colDiaChi As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colLoaiKhachHang As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colKhuVuc As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colDienThoai As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colFax As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colEmail As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colWebsite As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colMaSoThue As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colSoTaiKhoan As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colNganHang As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colTinhTrang As DevExpress.XtraGrid.Columns.GridColumn
 End Class

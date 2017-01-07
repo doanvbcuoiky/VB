@@ -2,10 +2,8 @@
 Imports DTO
 
 Public Class HangHoaBUS
-    Public Function LoadDSHangHoa() As DataTable
-        Dim HHDAO As New HangHoaDAO
-        Dim dt As DataTable
-        dt = HHDAO.LoadDSHangHoa()
+    Public Shared Function LoadDSHangHoa() As DataTable
+        Dim dt As DataTable = HangHoaDAO.LoadDSHangHoa()
         Return dt
     End Function
     Public Sub ThemHangHoa(ByVal HHDTO As HangHoaDTO)

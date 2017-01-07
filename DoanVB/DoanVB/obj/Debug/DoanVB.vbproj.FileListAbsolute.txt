@@ -692,3 +692,4 @@ C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmLienHe.resour
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmTTin.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.vbproj.GenerateResource.Cache
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe.licenses
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config

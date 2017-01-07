@@ -7,7 +7,7 @@ Public Class KhachHangDAO
         Dim cn As New SqlConnection()
         cn = con.connect()
         Dim dt As New DataTable()
-        Dim cmd As New SqlCommand("Select MaKhachHang from KHACHHANG", cn)
+        Dim cmd As New SqlCommand("Select * from KHACHHANG", cn)
         cmd.CommandType = CommandType.Text
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)
