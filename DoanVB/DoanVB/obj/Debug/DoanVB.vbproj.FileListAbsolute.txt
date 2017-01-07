@@ -693,3 +693,5 @@ C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmTTin.resource
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.vbproj.GenerateResource.Cache
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe.licenses
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhuVuc.resources
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhachHang.resources

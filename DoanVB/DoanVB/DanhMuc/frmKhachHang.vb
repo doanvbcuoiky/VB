@@ -24,4 +24,9 @@ Public Class frmKhachHang
     Private Sub GridControl1_Click_2(sender As Object, e As EventArgs) Handles GridControl1.Click
 
     End Sub
+
+    Private Sub bbtThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbtThem.ItemClick
+        Dim frmkh As New frmThemKhachHang()
+        frmkh.ShowDialog()
+    End Sub
 End Class

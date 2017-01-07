@@ -22,6 +22,22 @@ Partial Class frmKhachHang
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmKhachHang))
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.colMaKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colTenKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colNguoiLienHe = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colDiaChi = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colLoaiKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colKhuVuc = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colDienThoai = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colFax = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colEmail = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colWebsite = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colMaSoThue = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colSoTaiKhoan = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colNganHang = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colTinhTrang = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
         Me.bbtThem = New DevExpress.XtraBars.BarButtonItem()
@@ -38,29 +54,13 @@ Partial Class frmKhachHang
         Me.GridColumn13 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.QuanLyBanHangDataSet1 = New DoanVB.QuanLyBanHangDataSet1()
         Me.KHACHHANGBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KHACHHANGTableAdapter = New DoanVB.QuanLyBanHangDataSet1TableAdapters.KHACHHANGTableAdapter()
-        Me.colMaKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colTenKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colNguoiLienHe = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colDiaChi = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colLoaiKhachHang = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colKhuVuc = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colDienThoai = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colFax = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colEmail = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colWebsite = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colMaSoThue = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colSoTaiKhoan = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colNganHang = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.colTinhTrang = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelEx1.SuspendLayout()
-        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QuanLyBanHangDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KHACHHANGBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,6 +83,122 @@ Partial Class frmKhachHang
         Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
         Me.PanelEx1.Style.GradientAngle = 90
         Me.PanelEx1.TabIndex = 0
+        '
+        'GridControl1
+        '
+        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
+        Me.GridControl1.MainView = Me.GridView1
+        Me.GridControl1.MenuManager = Me.BarManager1
+        Me.GridControl1.Name = "GridControl1"
+        Me.GridControl1.Size = New System.Drawing.Size(722, 370)
+        Me.GridControl1.TabIndex = 0
+        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
+        '
+        'GridView1
+        '
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colMaKhachHang, Me.colTenKhachHang, Me.colNguoiLienHe, Me.colDiaChi, Me.colLoaiKhachHang, Me.colKhuVuc, Me.colDienThoai, Me.colFax, Me.colEmail, Me.colWebsite, Me.colMaSoThue, Me.colSoTaiKhoan, Me.colNganHang, Me.colTinhTrang})
+        Me.GridView1.GridControl = Me.GridControl1
+        Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
+        '
+        'colMaKhachHang
+        '
+        Me.colMaKhachHang.FieldName = "MaKhachHang"
+        Me.colMaKhachHang.Name = "colMaKhachHang"
+        Me.colMaKhachHang.Visible = True
+        Me.colMaKhachHang.VisibleIndex = 0
+        '
+        'colTenKhachHang
+        '
+        Me.colTenKhachHang.FieldName = "TenKhachHang"
+        Me.colTenKhachHang.Name = "colTenKhachHang"
+        Me.colTenKhachHang.Visible = True
+        Me.colTenKhachHang.VisibleIndex = 1
+        '
+        'colNguoiLienHe
+        '
+        Me.colNguoiLienHe.FieldName = "NguoiLienHe"
+        Me.colNguoiLienHe.Name = "colNguoiLienHe"
+        Me.colNguoiLienHe.Visible = True
+        Me.colNguoiLienHe.VisibleIndex = 2
+        '
+        'colDiaChi
+        '
+        Me.colDiaChi.FieldName = "DiaChi"
+        Me.colDiaChi.Name = "colDiaChi"
+        Me.colDiaChi.Visible = True
+        Me.colDiaChi.VisibleIndex = 3
+        '
+        'colLoaiKhachHang
+        '
+        Me.colLoaiKhachHang.FieldName = "LoaiKhachHang"
+        Me.colLoaiKhachHang.Name = "colLoaiKhachHang"
+        Me.colLoaiKhachHang.Visible = True
+        Me.colLoaiKhachHang.VisibleIndex = 4
+        '
+        'colKhuVuc
+        '
+        Me.colKhuVuc.FieldName = "KhuVuc"
+        Me.colKhuVuc.Name = "colKhuVuc"
+        Me.colKhuVuc.Visible = True
+        Me.colKhuVuc.VisibleIndex = 5
+        '
+        'colDienThoai
+        '
+        Me.colDienThoai.FieldName = "DienThoai"
+        Me.colDienThoai.Name = "colDienThoai"
+        Me.colDienThoai.Visible = True
+        Me.colDienThoai.VisibleIndex = 6
+        '
+        'colFax
+        '
+        Me.colFax.FieldName = "Fax"
+        Me.colFax.Name = "colFax"
+        Me.colFax.Visible = True
+        Me.colFax.VisibleIndex = 7
+        '
+        'colEmail
+        '
+        Me.colEmail.FieldName = "Email"
+        Me.colEmail.Name = "colEmail"
+        Me.colEmail.Visible = True
+        Me.colEmail.VisibleIndex = 8
+        '
+        'colWebsite
+        '
+        Me.colWebsite.FieldName = "Website"
+        Me.colWebsite.Name = "colWebsite"
+        Me.colWebsite.Visible = True
+        Me.colWebsite.VisibleIndex = 9
+        '
+        'colMaSoThue
+        '
+        Me.colMaSoThue.FieldName = "MaSoThue"
+        Me.colMaSoThue.Name = "colMaSoThue"
+        Me.colMaSoThue.Visible = True
+        Me.colMaSoThue.VisibleIndex = 10
+        '
+        'colSoTaiKhoan
+        '
+        Me.colSoTaiKhoan.FieldName = "SoTaiKhoan"
+        Me.colSoTaiKhoan.Name = "colSoTaiKhoan"
+        Me.colSoTaiKhoan.Visible = True
+        Me.colSoTaiKhoan.VisibleIndex = 11
+        '
+        'colNganHang
+        '
+        Me.colNganHang.FieldName = "NganHang"
+        Me.colNganHang.Name = "colNganHang"
+        Me.colNganHang.Visible = True
+        Me.colNganHang.VisibleIndex = 12
+        '
+        'colTinhTrang
+        '
+        Me.colTinhTrang.FieldName = "TinhTrang"
+        Me.colTinhTrang.Name = "colTinhTrang"
+        Me.colTinhTrang.Visible = True
+        Me.colTinhTrang.VisibleIndex = 13
         '
         'BarManager1
         '
@@ -203,24 +319,6 @@ Partial Class frmKhachHang
         Me.GridColumn6.Caption = "Di Động"
         Me.GridColumn6.Name = "GridColumn6"
         '
-        'GridControl1
-        '
-        Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
-        Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.MenuManager = Me.BarManager1
-        Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(722, 370)
-        Me.GridControl1.TabIndex = 0
-        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
-        '
-        'GridView1
-        '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colMaKhachHang, Me.colTenKhachHang, Me.colNguoiLienHe, Me.colDiaChi, Me.colLoaiKhachHang, Me.colKhuVuc, Me.colDienThoai, Me.colFax, Me.colEmail, Me.colWebsite, Me.colMaSoThue, Me.colSoTaiKhoan, Me.colNganHang, Me.colTinhTrang})
-        Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
-        '
         'QuanLyBanHangDataSet1
         '
         Me.QuanLyBanHangDataSet1.DataSetName = "QuanLyBanHangDataSet1"
@@ -235,104 +333,6 @@ Partial Class frmKhachHang
         '
         Me.KHACHHANGTableAdapter.ClearBeforeFill = True
         '
-        'colMaKhachHang
-        '
-        Me.colMaKhachHang.FieldName = "MaKhachHang"
-        Me.colMaKhachHang.Name = "colMaKhachHang"
-        Me.colMaKhachHang.Visible = True
-        Me.colMaKhachHang.VisibleIndex = 0
-        '
-        'colTenKhachHang
-        '
-        Me.colTenKhachHang.FieldName = "TenKhachHang"
-        Me.colTenKhachHang.Name = "colTenKhachHang"
-        Me.colTenKhachHang.Visible = True
-        Me.colTenKhachHang.VisibleIndex = 1
-        '
-        'colNguoiLienHe
-        '
-        Me.colNguoiLienHe.FieldName = "NguoiLienHe"
-        Me.colNguoiLienHe.Name = "colNguoiLienHe"
-        Me.colNguoiLienHe.Visible = True
-        Me.colNguoiLienHe.VisibleIndex = 2
-        '
-        'colDiaChi
-        '
-        Me.colDiaChi.FieldName = "DiaChi"
-        Me.colDiaChi.Name = "colDiaChi"
-        Me.colDiaChi.Visible = True
-        Me.colDiaChi.VisibleIndex = 3
-        '
-        'colLoaiKhachHang
-        '
-        Me.colLoaiKhachHang.FieldName = "LoaiKhachHang"
-        Me.colLoaiKhachHang.Name = "colLoaiKhachHang"
-        Me.colLoaiKhachHang.Visible = True
-        Me.colLoaiKhachHang.VisibleIndex = 4
-        '
-        'colKhuVuc
-        '
-        Me.colKhuVuc.FieldName = "KhuVuc"
-        Me.colKhuVuc.Name = "colKhuVuc"
-        Me.colKhuVuc.Visible = True
-        Me.colKhuVuc.VisibleIndex = 5
-        '
-        'colDienThoai
-        '
-        Me.colDienThoai.FieldName = "DienThoai"
-        Me.colDienThoai.Name = "colDienThoai"
-        Me.colDienThoai.Visible = True
-        Me.colDienThoai.VisibleIndex = 6
-        '
-        'colFax
-        '
-        Me.colFax.FieldName = "Fax"
-        Me.colFax.Name = "colFax"
-        Me.colFax.Visible = True
-        Me.colFax.VisibleIndex = 7
-        '
-        'colEmail
-        '
-        Me.colEmail.FieldName = "Email"
-        Me.colEmail.Name = "colEmail"
-        Me.colEmail.Visible = True
-        Me.colEmail.VisibleIndex = 8
-        '
-        'colWebsite
-        '
-        Me.colWebsite.FieldName = "Website"
-        Me.colWebsite.Name = "colWebsite"
-        Me.colWebsite.Visible = True
-        Me.colWebsite.VisibleIndex = 9
-        '
-        'colMaSoThue
-        '
-        Me.colMaSoThue.FieldName = "MaSoThue"
-        Me.colMaSoThue.Name = "colMaSoThue"
-        Me.colMaSoThue.Visible = True
-        Me.colMaSoThue.VisibleIndex = 10
-        '
-        'colSoTaiKhoan
-        '
-        Me.colSoTaiKhoan.FieldName = "SoTaiKhoan"
-        Me.colSoTaiKhoan.Name = "colSoTaiKhoan"
-        Me.colSoTaiKhoan.Visible = True
-        Me.colSoTaiKhoan.VisibleIndex = 11
-        '
-        'colNganHang
-        '
-        Me.colNganHang.FieldName = "NganHang"
-        Me.colNganHang.Name = "colNganHang"
-        Me.colNganHang.Visible = True
-        Me.colNganHang.VisibleIndex = 12
-        '
-        'colTinhTrang
-        '
-        Me.colTinhTrang.FieldName = "TinhTrang"
-        Me.colTinhTrang.Name = "colTinhTrang"
-        Me.colTinhTrang.Visible = True
-        Me.colTinhTrang.VisibleIndex = 13
-        '
         'frmKhachHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -346,9 +346,9 @@ Partial Class frmKhachHang
         Me.Name = "frmKhachHang"
         Me.Text = "frmKhachHang"
         Me.PanelEx1.ResumeLayout(False)
-        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QuanLyBanHangDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KHACHHANGBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

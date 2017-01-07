@@ -14,13 +14,14 @@ Public Class KhuVucDAO
         cn.Close()
         Return dt
     End Function
-    Public Sub ThemKhuVuc(ByVal KVDTO As KhuVucDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function ThemKhuVuc(ByVal KVDTO As KhuVucDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
+
         Dim cmd As New SqlCommand("ThemKhuVuc", cn)
         cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add("@MaKhuVuc", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@MaKhuVuc", SqlDbType.VarChar)
         cmd.Parameters.Add("@TenKhuVuc", SqlDbType.NVarChar)
         cmd.Parameters.Add("@GhiChu", SqlDbType.NVarChar)
         cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
@@ -30,9 +31,13 @@ Public Class KhuVucDAO
         cmd.Parameters("@GhiChu").Value = KVDTO.GhiChu1
         cmd.Parameters("@TinhTrang").Value = KVDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 
     Public Sub XoaKhuVuc(ByVal KVDTO As KhuVucDTO)
         Dim con As Connect

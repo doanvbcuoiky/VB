@@ -14,24 +14,24 @@ Public Class KhachHangDAO
         cn.Close()
         Return dt
     End Function
-    Public Sub ThemKhachHang(ByVal KHDTO As KhachHangDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function ThemKhachHang(ByVal KHDTO As KhachHangDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("ThemKhachHang", cn)
         cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add("@MaKhachHang", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@MaKhachHang", SqlDbType.VarChar)
         cmd.Parameters.Add("@TenKhachHang", SqlDbType.NVarChar)
         cmd.Parameters.Add("@NguoiLienHe", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@LoaiKhachHang", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@KhuVuc", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@DienThoai", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@Fax", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@Email", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@Website", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@MaSoThue", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@SoTaiKhoan", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@LoaiKhachHang", SqlDbType.VarChar)
+        cmd.Parameters.Add("@KhuVuc", SqlDbType.VarChar)
+        cmd.Parameters.Add("@DienThoai", SqlDbType.VarChar)
+        cmd.Parameters.Add("@Fax", SqlDbType.VarChar)
+        cmd.Parameters.Add("@Email", SqlDbType.VarChar)
+        cmd.Parameters.Add("@Website", SqlDbType.VarChar)
+        cmd.Parameters.Add("@MaSoThue", SqlDbType.VarChar)
+        cmd.Parameters.Add("@SoTaiKhoan", SqlDbType.VarChar)
         cmd.Parameters.Add("@NganHang", SqlDbType.NVarChar)
         cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
 
@@ -51,9 +51,14 @@ Public Class KhachHangDAO
         cmd.Parameters("@NganHang").Value = KHDTO.NganHang1
         cmd.Parameters("@TinhTrang").Value = KHDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 
     Public Sub XoaKhachHang(ByVal KHDTO As KhachHangDTO)
         Dim con As Connect

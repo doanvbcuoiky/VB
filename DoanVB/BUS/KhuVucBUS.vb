@@ -5,10 +5,9 @@ Public Class KhuVucBUS
     Public Shared Function LoadDSKhuVuc() As DataTable
         Return KhuVucDAO.LoadDSKhuVuc()
     End Function
-    Public Sub ThemKhuVuc(ByVal KVDTO As KhuVucDTO)
-        Dim KVDAO As New KhuVucDAO
-        KVDAO.ThemKhuVuc(KVDTO)
-    End Sub
+    Public Shared Function ThemKhuVuc(ByVal KVDTO As KhuVucDTO) As Boolean
+        Return KhuVucDAO.ThemKhuVuc(KVDTO)
+    End Function
     Public Sub XoaKhuVuc(ByVal KVDTO As KhuVucDTO)
         Dim KVDAO As New KhuVucDAO
         KVDAO.XoaKhuVuc(KVDTO)

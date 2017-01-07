@@ -2,13 +2,13 @@
 Imports DTO
 
 Public Class LoaiKhachHangDAO
-    Public Function LoadDSLoaiKhachHang() As DataTable
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function LoadDSLoaiKhachHang() As DataTable
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
-        Dim dt As DataTable
-        Dim cmd As New SqlCommand("LoadDSLoaiKhachHang", cn)
-        cmd.CommandType = CommandType.StoredProcedure
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from LOAIKHACHHANG", cn)
+        cmd.CommandType = CommandType.Text
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)
         cn.Close()

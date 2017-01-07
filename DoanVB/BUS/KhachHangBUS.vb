@@ -6,10 +6,9 @@ Public Class KhachHangBUS
         Dim dt As DataTable = KhachHangDAO.LoadDSKhachHang()
         Return dt
     End Function
-    Public Sub ThemKhachHang(ByVal KHDTO As KhachHangDTO)
-        Dim KHDAO As New KhachHangDAO
-        KHDAO.ThemKhachHang(KHDTO)
-    End Sub
+    Public Shared Function ThemKhachHang(ByVal KHDTO As KhachHangDTO) As Boolean
+        Return KhachHangDAO.ThemKhachHang(KHDTO)
+    End Function
     Public Sub XoaKhachHang(ByVal KHDTO As KhachHangDTO)
         Dim KHDAO As New KhachHangDAO
         KHDAO.XoaKhachHang(KHDTO)
