@@ -22,9 +22,9 @@ Partial Class frmDoiMatKhau
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtXacNhan = New System.Windows.Forms.TextBox()
+        Me.txtMkMoi = New System.Windows.Forms.TextBox()
+        Me.txtMkCu = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,9 +38,9 @@ Partial Class frmDoiMatKhau
         Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.PanelEx1.Controls.Add(Me.ButtonX2)
         Me.PanelEx1.Controls.Add(Me.ButtonX1)
-        Me.PanelEx1.Controls.Add(Me.TextBox3)
-        Me.PanelEx1.Controls.Add(Me.TextBox2)
-        Me.PanelEx1.Controls.Add(Me.TextBox1)
+        Me.PanelEx1.Controls.Add(Me.txtXacNhan)
+        Me.PanelEx1.Controls.Add(Me.txtMkMoi)
+        Me.PanelEx1.Controls.Add(Me.txtMkCu)
         Me.PanelEx1.Controls.Add(Me.Label4)
         Me.PanelEx1.Controls.Add(Me.Label3)
         Me.PanelEx1.Controls.Add(Me.Label2)
@@ -81,26 +81,29 @@ Partial Class frmDoiMatKhau
         Me.ButtonX1.TabIndex = 3
         Me.ButtonX1.Text = "Thoát"
         '
-        'TextBox3
+        'txtXacNhan
         '
-        Me.TextBox3.Location = New System.Drawing.Point(124, 101)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(257, 21)
-        Me.TextBox3.TabIndex = 2
+        Me.txtXacNhan.Location = New System.Drawing.Point(124, 101)
+        Me.txtXacNhan.Name = "txtXacNhan"
+        Me.txtXacNhan.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtXacNhan.Size = New System.Drawing.Size(257, 21)
+        Me.txtXacNhan.TabIndex = 2
         '
-        'TextBox2
+        'txtMkMoi
         '
-        Me.TextBox2.Location = New System.Drawing.Point(124, 73)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(257, 21)
-        Me.TextBox2.TabIndex = 2
+        Me.txtMkMoi.Location = New System.Drawing.Point(124, 73)
+        Me.txtMkMoi.Name = "txtMkMoi"
+        Me.txtMkMoi.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtMkMoi.Size = New System.Drawing.Size(257, 21)
+        Me.txtMkMoi.TabIndex = 2
         '
-        'TextBox1
+        'txtMkCu
         '
-        Me.TextBox1.Location = New System.Drawing.Point(124, 44)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(257, 21)
-        Me.TextBox1.TabIndex = 2
+        Me.txtMkCu.Location = New System.Drawing.Point(124, 44)
+        Me.txtMkCu.Name = "txtMkCu"
+        Me.txtMkCu.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtMkCu.Size = New System.Drawing.Size(257, 21)
+        Me.txtMkCu.TabIndex = 2
         '
         'Label4
         '
@@ -159,9 +162,9 @@ Partial Class frmDoiMatKhau
     Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
     Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
     Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtXacNhan As System.Windows.Forms.TextBox
+    Friend WithEvents txtMkMoi As System.Windows.Forms.TextBox
+    Friend WithEvents txtMkCu As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label

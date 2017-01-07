@@ -3,6 +3,16 @@ Imports DTO
 
 Public Class NguoiDungDAO
 
+    Public Shared Sub CapNhatMatKhau(ByVal user As String, ByVal pass As String)
+        Dim con As Connect = New Connect()
+        Dim cn As SqlConnection
+        cn = con.connect()
+        Dim sqlQuerry As String = "Update NguoiDung set MatKhau = '" & pass & "' where MaNguoiDung = '" & user & "'"
+        Dim cmd As New SqlCommand(sqlQuerry, cn)
+        cmd.CommandType = CommandType.Text
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
     Public Shared Sub LuuThongTinDangNhap(ByVal manguoidung As String)
         Dim con As Connect = New Connect()
         Dim cn As SqlConnection

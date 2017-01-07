@@ -3,6 +3,9 @@ Imports DTO
 
 Public Class NguoiDungBUS
 
+    Public Shared Sub CapNhatMatKhau(ByVal user As String, ByVal NewPass As String)
+        NguoiDungDAO.CapNhatMatKhau(user, NewPass)
+    End Sub
     Public Shared Sub LuuThongTinDangNhap(ByVal manguoidung As String)
         NguoiDungDAO.LuuThongTinDangNhap(manguoidung)
     End Sub

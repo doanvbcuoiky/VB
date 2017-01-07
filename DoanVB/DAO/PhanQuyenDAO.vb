@@ -2,13 +2,15 @@
 Imports DTO
 
 Public Class PhanQuyenDAO
-    Public Function LoadDSPhanQuyen() As DataTable
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function LoadDSPhanQuyen(ByVal MaNguoiDung As String) As DataTable
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
-        Dim dt As DataTable
+        Dim dt As New DataTable()
         Dim cmd As New SqlCommand("LoadDSPhanQuyen", cn)
         cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.Add("@MaNguoiDung", SqlDbType.VarChar)
+        cmd.Parameters("@MaNguoiDung").Value = MaNguoiDung
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)
         cn.Close()

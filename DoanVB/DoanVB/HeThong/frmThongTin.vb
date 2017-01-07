@@ -14,4 +14,12 @@
         Me.TextBox7.Text = "abc"
         Me.TextBox8.Text = "1234"
     End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+        Me.Close()
+    End Sub
 End Class

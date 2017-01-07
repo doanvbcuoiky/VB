@@ -2,10 +2,9 @@
 Imports DTO
 
 Public Class PhanQuyenBUS
-    Public Function LoadDSPhanQuyen() As DataTable
-        Dim PQDAO As New PhanQuyenDAO
+    Public Shared Function LoadDSPhanQuyen(ByVal manguoidung As String) As DataTable
         Dim dt As DataTable
-        dt = PQDAO.LoadDSPhanQuyen()
+        dt = PhanQuyenDAO.LoadDSPhanQuyen(manguoidung)
         Return dt
     End Function
     Public Sub ThemPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
