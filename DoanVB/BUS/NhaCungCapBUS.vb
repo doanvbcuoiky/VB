@@ -2,11 +2,8 @@
 Imports DTO
 
 Public Class NhaCungCapBUS
-    Public Function LoadDSNhaCungCap() As DataTable
-        Dim NCCDAO As New NhaCungCapDAO
-        Dim dt As DataTable
-        dt = NCCDAO.LoadDSNhaCungCap()
-        Return dt
+    Public Shared Function LoadDSNhaCungCap() As DataTable
+        Return NhaCungCapDAO.LoadDSNhaCungCap()
     End Function
     Public Sub ThemNhaCungCap(ByVal NCCDTO As NhaCungCapDTO)
         Dim NCCDAO As New NhaCungCapDAO
