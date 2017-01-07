@@ -13,10 +13,8 @@ Public Class frmDangNhap
     End Sub
 
     Private Sub cboTaiKhoan_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboTaiKhoan.SelectedIndexChanged
-        'Dim matkhau As String = NguoiDungBUS.LayMatKhau(Me.cboTaiKhoan.SelectedValue.ToString()).ToString()
-        'If (matkhau <> "") Then
-        '    Me.txtMatKhau.Text = matkhau
-        'End If
+        Dim matkhau As String = NguoiDungBUS.LayMatKhau(Me.cboTaiKhoan.SelectedValue.ToString())
+        Me.txtMatKhau.Text = matkhau
     End Sub
 
     Private Sub btnDangNhap_Click(sender As Object, e As EventArgs) Handles btnDangNhap.Click
@@ -25,14 +23,18 @@ Public Class frmDangNhap
             MessageBox.Show("Chưa nhập mật khẩu.")
         ElseIf NguoiDungBUS.KiemTraDangNhap(Me.cboTaiKhoan.SelectedValue.ToString(), Me.txtMatKhau.Text.ToString()) Then
             MessageBox.Show("Đăng nhập thành công.")
+            'Kiem tra check box ghi nhớ thông tin đăng nhập.
             If Me.ckGhiNho.Checked = False Then
-                MessageBox.Show("đã chọn")
                 NguoiDungBUS.LuuThongTinDangNhap(Me.cboTaiKhoan.SelectedValue.ToString())
             End If
+            frmMain.USER = cboTaiKhoan.SelectedValue.ToString()
             Me.Close()
         Else
-            'MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.")
+            MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.")
         End If
-        'Kiem tra check box ghi nhớ thông tin đăng nhập.
+    End Sub
+
+    Private Sub btnKetThuc_Click(sender As Object, e As EventArgs) Handles btnKetThuc.Click
+        Application.Exit()
     End Sub
 End Class

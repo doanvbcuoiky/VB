@@ -3,6 +3,8 @@ Imports System.Text
 
 
 Partial Public Class frmMain
+
+    Public Shared USER As String
     Shared Sub New()
         DevExpress.UserSkins.BonusSkins.Register()
         DevExpress.Skins.SkinManager.EnableFormSkins()
@@ -39,7 +41,7 @@ Partial Public Class frmMain
             frmphanquyen.MdiParent = Me
             frmphanquyen.Show()
         End If
-     
+
     End Sub
 
     Private Sub bbtDoiMatKhau_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbtDoiMatKhau.ItemClick
@@ -329,7 +331,8 @@ Partial Public Class frmMain
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim frm As New frmDangNhap
-        frm.ShowDialog()
+        Dim frmDN = New frmDangNhap()
+        frmDN.ShowDialog()
+        Me.Text = Me.Text & "-" & frmMain.USER
     End Sub
 End Class

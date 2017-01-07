@@ -30,18 +30,21 @@ Public Class NguoiDungDAO
         Dim con As Connect = New Connect()
         Dim cn As SqlConnection = New SqlConnection()
         cn = con.connect()
+        Dim dt As DataTable = New DataTable()
 
         Dim cmd As New SqlCommand("LayMatKhau", cn)
-        cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add("@manguoidung", SqlDbType.VarChar)
-        cmd.Parameters.Item("@manguoidung").Value = manguoidung.ToString()
-        cmd.Parameters.Add("@matkhau", SqlDbType.VarChar)
-        cmd.Parameters.Item("@matkhau").Value = ""
-        cmd.Parameters("@matkhau").Direction = ParameterDirection.Output
-        cmd.ExecuteNonQuery()
+        cmd.Parameters.Item("@manguoidung").Value = manguoidung
+        cmd.CommandType = CommandType.StoredProcedure
+
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
         Dim matkhau As String = ""
+        If (dt.Select().Count() <> 0) Then
+            matkhau = dt.Select()(0).Item(columnName:="MatKhau").ToString()
+        End If
         cn.Close()
-        Return cmd.Parameters("@matkhau").Value.ToString()
+        Return matkhau
     End Function
 
     Public Shared Function KiemTraDangNhap(ByVal manguoidung As String, ByVal matkhau As String) As Boolean

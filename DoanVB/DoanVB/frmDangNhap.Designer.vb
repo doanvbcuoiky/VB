@@ -29,6 +29,7 @@ Partial Class frmDangNhap
         Me.cboTaiKhoan = New System.Windows.Forms.ComboBox()
         Me.txtMatKhau = New System.Windows.Forms.TextBox()
         Me.btnDangNhap = New System.Windows.Forms.Button()
+        Me.btnKetThuc = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -93,11 +94,22 @@ Partial Class frmDangNhap
         Me.btnDangNhap.Text = "Đăng nhập"
         Me.btnDangNhap.UseVisualStyleBackColor = True
         '
+        'btnKetThuc
+        '
+        Me.btnKetThuc.Location = New System.Drawing.Point(183, 167)
+        Me.btnKetThuc.Name = "btnKetThuc"
+        Me.btnKetThuc.Size = New System.Drawing.Size(75, 23)
+        Me.btnKetThuc.TabIndex = 7
+        Me.btnKetThuc.Text = "Kết thúc"
+        Me.btnKetThuc.UseVisualStyleBackColor = True
+        '
         'frmDangNhap
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(284, 207)
+        Me.Controls.Add(Me.btnKetThuc)
         Me.Controls.Add(Me.btnDangNhap)
         Me.Controls.Add(Me.txtMatKhau)
         Me.Controls.Add(Me.cboTaiKhoan)
@@ -105,7 +117,10 @@ Partial Class frmDangNhap
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmDangNhap"
+        Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmDangNhap"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -118,4 +133,5 @@ Partial Class frmDangNhap
     Friend WithEvents cboTaiKhoan As System.Windows.Forms.ComboBox
     Friend WithEvents txtMatKhau As System.Windows.Forms.TextBox
     Friend WithEvents btnDangNhap As System.Windows.Forms.Button
+    Friend WithEvents btnKetThuc As System.Windows.Forms.Button
 End Class
