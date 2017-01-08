@@ -5,7 +5,6 @@ Public Class frmThemKhuVuc
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnDong.Click
         Me.Close()
     End Sub
-
     Private Sub btbLuu_Click(sender As Object, e As EventArgs) Handles btbLuu.Click
         Dim khuvuc = New KhuVucDTO(Me.txtMa.Text, Me.txtTen.Text, Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         Dim kq As Boolean = KhuVucBUS.ThemKhuVuc(khuvuc)

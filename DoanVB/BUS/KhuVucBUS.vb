@@ -8,10 +8,9 @@ Public Class KhuVucBUS
     Public Shared Function ThemKhuVuc(ByVal KVDTO As KhuVucDTO) As Boolean
         Return KhuVucDAO.ThemKhuVuc(KVDTO)
     End Function
-    Public Sub XoaKhuVuc(ByVal KVDTO As KhuVucDTO)
-        Dim KVDAO As New KhuVucDAO
-        KVDAO.XoaKhuVuc(KVDTO)
-    End Sub
+    Public Shared Function XoaKhuVuc(ByVal makhuvuc As String) As Boolean
+        Return KhuVucDAO.XoaKhuVuc(makhuvuc)
+    End Function
     Public Sub SuaKhuVuc(ByVal KVDTO As KhuVucDTO)
         Dim KVDAO As New KhuVucDAO
         KVDAO.SuaKhuVuc(KVDTO)

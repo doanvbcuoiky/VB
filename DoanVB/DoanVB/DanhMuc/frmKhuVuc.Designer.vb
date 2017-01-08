@@ -20,6 +20,7 @@ Partial Class frmKhuVuc
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim RepositoryItemCheckEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmKhuVuc))
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
@@ -28,7 +29,6 @@ Partial Class frmKhuVuc
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
@@ -61,10 +61,11 @@ Partial Class frmKhuVuc
         Me.BarButtonItem11 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarLargeButtonItem3 = New DevExpress.XtraBars.BarLargeButtonItem()
         Me.BarButtonItem12 = New DevExpress.XtraBars.BarButtonItem()
+        Me.lblMaKhuVuc = New DevExpress.XtraEditors.LabelControl()
         Me.PanelEx1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -95,7 +96,6 @@ Partial Class frmKhuVuc
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
         Me.GridControl1.Size = New System.Drawing.Size(658, 363)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -139,17 +139,14 @@ Partial Class frmKhuVuc
         'GridColumn4
         '
         Me.GridColumn4.Caption = "Còn Quản Lý"
-        Me.GridColumn4.ColumnEdit = Me.RepositoryItemCheckEdit1
+        RepositoryItemCheckEdit2.AutoHeight = False
+        RepositoryItemCheckEdit2.Name = "RepositoryItemCheckEdit1"
+        Me.GridColumn4.ColumnEdit = RepositoryItemCheckEdit2
         Me.GridColumn4.FieldName = "TinhTrang"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
         Me.GridColumn4.Width = 154
-        '
-        'RepositoryItemCheckEdit1
-        '
-        Me.RepositoryItemCheckEdit1.AutoHeight = False
-        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
         '
         'BarManager1
         '
@@ -393,11 +390,20 @@ Partial Class frmKhuVuc
         Me.BarButtonItem12.LargeGlyph = CType(resources.GetObject("BarButtonItem12.LargeGlyph"), System.Drawing.Image)
         Me.BarButtonItem12.Name = "BarButtonItem12"
         '
+        'lblMaKhuVuc
+        '
+        Me.lblMaKhuVuc.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
+        Me.lblMaKhuVuc.Location = New System.Drawing.Point(580, 5)
+        Me.lblMaKhuVuc.Name = "lblMaKhuVuc"
+        Me.lblMaKhuVuc.Size = New System.Drawing.Size(0, 13)
+        Me.lblMaKhuVuc.TabIndex = 1
+        '
         'frmKhuVuc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(658, 387)
+        Me.Controls.Add(Me.lblMaKhuVuc)
         Me.Controls.Add(Me.PanelEx1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
@@ -412,7 +418,7 @@ Partial Class frmKhuVuc
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -458,5 +464,5 @@ Partial Class frmKhuVuc
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Friend WithEvents lblMaKhuVuc As DevExpress.XtraEditors.LabelControl
 End Class
