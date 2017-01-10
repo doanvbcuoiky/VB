@@ -695,3 +695,6 @@ C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe.licenses
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhuVuc.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhachHang.resources
+D:\Documents\123\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config
+D:\Documents\123\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe
+D:\Documents\123\VB\DoanVB\DoanVB\obj\Debug\DoanVB.pdb

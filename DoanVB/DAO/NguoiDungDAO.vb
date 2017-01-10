@@ -77,10 +77,11 @@ Public Class NguoiDungDAO
         End If
         Return False
     End Function
-    Public Sub ThemNguoiDung(ByVal NDDTO As NguoiDungDTO)
-        Dim con As Connect = New Connect()
-        Dim cn As SqlConnection = New SqlConnection()
+    Public Shared Function ThemNguoiDung(ByVal NDDTO As NguoiDungDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
+
         Dim cmd As New SqlCommand("ThemNguoiDung", cn)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add("@MaNguoiDung", SqlDbType.NVarChar)
@@ -96,32 +97,29 @@ Public Class NguoiDungDAO
         cmd.Parameters("@TinhTrang").Value = NDDTO.TinhTrang1
         cmd.Parameters("@NhoMatKhau").Value = NDDTO.NhoMatKhau1
         cmd.Parameters("@MaNhanVien").Value = NDDTO.MaNhanVien1
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
 
-    Public Sub XoaNguoiDung(ByVal NDDTO As NguoiDungDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
+        cn.Close()
+        Return False
+    End Function
+
+    Public Shared Function XoaNguoiDung(ByVal manguoidung As String) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
-        Dim cmd As New SqlCommand("XoaNguoiDung", cn)
-        cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add("@MaNguoiDung", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@TenNguoiDung", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@MatKhau", SqlDbType.Bit)
-        cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
-        cmd.Parameters.Add("@NhoMatKhau", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@MaNhanVien", SqlDbType.NVarChar)
-
-        cmd.Parameters("@MaNguoiDung").Value = NDDTO.MaNguoiDung1
-        cmd.Parameters("@TenNguoiDung").Value = NDDTO.TenNguoiDung1
-        cmd.Parameters("@MatKhau").Value = NDDTO.MatKhau1
-        cmd.Parameters("@TinhTrang").Value = NDDTO.TinhTrang1
-        cmd.Parameters("@NhoMatKhau").Value = NDDTO.NhoMatKhau1
-        cmd.Parameters("@MaNhanVien").Value = NDDTO.MaNhanVien1
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+        Dim cmd As New SqlCommand("Delete From NGUOIDUNG where MaNguoiDung = '" & manguoidung & "'", cn)
+        cmd.CommandType = CommandType.Text
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 
     Public Sub SuaNguoiDung(ByVal NDDTO As NguoiDungDTO)
         Dim con As Connect

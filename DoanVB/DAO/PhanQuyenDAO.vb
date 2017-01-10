@@ -16,10 +16,11 @@ Public Class PhanQuyenDAO
         cn.Close()
         Return dt
     End Function
-    Public Sub ThemPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function ThemPhanQuyen(ByVal PQDTO As PhanQuyenDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
+
         Dim cmd As New SqlCommand("ThemPhanQuyen", cn)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add("@TenNhom", SqlDbType.NVarChar)
@@ -42,13 +43,17 @@ Public Class PhanQuyenDAO
         cmd.Parameters("@ChoPhepIn").Value = PQDTO.ChoPhepIn1
         cmd.Parameters("@TinhTrang").Value = PQDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 
-    Public Sub XoaPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function XoaPhanQuyen(ByVal PQDTO As PhanQuyenDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("XoaPhanQuyen", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -72,9 +77,14 @@ Public Class PhanQuyenDAO
         cmd.Parameters("@ChoPhepIn").Value = PQDTO.ChoPhepIn1
         cmd.Parameters("@TinhTrang").Value = PQDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 
     Public Sub SuaPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
         Dim con As Connect

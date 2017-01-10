@@ -55,8 +55,8 @@ Public Class KhuVucDAO
     End Function
 
     Public Sub SuaKhuVuc(ByVal KVDTO As KhuVucDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaKhuVuc", cn)
         cmd.CommandType = CommandType.StoredProcedure

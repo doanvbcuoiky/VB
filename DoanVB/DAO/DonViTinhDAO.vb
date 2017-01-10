@@ -14,10 +14,11 @@ Public Class DonViTinhDAO
         cn.Close()
         Return dt
     End Function
-    Public Sub ThemDonViTinh(ByVal DVTDTO As DonViTinhDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function ThemDonViTinh(ByVal DVTDTO As DonViTinhDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
+
         Dim cmd As New SqlCommand("ThemDonViTinh", cn)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.Add("@MaDonVi", SqlDbType.NVarChar)
@@ -30,29 +31,28 @@ Public Class DonViTinhDAO
         cmd.Parameters("@GhiChu").Value = DVTDTO.GhiChu1
         cmd.Parameters("@TinhTrang").Value = DVTDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 
-    Public Sub XoaDonViTinh(ByVal DVTDTO As DonViTinhDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function XoaDonViTinh(ByVal madonvi As String) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
-        Dim cmd As New SqlCommand("XoaDonViTinh", cn)
-        cmd.CommandType = CommandType.StoredProcedure
-        cmd.Parameters.Add("@MaDonVi", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@TenDonVi", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@GhiChu", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@TinhTrang", SqlDbType.Bit)
-
-        cmd.Parameters("@MaDonVi").Value = DVTDTO.MaDonVi1
-        cmd.Parameters("@TenDonVi").Value = DVTDTO.TenDonVi1
-        cmd.Parameters("@GhiChu").Value = DVTDTO.GhiChu1
-        cmd.Parameters("@TinhTrang").Value = DVTDTO.TinhTrang1
-
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+        Dim cmd As New SqlCommand("Delete From DONVITINH where MaDonVi = '" & madonvi & "'", cn)
+        cmd.CommandType = CommandType.Text
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 
     Public Sub SuaDonViTinh(ByVal DVTDTO As DonViTinhDTO)
         Dim con As Connect
