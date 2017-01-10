@@ -564,8 +564,7 @@ C:\Users\Nguye\Desktop\DoanVB\DoanVB\DoanVB\obj\Debug\DoanVB.vbproj.GenerateReso
 C:\Users\Nguye\Desktop\DoanVB\DoanVB\DoanVB\obj\Debug\DoanVB.exe.licenses
 C:\Users\Nguye\Desktop\DoanVB\DoanVB\DoanVB\obj\Debug\DoanVB.exe
 C:\Users\Nguye\Desktop\DoanVB\DoanVB\DoanVB\obj\Debug\DoanVB.pdb
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.pdb
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.pdb
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\BUS.dll
@@ -667,6 +666,9 @@ C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmTonKho.resour
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmTraTien.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmNhaCungCap.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmNhapDanhMucTuExel.resources
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmSuaKhuVuc.resources
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhachHang.resources
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhuVuc.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmDangNhap.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmDoiMatKhau.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmNhatKyHeThong.resources
@@ -692,9 +694,14 @@ C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmLienHe.resour
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmTTin.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.vbproj.GenerateResource.Cache
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe.licenses
+<<<<<<< HEAD
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhuVuc.resources
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemKhachHang.resources
 D:\Documents\123\VB\DoanVB\DoanVB\bin\Debug\DoanVB.exe.config
 D:\Documents\123\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe
 D:\Documents\123\VB\DoanVB\DoanVB\obj\Debug\DoanVB.pdb
+=======
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.pdb
+>>>>>>> origin/master

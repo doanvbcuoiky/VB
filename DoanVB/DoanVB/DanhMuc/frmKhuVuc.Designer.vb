@@ -20,8 +20,8 @@ Partial Class frmKhuVuc
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim RepositoryItemCheckEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmKhuVuc))
+        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
@@ -62,13 +62,18 @@ Partial Class frmKhuVuc
         Me.BarLargeButtonItem3 = New DevExpress.XtraBars.BarLargeButtonItem()
         Me.BarButtonItem12 = New DevExpress.XtraBars.BarButtonItem()
         Me.lblMaKhuVuc = New DevExpress.XtraEditors.LabelControl()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'RepositoryItemCheckEdit1
+        '
+        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
         '
         'PanelEx1
         '
@@ -139,9 +144,7 @@ Partial Class frmKhuVuc
         'GridColumn4
         '
         Me.GridColumn4.Caption = "Còn Quản Lý"
-        RepositoryItemCheckEdit2.AutoHeight = False
-        RepositoryItemCheckEdit2.Name = "RepositoryItemCheckEdit1"
-        Me.GridColumn4.ColumnEdit = RepositoryItemCheckEdit2
+        Me.GridColumn4.ColumnEdit = Me.RepositoryItemCheckEdit1
         Me.GridColumn4.FieldName = "TinhTrang"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
@@ -415,10 +418,10 @@ Partial Class frmKhuVuc
         Me.Controls.Add(Me.BarDockControl1)
         Me.Name = "frmKhuVuc"
         Me.Text = "frmKhuVuc"
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(RepositoryItemCheckEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -465,4 +468,5 @@ Partial Class frmKhuVuc
     Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lblMaKhuVuc As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
 End Class

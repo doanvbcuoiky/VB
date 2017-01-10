@@ -31,6 +31,12 @@ Partial Class frmNhaCungCap
         Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn11 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn13 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn14 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn15 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn16 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
@@ -49,12 +55,6 @@ Partial Class frmNhaCungCap
         Me.BarDockControl2 = New DevExpress.XtraBars.BarDockControl()
         Me.BarDockControl3 = New DevExpress.XtraBars.BarDockControl()
         Me.BarDockControl4 = New DevExpress.XtraBars.BarDockControl()
-        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn13 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn14 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn15 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn16 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelEx1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,7 +125,7 @@ Partial Class frmNhaCungCap
         Me.GridColumn5.FieldName = "DiaChi"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 4
+        Me.GridColumn5.VisibleIndex = 2
         '
         'GridColumn6
         '
@@ -133,7 +133,7 @@ Partial Class frmNhaCungCap
         Me.GridColumn6.FieldName = "DienThoai"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 5
+        Me.GridColumn6.VisibleIndex = 3
         '
         'GridColumn8
         '
@@ -141,7 +141,7 @@ Partial Class frmNhaCungCap
         Me.GridColumn8.FieldName = "Fax"
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.Visible = True
-        Me.GridColumn8.VisibleIndex = 7
+        Me.GridColumn8.VisibleIndex = 4
         '
         'GridColumn9
         '
@@ -149,7 +149,7 @@ Partial Class frmNhaCungCap
         Me.GridColumn9.FieldName = "TinhTrang"
         Me.GridColumn9.Name = "GridColumn9"
         Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 8
+        Me.GridColumn9.VisibleIndex = 5
         '
         'GridColumn11
         '
@@ -158,6 +158,54 @@ Partial Class frmNhaCungCap
         Me.GridColumn11.Name = "GridColumn11"
         Me.GridColumn11.Visible = True
         Me.GridColumn11.VisibleIndex = 9
+        '
+        'GridColumn10
+        '
+        Me.GridColumn10.Caption = "Email"
+        Me.GridColumn10.FieldName = "Email"
+        Me.GridColumn10.Name = "GridColumn10"
+        Me.GridColumn10.Visible = True
+        Me.GridColumn10.VisibleIndex = 6
+        '
+        'GridColumn12
+        '
+        Me.GridColumn12.Caption = "Wensite"
+        Me.GridColumn12.FieldName = "Website"
+        Me.GridColumn12.Name = "GridColumn12"
+        Me.GridColumn12.Visible = True
+        Me.GridColumn12.VisibleIndex = 7
+        '
+        'GridColumn13
+        '
+        Me.GridColumn13.Caption = "Mã số thuế"
+        Me.GridColumn13.FieldName = "MaSoThue"
+        Me.GridColumn13.Name = "GridColumn13"
+        Me.GridColumn13.Visible = True
+        Me.GridColumn13.VisibleIndex = 8
+        '
+        'GridColumn14
+        '
+        Me.GridColumn14.Caption = "Số tài khoản"
+        Me.GridColumn14.FieldName = "SoTaiKhoan"
+        Me.GridColumn14.Name = "GridColumn14"
+        Me.GridColumn14.Visible = True
+        Me.GridColumn14.VisibleIndex = 9
+        '
+        'GridColumn15
+        '
+        Me.GridColumn15.Caption = "Ngân hàng"
+        Me.GridColumn15.FieldName = "NganHang"
+        Me.GridColumn15.Name = "GridColumn15"
+        Me.GridColumn15.Visible = True
+        Me.GridColumn15.VisibleIndex = 10
+        '
+        'GridColumn16
+        '
+        Me.GridColumn16.Caption = "Số nợ"
+        Me.GridColumn16.FieldName = "NoHienTai"
+        Me.GridColumn16.Name = "GridColumn16"
+        Me.GridColumn16.Visible = True
+        Me.GridColumn16.VisibleIndex = 11
         '
         'BarManager1
         '
@@ -299,54 +347,6 @@ Partial Class frmNhaCungCap
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
         Me.BarDockControl4.Location = New System.Drawing.Point(640, 31)
         Me.BarDockControl4.Size = New System.Drawing.Size(0, 359)
-        '
-        'GridColumn10
-        '
-        Me.GridColumn10.Caption = "Email"
-        Me.GridColumn10.FieldName = "Email"
-        Me.GridColumn10.Name = "GridColumn10"
-        Me.GridColumn10.Visible = True
-        Me.GridColumn10.VisibleIndex = 9
-        '
-        'GridColumn12
-        '
-        Me.GridColumn12.Caption = "Wensite"
-        Me.GridColumn12.FieldName = "Website"
-        Me.GridColumn12.Name = "GridColumn12"
-        Me.GridColumn12.Visible = True
-        Me.GridColumn12.VisibleIndex = 10
-        '
-        'GridColumn13
-        '
-        Me.GridColumn13.Caption = "Mã số thuế"
-        Me.GridColumn13.FieldName = "MaSoThue"
-        Me.GridColumn13.Name = "GridColumn13"
-        Me.GridColumn13.Visible = True
-        Me.GridColumn13.VisibleIndex = 11
-        '
-        'GridColumn14
-        '
-        Me.GridColumn14.Caption = "Số tài khoản"
-        Me.GridColumn14.FieldName = "SoTaiKhoan"
-        Me.GridColumn14.Name = "GridColumn14"
-        Me.GridColumn14.Visible = True
-        Me.GridColumn14.VisibleIndex = 12
-        '
-        'GridColumn15
-        '
-        Me.GridColumn15.Caption = "Ngân hàng"
-        Me.GridColumn15.FieldName = "NganHang"
-        Me.GridColumn15.Name = "GridColumn15"
-        Me.GridColumn15.Visible = True
-        Me.GridColumn15.VisibleIndex = 13
-        '
-        'GridColumn16
-        '
-        Me.GridColumn16.Caption = "Số nợ"
-        Me.GridColumn16.FieldName = "NoHienTai"
-        Me.GridColumn16.Name = "GridColumn16"
-        Me.GridColumn16.Visible = True
-        Me.GridColumn16.VisibleIndex = 14
         '
         'frmNhaCungCap
         '

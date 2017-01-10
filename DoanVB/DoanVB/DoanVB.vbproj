@@ -215,7 +215,13 @@
     <Compile Include="DanhMuc\frmSuaKhuVuc.Designer.vb">
       <DependentUpon>frmSuaKhuVuc.vb</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="DanhMuc\frmSuaKhuVuc.vb" />
+=======
+    <Compile Include="DanhMuc\frmSuaKhuVuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> origin/master
     <Compile Include="DanhMuc\frmThemKhachHang.Designer.vb">
       <DependentUpon>frmThemKhachHang.vb</DependentUpon>
     </Compile>

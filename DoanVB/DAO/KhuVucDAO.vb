@@ -2,6 +2,18 @@
 Imports DTO
 
 Public Class KhuVucDAO
+    Public Shared Function ThongTinKhuVuc(ByVal makhuvuc As String)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from KHUVUC where MaKhuVuc = '" & makhuvuc & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
     Public Shared Function LoadDSKhuVuc() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()
@@ -54,7 +66,11 @@ Public Class KhuVucDAO
         End If
     End Function
 
+<<<<<<< HEAD
     Public Sub SuaKhuVuc(ByVal KVDTO As KhuVucDTO)
+=======
+    Public Shared Function SuaKhuVuc(ByVal KVDTO As KhuVucDTO) As Boolean
+>>>>>>> origin/master
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
@@ -69,7 +85,12 @@ Public Class KhuVucDAO
         cmd.Parameters("@TenKhuVuc").Value = KVDTO.TenKhuVuc1
         cmd.Parameters("@GhiChu").Value = KVDTO.GhiChu1
         cmd.Parameters("@TinhTrang").Value = KVDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 End Class

@@ -1,6 +1,7 @@
 ﻿Imports BUS
 Public Class frmKhuVuc
 
+    Public Shared lblmakh As String
     Private Sub DockPanel4_Click(sender As Object, e As EventArgs)
     End Sub
     Public Sub frmKhuVuc_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -30,5 +31,11 @@ Public Class frmKhuVuc
 
     Private Sub GridControl1_Load(sender As Object, e As EventArgs) Handles GridControl1.Load
 
+    End Sub
+
+    Private Sub BarButtonItem14_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem14.ItemClick
+        Dim frmSua = New frmSuaKhuVuc()
+        lblmakh = Me.lblMaKhuVuc.Text
+        frmSua.ShowDialog()
     End Sub
 End Class
