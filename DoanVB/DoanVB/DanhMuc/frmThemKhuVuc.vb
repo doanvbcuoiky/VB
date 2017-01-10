@@ -1,7 +1,6 @@
 ﻿Imports BUS
 Imports DTO
 Public Class frmThemKhuVuc
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnDong.Click
         Me.Close()
     End Sub
