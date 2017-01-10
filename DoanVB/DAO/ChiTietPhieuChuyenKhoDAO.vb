@@ -41,7 +41,7 @@ Public Class ChiTietPhieuChuyenKhoDAO
         Return False
     End Function
 
-    Public Shared Function XoaChiTietPhieuChuyenKho(ByVal maphieuchuyen As String) As Boolean
+    Public Shared Function XoaChiTietPhieuChuyenKho(ByVal maphieuchuyen As String, ByVal mahanghoa As String) As Boolean
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
@@ -56,9 +56,9 @@ Public Class ChiTietPhieuChuyenKhoDAO
         End If
     End Function
 
-    Public Sub SuaChiTietPhieuChuyenKho(ByVal CTPCK As ChiTietPhieuChuyenKhoDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaChiTietPhieuChuyenKho(ByVal CTPCK As ChiTietPhieuChuyenKhoDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaChiTietPhieuChuyenKho", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -75,5 +75,5 @@ Public Class ChiTietPhieuChuyenKhoDAO
         cmd.Parameters("@DonGia").Value = CTPCK.DonGia1
         cmd.ExecuteNonQuery()
         cn.Close()
-    End Sub
+    End Function
 End Class

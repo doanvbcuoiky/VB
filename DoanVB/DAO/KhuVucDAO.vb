@@ -65,12 +65,7 @@ Public Class KhuVucDAO
             Return False
         End If
     End Function
-
-<<<<<<< HEAD
-    Public Sub SuaKhuVuc(ByVal KVDTO As KhuVucDTO)
-=======
     Public Shared Function SuaKhuVuc(ByVal KVDTO As KhuVucDTO) As Boolean
->>>>>>> origin/master
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()

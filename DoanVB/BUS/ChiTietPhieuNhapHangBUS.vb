@@ -3,21 +3,15 @@ Imports DTO
 
 Public Class ChiTietPhieuNhapHangBUS
     Public Function LoadDSChiTietPhieuNhapHang() As DataTable
-        Dim CTPNHDAO As New ChiTietPhieuNhapHangDAO
-        Dim dt As DataTable
-        dt = CTPNHDAO.LoadDSChiTietPhieuNhapHang()
-        Return dt
+        Return ChiTietPhieuNhapHangBUS.LoadDSChiTietPhieuNhapHang()
     End Function
     Public Sub ThemChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO)
-        Dim CTPNHDAO As New ChiTietPhieuNhapHangDAO
-        CTPNHDAO.ThemChiTietPhieuNhapHang(CTPNHDTO)
+        Return ChiTietPhieuNhapHangBUS.ThemChiTietPhieuNhapHang(CTPNHDTO)
     End Sub
     Public Sub XoaChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO)
-        Dim CTPNHDAO As New ChiTietPhieuNhapHangDAO
-        CTPNHDAO.XoaChiTietPhieuNhapHang(CTPNHDTO)
+        Return ChiTietPhieuNhapHangBUS.XoaChiTietPhieuNhapHang(CTPNHDTO)
     End Sub
     Public Sub SuaChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO)
-        Dim CTPNHDAO As New ChiTietPhieuNhapHangDAO
-        CTPNHDAO.SuaChiTietPhieuNhapHang(CTPNHDTO)
+        Return ChiTietPhieuNhapHangBUS.SuaChiTietPhieuNhapHang(CTPNHDTO)
     End Sub
 End Class
