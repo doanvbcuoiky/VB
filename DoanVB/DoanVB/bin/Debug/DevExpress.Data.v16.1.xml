@@ -1353,114 +1353,6 @@
 
 
         </member>
-        <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperator">
-
-            <summary>
-                <para>Declares the base functionality for custom functions.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperator.Evaluate(System.Object[])">
-            <summary>
-                <para>When implemented by a custom function, evaluates it on the client.
-</para>
-            </summary>
-            <param name="operands">
-		An array of objects specifying function operands (parameters).
-
-            </param>
-            <returns>An <see cref="Object"/> specifying a custom function's return value, calculated based on the <i>operands</i>.
-</returns>
-
-
-        </member>
-        <member name="P:DevExpress.Data.Filtering.ICustomFunctionOperator.Name">
-            <summary>
-                <para>When implemented by a custom function, specifies its name.
-</para>
-            </summary>
-            <value>A <see cref="String"/> used to identify a custom function.
-</value>
-
-
-        </member>
-        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperator.ResultType(System.Type[])">
-            <summary>
-                <para>When implemented by a custom function, determines its return value type based on the type of function operands (parameters).
-</para>
-            </summary>
-            <param name="operands">
-		An array of function operator (parameter) types.
-
-            </param>
-            <returns>A <see cref="Type"/> object specifying the return value type of a custom function.
-</returns>
-
-
-        </member>
-        <member name="T:DevExpress.Data.Filtering.ConstantValue">
-
-            <summary>
-                <para>A constant value operand in criteria expressions.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Data.Filtering.ConstantValue.#ctor">
-            <summary>
-                <para>Initializes a new instance of the ConstantValue class with default settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Data.Filtering.ConstantValue.#ctor(System.Object)">
-            <summary>
-                <para>Initializes a new instance of the ConstantValue class with the specified constant value.
-</para>
-            </summary>
-            <param name="value">
-		The constant value for the operand. This value is assigned to the <see cref="P:DevExpress.Data.Filtering.OperandValue.Value"/> property.
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Data.Filtering.ConstantValue.Clone">
-            <summary>
-                <para>Creates a copy of the current ConstantValue instance.
-</para>
-            </summary>
-            <returns>An ConstantValue object which represents an exact copy of the current object.
-</returns>
-
-
-        </member>
-        <member name="T:DevExpress.Utils.LayoutAllowEventHandler">
-
-            <summary>
-                <para>A method that will handle events raised when upgrading a control's layout, allowing you to cancel the upgrade (e.g. <see cref="E:DevExpress.XtraGrid.Views.Base.BaseView.BeforeLoadLayout"/>, <see cref="E:DevExpress.XtraBars.BarManager.BeforeLoadLayout"/>, etc.). 
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Utils.LayoutAllowEventHandler.Invoke(System.Object,DevExpress.Utils.LayoutAllowEventArgs)">
-            <summary>
-                <para>A method that will handle events raised when upgrading a control's layout, allowing you to cancel the upgrade (e.g. <see cref="E:DevExpress.XtraGrid.Views.Base.BaseView.BeforeLoadLayout"/>, <see cref="E:DevExpress.XtraBars.BarManager.BeforeLoadLayout"/>, etc.).
-</para>
-            </summary>
-            <param name="sender">
-		The event sender.
-
-            </param>
-            <param name="e">
-		A <see cref="T:DevExpress.Utils.LayoutAllowEventArgs"/> object that contains event data.
-
-            </param>
-
-
-        </member>
         <member name="T:DevExpress.Utils.LayoutAllowEventArgs">
 
             <summary>
@@ -1488,6 +1380,611 @@
             </summary>
             <value><b>true</b> to allow the operation; otherwise, <b>false</b>.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.UnboundSourceProperty">
+
+            <summary>
+                <para>Supplies information on a column of the <see cref="T:DevExpress.Data.UnboundSource"/>'s list.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourceProperty.#ctor(System.String,System.Type)">
+            <summary>
+                <para>Initializes a new instance of the UnboundSourceProperty class.
+</para>
+            </summary>
+            <param name="name">
+		A string that is the property name.
+
+            </param>
+            <param name="propertyType">
+		A <see cref="T:System.Type"/> object specifying the property type.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourceProperty.#ctor">
+            <summary>
+                <para>Initializes a new instance of the UnboundSourceProperty class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourceProperty.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the UnboundSourceProperty class.
+</para>
+            </summary>
+            <param name="name">
+		A string that is the property name.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceProperty.DisplayName">
+            <summary>
+                <para>Specifies the display name of the property.
+</para>
+            </summary>
+            <value>A string that is the property display name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceProperty.Name">
+            <summary>
+                <para>Specifies the name of the property.
+</para>
+            </summary>
+            <value>A string that is the property name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceProperty.PropertyType">
+            <summary>
+                <para>Specifies the property type
+</para>
+            </summary>
+            <value>A <see cref="Type"/> object specifying the property type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceProperty.UserTag">
+            <summary>
+                <para>Specifies an object that contains data associated with the property.
+</para>
+            </summary>
+            <value>An object that contains data associated with the property.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.UnboundSource">
+
+            <summary>
+                <para>A data source used to supply and obtain a <a href="https://msdn.microsoft.com/en-us/library/system.componentmodel.itypedlist.aspx">typed list of objects</a> to data-aware controls in unbound mode.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+                <para>Initializes a new instance of the UnboundSource class.
+</para>
+            </summary>
+            <param name="container">
+		An <see cref="T:System.ComponentModel.IContainer"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.#ctor">
+            <summary>
+                <para>Initializes a new instance of the UnboundSource class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.Add">
+            <summary>
+                <para>Adds a new row to the end of the UnboundSource list.
+</para>
+            </summary>
+            <returns>An integer index of the new row.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.Change(System.Int32,System.String)">
+            <summary>
+                <para>Changes the specified value.
+</para>
+            </summary>
+            <param name="row">
+		An integer row number containing the value to be changed.
+
+            </param>
+            <param name="propertyName">
+		A string which is the name of the property whose value should be changed.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.Clear">
+            <summary>
+                <para>Clears the UnboundSource's list.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSource.Count">
+            <summary>
+                <para>Specifies the item count in the UnboundSource's list.
+
+</para>
+            </summary>
+            <value>An integer which is the item count.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.InsertAt(System.Int32)">
+            <summary>
+                <para>Inserts a new row at the specified position.
+</para>
+            </summary>
+            <param name="position">
+		The integer index of the new row.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSource.Item(System.Int32,System.String)">
+            <summary>
+                <para>Specifies a value within the UnboundSource list at a specific row index and with the specific property name.
+
+</para>
+            </summary>
+            <param name="rowIndex">
+		The zero-based index of the value.
+
+            </param>
+            <param name="propertyName">
+		A string which is the list property name.
+
+            </param>
+            <value>An object at the specific row index and with the specific property name.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.Move(System.Int32,System.Int32)">
+            <summary>
+                <para>Moves the row to another position.
+</para>
+            </summary>
+            <param name="from">
+		The integer specifying the current row index.
+
+
+            </param>
+            <param name="to">
+		The integer specifying the new row index.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSource.Properties">
+            <summary>
+                <para>Gets the collection of the UnboundSource's properties.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Data.UnboundSourcePropertyCollection"/> object specifying the properties collection.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.RemoveAt(System.Int32)">
+            <summary>
+                <para>Removes the specified row.
+</para>
+            </summary>
+            <param name="index">
+		The integer index of the row to be removed.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.Reset(System.Int32)">
+            <summary>
+                <para>Changes the capacity of the UnboundSource's list.
+</para>
+            </summary>
+            <param name="countAfterReset">
+		An integer specifying the new row count.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSource.SetRowCount(System.Int32)">
+            <summary>
+                <para>Changes the row count in the UnboundSource's list.
+</para>
+            </summary>
+            <param name="count">
+		An integer which is the new row count.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.Data.UnboundSource.UnboundSourceListChanged">
+            <summary>
+                <para>Occurs when the UnboundSource's list is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Data.UnboundSource.UnboundSourceListChanging">
+            <summary>
+                <para>Occurs when the UnboundSource's list is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Data.UnboundSource.ValueNeeded">
+            <summary>
+                <para>Occurs when a value is requested from the UnboundSource.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Data.UnboundSource.ValuePushed">
+            <summary>
+                <para>Occurs when a value is set in the UnboundSource.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.Core.ApplicationThemeHelper">
+
+            <summary>
+                <para>An abstract class that provides access to an application's theme settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Xpf.Core.ApplicationThemeHelper.ApplicationThemeName">
+            <summary>
+                <para>Gets or sets the name of the theme applied to the entire application.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the theme name.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Core.ApplicationThemeHelper.SaveApplicationThemeName">
+            <summary>
+                <para>Saves the current theme name to the application configuration file.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.Core.ApplicationThemeHelper.UpdateApplicationThemeName">
+            <summary>
+                <para>Loads the theme name from the application configuration file.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.Core.ApplicationThemeHelper.UseLegacyDefaultTheme">
+            <summary>
+                <para>Specifies whether the application should use the legacy default theme ("DeepBlue").
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.Helpers.ClauseType">
+
+            <summary>
+                <para>Lists the values that define the types of filter criteria used in the Automatic Filter Row.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.AnyOf">
+            <summary>
+                <para>Specifies the <b>Any Of</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.BeginsWith">
+            <summary>
+                <para>Specifies the <b>Begins With</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.Between">
+            <summary>
+                <para>Specifies the <b>Between</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.Contains">
+            <summary>
+                <para>Specifies the <b>Contains</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.DoesNotContain">
+            <summary>
+                <para>Specifies the <b>Does Not Contain</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.DoesNotEqual">
+            <summary>
+                <para>Specifies the <b>Does Not Equal</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.EndsWith">
+            <summary>
+                <para>Specifies the <b>Ends With</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.Equals">
+            <summary>
+                <para>Specifies the <b>Equals</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.Greater">
+            <summary>
+                <para>Specifies the <b>Greater</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.GreaterOrEqual">
+            <summary>
+                <para>Specifies the <b>Greater Or Equal</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsBeyondThisYear">
+            <summary>
+                <para>Specifies the <b>Is Beyond This Year</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsEarlierThisMonth">
+            <summary>
+                <para>Specifies the <b>Is Earlier This Month</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsEarlierThisWeek">
+            <summary>
+                <para>Specifies the <b>Is Earlier This Week</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsEarlierThisYear">
+            <summary>
+                <para>Specifies the <b>Is Earlier This Year</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsLastWeek">
+            <summary>
+                <para>Specifies the <b>Is Last Week</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsLaterThisMonth">
+            <summary>
+                <para>Specifies the <b>Is Later This Month</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsLaterThisWeek">
+            <summary>
+                <para>Specifies the <b>Is Later This Week</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsLaterThisYear">
+            <summary>
+                <para>Specifies the <b>Is Later This Year</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsNextWeek">
+            <summary>
+                <para>Specifies the <b>Is Next Week</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsNotNull">
+            <summary>
+                <para>Specifies the <b>Is Not Null</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsNotNullOrEmpty">
+            <summary>
+                <para>Specifies the <b>Is Not Null Or Empty</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsNull">
+            <summary>
+                <para>Specifies the <b>Is Null</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsNullOrEmpty">
+            <summary>
+                <para>Specifies the <b>Is Null Or Empty</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsPriorThisYear">
+            <summary>
+                <para>Specifies the <b>Is Prior This Year</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsToday">
+            <summary>
+                <para>Specifies the <b>Is Today</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsTomorrow">
+            <summary>
+                <para>Specifies the <b>Is Tomorrow</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.IsYesterday">
+            <summary>
+                <para>Specifies the <b>Is Yesterday</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.Less">
+            <summary>
+                <para>Specifies the <b>Less</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.LessOrEqual">
+            <summary>
+                <para>Specifies the <b>Less Or Equal</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.Like">
+            <summary>
+                <para>Specifies the <b>Like</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.NoneOf">
+            <summary>
+                <para>Specifies the <b>None Of</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.NotBetween">
+            <summary>
+                <para>Specifies the <b>Not Between</b> filter criteria.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.Filtering.Helpers.ClauseType.NotLike">
+            <summary>
+                <para>Specifies the <b>Not Like</b> filter criteria.
+</para>
+            </summary>
 
 
         </member>
@@ -2347,7 +2844,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.Linq.LinqInstantFeedbackSource">
 
             <summary>
-                <para>A component that can be used as a data source for the GridControl and SearchLookUpEdit controls in Instant Feedback Mode. Can be associated with any queryable source. 
+                <para>The data source for the GridControl and SearchLookUpEdit that binds these controls to any queryable source ('LINQ to SQL Classes') in Instant Feedback Mode.
 </para>
             </summary>
 
@@ -2604,7 +3101,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.WizardFramework.Wizard`1">
 
             <summary>
-                <para>A Data Source wizard instance associated with a specific View.
+                <para>A Data Source Wizard instance associated with a specific View.
 </para>
             </summary>
 
@@ -2849,50 +3346,6 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
             </summary>
             <value>A string representing a word added to the dictionary.
 </value>
-
-
-        </member>
-        <member name="T:DevExpress.Data.Browsing.Design.TypeSpecificsService">
-
-            <summary>
-                <para>For internal use.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Data.Browsing.Design.TypeSpecificsService.#ctor">
-            <summary>
-                <para>Initializes a new instance of the TypeSpecificsService class with default settings.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Data.Browsing.Design.TypeSpecificsService.GetPropertyTypeSpecifics(System.ComponentModel.PropertyDescriptor)">
-            <summary>
-                <para>For internal use.
-</para>
-            </summary>
-            <param name="property">
-		 
-
-            </param>
-            <returns> 
-</returns>
-
-
-        </member>
-        <member name="M:DevExpress.Data.Browsing.Design.TypeSpecificsService.GetTypeSpecifics(System.Type)">
-            <summary>
-                <para>For internal use.
-</para>
-            </summary>
-            <param name="type">
-		 
-
-            </param>
-            <returns> 
-</returns>
 
 
         </member>
@@ -3458,7 +3911,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Utils.AzureCompatibility">
 
             <summary>
-                <para>Provides an option to fix issues with unexpected output content (such as red crosses X, distorted fonts, etc.) for Printing, Reporting, RichEditDocumentServer and PDF libraries used on the Azure Web Site.
+                <para>Provides an option to fix issues with unexpected output content (such as red crosses X, distorted fonts, etc.) for Printing, Reporting, RichEditDocumentServer and PDF libraries used on the Microsoft Azure Web Sites.
 </para>
             </summary>
 
@@ -3702,6 +4155,16 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
             </param>
             <returns><b>true</b> if the specified object is equal to the current object; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Camera.CameraDeviceBase.GetAvailableResolutions">
+            <summary>
+                <para>Returns the list of video resolutions available on the current device.
+</para>
+            </summary>
+            <returns>The list of video resolutions available on the current device.
 </returns>
 
 
@@ -4873,112 +5336,6 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
 
         </member>
-        <member name="T:DevExpress.XtraReports.UI.FieldType">
-
-            <summary>
-                <para>Specifies the type of the value returned by a calculated field.
-
-</para>
-            </summary>
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Boolean">
-            <summary>
-                <para>Indicates that the field returns a Boolean value (the <see cref="T:System.Boolean"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Byte">
-            <summary>
-                <para>Indicates that the field returns a byte value (the <see cref="T:System.Byte"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.DateTime">
-            <summary>
-                <para>Indicates that the field returns a date-time value (the <see cref="T:System.DateTime"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Decimal">
-            <summary>
-                <para>Indicates that the field returns a decimal value (the <see cref="T:System.Decimal"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Double">
-            <summary>
-                <para>Indicates that the field returns a double value (the <see cref="T:System.Double"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Float">
-            <summary>
-                <para>Indicates that the field returns a float value (the <see cref="T:System.Single"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Guid">
-            <summary>
-                <para>Indicates that the field returns a GUID value (the System.Guid type)
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Int16">
-            <summary>
-                <para>Indicates that the field returns an integer value (the <see cref="T:System.Int16"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.Int32">
-            <summary>
-                <para>Indicates that the field returns an integer value (the <see cref="T:System.Int32"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.None">
-            <summary>
-                <para>Indicates that the field's type is undefined, and it determined by evaluating the actually returned object when it is used during report generation.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.String">
-            <summary>
-                <para>Indicates that the field returns a string value (the <see cref="T:System.String"/> type).
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraReports.UI.FieldType.TimeSpan">
-            <summary>
-                <para>Indicates that the field returns a time span value (the <see cref="T:System.TimeSpan"/> type).
-</para>
-            </summary>
-
-
-        </member>
         <member name="T:DevExpress.Services.MouseHandlerServiceWrapper">
 
             <summary>
@@ -5347,24 +5704,6 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
 
         </member>
-        <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportStylePageView">
-
-            <summary>
-                <para>If implemented, provides a view for the <b>Specify the Report Style</b> page of the Report Wizard.
-</para>
-            </summary>
-
-        </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportStylePageView.ReportStyleId">
-            <summary>
-                <para>If implemented, specifies the selected report style.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Data.XtraReports.Wizard.ReportStyleId"/> enumeration value.
-</value>
-
-
-        </member>
         <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperatorEvaluatableWithCaseSensitivity">
 
             <summary>
@@ -5465,6 +5804,54 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
             </param>
             <returns>An <a href="https://msdn.microsoft.com/en-us/library/system.linq.expressions.expression.aspx">Expression</a> object that specifies the LINQ expression. 
 </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView">
+
+            <summary>
+                <para>If implemented, provides a view for the <b>Specify the Report Layout</b> page of the Report Wizard for WPF.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.AdjustFieldWidth">
+            <summary>
+                <para>If implemented, specifies the state of the <b>Adjust the field width</b> check box.
+</para>
+            </summary>
+            <value><b>true</b>, to activate the check box; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.IsGroupedReport">
+            <summary>
+                <para>If implemented, specifies whether or not the report contains groups.
+</para>
+            </summary>
+            <value><b>true</b>, if the report is grouped; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.Portrait">
+            <summary>
+                <para>If implemented, specifies the state of the <b>Portrait</b> and <b>Landscape</b> radio buttons.
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>Portrait</b> radio button is active; <b>false</b> if the <b>Landscape</b> radio button is active.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.ReportLayout">
+            <summary>
+                <para>If implemented, specifies the selected report layout.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Data.XtraReports.Wizard.ReportLayout"/> enumeration value.
+</value>
 
 
         </member>
@@ -5678,6 +6065,13 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
             <summary>
                 <para>Indicates the <see cref="T:System.String"/> data type.
 </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpo.DB.DBColumnType.TimeSpan">
+            <summary>
+                <para> </para>
             </summary>
 
 
@@ -6155,6 +6549,76 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
 
         </member>
+        <member name="T:DevExpress.Data.UnboundSourceListChangedEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.Data.UnboundSource.UnboundSourceListChanging"/> and <see cref="E:DevExpress.Data.UnboundSource.UnboundSourceListChanged"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourceListChangedEventArgs.#ctor(System.Boolean,System.ComponentModel.ListChangedType,System.Int32,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the UnboundSourceListChangedEventArgs class.
+</para>
+            </summary>
+            <param name="isTriggeredByComponentApi">
+		<b>true</b>, if the current event is triggered by the <see cref="T:DevExpress.Data.UnboundSource"/> component API; otherwise, <b>false</b>.
+
+
+            </param>
+            <param name="listChangedType">
+		Gets the <a href="https://msdn.microsoft.com/en-us/library/system.componentmodel.listchangedtype.aspx">ListChangedType</a> enumeration value indicating the type of change.
+
+
+            </param>
+            <param name="newIndex">
+		Gets the integer index of the <see cref="T:DevExpress.Data.UnboundSource"/> row affected by the change.
+
+            </param>
+            <param name="oldIndex">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourceListChangedEventArgs.#ctor(System.Boolean,System.ComponentModel.ListChangedType,System.Int32,System.ComponentModel.PropertyDescriptor)">
+            <summary>
+                <para>Initializes a new instance of the UnboundSourceListChangedEventArgs class.
+</para>
+            </summary>
+            <param name="isTriggeredByComponentApi">
+		<b>true</b>, if the current event is triggered by the <see cref="T:DevExpress.Data.UnboundSource"/> component API; otherwise, <b>false</b>.
+
+
+            </param>
+            <param name="listChangedType">
+		Gets the <a href="https://msdn.microsoft.com/en-us/library/system.componentmodel.listchangedtype.aspx">ListChangedType</a> enumeration value indicating the type of change.
+
+
+            </param>
+            <param name="index">
+		Gets the integer index of the <see cref="T:DevExpress.Data.UnboundSource"/> list row affected by the change.
+
+            </param>
+            <param name="propertyDescriptor">
+		Gets the <a href="https://msdn.microsoft.com/en-us/library/system.componentmodel.propertydescriptor.aspx">PropertyDescriptor</a> of the <see cref="T:DevExpress.Data.UnboundSource"/> list property affected by the change.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceListChangedEventArgs.IsTriggeredByComponentApi">
+            <summary>
+                <para>Gets a value indicating if the current event is triggered by the <see cref="T:DevExpress.Data.UnboundSource"/> component API.
+</para>
+            </summary>
+            <value><b>true</b>, if the current event is triggered by the component API; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraEditors.FilterDateType">
 
             <summary>
@@ -6543,6 +7007,52 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
 
         </member>
+        <member name="T:DevExpress.Data.Filtering.ICustomFunctionOperator">
+
+            <summary>
+                <para>Declares the base functionality for custom functions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperator.Evaluate(System.Object[])">
+            <summary>
+                <para>When implemented by a custom function, evaluates it on the client.
+</para>
+            </summary>
+            <param name="operands">
+		An array of objects specifying function operands (parameters).
+
+            </param>
+            <returns>An <see cref="Object"/> specifying a custom function's return value, calculated based on the <i>operands</i>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Data.Filtering.ICustomFunctionOperator.Name">
+            <summary>
+                <para>When implemented by a custom function, specifies its name.
+</para>
+            </summary>
+            <value>A <see cref="String"/> used to identify a custom function.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ICustomFunctionOperator.ResultType(System.Type[])">
+            <summary>
+                <para>When implemented by a custom function, determines its return value type based on the type of function operands (parameters).
+</para>
+            </summary>
+            <param name="operands">
+		An array of function operator (parameter) types.
+
+            </param>
+            <returns>A <see cref="Type"/> object specifying the return value type of a custom function.
+</returns>
+
+
+        </member>
         <member name="T:DevExpress.Data.Camera.DeviceVideoProperty">
 
             <summary>
@@ -6669,7 +7179,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageAlignment.MiddleCenter">
             <summary>
-                <para>An image is aligned to the middler of a control
+                <para>An image is aligned to the middle of a control
 </para>
             </summary>
 
@@ -6712,6 +7222,44 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
                 <para>An image is aligned to the top right corner of a control. 
 </para>
             </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.ConstantValue">
+
+            <summary>
+                <para>A constant value operand in criteria expressions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ConstantValue.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ConstantValue class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ConstantValue.#ctor(System.Object)">
+            <summary>
+                <para>Initializes a new instance of the ConstantValue class with the specified constant value.
+</para>
+            </summary>
+            <param name="value">
+		The constant value for the operand. This value is assigned to the <see cref="P:DevExpress.Data.Filtering.OperandValue.Value"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.ConstantValue.Clone">
+            <summary>
+                <para>Creates a copy of the current ConstantValue instance.
+</para>
+            </summary>
+            <returns>An ConstantValue object which represents an exact copy of the current object.
+</returns>
 
 
         </member>
@@ -6824,6 +7372,30 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
             </summary>
             <value>An integer value that specifies the number of master-detail relationships for the current master data source.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.Utils.LayoutAllowEventHandler">
+
+            <summary>
+                <para>A method that will handle events raised when upgrading a control's layout, allowing you to cancel the upgrade (e.g. <see cref="E:DevExpress.XtraGrid.Views.Base.BaseView.BeforeLoadLayout"/>, <see cref="E:DevExpress.XtraBars.BarManager.BeforeLoadLayout"/>, etc.). 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Utils.LayoutAllowEventHandler.Invoke(System.Object,DevExpress.Utils.LayoutAllowEventArgs)">
+            <summary>
+                <para>A method that will handle events raised when upgrading a control's layout, allowing you to cancel the upgrade (e.g. <see cref="E:DevExpress.XtraGrid.Views.Base.BaseView.BeforeLoadLayout"/>, <see cref="E:DevExpress.XtraBars.BarManager.BeforeLoadLayout"/>, etc.).
+</para>
+            </summary>
+            <param name="sender">
+		The event sender.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Utils.LayoutAllowEventArgs"/> object that contains event data.
+
+            </param>
 
 
         </member>
@@ -6981,7 +7553,8 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.Browsing.DataContext.TryGetDataMemberDisplayName(System.Object,System.String,System.String@)">
             <summary>
-                <para> </para>
+                <para>Attempts to obtain the display name of the specified data member.
+</para>
             </summary>
             <param name="dataSource">
 		A <see cref="T:System.Object"/> value, specifying the data source.
@@ -6995,7 +7568,8 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 		A <see cref="T:System.String"/> value, specifying the result.
 
             </param>
-            <returns> </returns>
+            <returns><b>true</b> if the data member's display name has been obtained; otherwise <b>false</b>.
+</returns>
 
 
         </member>
@@ -7121,11 +7695,11 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 </para>
             </summary>
             <param name="projectAssemblyFullName">
-		A <see cref="T:System.String"/> value.
+		A <see cref="T:System.String"/> value, specifying the project assembly.
 
             </param>
             <param name="referenceName">
-		A <see cref="T:System.String"/> value.
+		A <see cref="T:System.String"/> value, specifying the reference name.
 
             </param>
             <returns>A <see cref="T:System.String"/> value.
@@ -7440,6 +8014,112 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
 
         </member>
+        <member name="T:DevExpress.XtraReports.UI.FieldType">
+
+            <summary>
+                <para>Specifies the type of the value returned by a calculated field.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Boolean">
+            <summary>
+                <para>Indicates that the field returns a Boolean value (the <see cref="T:System.Boolean"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Byte">
+            <summary>
+                <para>Indicates that the field returns a byte value (the <see cref="T:System.Byte"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.DateTime">
+            <summary>
+                <para>Indicates that the field returns a date-time value (the <see cref="T:System.DateTime"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Decimal">
+            <summary>
+                <para>Indicates that the field returns a decimal value (the <see cref="T:System.Decimal"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Double">
+            <summary>
+                <para>Indicates that the field returns a double value (the <see cref="T:System.Double"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Float">
+            <summary>
+                <para>Indicates that the field returns a float value (the <see cref="T:System.Single"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Guid">
+            <summary>
+                <para>Indicates that the field returns a GUID value (the System.Guid type)
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Int16">
+            <summary>
+                <para>Indicates that the field returns an integer value (the <see cref="T:System.Int16"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.Int32">
+            <summary>
+                <para>Indicates that the field returns an integer value (the <see cref="T:System.Int32"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.None">
+            <summary>
+                <para>Indicates that the field's type is undefined, and it determined by evaluating the actually returned object when it is used during report generation.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.String">
+            <summary>
+                <para>Indicates that the field returns a string value (the <see cref="T:System.String"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraReports.UI.FieldType.TimeSpan">
+            <summary>
+                <para>Indicates that the field returns a time span value (the <see cref="T:System.TimeSpan"/> type).
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.Data.Linq.LinqServerModeExceptionThrownEventArgs">
 
             <summary>
@@ -7492,42 +8172,6 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
 
 
             </param>
-
-
-        </member>
-        <member name="T:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind">
-
-            <summary>
-                <para>Specifies the prototype string format for the <see cref="T:DevExpress.XtraPrinting.BrickStringFormat"/>.
-
-</para>
-            </summary>
-
-        </member>
-        <member name="F:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind.Default">
-            <summary>
-                <para>The current string format is based on the default string format.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind.GenericDefault">
-            <summary>
-                <para>The current string format is based on the generic default string format.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind.GenericTypographic">
-            <summary>
-                <para>The current string format is based on the generic typographic string format.
-
-</para>
-            </summary>
 
 
         </member>
@@ -7649,7 +8293,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.Linq.LinqServerModeSource">
 
             <summary>
-                <para>The data source for the GridControl and PivotGridControl controls that can be associated with any queryable source.
+                <para>The data source for the GridControl and PivotGridControl that binds these controls to any queryable source ('LINQ to SQL Classes') in server mode.
 
 </para>
             </summary>
@@ -8028,7 +8672,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.RealTimeSource">
 
             <summary>
-                <para>A data source component which acts as an asynchronous bridge between a data-aware control and rapidly changing data.
+                <para>The component that acts as an asynchronous bridge between a data-aware control and rapidly changing data.
 </para>
             </summary>
 
@@ -8250,14 +8894,14 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.WizardFramework.IWizardPage`1">
 
             <summary>
-                <para>If implemented, represents a page of the Report Wizard.
+                <para>If implemented, represents a page of the WPF Report Wizard.
 </para>
             </summary>
 
         </member>
         <member name="M:DevExpress.Data.WizardFramework.IWizardPage`1.Begin">
             <summary>
-                <para>If implemented, initializes controls of a Report Wizard page.
+                <para>If implemented, initializes controls of a WPF Report Wizard page.
 </para>
             </summary>
 
@@ -8892,7 +9536,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IWelcomePageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Welcome</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Welcome</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -8900,7 +9544,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ISetReportTitlePageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Specify the Report's Title</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Specify the Report's Title</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -8918,7 +9562,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectLabelTypePageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Select the Label Type</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Select the Label Type</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9005,7 +9649,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectHierarchicalDataSourceColumnsPageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Select Columns</b> page of the Report Wizard for a hierarchical data source.
+                <para>If implemented, provides a view for the <b>Select Columns</b> page of the WPF Report Wizard for a hierarchical data source.
 </para>
             </summary>
 
@@ -9057,7 +9701,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectHierarchicalDataSourceColumnsPageView.EnableAddColumnButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Add Column</b> button on the <b>Select Columns</b> page of the Report Wizard for a hierarchical data source.
+                <para>If implemented, activates or deactivates the <b>Add Column</b> button on the <b>Select Columns</b> page of the WPF Report Wizard for a hierarchical data source.
 </para>
             </summary>
             <param name="enable">
@@ -9069,7 +9713,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectHierarchicalDataSourceColumnsPageView.EnableRemoveAllColumnsButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Remove All Columns</b> button on the <b>Select Columns</b> page of the Report Wizard for a hierarchical data source.
+                <para>If implemented, activates or deactivates the <b>Remove All Columns</b> button on the <b>Select Columns</b> page of the WPF Report Wizard for a hierarchical data source.
 </para>
             </summary>
             <param name="enable">
@@ -9081,7 +9725,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectHierarchicalDataSourceColumnsPageView.EnableRemoveColumnsButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Remove Columns</b> button on the <b>Select Columns</b> page of the Report Wizard for a hierarchical data source.
+                <para>If implemented, activates or deactivates the <b>Remove Columns</b> button on the <b>Select Columns</b> page of the WPF Report Wizard for a hierarchical data source.
 </para>
             </summary>
             <param name="enable">
@@ -9145,7 +9789,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectDataSourcePageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Select the Data Source Type</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Select the Data Source Type</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9195,7 +9839,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectDataMemberPageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Create a Query</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Create a Query</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9257,7 +9901,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectColumnsPageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Select Columns</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Select Columns</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9280,7 +9924,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="E:DevExpress.Data.XtraReports.Wizard.Views.ISelectColumnsPageView.AddColumnsClicked">
             <summary>
-                <para>Occurs when the <b>Add Columns</b> button is clicked on the <b>Select Columns</b>  Report Wizard page.
+                <para>Occurs when the <b>Add Columns</b> button is clicked on the <b>Select Columns</b> Report Wizard page.
 </para>
             </summary>
 
@@ -9288,7 +9932,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectColumnsPageView.EnableAddAllColumnsButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Add All Columns</b> button on the <b>Select Columns</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Add All Columns</b> button on the <b>Select Columns</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9300,7 +9944,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectColumnsPageView.EnableAddColumnsButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Add Columns</b> button on the <b>Select Columns</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Add Columns</b> button on the <b>Select Columns</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9312,7 +9956,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectColumnsPageView.EnableRemoveAllColumnsButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Remove All Columns</b> button on the <b>Select Columns</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Remove All Columns</b> button on the <b>Select Columns</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9324,7 +9968,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.ISelectColumnsPageView.EnableRemoveColumnsButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Remove Columns</b> button on the <b>Select Columns</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Remove Columns</b> button on the <b>Select Columns</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9410,7 +10054,7 @@ To create the <b>logical OR</b> operator using the <see cref="M:DevExpress.Data.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.ICustomizeLabelPageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Adjust the Label's Parameters</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Adjust the Label's Parameters</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9535,7 +10179,7 @@ An integer value.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IChooseSummaryOptionsPageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Specify Summary Functions</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Specify Summary Functions</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9577,7 +10221,7 @@ An integer value.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportTypePageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Select the Report Type</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Select the Report Type</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9592,50 +10236,20 @@ An integer value.
 
 
         </member>
-        <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView">
+        <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportStylePageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Specify the Report Layout</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Specify the Report Style</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
         </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.AdjustFieldWidth">
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportStylePageView.ReportStyleId">
             <summary>
-                <para>If implemented, specifies the state of the <b>Adjust the field width</b> check box.
+                <para>If implemented, specifies the selected report style.
 </para>
             </summary>
-            <value><b>true</b>, to activate the check box; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.IsGroupedReport">
-            <summary>
-                <para>If implemented, specifies whether or not the report contains groups.
-</para>
-            </summary>
-            <value><b>true</b>, if the report is grouped; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.Portrait">
-            <summary>
-                <para>If implemented, specifies the state of the <b>Portrait</b> and <b>Landscape</b> radio buttons.
-</para>
-            </summary>
-            <value><b>true</b>, if the <b>Portrait</b> radio button is active; <b>false</b> if the <b>Landscape</b> radio button is active.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Views.IChooseReportLayoutPageView.ReportLayout">
-            <summary>
-                <para>If implemented, specifies the selected report layout.
-</para>
-            </summary>
-            <value>A <see cref="T:DevExpress.Data.XtraReports.Wizard.ReportLayout"/> enumeration value.
+            <value>A <see cref="T:DevExpress.Data.XtraReports.Wizard.ReportStyleId"/> enumeration value.
 </value>
 
 
@@ -9643,7 +10257,7 @@ An integer value.
         <member name="T:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView">
 
             <summary>
-                <para>If implemented, provides a view for the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, provides a view for the <b>Create Groups</b> page of the Report Wizard for WPF.
 </para>
             </summary>
 
@@ -9682,7 +10296,7 @@ An integer value.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView.EnableAddGroupingLevelButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Add Grouping Level</b> button on the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Add Grouping Level</b> button on the <b>Create Groups</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9694,7 +10308,7 @@ An integer value.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView.EnableCombineGroupingLevelButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Combine Grouping Level</b> button on the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Combine Grouping Level</b> button on the <b>Create Groups</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9706,7 +10320,7 @@ An integer value.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView.EnableGroupingLevelDown(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Move Grouping Level Down</b> button on the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Move Grouping Level Down</b> button on the <b>Create Groups</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9718,7 +10332,7 @@ An integer value.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView.EnableGroupingLevelUp(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Move Grouping Level Up</b> button on the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Move Grouping Level Up</b> button on the <b>Create Groups</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9730,7 +10344,7 @@ An integer value.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView.EnableRemoveGroupingLevelButton(System.Boolean)">
             <summary>
-                <para>If implemented, activates or deactivates the <b>Remove Grouping Level</b> button on the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, activates or deactivates the <b>Remove Grouping Level</b> button on the <b>Create Groups</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="enable">
@@ -9822,7 +10436,7 @@ An integer value.
         </member>
         <member name="M:DevExpress.Data.XtraReports.Wizard.Views.IAddGroupingLevelPageView.ShowWaitIndicator(System.Boolean)">
             <summary>
-                <para>If implemented, shows or hides the wait indicator on the <b>Create Groups</b> page of the Report Wizard.
+                <para>If implemented, shows or hides the wait indicator on the <b>Create Groups</b> page of the WPF Report Wizard.
 </para>
             </summary>
             <param name="show">
@@ -9919,78 +10533,6 @@ An integer value.
 </para>
             </summary>
             <value><b>true</b>, if the <b>Finish</b> button is  enabled; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="T:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1">
-
-            <summary>
-                <para>The <b>Select the Label Type</b> page of the Report Wizard.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.#ctor(DevExpress.Data.XtraReports.Wizard.Views.ISelectLabelTypePageView,DevExpress.Data.XtraReports.Labels.ILabelProductRepository)">
-            <summary>
-                <para>Initializes a new instance of the SelectLabelTypePage&lt;TModel&gt; class with the specified settings.
-</para>
-            </summary>
-            <param name="view">
-		An object implementing the <see cref="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectLabelTypePageView"/> interface. 
-
-
-            </param>
-            <param name="repository">
-		An object implementing the <see cref="T:DevExpress.Data.XtraReports.Labels.ILabelProductRepository"/> interface. (Typically, it is the <see cref="T:DevExpress.Data.XtraReports.Labels.XDocumentLabelProductRepository"/> object.)
-
-
-            </param>
-
-
-        </member>
-        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.Begin">
-            <summary>
-                <para>Initializes controls of the <b>Select the Label Type</b> page of the Report Wizard.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.Commit">
-            <summary>
-                <para>Saves settings specified by a wizard page to the report model.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.FinishEnabled">
-            <summary>
-                <para>Specifies whether of not the <b>Finish</b> button is enabled on the <b>Select the Label Type</b> page of the Report Wizard.
-</para>
-            </summary>
-            <value><b>true</b>, if the <b>Finish</b> button is  enabled; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.GetNextPageType">
-            <summary>
-                <para>Returns the type of the next wizard page.
-</para>
-            </summary>
-            <returns>A <see cref="T:System.Type"/> enumeration value.
-</returns>
-
-
-        </member>
-        <member name="P:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.MoveNextEnabled">
-            <summary>
-                <para>Specifies whether of not the <b>Next</b> button is enabled on the <b>Select the Label Type</b> page of the Report Wizard.
-</para>
-            </summary>
-            <value><b>true</b>, if the <b>Next</b> button is  enabled; otherwise, <b>false</b>.
 </value>
 
 
@@ -10613,6 +11155,42 @@ An integer value.
 
 
         </member>
+        <member name="T:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind">
+
+            <summary>
+                <para>Specifies the prototype string format for the <see cref="T:DevExpress.XtraPrinting.BrickStringFormat"/>.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind.Default">
+            <summary>
+                <para>The current string format is based on the default string format.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind.GenericDefault">
+            <summary>
+                <para>The current string format is based on the generic default string format.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPrinting.BrickStringFormatPrototypeKind.GenericTypographic">
+            <summary>
+                <para>The current string format is based on the generic typographic string format.
+
+</para>
+            </summary>
+
+
+        </member>
         <member name="T:DevExpress.Data.WizardFramework.WizardPageErrorEventArgs">
 
             <summary>
@@ -10664,6 +11242,78 @@ An integer value.
                 <para>When the brick dimensions do not fit into the bottom page margin, the brick content is moved to a new page in its entirety.
 </para>
             </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1">
+
+            <summary>
+                <para>The <b>Select the Label Type</b> page of the Report Wizard.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.#ctor(DevExpress.Data.XtraReports.Wizard.Views.ISelectLabelTypePageView,DevExpress.Data.XtraReports.Labels.ILabelProductRepository)">
+            <summary>
+                <para>Initializes a new instance of the SelectLabelTypePage&lt;TModel&gt; class with the specified settings.
+</para>
+            </summary>
+            <param name="view">
+		An object implementing the <see cref="T:DevExpress.Data.XtraReports.Wizard.Views.ISelectLabelTypePageView"/> interface. 
+
+
+            </param>
+            <param name="repository">
+		An object implementing the <see cref="T:DevExpress.Data.XtraReports.Labels.ILabelProductRepository"/> interface. (Typically, it is the <see cref="T:DevExpress.Data.XtraReports.Labels.XDocumentLabelProductRepository"/> object.)
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.Begin">
+            <summary>
+                <para>Initializes controls of the <b>Select the Label Type</b> page of the Report Wizard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.Commit">
+            <summary>
+                <para>Saves settings specified by a wizard page to the report model.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.FinishEnabled">
+            <summary>
+                <para>Specifies whether of not the <b>Finish</b> button is enabled on the <b>Select the Label Type</b> page of the Report Wizard.
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>Finish</b> button is  enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.GetNextPageType">
+            <summary>
+                <para>Returns the type of the next wizard page.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Type"/> enumeration value.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Data.XtraReports.Wizard.Presenters.SelectLabelTypePage`1.MoveNextEnabled">
+            <summary>
+                <para>Specifies whether of not the <b>Next</b> button is enabled on the <b>Select the Label Type</b> page of the Report Wizard.
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>Next</b> button is  enabled; otherwise, <b>false</b>.
+</value>
 
 
         </member>
@@ -15195,22 +15845,27 @@ The operands are specified by the <see cref="P:DevExpress.Data.Filtering.Functio
         </member>
         <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Accept(DevExpress.Data.Filtering.ICriteriaVisitor)">
             <summary>
-                <para> </para>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
             </summary>
             <param name="visitor">
 		 
+
             </param>
 
 
         </member>
         <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Accept``1(DevExpress.Data.Filtering.ICriteriaVisitor{``0})">
             <summary>
-                <para> </para>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
             </summary>
             <param name="visitor">
 		 
+
             </param>
-            <returns> </returns>
+            <returns> 
+</returns>
 
 
         </member>
@@ -18957,6 +19612,50 @@ To create the addition operator using the <see cref="M:DevExpress.Data.Filtering
 
 
         </member>
+        <member name="T:DevExpress.Data.Browsing.Design.TypeSpecificsService">
+
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Browsing.Design.TypeSpecificsService.#ctor">
+            <summary>
+                <para>Initializes a new instance of the TypeSpecificsService class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Browsing.Design.TypeSpecificsService.GetPropertyTypeSpecifics(System.ComponentModel.PropertyDescriptor)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="property">
+		 
+
+            </param>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Browsing.Design.TypeSpecificsService.GetTypeSpecifics(System.Type)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="type">
+		 
+
+            </param>
+            <returns> 
+</returns>
+
+
+        </member>
         <member name="T:DevExpress.XtraGrid.ColumnFilterMode">
 
             <summary>
@@ -19769,7 +20468,7 @@ This is supported only by the DXPrinting for WPF library.
         </member>
         <member name="F:DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding">
             <summary>
-                <para>Identifies the <b>Stop</b>  button, which is displayed in the status bar to the right of the progress bar, and can be used to stop generating a document.
+                <para>Identifies the <b>Stop</b> button, which is displayed in the status bar to the right of the progress bar, and can be used to stop generating a document.
 </para>
             </summary>
 
@@ -19893,6 +20592,102 @@ This is supported only by the DXPrinting for WPF library.
 
 
         </member>
+        <member name="T:DevExpress.Data.UnboundSourcePropertyCollection">
+
+            <summary>
+                <para>A collection of the <see cref="T:DevExpress.Data.UnboundSource"/>'s list columns.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourcePropertyCollection.#ctor(DevExpress.Data.UnboundSource)">
+            <summary>
+                <para>Initializes a new instance of the UnboundSourcePropertyCollection class.
+</para>
+            </summary>
+            <param name="owner">
+		An <see cref="T:DevExpress.Data.UnboundSource"/> object which owns the UnboundSourcePropertyCollection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourcePropertyCollection.Add(DevExpress.Data.UnboundSourcePropertyCollection)">
+            <summary>
+                <para>Adds the specified items to the UnboundSourcePropertyCollection collection.
+</para>
+            </summary>
+            <param name="properties">
+		An <see cref="T:DevExpress.Data.UnboundSourcePropertyCollection"/> list of items to be added to the current UnboundSourcePropertyCollection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourcePropertyCollection.Add(DevExpress.Data.UnboundSourceProperty)">
+            <summary>
+                <para>Adds the specified item to the UnboundSourcePropertyCollection collection.
+</para>
+            </summary>
+            <param name="property">
+		An <see cref="T:DevExpress.Data.UnboundSourceProperty"/> item to be added to the current UnboundSourcePropertyCollection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourcePropertyCollection.AddRange(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Adds the specified items to the UnboundSourcePropertyCollection collection.
+</para>
+            </summary>
+            <param name="properties">
+		An <b>IEnumerable&lt;</b><see cref="T:DevExpress.Data.UnboundSourceProperty"/><b>&gt;</b> list of items to be added to the current UnboundSourcePropertyCollection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.UnboundSourcePropertyCollection.ClearAndAddRange(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Clears the UnboundSourcePropertyCollection collection and adds the specified items to it.
+</para>
+            </summary>
+            <param name="properties">
+		An <b>IEnumerable&lt;</b><see cref="T:DevExpress.Data.UnboundSourceProperty"/><b>&gt;</b> list of items to be added to the current UnboundSourcePropertyCollection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourcePropertyCollection.Item(System.Int32)">
+            <summary>
+                <para>Specifies an item within the UnboundSourcePropertyCollection collection at a specific index.
+</para>
+            </summary>
+            <param name="index">
+		The zero-based index of the item.
+
+            </param>
+            <value>An <see cref="UnboundSourceProperty"/> item at a specific index.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourcePropertyCollection.Item(System.String)">
+            <summary>
+                <para>Specifies an item within the UnboundSourcePropertyCollection collection with a specific name.
+</para>
+            </summary>
+            <param name="name">
+		A string which is the <see cref="P:DevExpress.Data.UnboundSourceProperty.Name"/> of the item.
+
+            </param>
+            <value>An <see cref="UnboundSourceProperty"/> item with the specific name.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.Data.UnboundColumnType">
 
             <summary>
@@ -19954,6 +20749,54 @@ This is supported only by the DXPrinting for WPF library.
                 <para>Indicates that the column is unbound and it contains string values (the <see cref="T:System.String"/> type). 
 </para>
             </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.UnboundSourceValuePushedEventArgs">
+
+            <summary>
+                <para>Arguments, passed to the <see cref="E:DevExpress.Data.UnboundSource.ValuePushed"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValuePushedEventArgs.PropertyName">
+            <summary>
+                <para>Gets the name of the property whose value is being set.
+</para>
+            </summary>
+            <value>A string that is the property name. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValuePushedEventArgs.RowIndex">
+            <summary>
+                <para>Gets the row index of the value.
+</para>
+            </summary>
+            <value>An integer index of the row. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValuePushedEventArgs.Tag">
+            <summary>
+                <para>Gets an object that contains data associated with the value.
+</para>
+            </summary>
+            <value>An object that contains data associated with the value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValuePushedEventArgs.Value">
+            <summary>
+                <para>Specifies the value which is being set.
+</para>
+            </summary>
+            <value>An object specifying the value which is being set. 
+</value>
 
 
         </member>
@@ -20065,6 +20908,54 @@ This is supported only by the DXPrinting for WPF library.
 
 
         </member>
+        <member name="T:DevExpress.Data.UnboundSourceValueNeededEventArgs">
+
+            <summary>
+                <para>Arguments, passed to the <see cref="E:DevExpress.Data.UnboundSource.ValueNeeded"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValueNeededEventArgs.PropertyName">
+            <summary>
+                <para>Gets the name of the property whose value is requested.
+</para>
+            </summary>
+            <value>A string which is the property name. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValueNeededEventArgs.RowIndex">
+            <summary>
+                <para>Gets the row index of the value.
+</para>
+            </summary>
+            <value>The integer index of the row. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValueNeededEventArgs.Tag">
+            <summary>
+                <para>Gets an object that contains data associated with the value.
+</para>
+            </summary>
+            <value>An object that contains data associated with the value. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.UnboundSourceValueNeededEventArgs.Value">
+            <summary>
+                <para>Specifies the value which is requested.
+</para>
+            </summary>
+            <value>An object specifying the value which is requested. 
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraGrid.ColumnSortMode">
 
             <summary>
@@ -20129,7 +21020,10 @@ For other columns their data is sorted by the edit values (these are synchronize
         </member>
         <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Alphabetical">
             <summary>
-                <para>Rows are grouped by the character that their values start with.
+                <para>Rows are grouped by the character that grouping column values start with.
+
+
+Not supported in server mode for numeric and date/time columns.
 
 </para>
             </summary>
@@ -20185,11 +21079,7 @@ Rows are grouped by the year part of their values.
         </member>
         <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Default">
             <summary>
-                <para>In regular binding mode, for columns which store date/time values, this option is the same as the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Date"/> option. For non date/time columns this option is the same as the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Value"/> option.
-
-<para>
-In server mode, rows are always grouped by values. See the description of the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Value"/> option.
-</para>
+                <para>For columns which store date/time values, this option is the same as the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Date"/> option. For non date/time columns this option is the same as the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Value"/> option.
 </para>
             </summary>
 
@@ -20197,11 +21087,15 @@ In server mode, rows are always grouped by values. See the description of the <s
         </member>
         <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DisplayText">
             <summary>
-                <para>Rows are grouped by cells' display values.
+                <para>Rows are grouped by display values of the grouping column.
 
 <para>
-In specific instances, cells can have different edit values, but the same display value. To combine these rows into the same group, use the <b>DisplayText</b> group mode.
+In specific instances, column cells can have different edit values, but the same display value. To combine these rows into the same group, use the <b>DisplayText</b> group mode.
 </para>
+
+
+Not supported in server mode.
+
 </para>
             </summary>
 
@@ -20209,10 +21103,10 @@ In specific instances, cells can have different edit values, but the same displa
         </member>
         <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Value">
             <summary>
-                <para>Rows are grouped by their values (the entire values of each row in a group have to match). The number of groups matches the number of unique values within the grouping column. 
+                <para>Rows are grouped by values of grouping columns. The number of groups matches the number of unique values within the grouping column.
 
 <para>
-Note that <see cref="T:System.DateTime"/> objects which have the same date portion but different time portions are treated as unique values (each has it's own group).
+For date/time columns, both the date and time portions are taken into account for value comparison. To specify how date/time values are presented in group rows in WinForms Data Grid, apply formatting to the grouping column (e.g., with the <see cref="P:DevExpress.XtraGrid.Columns.GridColumn.DisplayFormat"/> property).
 </para>
 
 
@@ -20348,9 +21242,7 @@ The Picture Box size is adjusted to that of the image it contains.
         </member>
         <member name="F:DevExpress.XtraPrinting.ImageSizeMode.CenterImage">
             <summary>
-                <para>
-The image is displayed in the center of the Picture Box. The outside edges of an image are clipped if it does not fit into the control's bounds.
-This option is obsolete. To achieve the same result, set the <see cref="P:DevExpress.XtraReports.UI.XRPictureBox.Sizing"/> property of a Picture Box to <see cref="F:DevExpress.XtraPrinting.ImageSizeMode.Normal"/> and the <see cref="P:DevExpress.XtraReports.UI.XRPictureBox.ImageAlignment"/> property to <see cref="F:DevExpress.XtraPrinting.ImageAlignment.MiddleCenter"/>.
+                <para>This option is obsolete. To achieve the same result, set the <see cref="P:DevExpress.XtraReports.UI.XRPictureBox.Sizing"/> property of a Picture Box to <see cref="F:DevExpress.XtraPrinting.ImageSizeMode.Normal"/> and the <see cref="P:DevExpress.XtraReports.UI.XRPictureBox.ImageAlignment"/> property to <see cref="F:DevExpress.XtraPrinting.ImageAlignment.MiddleCenter"/>.
 
 </para>
             </summary>
@@ -20597,7 +21489,7 @@ Otherwise, the closest matching image side (height or width) will be sized to th
         </member>
         <member name="P:DevExpress.Data.XtraReports.DataProviders.EntityInfo`1.DisplayName">
             <summary>
-                <para>Specifies the data source display name for a wizard.
+                <para>Specifies the data source display name for a WPF Report Wizard.
 </para>
             </summary>
             <value>A <see cref="T:System.String"/> value, specifying the data source display name.
@@ -20636,6 +21528,817 @@ Otherwise, the closest matching image side (height or width) will be sized to th
             </summary>
             <value>A TName object that is the name of the entity.
 </value>
+
+
+        </member>
+        <member name="T:DevExpress.Entity.Model.IContainerInfo">
+
+            <summary>
+                <para>If implemented, provides information about an Entity Framework data context.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Entity.Model.IContainerInfo.ContainerType">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Entity.Model.DbContainerType">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Entity.Model.DbContainerType.EntityFramework">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Entity.Model.DbContainerType.WCF">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.EnumProcessingHelper">
+
+            <summary>
+                <para>Provides helper methods used to register enumeration types whose values can be serialized in Criteria Language expressions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnum(System.Type)">
+            <summary>
+                <para>Enables serialization of the specified enumeration type's values in Criteria Language expressions.
+</para>
+            </summary>
+            <param name="enumType">
+		A <see cref="T:System.Type"/> object specifying the type of enumeration to be registered.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnum(System.Type,System.String)">
+            <summary>
+                <para>Enables serialization of the specified enumeration type values in Criteria Language expressions.
+</para>
+            </summary>
+            <param name="enumType">
+		A <see cref="T:System.Type"/> object specifying the type of enumeration to be registered.
+
+            </param>
+            <param name="toStringName">
+		A string that specifies the enumeration name to be used in criteria instead of <a href="https://msdn.microsoft.com/en-us/library/system.type.fullname.aspx">FullName</a>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnum``1">
+            <summary>
+                <para>Enables serialization of the specified enumeration type's values in Criteria Language expressions.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnums(System.Reflection.Assembly)">
+            <summary>
+                <para>Enables serializing values of all enumerations from the specified assembly in Criteria Language expressions.
+</para>
+            </summary>
+            <param name="assembly">
+		A <see cref="T:System.Reflection.Assembly"/> object that specifies the assembly containing enumerations to be registered.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnums(System.Reflection.Assembly,System.Boolean)">
+            <summary>
+                <para>Enables serializing values of all enumerations from the specified assembly in Criteria Language expressions.
+</para>
+            </summary>
+            <param name="assembly">
+		A <see cref="T:System.Reflection.Assembly"/> object that specifies the assembly containing enumerations to be registered.
+
+            </param>
+            <param name="suppressReferencesProcessing">
+		<b>true</b>, if enumerations from referenced assemblies are ignored; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnums(System.Reflection.Assembly[])">
+            <summary>
+                <para>Enables serializing values of all enumerations from the specified assemblies in Criteria Language expressions.
+</para>
+            </summary>
+            <param name="assemblies">
+		A <see cref="T:System.Reflection.Assembly[]"/> array that specifies assemblies containing enumerations to be registered.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnums(System.Reflection.Assembly[],System.Boolean)">
+            <summary>
+                <para>Enables serializing values of all enumerations from the specified assemblies in Criteria Language expressions.
+</para>
+            </summary>
+            <param name="assemblies">
+		A <see cref="T:System.Reflection.Assembly[]"/> array that specifies assemblies containing enumerations to be registered.
+
+            </param>
+            <param name="suppressReferencesProcessing">
+		<b>true</b>, if enumerations from referenced assemblies are ignored; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.EnumProcessingHelper.RegisterEnums">
+            <summary>
+                <para>Enables serializing values of enumerations from all assembies that are loaded to the <a href="https://msdn.microsoft.com/en-us/library/system.appdomain.currentdomain(v=vs.110).aspx">current application domain</a> in Criteria Language expressions.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraPrinting.GraphicsUnitConverter">
+
+            <summary>
+                <para>Enables you to convert values that are calculated in some measure units to different measure units.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GraphicsUnitConverter class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.RectangleF,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the location and size of a rectangle calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.RectangleF"/> structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.RectangleF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.RectangleF,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the location and size of a rectangle calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.RectangleF"/> structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.RectangleF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Rectangle,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the location and size of a rectangle calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Rectangle"/> structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Point,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the coordinates of a point calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Point"/> structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Point"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Size,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the size calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Size"/> structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Size"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(DevExpress.XtraPrinting.Native.MarginsF,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the document margins calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A DevExpress.XtraPrinting.Native.MarginsF object.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A DevExpress.XtraPrinting.Native.MarginsF object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.PointF,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the coordinates of a point calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.PointF"/> structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.PointF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Rectangle,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the location and size of a rectangle calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Rectangle"/> structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.SizeF,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the size calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.SizeF"/> structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Size,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the size calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Size"/> structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Size"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Printing.Margins,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the document margins calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Printing.Margins"/> object.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Printing.Margins"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Single,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the floating-point value calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Single"/> value.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A <see cref="T:System.Single"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(DevExpress.XtraPrinting.Native.MarginsF,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the document margins calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A DevExpress.XtraPrinting.Native.MarginsF object.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A DevExpress.XtraPrinting.Native.MarginsF object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Single,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the floating-point value calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Single"/> value.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Single"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.PointF,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the coordinates of a point calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.PointF"/> structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.PointF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(DevExpress.XtraPrinting.Native.RectangleDF,System.Drawing.GraphicsUnit,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Adjusts the location and size of a rectangle calculated for the specified unit of measure according to a new unit of measure.
+</para>
+            </summary>
+            <param name="val">
+		A DevExpress.XtraPrinting.Native.RectangleDF structure.
+
+            </param>
+            <param name="fromUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the initial unit of measure.
+
+            </param>
+            <param name="toUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration value, specifying the required unit of measure.
+
+            </param>
+            <returns>A DevExpress.XtraPrinting.Native.RectangleDF structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.SizeF,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the size calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.SizeF"/> structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(DevExpress.XtraPrinting.Native.RectangleDF,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the location and size of a rectangle calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A DevExpress.XtraPrinting.Native.RectangleDF structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A DevExpress.XtraPrinting.Native.RectangleDF structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Int32,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the integer value calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		An integer value.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>An integer value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Convert(System.Drawing.Point,System.Single,System.Single)">
+            <summary>
+                <para>Adjusts the coordinates of a point calculated for the specified DPI according to a new DPI.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.Point"/> structure.
+
+            </param>
+            <param name="fromDpi">
+		A <see cref="T:System.Single"/> value, specifying the initial DPI setting.
+
+            </param>
+            <param name="toDpi">
+		A <see cref="T:System.Single"/> value, specifying the required DPI setting.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Point"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToDoc(System.Drawing.SizeF)">
+            <summary>
+                <para>Converts the size calculated in device-independent pixels (DIP) to a size calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="size">
+		A <see cref="T:System.Drawing.SizeF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToDoc(System.Single)">
+            <summary>
+                <para>Converts the floating-point value calculated in device-independent pixels (DIP) to a value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Single"/> value.
+
+            </param>
+            <returns>A <see cref="T:System.Single"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToDoc(System.Drawing.RectangleF)">
+            <summary>
+                <para>Converts the location and size of a rectangle calculated in device-independent pixels (DIP) to a value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="rect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.RectangleF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDip(System.Single)">
+            <summary>
+                <para>Converts the floating-point value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch) to a value calculated in device-independent pixels (DIP).
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Single"/> value.
+
+            </param>
+            <returns>A <see cref="T:System.Single"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToPixel(System.Single)">
+            <summary>
+                <para>Converts the floating-point value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch) to a value calculated in pixels.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Single"/> value.
+
+            </param>
+            <returns>A <see cref="T:System.Single"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToPixel(System.Drawing.SizeF)">
+            <summary>
+                <para>Converts the size calculated in document units (measured in <b>1</b>/<b>300</b> of an inch) to a size calculated in pixels.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.SizeF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToPixel(System.Drawing.RectangleF)">
+            <summary>
+                <para>Converts the location and size of a rectangle calculated in document units (measured in <b>1</b>/<b>300</b> of an inch) to a value calculated in pixels.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.RectangleF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.RectangleF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToPixel(DevExpress.XtraPrinting.Native.MarginsF)">
+            <summary>
+                <para>Converts the document margins calculated in document units (measured in <b>1</b>/<b>300</b> of an inch) to a value calculated in pixels.
+</para>
+            </summary>
+            <param name="val">
+		A DevExpress.XtraPrinting.Native.MarginsF object.
+
+            </param>
+            <returns>A DevExpress.XtraPrinting.Native.MarginsF object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToPixel(System.Drawing.PointF)">
+            <summary>
+                <para>Converts the coordinates of a point calculated in document units (measured in <b>1</b>/<b>300</b> of an inch) to a value calculated in pixels.
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.PointF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.PointF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.PixelToDoc(System.Drawing.PointF)">
+            <summary>
+                <para>Converts the coordinates of a point calculated in pixels to a value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.PointF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.PointF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.PixelToDoc(System.Drawing.SizeF)">
+            <summary>
+                <para>Converts the size calculated in pixels to a size calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.SizeF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.PixelToDoc(System.Drawing.RectangleF)">
+            <summary>
+                <para>Converts the location and size of a rectangle calculated in pixels to a value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Drawing.RectangleF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.RectangleF"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.PixelToDoc(System.Single)">
+            <summary>
+                <para>Converts the floating-point value calculated in pixels to a value calculated in document units (measured in <b>1</b>/<b>300</b> of an inch).
+</para>
+            </summary>
+            <param name="val">
+		A <see cref="T:System.Single"/> value.
+
+            </param>
+            <returns>A <see cref="T:System.Single"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Round(System.Drawing.PointF)">
+            <summary>
+                <para>Adjusts the floating-point coordinates of a point to the nearest integer values.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:System.Drawing.PointF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Point"/> structure.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.Round(System.Drawing.RectangleF)">
+            <summary>
+                <para>Adjusts the floating-point dimensions of a rectangle to the nearest integer values.
+</para>
+            </summary>
+            <param name="rect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> structure.
+</returns>
 
 
         </member>
@@ -22397,7 +24100,7 @@ Otherwise, the closest matching image side (height or width) will be sized to th
         <member name="T:DevExpress.Data.XtraReports.ServiceModel.IReportWizardServiceClient">
 
             <summary>
-                <para>If implemented by a class, provides the client-side functionality for a Report Wizard.
+                <para>If implemented by a class, provides the client-side functionality to a Report Wizard for WPF.
 </para>
             </summary>
 
@@ -22952,7 +24655,7 @@ Otherwise, the closest matching image side (height or width) will be sized to th
         </member>
         <member name="P:DevExpress.Data.XtraReports.DataProviders.ColumnInfo.TypeSpecifics">
             <summary>
-                <para>For internal use. Specifies the type of data column to draw an appropriate icon in the Designer's Field List.
+                <para>For internal use. Specifies the type of data column to draw an appropriate icon in the WPF Report Designer's Field List.
 
 </para>
             </summary>
@@ -22964,7 +24667,7 @@ Otherwise, the closest matching image side (height or width) will be sized to th
         <member name="T:DevExpress.Data.XtraReports.DataProviders.TableInfo">
 
             <summary>
-                <para>When connecting to a data source using the wizard, assigns identifiers to data tables, views and stored procedures, as well as their data members.
+                <para>When connecting to a data source using the WPF Report Wizard, assigns identifiers to data tables, views and stored procedures, as well as their data members.
 </para>
             </summary>
 
@@ -23540,7 +25243,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Data.WcfLinq.WcfInstantFeedbackSource">
 
             <summary>
-                <para>A component that can be used as a data source for the GridControl and SearchLookUpEdit controls in Instant Feedback Mode. Can be associated with a WCF data service. 
+                <para>The data source for the GridControl and SearchLookUpEdit controls that binds these controls to a WCF Data Service in Instant Feedback Mode.
 </para>
             </summary>
 
@@ -23697,7 +25400,8 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Data.WcfLinq.WcfServerModeSource">
 
             <summary>
-                <para>A component that can be used as a data source for the GridControl and SearchLookUpEdit controls in Server Mode. Can be associated with a WCF Data Service. 
+                <para>The data source for the GridControl and SearchLookUpEdit controls that binds these controls to a WCF Data Service in Server Mode.
+
 </para>
             </summary>
 
@@ -23817,7 +25521,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Data.PLinq.PLinqInstantFeedbackSource">
 
             <summary>
-                <para>A component that can be used as a data source for the GridControl and SearchLookUpEdit controls in Instant Feedback Mode. Can be associated with any enumerable source. 
+                <para>The data source for the GridControl and SearchLookUpEdit that binds these controls to any enumerable source in Instant Feedback Mode.
 </para>
             </summary>
 
@@ -23944,7 +25648,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Data.PLinq.PLinqServerModeSource">
 
             <summary>
-                <para>A component that can be used as a data source for the <see cref="T:DevExpress.XtraGrid.GridControl"/>, <see cref="T:DevExpress.XtraEditors.GridLookUpEdit"/> and <see cref="T:DevExpress.XtraEditors.SearchLookUpEdit"/> controls in Server Mode. Can be associated with any enumerable source. 
+                <para>The data source for the <see cref="T:DevExpress.XtraGrid.GridControl"/>, <see cref="T:DevExpress.XtraEditors.GridLookUpEdit"/> and <see cref="T:DevExpress.XtraEditors.SearchLookUpEdit"/> controls that binds these controls to any enumerable source in  Server Mode.
 </para>
             </summary>
 
@@ -24024,7 +25728,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Data.Linq.EntityInstantFeedbackSource">
 
             <summary>
-                <para>A component that can be used as a data source for the GridControl and SearchLookUpEdit controls in Instant Feedback Mode. Can be associated with an Entity Framework 4+ queryable source. 
+                <para>The data source for the GridControl and SearchLookUpEdit that binds these controls to Entity Framework 4+ model classes in Instant Feedback Mode.
 </para>
             </summary>
 
@@ -24161,7 +25865,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Data.Linq.EntityServerModeSource">
 
             <summary>
-                <para>A component that can be used as a data source for the GridControl, PivotGridControl and WinForms <see cref="T:DevExpress.XtraEditors.SearchLookUpEdit"/> controls in Server Mode. Can be associated with an Entity Framework 4+ queryable source. 
+                <para>The data source for the GridControl, PivotGridControl and SearchLookUpEdit that binds these controls to Entity Framework 4+ model classes in server mode.
 </para>
             </summary>
 
@@ -25164,14 +26868,6 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
 
 
         </member>
-        <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.ExportOption_XlsUseNativeFormat">
-            <summary>
-                <para>"<b>Export values using their format</b>"
-</para>
-            </summary>
-
-
-        </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.ExportOption_XlsxExportMode">
             <summary>
                 <para>"<b>Export mode:</b>"
@@ -25769,6 +27465,14 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
 
 
         </member>
+        <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_CannotFindFile">
+            <summary>
+                <para>"<b>Cannot perform the specified task. The following library is missing: \"{0}\"</b>"
+</para>
+            </summary>
+
+
+        </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_CannotLoadDocument">
             <summary>
                 <para>"<b>The specified file cannot be loaded, because it either does not contain valid XML data or exceeds the allowed size.</b>"
@@ -25844,6 +27548,14 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDoesNotContainValidXml">
             <summary>
                 <para>"<b>The specified file doesn't contain valid XML data in the PRNX format. Loading is stopped.</b>"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDoesNotHavePrnxExtension">
+            <summary>
+                <para>"<b>The specified file doesn't have a PRNX extension. Proceed anyway?</b>"
 </para>
             </summary>
 
@@ -29965,7 +31677,8 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         <member name="T:DevExpress.Entity.ProjectModel.IDXTypeInfo">
 
             <summary>
-                <para>When implemented by a class, provide information about a project type.
+                <para>When implemented by a class, provides information about a project type.
+
 </para>
             </summary>
 
@@ -30362,11 +32075,11 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="M:DevExpress.XtraPrinting.ILink.CreateDocument(System.Boolean)">
             <summary>
-                <para>If implemented by a class, creates a document from the link, so the document can be displayed or printed. Optionally, can generate pages in background. 
+                <para>If implemented by a class, creates a document from the link, so the document can be displayed or printed.
 </para>
             </summary>
             <param name="buildPagesInBackground">
-		<b>true</b> to generate pages in background; otherwise, <b>false</b>.
+		A Boolean value. This value is ignored and has no effect on the document creation process.
 
             </param>
 

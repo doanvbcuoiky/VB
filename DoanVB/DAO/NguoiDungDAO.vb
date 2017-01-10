@@ -37,6 +37,7 @@ Public Class NguoiDungDAO
         Return dt
     End Function
     Public Shared Function LayMatKhau(ByVal manguoidung As String) As String
+        'Try
         Dim con As Connect = New Connect()
         Dim cn As SqlConnection = New SqlConnection()
         cn = con.connect()
@@ -55,6 +56,10 @@ Public Class NguoiDungDAO
         End If
         cn.Close()
         Return matkhau
+        ' Catch ex As Exception
+        '     Return ""
+        ' End Try
+
     End Function
 
     Public Shared Function KiemTraDangNhap(ByVal manguoidung As String, ByVal matkhau As String) As Boolean

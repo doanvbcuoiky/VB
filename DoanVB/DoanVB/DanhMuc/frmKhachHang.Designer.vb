@@ -40,9 +40,9 @@ Partial Class frmKhachHang
         Me.colTinhTrang = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
-        Me.bbtThem = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
-        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.btnThem = New DevExpress.XtraBars.BarButtonItem()
+        Me.btnSua = New DevExpress.XtraBars.BarButtonItem()
+        Me.btnXoa = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem5 = New DevExpress.XtraBars.BarButtonItem()
@@ -57,6 +57,7 @@ Partial Class frmKhachHang
         Me.QuanLyBanHangDataSet1 = New DoanVB.QuanLyBanHangDataSet1()
         Me.KHACHHANGBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.KHACHHANGTableAdapter = New DoanVB.QuanLyBanHangDataSet1TableAdapters.KHACHHANGTableAdapter()
+        Me.lblMaKhachHang = New System.Windows.Forms.Label()
         Me.PanelEx1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,7 +75,7 @@ Partial Class frmKhachHang
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEx1.Location = New System.Drawing.Point(0, 24)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(722, 370)
+        Me.PanelEx1.Size = New System.Drawing.Size(722, 363)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -91,7 +92,7 @@ Partial Class frmKhachHang
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(722, 370)
+        Me.GridControl1.Size = New System.Drawing.Size(722, 363)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -100,7 +101,6 @@ Partial Class frmKhachHang
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colMaKhachHang, Me.colTenKhachHang, Me.colNguoiLienHe, Me.colDiaChi, Me.colLoaiKhachHang, Me.colKhuVuc, Me.colDienThoai, Me.colFax, Me.colEmail, Me.colWebsite, Me.colMaSoThue, Me.colSoTaiKhoan, Me.colNganHang, Me.colTinhTrang})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         '
         'colMaKhachHang
         '
@@ -208,7 +208,7 @@ Partial Class frmKhachHang
         Me.BarManager1.DockControls.Add(Me.barDockControlLeft)
         Me.BarManager1.DockControls.Add(Me.barDockControlRight)
         Me.BarManager1.Form = Me
-        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.bbtThem, Me.BarButtonItem2, Me.BarButtonItem1, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6})
+        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.btnThem, Me.btnSua, Me.btnXoa, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6})
         Me.BarManager1.MainMenu = Me.Bar2
         Me.BarManager1.MaxItemId = 7
         '
@@ -218,36 +218,36 @@ Partial Class frmKhachHang
         Me.Bar2.DockCol = 0
         Me.Bar2.DockRow = 0
         Me.Bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-        Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.bbtThem, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem3, "", True, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem4, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem5, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem6, "", True, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
+        Me.Bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnThem, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnSua, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnXoa, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem3, "", True, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem4, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem5, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarButtonItem6, "", True, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
         Me.Bar2.OptionsBar.MultiLine = True
         Me.Bar2.OptionsBar.UseWholeRow = True
         Me.Bar2.Text = "Main menu"
         '
-        'bbtThem
+        'btnThem
         '
-        Me.bbtThem.Border = DevExpress.XtraEditors.Controls.BorderStyles.[Default]
-        Me.bbtThem.Caption = "Thêm"
-        Me.bbtThem.Glyph = CType(resources.GetObject("bbtThem.Glyph"), System.Drawing.Image)
-        Me.bbtThem.Id = 0
-        Me.bbtThem.ImageUri.Uri = "Add"
-        Me.bbtThem.LargeGlyph = CType(resources.GetObject("bbtThem.LargeGlyph"), System.Drawing.Image)
-        Me.bbtThem.Name = "bbtThem"
+        Me.btnThem.Border = DevExpress.XtraEditors.Controls.BorderStyles.[Default]
+        Me.btnThem.Caption = "Thêm"
+        Me.btnThem.Glyph = CType(resources.GetObject("btnThem.Glyph"), System.Drawing.Image)
+        Me.btnThem.Id = 0
+        Me.btnThem.ImageUri.Uri = "Add"
+        Me.btnThem.LargeGlyph = CType(resources.GetObject("btnThem.LargeGlyph"), System.Drawing.Image)
+        Me.btnThem.Name = "btnThem"
         '
-        'BarButtonItem2
+        'btnSua
         '
-        Me.BarButtonItem2.Caption = "Sửa Chữa"
-        Me.BarButtonItem2.Glyph = CType(resources.GetObject("BarButtonItem2.Glyph"), System.Drawing.Image)
-        Me.BarButtonItem2.Id = 1
-        Me.BarButtonItem2.LargeGlyph = CType(resources.GetObject("BarButtonItem2.LargeGlyph"), System.Drawing.Image)
-        Me.BarButtonItem2.Name = "BarButtonItem2"
+        Me.btnSua.Caption = "Sửa Chữa"
+        Me.btnSua.Glyph = CType(resources.GetObject("btnSua.Glyph"), System.Drawing.Image)
+        Me.btnSua.Id = 1
+        Me.btnSua.LargeGlyph = CType(resources.GetObject("btnSua.LargeGlyph"), System.Drawing.Image)
+        Me.btnSua.Name = "btnSua"
         '
-        'BarButtonItem1
+        'btnXoa
         '
-        Me.BarButtonItem1.Caption = "Xóa"
-        Me.BarButtonItem1.Glyph = CType(resources.GetObject("BarButtonItem1.Glyph"), System.Drawing.Image)
-        Me.BarButtonItem1.Id = 2
-        Me.BarButtonItem1.LargeGlyph = CType(resources.GetObject("BarButtonItem1.LargeGlyph"), System.Drawing.Image)
-        Me.BarButtonItem1.Name = "BarButtonItem1"
+        Me.btnXoa.Caption = "Xóa"
+        Me.btnXoa.Glyph = CType(resources.GetObject("btnXoa.Glyph"), System.Drawing.Image)
+        Me.btnXoa.Id = 2
+        Me.btnXoa.LargeGlyph = CType(resources.GetObject("btnXoa.LargeGlyph"), System.Drawing.Image)
+        Me.btnXoa.Name = "btnXoa"
         '
         'BarButtonItem3
         '
@@ -292,7 +292,7 @@ Partial Class frmKhachHang
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 394)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 387)
         Me.barDockControlBottom.Size = New System.Drawing.Size(722, 0)
         '
         'barDockControlLeft
@@ -300,14 +300,14 @@ Partial Class frmKhachHang
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 370)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 363)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(722, 24)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 370)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 363)
         '
         'GridColumn13
         '
@@ -333,11 +333,21 @@ Partial Class frmKhachHang
         '
         Me.KHACHHANGTableAdapter.ClearBeforeFill = True
         '
+        'lblMaKhachHang
+        '
+        Me.lblMaKhachHang.AutoSize = True
+        Me.lblMaKhachHang.Location = New System.Drawing.Point(573, 5)
+        Me.lblMaKhachHang.Name = "lblMaKhachHang"
+        Me.lblMaKhachHang.Size = New System.Drawing.Size(85, 13)
+        Me.lblMaKhachHang.TabIndex = 8
+        Me.lblMaKhachHang.Text = "lblMaKhachHang"
+        '
         'frmKhachHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(722, 394)
+        Me.ClientSize = New System.Drawing.Size(722, 387)
+        Me.Controls.Add(Me.lblMaKhachHang)
         Me.Controls.Add(Me.PanelEx1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
@@ -362,9 +372,9 @@ Partial Class frmKhachHang
     Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
     Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
     Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents bbtThem As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
@@ -391,4 +401,5 @@ Partial Class frmKhachHang
     Friend WithEvents colSoTaiKhoan As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colNganHang As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colTinhTrang As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents lblMaKhachHang As System.Windows.Forms.Label
 End Class

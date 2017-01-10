@@ -80,8 +80,8 @@ Public Class HangHoaDAO
     End Function
 
     Public Shared Function SuaHangHoa(ByVal HHDTO As HangHoaDTO) As Boolean
-        Dim con As Connect
-        Dim cn As SqlConnection
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaHangHoa", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -123,8 +123,9 @@ Public Class HangHoaDAO
         If cmd.ExecuteNonQuery() > 0 Then
             cn.Close()
             Return True
+        Else
+            cn.Close()
+            Return False
         End If
-        cn.Close()
-        Return False
     End Function
 End Class

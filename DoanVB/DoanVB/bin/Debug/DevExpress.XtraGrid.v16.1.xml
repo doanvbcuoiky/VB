@@ -288,50 +288,188 @@
 
 
         </member>
-        <member name="T:DevExpress.XtraGrid.Localization.GridLocalizer">
+        <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions">
 
             <summary>
-                <para>A base class that provides necessary functionality for custom localizers of the Data Grid control.
+                <para>Provides access to a specific <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> Style's advanced settings.
 </para>
             </summary>
 
         </member>
-        <member name="M:DevExpress.XtraGrid.Localization.GridLocalizer.#ctor">
+        <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.#ctor(DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView)">
             <summary>
-                <para>Initializes a new instance of the GridLocalizer class with default settings.
+                <para>Initializes a new instance of the WinExplorerViewStyleOptions class with the specified settings.
 </para>
             </summary>
+            <param name="view">
+		A WinExplorerView that owns the newly created WinExplorerViewStyleOptions object.
+
+            </param>
 
 
         </member>
-        <member name="P:DevExpress.XtraGrid.Localization.GridLocalizer.Active">
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.CheckBoxMargins">
             <summary>
-                <para>Gets or sets a localizer object providing localization of the user interface at runtime.
+                <para>Gets or sets margins for the Check Box field.
 </para>
             </summary>
-            <value>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> descendant, used to localize the user interface at runtime. 
+            <value>A Padding structure that is margins for the Check Box field.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ContentMargins">
+            <summary>
+                <para>Gets or sets the content padding for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
+</para>
+            </summary>
+            <value>A Padding structure that is the content padding for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCaptionButtonIndent">
+            <summary>
+                <para>Gets or sets the distance between the Group caption (or check box) and this Group's expand/collapse button.
+</para>
+            </summary>
+            <value>An Int32 value that is the distance between the Group caption (or check box) and this Group's expand/collapse button.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCheckBoxIndent">
+            <summary>
+                <para>Gets or sets the distance between a check box and text within the group caption area.
+</para>
+            </summary>
+            <value>An Int32 value that is the distance between a check box and text within the group caption area.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.HorizontalIndent">
+            <summary>
+                <para>Gets or sets the horizontal distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
+</para>
+            </summary>
+            <value>An Int32 value that is the horizontal distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
 
 </value>
 
 
         </member>
-        <member name="M:DevExpress.XtraGrid.Localization.GridLocalizer.CreateDefaultLocalizer">
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ImageMargins">
             <summary>
-                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+                <para>Gets or sets margins for item images within this <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
 </para>
             </summary>
-            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object representing resources based on the thread's culture.
-</returns>
+            <value>A Padding structure that is margins for item images within this <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
+</value>
 
 
         </member>
-        <member name="M:DevExpress.XtraGrid.Localization.GridLocalizer.CreateResXLocalizer">
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ImageSize">
             <summary>
-                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+                <para>Gets or sets the size of item images within this View Style.
 </para>
             </summary>
-            <returns>A <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, which provides resources based on the thread's culture.
-</returns>
+            <value>A Size structure that is the item image size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ImageToTextIndent">
+            <summary>
+                <para>Gets or sets the distance between an item image and the caption.
+
+</para>
+            </summary>
+            <value>An Int32 value that is the distance between an item image and the caption.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IndentBetweenGroupAndItem">
+            <summary>
+                <para>Gets or sets the distance between group captions and items within these groups.
+</para>
+            </summary>
+            <value>An Int32 value that is the distance between group captions and items within these groups.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IndentBetweenGroups">
+            <summary>
+                <para>Gets or sets the distance between Groups within the target <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> Style.
+</para>
+            </summary>
+            <value>An Int32 value that is the distance between Groups.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IsGroupCaptionButtonIndentSet">
+            <summary>
+                <para>Gets whether the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCaptionButtonIndent"/> property is customized.
+</para>
+            </summary>
+            <value><b>true</b>, if the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCaptionButtonIndent"/> property is customized; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IsGroupCheckBoxIndentSet">
+            <summary>
+                <para>Gets whether the indent between the text and check box in the group caption area is currently set.
+
+</para>
+            </summary>
+            <value><b>true</b> if the indent between the text and check box in the group caption area is currently set; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ItemWidth">
+            <summary>
+                <para>Gets or sets the item width for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
+</para>
+            </summary>
+            <value>An Int32 value that is the item width for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.SelectionDrawMode">
+            <summary>
+                <para>Gets or sets how selection for <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items with no caption is drawn.
+</para>
+            </summary>
+            <value>A <see cref="SelectionDrawMode"/> enumerator value that specifies how selection for <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items with no caption is drawn.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ShowDescription">
+            <summary>
+                <para>Gets or sets whether the Description data column is shown. This property is in effect when the WinExplorer View is displayed in the <b>Tiles</b> or <b>Content</b> style.
+</para>
+            </summary>
+            <value>A DefaultBoolean enumeration value that specifies whether the description is shown.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.VerticalIndent">
+            <summary>
+                <para>Gets or sets the vertical distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
+</para>
+            </summary>
+            <value>An Int32 value that is the vertical distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
+</value>
 
 
         </member>
@@ -677,191 +815,6 @@
 
 
         </member>
-        <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions">
-
-            <summary>
-                <para>Provides access to a specific <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> Style's advanced settings.
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.#ctor(DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView)">
-            <summary>
-                <para>Initializes a new instance of the WinExplorerViewStyleOptions class with the specified settings.
-</para>
-            </summary>
-            <param name="view">
-		A WinExplorerView that owns the newly created WinExplorerViewStyleOptions object.
-
-            </param>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.CheckBoxMargins">
-            <summary>
-                <para>Gets or sets margins for the Check Box field.
-</para>
-            </summary>
-            <value>A Padding structure that is margins for the Check Box field.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ContentMargins">
-            <summary>
-                <para>Gets or sets the content padding for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
-</para>
-            </summary>
-            <value>A Padding structure that is the content padding for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCaptionButtonIndent">
-            <summary>
-                <para>Gets or sets the distance between the Group caption (or check box) and this Group's expand/collapse button.
-</para>
-            </summary>
-            <value>An Int32 value that is the distance between the Group caption (or check box) and this Group's expand/collapse button.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCheckBoxIndent">
-            <summary>
-                <para>Gets or sets the distance between a check box and text within the group caption area.
-</para>
-            </summary>
-            <value>An Int32 value that is the distance between a check box and text within the group caption area.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.HorizontalIndent">
-            <summary>
-                <para>Gets or sets the horizontal distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
-</para>
-            </summary>
-            <value>An Int32 value that is the horizontal distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
-
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ImageMargins">
-            <summary>
-                <para>Gets or sets margins for item images within this <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
-</para>
-            </summary>
-            <value>A Padding structure that is margins for item images within this <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ImageSize">
-            <summary>
-                <para>Gets or sets the size of item images within this View Style.
-</para>
-            </summary>
-            <value>A Size structure that is the item image size.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ImageToTextIndent">
-            <summary>
-                <para>Gets or sets the distance between an item image and the caption.
-
-</para>
-            </summary>
-            <value>An Int32 value that is the distance between an item image and the caption.
-
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IndentBetweenGroupAndItem">
-            <summary>
-                <para>Gets or sets the distance between group captions and items within these groups.
-</para>
-            </summary>
-            <value>An Int32 value that is the distance between group captions and items within these groups.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IndentBetweenGroups">
-            <summary>
-                <para>Gets or sets the distance between Groups within the target <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> Style.
-</para>
-            </summary>
-            <value>An Int32 value that is the distance between Groups.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IsGroupCaptionButtonIndentSet">
-            <summary>
-                <para>Gets whether the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCaptionButtonIndent"/> property is customized.
-</para>
-            </summary>
-            <value><b>true</b>, if the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.GroupCaptionButtonIndent"/> property is customized; otherwise, <b>false</b>.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.IsGroupCheckBoxIndentSet">
-            <summary>
-                <para>Gets whether the indent between the text and check box in the group caption area is currently set.
-
-</para>
-            </summary>
-            <value><b>true</b> if the indent between the text and check box in the group caption area is currently set; otherwise, <b>false</b>.
-
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ItemWidth">
-            <summary>
-                <para>Gets or sets the item width for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
-</para>
-            </summary>
-            <value>An Int32 value that is the item width for the current <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> style.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.SelectionDrawMode">
-            <summary>
-                <para>Gets or sets how selection for <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items with no caption is drawn.
-</para>
-            </summary>
-            <value>A <see cref="SelectionDrawMode"/> enumerator value that specifies how selection for <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items with no caption is drawn.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.ShowDescription">
-            <summary>
-                <para>Gets or sets whether the Description data column is shown. This property is in effect when the WinExplorer View is displayed in the <b>Tiles</b> or <b>Content</b> style.
-</para>
-            </summary>
-            <value>A DefaultBoolean enumeration value that specifies whether the description is shown.
-</value>
-
-
-        </member>
-        <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyleOptions.VerticalIndent">
-            <summary>
-                <para>Gets or sets the vertical distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
-</para>
-            </summary>
-            <value>An Int32 value that is the vertical distance between the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> items within the current View Style.
-</value>
-
-
-        </member>
         <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns">
 
             <summary>
@@ -907,9 +860,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.CheckBoxColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.CheckBoxColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.CheckBoxColumn"/> property.
+</value>
 
 
         </member>
@@ -925,9 +880,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.DescriptionColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.DescriptionColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.DescriptionColumn"/> property.
+</value>
 
 
         </member>
@@ -944,9 +901,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.EnabledColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.EnabledColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.EnabledColumn"/> property.
+</value>
 
 
         </member>
@@ -962,9 +921,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.ExtraLargeImageColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.ExtraLargeImageColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.ExtraLargeImageColumn"/> property.
+</value>
 
 
         </member>
@@ -980,9 +941,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.ExtraLargeImageIndexColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.ExtraLargeImageIndexColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.ExtraLargeImageIndexColumn"/> property.
+</value>
 
 
         </member>
@@ -998,9 +961,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.GroupColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.GroupColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.GroupColumn"/> property.
+</value>
 
 
         </member>
@@ -1016,9 +981,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.LargeImageColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.LargeImageColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.LargeImageColumn"/> property.
+</value>
 
 
         </member>
@@ -1034,9 +1001,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.LargeImageIndexColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.LargeImageIndexColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.LargeImageIndexColumn"/> property.
+</value>
 
 
         </member>
@@ -1052,9 +1021,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.MediumImageColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.MediumImageColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.MediumImageColumn"/> property.
+</value>
 
 
         </member>
@@ -1070,9 +1041,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.MediumImageIndexColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.MediumImageIndexColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.MediumImageIndexColumn"/> property.
+</value>
 
 
         </member>
@@ -1088,9 +1061,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.SmallImageColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.SmallImageColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.SmallImageColumn"/> property.
+</value>
 
 
         </member>
@@ -1106,9 +1081,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.SmallImageIndexColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.SmallImageIndexColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.SmallImageIndexColumn"/> property.
+</value>
 
 
         </member>
@@ -1124,9 +1101,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.TextColumnName">
             <summary>
-                <para> </para>
+                <para>Gets or sets the name of a grid column that is assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.TextColumn"/> property.
+</para>
             </summary>
-            <value> </value>
+            <value>A String value that is the name of a grid column assigned to the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewColumns.TextColumn"/> property.
+</value>
 
 
         </member>
@@ -1140,89 +1119,11 @@
 
 
         </member>
-        <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle">
-
-            <summary>
-                <para>Provides member that specify different <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> Styles.
-</para>
-            </summary>
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Content">
-            <summary>
-                <para>Each item is displays its check-box, medium image, caption and description in a single row. Items are arranged one under another and separated by horizontal lines. Check boxes are visible only if checked or hovered. 
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Default">
-            <summary>
-                <para>Same as <see cref="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Medium"/>.
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.ExtraLarge">
-            <summary>
-                <para>Extra large images with text and check boxes on the left of the image. 
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Large">
-            <summary>
-                <para>Large images with text and check boxes to the left of the image. 
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.List">
-            <summary>
-                <para>Small images with text and check boxes to left of the image. Items are arranged vertically, and groups are placed horizontally side-by-side. Groups cannot be collapsed even if the <b>OptionsView.ShowExpandCollapseButtons</b> property equals true.
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Medium">
-            <summary>
-                <para>Medium images with text and check boxes to the left of the image. 
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Small">
-            <summary>
-                <para>Small images with text and check boxes to the left of the image. Items are arranged horizontally. Groups are placed one below the other. 
-
-</para>
-            </summary>
-
-
-        </member>
-        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Tiles">
-            <summary>
-                <para>Medium images with text, description and check boxes to the top left corner of the image. Check boxes are visible only if checked or hovered. 
-
-</para>
-            </summary>
-
-
-        </member>
         <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView">
 
             <summary>
-                <para>A WinExplorer View.
+                <para>The View that displays records using one of seven styles supported by MS Windows Explorer. See WinExplorer View.
+
 </para>
             </summary>
 
@@ -1237,10 +1138,12 @@
         </member>
         <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.#ctor(DevExpress.XtraGrid.GridControl)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the WinExplorerView class with the specified owner.
+</para>
             </summary>
             <param name="ownerControl">
-		 
+		A GridControl that owns this WinExplorerView.
+
             </param>
 
 
@@ -1391,6 +1294,28 @@
             </param>
             <returns>An object that contains information about the visual elements located at the test point.
 </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.ClearAsyncImageLoadCache">
+            <summary>
+                <para>Forces the WinExplorerView to remove all asynchronously loaded images from the cache.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.ClearAsyncImageLoadCache(System.Int32)">
+            <summary>
+                <para>Removes an image loaded for a specific row from the cache.
+
+</para>
+            </summary>
+            <param name="rowHandle">
+		An Int32 value that is the row handle for a data record, whose cached thumbnail image should be removed.
+
+            </param>
 
 
         </member>
@@ -1925,9 +1850,11 @@
         </member>
         <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.OptionsLayout">
             <summary>
-                <para> </para>
+                <para>Provides access to properties that affect the layout of this WinExplorerView.
+</para>
             </summary>
-            <value> </value>
+            <value>A <see cref="WinExplorerViewOptionsLayout"/> object that stores View layout settings.
+</value>
 
 
         </member>
@@ -3250,7 +3177,7 @@ Manual searching is enabled in the following cases: 1) a control functions in re
         <member name="T:DevExpress.XtraEditors.SearchLookUpEdit">
 
             <summary>
-                <para>An editor that provides lookup functionality using a dropdown <see cref="T:DevExpress.XtraGrid.GridControl"/>, and contains the Find edit box, allowing end-users to quickly filter dropdown rows.
+                <para>The editor that provides lookup functionality using a dropdown feature-rich data grid (<see cref="T:DevExpress.XtraGrid.GridControl"/>), and contains the built-in Find Panel, allowing end-users to quickly filter and locate dropdown rows.
 </para>
             </summary>
 
@@ -5065,7 +4992,7 @@ Manual searching is enabled in the following cases: 1) a control functions in re
         <member name="T:DevExpress.XtraGrid.Views.Layout.LayoutView">
 
             <summary>
-                <para>Represents the View which allows records to be represented as cards using various layouts.
+                <para>The View that allows records to be represented as cards using various layouts.
 </para>
             </summary>
 
@@ -5304,6 +5231,14 @@ Manual searching is enabled in the following cases: 1) a control functions in re
         <member name="E:DevExpress.XtraGrid.Views.Layout.LayoutView.CustomCardStyle">
             <summary>
                 <para>Allows you to customize the appearance of a card's caption and border.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraGrid.Views.Layout.LayoutView.CustomDrawCardBackground">
+            <summary>
+                <para>Allows you to highlight or manually paint a card's border and background in a custom manner.
 </para>
             </summary>
 
@@ -7400,7 +7335,7 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
         <member name="T:DevExpress.XtraGrid.Views.Grid.EditFormUserControl">
 
             <summary>
-                <para>A user control that can be used as a custom edit form for the Data Grid control.
+                <para>A custom edit form for the Data Grid control.
 </para>
             </summary>
 
@@ -7683,6 +7618,53 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
 
 
         </member>
+        <member name="T:DevExpress.XtraGrid.Localization.GridLocalizer">
+
+            <summary>
+                <para>A base class that provides necessary functionality for custom localizers of the Data Grid control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Localization.GridLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GridLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Localization.GridLocalizer.Active">
+            <summary>
+                <para>Gets or sets a localizer object providing localization of the user interface at runtime.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> descendant, used to localize the user interface at runtime. 
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Localization.GridLocalizer.CreateDefaultLocalizer">
+            <summary>
+                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object representing resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Localization.GridLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, which provides resources based on the thread's culture.
+</returns>
+
+
+        </member>
         <member name="T:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsView">
 
             <summary>
@@ -7790,9 +7772,11 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
         </member>
         <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit.AcceptEditorTextAsNewValue">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether a custom value (a value that is not present in the lookup data source) that is entered in the edit box is accepted by the editor (when the value is validated and editor loses focus). This property supports Combobox mode for the lookup editor.
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies if custom values are accepted by the editor. The <b>DefaultBoolean.Default</b> property value is equivalent to <b>False</b>.
+</value>
 
 
         </member>
@@ -7995,7 +7979,7 @@ Currently this option is the same as the <b>GridView</b> option
         <member name="T:DevExpress.XtraEditors.GridLookUpEdit">
 
             <summary>
-                <para>An editor that provides lookup functionality using a dropdown <see cref="T:DevExpress.XtraGrid.GridControl"/>.
+                <para>The editor that provides lookup functionality using a dropdown feature-rich data grid (<see cref="T:DevExpress.XtraGrid.GridControl"/>).
 </para>
             </summary>
 
@@ -8390,7 +8374,7 @@ Currently this option is the same as the <b>GridView</b> option
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsClipboard.AllowCopy">
             <summary>
-                <para>Gets or sets whether an end-user can copy selected cells to the clipboard.
+                <para>Gets or sets whether an end-user can copy selected rows and cells to the clipboard.
 
 
 </para>
@@ -11837,11 +11821,11 @@ For instance, when the PaintStyleName property is set to "Default" and the "Offi
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsFilter.AllowColumnMRUFilterList">
             <summary>
-                <para>Gets or sets whether recently used filter items are displayed in the Filter dropdowns for columns.
+                <para>Gets or sets whether the MRU feature is enabled in column filter dropdowns.
 
 </para>
             </summary>
-            <value><b>true</b> if the columns' filter dropdown lists can display recently used filter items; otherwise, <b>false</b>.
+            <value><b>true</b> if the columns' filter dropdown lists can display most recently used filter items; otherwise, <b>false</b>.
 </value>
 
 
@@ -11900,7 +11884,7 @@ For instance, when the PaintStyleName property is set to "Default" and the "Offi
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsFilter.ColumnFilterPopupMaxRecordsCount">
             <summary>
-                <para>Gets or sets the maximum number of records whose field values can be displayed within filter dropdowns.
+                <para>Gets or sets the maximum number of records that are scanned to populate column filter dropdowns with unique filter values.
 </para>
             </summary>
             <value>An integer value specifying the maximum number of records whose field values can be displayed within filter dropdowns.
@@ -11964,7 +11948,7 @@ For instance, when the PaintStyleName property is set to "Default" and the "Offi
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsFilter.MRUColumnFilterListCount">
             <summary>
-                <para>Gets or sets the capacity of the lists that store the recently used filter items for the View's columns.
+                <para>Gets or sets the capacity of the MRU item lists in column filter dropdowns.
 </para>
             </summary>
             <value>An integer specifying the capacity of the lists that store the recently used filter items for the View's columns.
@@ -11974,11 +11958,11 @@ For instance, when the PaintStyleName property is set to "Default" and the "Offi
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsFilter.MRUFilterListCount">
             <summary>
-                <para>Gets or sets the capacity of the list that stores the recently used filter conditions for the View.
+                <para>Gets or sets the capacity of the View's MRU Filter List.
 
 </para>
             </summary>
-            <value>An integer that specifies the maximum number of recently used filter conditions which are stored by the View.
+            <value>An integer that specifies the maximum number of filter conditions that have recently been applied to the View.
 
 </value>
 
@@ -12408,10 +12392,10 @@ It specifies whether selecting a date or date range via the embedded calendar fi
         </member>
         <member name="P:DevExpress.XtraGrid.Columns.OptionsColumnFilter.ShowEmptyDateFilter">
             <summary>
-                <para>Gets or sets whether a Filter Dropdown List has a filter used to select records that contain null values in a date-time column.
+                <para>Gets or sets whether a Filter Dropdown List has the "Show Empty" filter used to select records that contain null values in a date-time column.
 </para>
             </summary>
-            <value><b>true</b> if a corresponding filter is available; otherwise, <b>false</b>.
+            <value><b>true</b> if the "Show Empty" filter is available; otherwise, <b>false</b>.
 </value>
 
 
@@ -12561,7 +12545,7 @@ It specifies whether selecting a date or date range via the embedded calendar fi
         </member>
         <member name="P:DevExpress.XtraGrid.Columns.OptionsColumn.Printable">
             <summary>
-                <para>Gets or sets whether a column is included in the print/export output. This property is supported only when the column belongs to the <see cref="T:DevExpress.XtraGrid.Views.Grid.GridView"/> object.
+                <para>Gets or sets whether a column is included in the print/export output.
 </para>
             </summary>
             <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether a column is included in the print/export output.
@@ -13036,6 +13020,17 @@ It specifies whether selecting a date or date range via the embedded calendar fi
 		A <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/> that owns the newly created TileViewItemOptions object.
 
             </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Tile.TileViewItemOptions.AllowItemHover">
+            <summary>
+                <para>Gets or sets whether or not tiles within this <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/> support the hover visual state.
+</para>
+            </summary>
+            <value><b>true</b>, if tiles support the hover state; otherwise, <b>false</b>.
+
+</value>
 
 
         </member>
@@ -14170,6 +14165,110 @@ It specifies whether selecting a date or date range via the embedded calendar fi
 
 
         </member>
+        <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle">
+
+            <summary>
+                <para>Provides member that specify different <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> Styles.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Content">
+            <summary>
+                <para>Each item is displays its check-box, medium image, caption and description in a single row. Items are arranged one under another and separated by horizontal lines. Check boxes are visible only if checked or hovered. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Default">
+            <summary>
+                <para>Same as <see cref="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Medium"/>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.ExtraLarge">
+            <summary>
+                <para>Extra large images with text and check boxes on the left of the image. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Large">
+            <summary>
+                <para>Large images with text and check boxes to the left of the image. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.List">
+            <summary>
+                <para>Small images with text and check boxes to left of the image. Items are arranged vertically, and groups are placed horizontally side-by-side. Groups cannot be collapsed even if the <b>OptionsView.ShowExpandCollapseButtons</b> property equals true.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Medium">
+            <summary>
+                <para>Medium images with text and check boxes to the left of the image. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Small">
+            <summary>
+                <para>Small images with text and check boxes to the left of the image. Items are arranged horizontally. Groups are placed one below the other. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerViewStyle.Tiles">
+            <summary>
+                <para>Medium images with text, description and check boxes to the top left corner of the image. Check boxes are visible only if checked or hovered. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawCell"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldCaption"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardField"/> and <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldValue"/> events. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler.Invoke(System.Object,DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawCell"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldCaption"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardField"/> and <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldValue"/> events.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. Identifies the View that raised the event.
+
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
         <member name="T:DevExpress.XtraGrid.Views.Printing.CancelPrintRowEventArgs">
 
             <summary>
@@ -14509,7 +14608,15 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
         </member>
         <member name="F:DevExpress.XtraGrid.Columns.FilterPopupMode.Date">
             <summary>
-                <para>This mode is in effect for columns displaying date-time values. The filter dropdown contains a calendar, plus check boxes that allow  used date intervals to be selected:
+                <para>This mode is equivalent to <b>DateSmart</b> regarding the appearance of the filter dropdown. The filter dropdown displays all the available check boxes, even if there is no data that falls into a corresponding date range.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.Columns.FilterPopupMode.DateAlt">
+            <summary>
+                <para>This mode is equivalent to DateSmart, but with a different set of filters: Today, This week, This month, Next month, etc.
 
 <para>
 
@@ -14519,17 +14626,14 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
 
 
         </member>
-        <member name="F:DevExpress.XtraGrid.Columns.FilterPopupMode.DateAlt">
-            <summary>
-                <para>This mode is equivalent to DateSmart, but with a different number of filters: Today, This week, This month, Next month, etc.
-</para>
-            </summary>
-
-
-        </member>
         <member name="F:DevExpress.XtraGrid.Columns.FilterPopupMode.DateSmart">
             <summary>
-                <para>This mode is in effect for columns displaying date-time values. It consists of a calendar, like the Date mode, plus check boxes that allow  used date intervals to be selected.
+                <para>The filter dropdown provides a built-in calendar plus check boxes to select common non-intersecting date intervals.
+
+<para>
+
+</para>
+
 If there is no underlying data that would fall into a specific date range, the corresponding check box is hidden.
 <para>
 If the data source is empty or if all values in the date-time column are set to <b>null</b>, all check boxes are visible.
@@ -17924,6 +18028,16 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
 
 
         </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsDetail.DetailMode">
+            <summary>
+                <para>Gets or sets whether detail Views are painted in Classic mode (master and detail Views have their own vertical scrollbars) or Embedded mode (a single vertical scrollbar is used throughout the grid control).
+</para>
+            </summary>
+            <value>A value that specifies the current detail mode. The <b>DetailMode.Default</b> value is equivalent to <b>Classic</b>.
+</value>
+
+
+        </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsDetail.EnableDetailToolTip">
             <summary>
                 <para>Gets or sets a value specifying whether detail tooltips are enabled for detail Views that are opened via the current master View. This option must be applied to a master View.
@@ -17951,6 +18065,16 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
 </para>
             </summary>
             <value><b>true</b> to display detail tabs; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsDetail.ShowEmbeddedDetailIndent">
+            <summary>
+                <para>Gets or sets whether vertical indents are enabled between detail Views and master Views in Embedded detail mode (see <see cref="P:DevExpress.XtraGrid.Views.Grid.GridOptionsDetail.DetailMode"/>).
+</para>
+            </summary>
+            <value>A value that specifies if vertical indents are enabled. The DefaultBoolean.Default value is equivalent to <b>True</b>.
 </value>
 
 
@@ -18154,9 +18278,11 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsBehavior.AllowGroupExpandAnimation">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether groups are expanded/collapsed using an animation effect.
+</para>
             </summary>
-            <value> </value>
+            <value>A value that specifies if data groups are expanded/collapsed using an animation effect. The DefaultBoolean.Default value is equivalent to <b>True</b>.
+</value>
 
 
         </member>
@@ -19185,6 +19311,14 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
 
 
         </member>
+        <member name="P:DevExpress.XtraGrid.Views.BandedGrid.GridBand.CustomizationSearchCaption">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
         <member name="P:DevExpress.XtraGrid.Views.BandedGrid.GridBand.Fixed">
             <summary>
                 <para>Gets or sets the band's behavior when the View is scrolled horizontally.
@@ -19522,7 +19656,7 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
         <member name="T:DevExpress.XtraGrid.Views.BandedGrid.BandedGridView">
 
             <summary>
-                <para>Represents a View that displays data in a tabular form and which allows grouping of columns into bands.
+                <para>The View that displays data in a tabular form and allows grouping of columns into bands.
 </para>
             </summary>
 
@@ -19646,7 +19780,7 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
         </member>
         <member name="M:DevExpress.XtraGrid.Views.BandedGrid.BandedGridView.CanDragBand(DevExpress.XtraGrid.Views.BandedGrid.GridBand)">
             <summary>
-                <para>Indicates whethera band can be dragged by end-users.
+                <para>Indicates whether a band can be dragged by end-users.
 </para>
             </summary>
             <param name="band">
@@ -20276,7 +20410,7 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
         <member name="T:DevExpress.XtraGrid.Views.BandedGrid.AdvBandedGridView">
 
             <summary>
-                <para>Represents a View that displays data in a tabular form, allows grouping columns into bands and supports complex data cell arrangements.
+                <para>The View that displays data in a tabular form, allows grouping columns into bands and supports complex data cell arrangements.
 </para>
             </summary>
 
@@ -21001,7 +21135,7 @@ In server mode, this option is not in effect.
         <member name="T:DevExpress.XtraGrid.Views.Tile.TileView">
 
             <summary>
-                <para>A Tile View.
+                <para>The View that displays records as non-editable tiles. See Tile View.
 </para>
             </summary>
 
@@ -21016,10 +21150,12 @@ In server mode, this option is not in effect.
         </member>
         <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.#ctor(DevExpress.XtraGrid.GridControl)">
             <summary>
-                <para> </para>
+                <para>Initializes a new instance of the TileView class with the specified settings.
+</para>
             </summary>
             <param name="gridControl">
-		 
+		A <see cref="T:DevExpress.XtraGrid.GridControl"/> that owns this TileView.
+
             </param>
 
 
@@ -21094,6 +21230,16 @@ In server mode, this option is not in effect.
             <param name="copyEvents">
 		<b>true</b>, if the <b>Assign</b> method should also copy the target view's event handlers; otherwise, <b>false</b>.
 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.AssignTileTemplate(DevExpress.XtraEditors.TileItemElementCollection)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="srcTemplate">
+		 
             </param>
 
 
@@ -21883,6 +22029,31 @@ In server mode, this option is not in effect.
 
 
         </member>
+        <member name="T:DevExpress.XtraGrid.WinExplorer.WinExplorerViewOptionsLayout">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.WinExplorer.WinExplorerViewOptionsLayout.#ctor">
+            <summary>
+                <para>Initializes a new instance of the WinExplorerViewOptionsLayout class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.WinExplorer.WinExplorerViewOptionsLayout.StoreColumnSet">
+            <summary>
+                <para>Gets or sets whether or not settings from the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.ColumnSet"/> group should be serialized.
+</para>
+            </summary>
+            <value><b>true</b>, if settings from the <see cref="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.ColumnSet"/> group should be serialized; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
         <member name="T:DevExpress.XtraGrid.Views.Base.BaseViewAppearanceCollection">
 
             <summary>
@@ -22094,31 +22265,6 @@ In server mode, this option is not in effect.
                 <para>If active, disables all other options.
 </para>
             </summary>
-
-
-        </member>
-        <member name="T:DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler">
-
-            <summary>
-                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawCell"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldCaption"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardField"/> and <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldValue"/> events. 
-</para>
-            </summary>
-
-        </member>
-        <member name="M:DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler.Invoke(System.Object,DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs)">
-            <summary>
-                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawCell"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldCaption"/>, <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardField"/> and <see cref="E:DevExpress.XtraGrid.Views.Card.CardView.CustomDrawCardFieldValue"/> events.
-</para>
-            </summary>
-            <param name="sender">
-		The event source. Identifies the View that raised the event.
-
-
-            </param>
-            <param name="e">
-		A <see cref="T:DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs"/> object that contains event data.
-
-            </param>
 
 
         </member>
@@ -23585,9 +23731,11 @@ For the <see cref="E:DevExpress.XtraGrid.Views.Grid.GridView.MasterRowGetRelatio
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.CustomFilterDialogEventArgs.ResetEditorEventHandlers">
             <summary>
-                <para> </para>
+                <para>Gets or sets whether event handlers of the dialog's editors are reset (i.e., not copied from a column's in-place editor).
+</para>
             </summary>
-            <value> </value>
+            <value><b>true</b> if event handlers of the dialog's editors are reset; otherwise, <b>false</b>. The default is <b>true</b>.
+</value>
 
 
         </member>
@@ -24188,9 +24336,11 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo.RowInfo">
             <summary>
-                <para> </para>
+                <para>Gets an object that contains information on the row under the test point.
+</para>
             </summary>
-            <value> </value>
+            <value>An object that contains information on the row under the test point.
+</value>
 
 
         </member>
@@ -24201,6 +24351,16 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
 </para>
             </summary>
             <value>The <see cref="T:DevExpress.XtraGrid.Views.Grid.GridView"/> located under the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo.VisibleIndex">
+            <summary>
+                <para>Gets the visible index of the row under the test point.
+</para>
+            </summary>
+            <value>The visible index of the row under the test point.
 </value>
 
 
@@ -24514,7 +24674,7 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
         <member name="T:DevExpress.XtraGrid.Views.Grid.GridView">
 
             <summary>
-                <para>Represents a View displaying data in a tabular form.
+                <para>The View that displays data in a tabular form.
 </para>
             </summary>
 
@@ -26451,6 +26611,18 @@ descendant (a <see cref="T:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo"/
 
 
         </member>
+        <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.InvalidateRowByIndex(System.Int32)">
+            <summary>
+                <para>Invalidates a row by its visible index.
+</para>
+            </summary>
+            <param name="visibleIndex">
+		The visible index of the row to be invalidated.
+
+            </param>
+
+
+        </member>
         <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.InvalidateRowCell(System.Int32,DevExpress.XtraGrid.Columns.GridColumn)">
             <summary>
                 <para>Invalidates the specified data cell.
@@ -26585,6 +26757,25 @@ descendant (a <see cref="T:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo"/
 
 
         </member>
+        <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.IsDetailRowIndex(System.Int32,DevExpress.XtraGrid.Views.Base.BaseView)">
+            <summary>
+                <para>Returns if the specified row belongs to a detail View (in Embedded detail mode).
+</para>
+            </summary>
+            <param name="visibleIndex">
+		The visible index of the row to test.
+
+            </param>
+            <param name="view">
+		The detail View to test. This is an optional parameter.
+
+            </param>
+            <returns><b>true</b>, if the specified row belongs to a detail View (in Embedded detail mode); otherwise, <b>false</b>.
+
+</returns>
+
+
+        </member>
         <member name="P:DevExpress.XtraGrid.Views.Grid.GridView.IsDraggingState">
             <summary>
                 <para>Tests whether the end-user is currently dragging a column header.
@@ -26625,6 +26816,22 @@ descendant (a <see cref="T:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo"/
 
             </param>
             <returns><b>true</b> if the row footer contains summary values; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.IsExternalRow(System.Int32)">
+            <summary>
+                <para>Gets whether the specified row handle refers to a row, header region or footer region within a detail View in Embedded detail mode.
+
+</para>
+            </summary>
+            <param name="rowHandle">
+		A row handle.
+
+            </param>
+            <returns><b>true</b> if the specified row handle refers to a row, header region or footer region within a detail View in Embedded detail mode; otherwise, <b>false</b>.
+
 </returns>
 
 
@@ -26724,6 +26931,38 @@ descendant (a <see cref="T:DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo"/
 
             </param>
             <returns>A <see cref="T:DevExpress.XtraGrid.Views.Grid.RowVisibleState"/> enumeration value specifying the row's visible state.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.IsRowVisible(System.Int32,System.Int32)">
+            <summary>
+                <para>Returns a row's visible state. A row can be identified by its row handle or visible index.
+</para>
+            </summary>
+            <param name="rowHandle">
+		The row handle of the target row.
+
+            </param>
+            <param name="visibleIndex">
+		The visible index of the target row.
+
+            </param>
+            <returns>The row's visible state.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Grid.GridView.IsRowVisibleByIndex(System.Int32)">
+            <summary>
+                <para>Returns the visible state of the row with the specified visible index.
+</para>
+            </summary>
+            <param name="visibleIndex">
+		The visible index of the row whose state is to be retrieved.
+
+            </param>
+            <returns>The row's visible state.
 </returns>
 
 
@@ -27779,7 +28018,8 @@ If set to <b>-1</b>, the method acts like the <see cref="M:DevExpress.XtraGrid.V
                 <para>Gets or sets the top visible row.
 </para>
             </summary>
-            <value>An integer value representing the top visible row's visible index.
+            <value>An integer value representing the index of the top row visible.
+
 </value>
 
 
@@ -28370,7 +28610,7 @@ If set to <b>-1</b>, the method acts like the <see cref="M:DevExpress.XtraGrid.V
         <member name="T:DevExpress.XtraGrid.StyleFormatCondition">
 
             <summary>
-                <para>Represents a style condition applied to a View.
+                <para>A single style condition.
 
 </para>
             </summary>
@@ -28554,10 +28794,10 @@ If set to <b>-1</b>, the method acts like the <see cref="M:DevExpress.XtraGrid.V
         </member>
         <member name="P:DevExpress.XtraGrid.StyleFormatCondition.ApplyToRow">
             <summary>
-                <para>Gets or sets whether the appearance settings are to be applied to rows or individual cells.
+                <para>Gets or sets whether the appearance settings are to be applied to rows or to cells of the <see cref="P:DevExpress.XtraGrid.StyleFormatCondition.Column"/>.
 </para>
             </summary>
-            <value><b>true</b> to apply the appearance settings to entire rows; otherwise, <b>false</b>.
+            <value><b>true</b> to apply formatting to entire rows; <b>false</b> to apply formatting to cells of the <see cref="P:DevExpress.XtraGrid.StyleFormatCondition.Column"/>.
 </value>
 
 
@@ -28913,7 +29153,9 @@ If set to <b>-1</b>, the method acts like the <see cref="M:DevExpress.XtraGrid.V
         <member name="T:DevExpress.XtraGrid.GridControl">
 
             <summary>
-                <para>The Data Grid (GridControl) is a powerful editing and data shaping component for end-users to display and manage large amounts of data in standard tabular representation, as well as multiple other views.
+                <para>Displays data from a data source in a standard tabular form (view), or in various other forms (as a banded grid, cards or tiles). 
+Supports numerous editing and data-shaping features, such as summaries, filtration, data grouping, master-detail mode, etc. See Data Grid.
+
 </para>
             </summary>
 
@@ -28953,13 +29195,17 @@ If set to <b>-1</b>, the method acts like the <see cref="M:DevExpress.XtraGrid.V
         </member>
         <member name="M:DevExpress.XtraGrid.GridControl.AccessibleNotifyClients(System.Windows.Forms.AccessibleEvents,DevExpress.Accessibility.BaseAccessible)">
             <summary>
-                <para> </para>
+                <para>Notifies accessibility client applications of the specified <see cref="T:System.Windows.Forms.AccessibleEvents"/> event for the specified child control. 
+</para>
             </summary>
             <param name="accEvents">
-		 
+		An <see cref="T:System.Windows.Forms.AccessibleEvents"/> event being fired.
+
+
             </param>
             <param name="acc">
-		 
+		An object that identifies a control to notify of the accessible event.
+
             </param>
 
 
@@ -29901,6 +30147,35 @@ to the specified file in XLSX (MS Excel 2007) format.
 
 
         </member>
+        <member name="F:DevExpress.XtraGrid.GridControl.ExternalRowFooterHandle">
+            <summary>
+                <para>In Embedded detail mode, this row handle corresponds to the regions of detail Views below detail data and group rows. See <see cref="M:DevExpress.XtraGrid.Views.Grid.GridView.IsExternalRow"/>.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.GridControl.ExternalRowHandle">
+            <summary>
+                <para>In Embedded detail mode, this row handle corresponds to data and group rows of detail Views. See <see cref="M:DevExpress.XtraGrid.Views.Grid.GridView.IsExternalRow"/>.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.GridControl.ExternalRowHeaderHandle">
+            <summary>
+                <para>In Embedded detail mode, this row handle corresponds to the regions of detail Views above data and group rows (these regions include group panels and column header panels). See <see cref="M:DevExpress.XtraGrid.Views.Grid.GridView.IsExternalRow"/>.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
         <member name="M:DevExpress.XtraGrid.GridControl.FireChanged">
             <summary>
                 <para>Forces an update to the control's properties that are listed within the property grid at design time.
@@ -30359,7 +30634,7 @@ to the specified file in XLSX (MS Excel 2007) format.
         <member name="T:DevExpress.XtraGrid.Views.Card.CardView">
 
             <summary>
-                <para>Represents a View displaying data using cards.
+                <para>The View that displays data using cards.
 </para>
             </summary>
 
@@ -31950,6 +32225,13 @@ to the specified file in XLSX (MS Excel 2007) format.
             </summary>
             <value>An object representing the focused cell value.
 </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGrid.Views.Base.ColumnView.FocusInvalidRow">
+            <summary>
+                <para> </para>
+            </summary>
 
 
         </member>
@@ -34902,7 +35184,7 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value, if n
         </member>
         <member name="P:DevExpress.XtraGrid.Views.Base.BaseView.FormatConditions">
             <summary>
-                <para>Gets the collection of <b>style format conditions</b> for a View. 
+                <para>Gets the collection of style format conditions for a View. 
 </para>
             </summary>
             <value>A <see cref="T:DevExpress.XtraGrid.StyleFormatConditionCollection"/> object representing a collection of style format conditions for a View.
@@ -36076,6 +36358,14 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value, if n
 
 
         </member>
+        <member name="P:DevExpress.XtraGrid.Columns.GridColumn.CustomizationSearchCaption">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
         <member name="P:DevExpress.XtraGrid.Columns.GridColumn.DisplayFormat">
             <summary>
                 <para>Provides access to the object specifying the formatting applied to column values.
@@ -36212,8 +36502,7 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value, if n
         </member>
         <member name="P:DevExpress.XtraGrid.Columns.GridColumn.GroupInterval">
             <summary>
-                <para>Gets or sets how data rows are grouped when grouping by the current column is applied. Not supported in Server Mode.
-
+                <para>Gets or sets how data rows are grouped when grouping by the current column is applied. Certain limitations apply in server mode. 
 </para>
             </summary>
             <value>A <see cref="T:DevExpress.XtraGrid.ColumnGroupInterval"/> value that determines how data rows are grouped when grouping by the current column is applied.

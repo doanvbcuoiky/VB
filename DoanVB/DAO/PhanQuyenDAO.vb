@@ -86,9 +86,9 @@ Public Class PhanQuyenDAO
         End If
     End Function
 
-    Public Sub SuaPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaPhanQuyen(ByVal PQDTO As PhanQuyenDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaPhanQuyen", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -112,7 +112,12 @@ Public Class PhanQuyenDAO
         cmd.Parameters("@ChoPhepIn").Value = PQDTO.ChoPhepIn1
         cmd.Parameters("@TinhTrang").Value = PQDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 End Class

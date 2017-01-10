@@ -7,16 +7,14 @@ Public Class PhanQuyenBUS
         dt = PhanQuyenDAO.LoadDSPhanQuyen(manguoidung)
         Return dt
     End Function
-    Public Sub ThemPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
-        Dim PQDAO As New PhanQuyenDAO
-        PQDAO.ThemPhanQuyen(PQDTO)
-    End Sub
-    Public Sub XoaPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
-        Dim PQDAO As New PhanQuyenDAO
-        PQDAO.XoaPhanQuyen(PQDTO)
-    End Sub
-    Public Sub SuaPhanQuyen(ByVal PQDTO As PhanQuyenDTO)
-        Dim PQDAO As New PhanQuyenDAO
-        PQDAO.SuaPhanQuyen(PQDTO)
-    End Sub
+    Public Shared Function ThemPhanQuyen(ByVal PQDTO As PhanQuyenDTO) As Boolean
+        Return PhanQuyenDAO.ThemPhanQuyen(PQDTO)
+    End Function
+    Public Shared Function XoaPhanQuyen(ByVal mapq As String) As Boolean
+        'Return PhanQuyenDAO.XoaPhanQuyen(mapq)
+        Return False
+    End Function
+    Public Shared Function SuaPhanQuyen(ByVal PQDTO As PhanQuyenDTO) As Boolean
+        Return PhanQuyenDAO.SuaPhanQuyen(PQDTO)
+    End Function
 End Class
