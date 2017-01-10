@@ -79,7 +79,7 @@ Public Class HangHoaDAO
         End If
     End Function
 
-    Public Sub SuaHangHoa(ByVal HHDTO As HangHoaDTO)
+    Public Shared Function SuaHangHoa(ByVal HHDTO As HangHoaDTO) As Boolean
         Dim con As Connect
         Dim cn As SqlConnection
         cn = con.connect()
@@ -120,7 +120,11 @@ Public Class HangHoaDAO
         cmd.Parameters("@HinhAnh").Value = HHDTO.HinhAnh1
         cmd.Parameters("@TinhTrang").Value = HHDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

@@ -69,9 +69,9 @@ Public Class KhoHangDAO
         End If
     End Function
 
-    Public Sub SuaKhoHang(ByVal KHDTO As KhoHangDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaKhoHang(ByVal KHDTO As KhoHangDTO)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaKhoHang", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -99,7 +99,11 @@ Public Class KhoHangDAO
         cmd.Parameters("@Email").Value = KHDTO.Email1
         cmd.Parameters("@DienGiai").Value = KHDTO.DienGiai1
         cmd.Parameters("@TinhTrang").Value = KHDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

@@ -3,22 +3,18 @@ Imports DTO
 
 Public Class BoPhanBUS
     Public Function LoadDSBoPhan() As DataTable
-        Dim BPDAO As New BoPhanDAO
         Dim dt As DataTable
-        dt = BPDAO.LoadDSBoPhan()
+        dt = BoPhanDAO.LoadDSBoPhan()
         Return dt
     End Function
-    Public Sub ThemBoPhan(ByVal BPDTO As BoPhanDTO)
-        Dim BPDAO As New BoPhanDAO
-        BPDAO.ThemBoPhan(BPDTO)
-    End Sub
-    Public Sub XoaBoPhan(ByVal BPDTO As BoPhanDTO)
-        Dim BPDAO As New BoPhanDAO
-        BPDAO.XoaBoPhan(BPDTO)
-    End Sub
-    Public Sub SuaBoPhan(ByVal BPDTO As BoPhanDTO)
-        Dim BPDAO As New BoPhanDAO
-        BPDAO.SuaBoPhan(BPDTO)
-    End Sub
+    Public Shared Function ThemBoPhan(ByVal BPDTO As BoPhanDTO) As Boolean
+        BoPhanDAO.ThemBoPhan(BPDTO)
+    End Function
+    Public Shared Function XoaBoPhan(ByVal mabophan As String) As Boolean
+        Return BoPhanDAO.XoaBoPhan(mabophan)
+    End Function
+    Public Function SuaBoPhan(ByVal BPDTO As BoPhanDTO) As Boolean
+        Return BoPhanDAO.SuaBoPhan(BPDTO)
+    End Function
 
 End Class

@@ -64,9 +64,9 @@ Public Class NhanVienDAO
         End If
     End Function
 
-    Public Sub SuaNhanVien(ByVal NVDTO As NhanVienDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaNhanVien(ByVal NVDTO As NhanVienDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaNhanVien", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -89,7 +89,12 @@ Public Class NhanVienDAO
         cmd.Parameters("@BoPhan").Value = NVDTO.BoPhan1
         cmd.Parameters("@NguoiQuanLi").Value = NVDTO.NguoiQuanLi1
         cmd.Parameters("@TinhTrang").Value = NVDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
+
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

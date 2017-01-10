@@ -62,9 +62,9 @@ Public Class PhieuBanHangDAO
         End If
     End Function
 
-    Public Sub SuaPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaPhieuBanHang", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -85,7 +85,11 @@ Public Class PhieuBanHangDAO
         cmd.Parameters("@HinhThucThanhToan").Value = PBHDTO.HinhThucThanhToan1
         cmd.Parameters("@TongTien").Value = PBHDTO.TongTien1
         cmd.Parameters("@TinhTrang").Value = PBHDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

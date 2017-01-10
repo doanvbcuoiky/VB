@@ -54,7 +54,7 @@ Public Class BoPhanDAO
         End If
     End Function
 
-    Public Sub SuaBoPhan(ByVal BPDTO As BoPhanDTO)
+    Public Shared Function SuaBoPhan(ByVal BPDTO As BoPhanDTO) As Boolean
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
@@ -69,7 +69,13 @@ Public Class BoPhanDAO
         cmd.Parameters("@TenBoPhan").Value = BPDTO.TenBoPhan1
         cmd.Parameters("@GhiChu").Value = BPDTO.GhiChu1
         cmd.Parameters("@TinhTrang").Value = BPDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
-        cn.Close()
-    End Sub
+
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        Else
+            cn.Close()
+            Return False
+        End If
+    End Function
 End Class

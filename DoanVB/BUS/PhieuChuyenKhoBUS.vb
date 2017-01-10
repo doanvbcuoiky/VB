@@ -2,22 +2,16 @@
 Imports DTO
 
 Public Class PhieuChuyenKhoBUS
-    Public Function LoadDSPhieuChuyenKho() As DataTable
-        Dim PCKDAO As New PhieuChuyenKhoDAO
-        Dim dt As DataTable
-        dt = PCKDAO.LoadDSPhieuChuyenKho()
-        Return dt
+    Public Shared Function LoadDSPhieuChuyenKho() As DataTable
+        Return PhieuChuyenKhoDAO.LoadDSPhieuChuyenKho()
     End Function
-    Public Sub ThemPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
-        Dim PCKDAO As New PhieuChuyenKhoDAO
-        PCKDAO.ThemPhieuChuyenKho(PCKDTO)
-    End Sub
-    Public Sub XoaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
-        Dim PCKDAO As New PhieuChuyenKhoDAO
-        PCKDAO.XoaPhieuChuyenKho(PCKDTO)
-    End Sub
-    Public Sub SuaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
-        Dim PCKDAO As New PhieuChuyenKhoDAO
-        PCKDAO.SuaPhieuChuyenKho(PCKDTO)
-    End Sub
+    Public Shared Function ThemPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
+        Return PhieuChuyenKhoDAO.ThemPhieuChuyenKho(PCKDTO)
+    End Function
+    Public Shared Function XoaPhieuChuyenKho(ByVal maphieuchuyen As String)
+        Return PhieuChuyenKhoDAO.XoaPhieuChuyenKho(maphieuchuyen)
+    End Function
+    Public Shared Function SuaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
+        Return PhieuChuyenKhoDAO.SuaPhieuChuyenKho(PCKDTO)
+    End Function
 End Class

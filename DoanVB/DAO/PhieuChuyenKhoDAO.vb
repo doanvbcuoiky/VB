@@ -64,9 +64,9 @@ Public Class PhieuChuyenKhoDAO
         End If
     End Function
 
-    Public Sub SuaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaPhieuChuyenKho(ByVal PCKDTO As PhieuChuyenKhoDTO)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaPhieuChuyenKho", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -90,7 +90,11 @@ Public Class PhieuChuyenKhoDAO
         cmd.Parameters("@TongTien").Value = PCKDTO.TongTien1
         cmd.Parameters("@TinhTrang").Value = PCKDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

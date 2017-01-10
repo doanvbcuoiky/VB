@@ -2,22 +2,16 @@
 Imports DTO
 
 Public Class PhieuNhapHangBUS
-    Public Function LoadDSPhieuNhapHang() As DataTable
-        Dim PNHDAO As New PhieuNhapHangDAO
-        Dim dt As DataTable
-        dt = PNHDAO.LoadDSPhieuNhapHang()
-        Return dt
+    Public Shared Function LoadDSPhieuNhapHang() As DataTable
+        Return PhieuNhapHangDAO.LoadDSPhieuNhapHang()
     End Function
-    Public Sub ThemPhieuNhapHang(ByVal PNHDTO As PhieuNhapHangDTO)
-        Dim PNHDAO As New PhieuNhapHangDAO
-        PNHDAO.ThemPhieuNhapHang(PNHDTO)
-    End Sub
-    Public Sub XoaPhieuNhapHang(ByVal PNHDTO As PhieuNhapHangDTO)
-        Dim PNHDAO As New PhieuNhapHangDAO
-        PNHDAO.XoaPhieuNhapHang(PNHDTO)
-    End Sub
-    Public Sub SuaPhieuNhapHang(ByVal PNHDTO As PhieuNhapHangDTO)
-        Dim PNHDAO As New PhieuNhapHangDAO
-        PNHDAO.SuaPhieuNhapHang(PNHDTO)
-    End Sub
+    Public Shared Function ThemPhieuNhapHang(ByVal PNHDTO As PhieuNhapHangDTO) As Boolean
+        Return PhieuNhapHangDAO.ThemPhieuNhapHang(PNHDTO)
+    End Function
+    Public Shared Function XoaPhieuNhapHang(ByVal maphieu As String) As Boolean
+        Return PhieuNhapHangDAO.XoaPhieuNhapHang(maphieu)
+    End Function
+    Public Shared Function SuaPhieuNhapHang(ByVal PNHDTO As PhieuNhapHangDTO) As Boolean
+        Return PhieuNhapHangDAO.SuaPhieuNhapHang(PNHDTO)
+    End Function
 End Class

@@ -54,9 +54,9 @@ Public Class DonViTinhDAO
         End If
     End Function
 
-    Public Sub SuaDonViTinh(ByVal DVTDTO As DonViTinhDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaDonViTinh(ByVal DVTDTO As DonViTinhDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaDonViTinh", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -70,7 +70,11 @@ Public Class DonViTinhDAO
         cmd.Parameters("@GhiChu").Value = DVTDTO.GhiChu1
         cmd.Parameters("@TinhTrang").Value = DVTDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

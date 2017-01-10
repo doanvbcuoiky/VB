@@ -5,16 +5,13 @@ Public Class KhoHangBUS
     Public Shared Function LoadDSKhoHang() As DataTable
         Return KhoHangDAO.LoadDSKhoHang()
     End Function
-    Public Sub ThemKhoHang(ByVal KHDTO As KhoHangDTO)
-        Dim KHDAO As New KhoHangDAO
-        KHDAO.ThemKhoHang(KHDTO)
-    End Sub
-    Public Sub XoaKhoHang(ByVal KHDTO As KhoHangDTO)
-        Dim KHDAO As New KhoHangDAO
-        KHDAO.XoaKhoHang(KHDTO)
-    End Sub
-    Public Sub SuaKhoHang(ByVal KHDTO As KhoHangDTO)
-        Dim KHDAO As New KhoHangDAO
-        KHDAO.SuaKhoHang(KHDTO)
-    End Sub
+    Public Shared Function ThemKhoHang(ByVal KHDTO As KhoHangDTO) As Boolean
+        Return KhoHangDAO.ThemKhoHang(KHDTO)
+    End Function
+    Public Shared Function XoaKhoHang(ByVal makhohang As String) As Boolean
+        Return KhoHangDAO.XoaKhoHang(makhohang)
+    End Function
+    Public Shared Function SuaKhoHang(ByVal KHDTO As KhoHangDTO) As Boolean
+        Return KhoHangDAO.SuaKhoHang(KHDTO)
+    End Function
 End Class

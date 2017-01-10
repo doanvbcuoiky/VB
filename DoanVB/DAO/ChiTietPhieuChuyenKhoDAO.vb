@@ -73,7 +73,11 @@ Public Class ChiTietPhieuChuyenKhoDAO
         cmd.Parameters("@DonVi").Value = CTPCK.DonVi1
         cmd.Parameters("@SoLuong").Value = CTPCK.SoLuong1
         cmd.Parameters("@DonGia").Value = CTPCK.DonGia1
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
+        Return False
     End Function
 End Class

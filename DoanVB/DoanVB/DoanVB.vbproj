@@ -33,7 +33,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -215,7 +215,6 @@
     <Compile Include="DanhMuc\frmSuaKhuVuc.Designer.vb">
       <DependentUpon>frmSuaKhuVuc.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmSuaKhuVuc.vb" />
     <Compile Include="DanhMuc\frmSuaKhuVuc.vb">
       <SubType>Form</SubType>
     </Compile>

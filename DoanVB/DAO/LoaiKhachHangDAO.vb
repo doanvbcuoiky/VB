@@ -54,9 +54,9 @@ Public Class LoaiKhachHangDAO
         End If
     End Function
 
-    Public Sub SuaLoaiKhachHang(ByVal LKHDTO As LoaiKhachHangDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaLoaiKhachHang(ByVal LKHDTO As LoaiKhachHangDTO)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaLoaiKhachHang", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -69,7 +69,12 @@ Public Class LoaiKhachHangDAO
         cmd.Parameters("@TenLoaiKhachHang").Value = LKHDTO.TenLoaiKhachHang1
         cmd.Parameters("@GhiChu").Value = LKHDTO.GhiChu1
         cmd.Parameters("@TinhTrang").Value = LKHDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
+
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

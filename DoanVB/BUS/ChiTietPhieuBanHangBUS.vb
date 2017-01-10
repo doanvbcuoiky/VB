@@ -2,22 +2,16 @@
 Imports DTO
 
 Public Class ChiTietPhieuBanHangBUS
-    Public Function LoadDSChiTietPhieuBanHang() As DataTable
-        Dim CTPBHDAO As New ChiTietPhieuBanHangDAO
-        Dim dt As DataTable
-        dt = CTPBHDAO.LoadDSChiTietPhieuBanHang()
-        Return dt
+    Public Shared Function LoadDSChiTietPhieuBanHang() As DataTable
+        Return ChiTietPhieuBanHangDAO.LoadDSChiTietPhieuBanHang()
     End Function
-    Public Sub ThemChiTietPhieuBanHang(ByVal CTPBHDTO As ChiTietPhieuBanHangDTO)
-        Dim CTPBHDAO As New ChiTietPhieuBanHangDAO
-        CTPBHDAO.ThemChiTietPhieuBanHang(CTPBHDTO)
-    End Sub
-    Public Sub XoaChiTietPhieuBanHang(ByVal CTPBHDTO As ChiTietPhieuBanHangDTO)
-        Dim CTPBHDAO As New ChiTietPhieuBanHangDAO
-        CTPBHDAO.XoaChiTietPhieuBanHang(CTPBHDTO)
-    End Sub
-    Public Sub SuaChiTietPhieuBanHang(ByVal CTPBHDTO As ChiTietPhieuBanHangDTO)
-        Dim CTPBHDAO As New ChiTietPhieuBanHangDAO
-        CTPBHDAO.SuaChiTietPhieuBanHang(CTPBHDTO)
-    End Sub
+    Public Shared Function ThemChiTietPhieuBanHang(ByVal CTPBHDTO As ChiTietPhieuBanHangDTO) As Boolean
+        Return ChiTietPhieuBanHangDAO.ThemChiTietPhieuBanHang(CTPBHDTO)
+    End Function
+    Public Shared Function XoaChiTietPhieuBanHang(ByVal maphieu As String, ByVal mahanghoa As String) As Boolean
+        Return ChiTietPhieuBanHangDAO.XoaChiTietPhieuBanHang(maphieu, mahanghoa)
+    End Function
+    Public Shared Function SuaChiTietPhieuBanHang(ByVal CTPBHDTO As ChiTietPhieuBanHangDTO) As Boolean
+        Return ChiTietPhieuBanHangDAO.SuaChiTietPhieuBanHang(CTPBHDTO)
+    End Function
 End Class

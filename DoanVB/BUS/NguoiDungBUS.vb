@@ -20,16 +20,13 @@ Public Class NguoiDungBUS
     Public Shared Function LayMatKhau(ByVal manguoidung As String) As String
         Return NguoiDungDAO.LayMatKhau(manguoidung)
     End Function
-    Public Sub ThemNguoiDung(ByVal NDDTO As NguoiDungDTO)
-        Dim NDDAO As New NguoiDungDAO
-        NDDAO.ThemNguoiDung(NDDTO)
-    End Sub
-    Public Sub XoaNguoiDung(ByVal NDDTO As NguoiDungDTO)
-        Dim NDDAO As New NguoiDungDAO
-        NDDAO.XoaNguoiDung(NDDTO)
-    End Sub
-    Public Sub SuaNguoiDung(ByVal NDDTO As NguoiDungDTO)
-        Dim NDDAO As New NguoiDungDAO
-        NDDAO.SuaNguoiDung(NDDTO)
-    End Sub
+    Public Shared Function ThemNguoiDung(ByVal NDDTO As NguoiDungDTO) As Boolean
+        Return NguoiDungDAO.ThemNguoiDung(NDDTO)
+    End Function
+    Public Shared Function XoaNguoiDung(ByVal manguoidung As String) As Boolean
+        Return NguoiDungDAO.XoaNguoiDung(manguoidung)
+    End Function
+    Public Shared Function SuaNguoiDung(ByVal NDDTO As NguoiDungDTO) As Boolean
+        Return NguoiDungDAO.SuaNguoiDung(NDDTO)
+    End Function
 End Class

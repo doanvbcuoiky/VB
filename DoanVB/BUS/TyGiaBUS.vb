@@ -2,22 +2,16 @@
 Imports DTO
 
 Public Class TyGiaBUS
-    Public Function LoadDSTyGia() As DataTable
-        Dim TGDAO As New TyGiaDAO
-        Dim dt As DataTable
-        dt = TGDAO.LoadDSTyGia()
-        Return dt
+    Public Shared Function LoadDSTyGia() As DataTable
+        Return TyGiaDAO.LoadDSTyGia()
     End Function
-    Public Sub ThemTyGia(ByVal TGDTO As TyGiaDTO)
-        Dim TGDAO As New TyGiaDAO
-        TGDAO.ThemTyGia(TGDTO)
-    End Sub
-    Public Sub XoaTyGia(ByVal TGDTO As TyGiaDTO)
-        Dim TGDAO As New TyGiaDAO
-        TGDAO.XoaTyGia(TGDTO)
-    End Sub
-    Public Sub SuaTyGia(ByVal TGDTO As TyGiaDTO)
-        Dim TGDAO As New TyGiaDAO
-        TGDAO.SuaTyGia(TGDTO)
-    End Sub
+    Public Shared Function ThemTyGia(ByVal TGDTO As TyGiaDTO) As Boolean
+        Return TyGiaDAO.ThemTyGia(TGDTO)
+    End Function
+    Public Shared Function XoaTyGia(ByVal matygia As String) As Boolean
+        Return TyGiaDAO.XoaTyGia(matygia)
+    End Function
+    Public Shared Function SuaTyGia(ByVal TGDTO As TyGiaDTO) As Boolean
+        Return TyGiaDAO.SuaTyGia(TGDTO)
+    End Function
 End Class

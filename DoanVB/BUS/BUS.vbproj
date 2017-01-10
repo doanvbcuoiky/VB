@@ -94,7 +94,7 @@
     <Compile Include="NhaCungCapBUS.vb" />
     <Compile Include="NhanVienBUS.vb" />
     <Compile Include="NhatKyHeThongBUS.vb" />
-    <Compile Include="NhomHangHoa.vb" />
+    <Compile Include="NhomHangHoaBUS.vb" />
     <Compile Include="PhanQuyenBUS.vb" />
     <Compile Include="PhieuBanHangBUS.vb" />
     <Compile Include="PhieuChuyenKhoBUS.vb" />

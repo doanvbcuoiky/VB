@@ -53,7 +53,7 @@ Public Class TyGiaDAO
         End If
     End Function
 
-    Public Sub SuaTyGia(ByVal TGDTO As TyGiaDTO)
+    Public Shared Function SuaTyGia(ByVal TGDTO As TyGiaDTO) As Boolean
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
@@ -68,7 +68,11 @@ Public Class TyGiaDAO
         cmd.Parameters("@TenTienTe").Value = TGDTO.TenTienTe1
         cmd.Parameters("@TyGiaQuyDoi").Value = TGDTO.TyGiaQuyDoi1
         cmd.Parameters("@TinhTrang").Value = TGDTO.TinhTrang1
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

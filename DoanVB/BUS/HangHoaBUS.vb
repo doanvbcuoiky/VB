@@ -6,16 +6,13 @@ Public Class HangHoaBUS
         Dim dt As DataTable = HangHoaDAO.LoadDSHangHoa()
         Return dt
     End Function
-    Public Sub ThemHangHoa(ByVal HHDTO As HangHoaDTO)
-        Dim HHDAO As New HangHoaDAO
-        HHDAO.ThemHangHoa(HHDTO)
-    End Sub
-    Public Sub XoaHangHoa(ByVal HHDTO As HangHoaDTO)
-        Dim HHDAO As New HangHoaDAO
-        HHDAO.XoaHangHoa(HHDTO)
-    End Sub
-    Public Sub SuaHangHoa(ByVal HHDTO As HangHoaDTO)
-        Dim HHDAO As New HangHoaDAO
-        HHDAO.SuaHangHoa(HHDTO)
-    End Sub
+    Public Shared Function ThemHangHoa(ByVal HHDTO As HangHoaDTO)
+        Return HangHoaDAO.ThemHangHoa(HHDTO)
+    End Function
+    Public Shared Function XoaHangHoa(ByVal mahanghoa As String)
+        Return HangHoaDAO.XoaHangHoa(mahanghoa)
+    End Function
+    Public Shared Function SuaHangHoa(ByVal HHDTO As HangHoaDTO)
+        Return HangHoaDAO.SuaHangHoa(HHDTO)
+    End Function
 End Class

@@ -2,22 +2,16 @@
 Imports DTO
 
 Public Class PhieuBanHangBUS
-    Public Function LoadDSPhieuBanHang() As DataTable
-        Dim PBHDAO As New PhieuBanHangDAO
-        Dim dt As DataTable
-        dt = PBHDAO.LoadDSPhieuBanHang()
-        Return dt
+    Public Shared Function LoadDSPhieuBanHang() As DataTable
+        Return PhieuBanHangDAO.LoadDSPhieuBanHang()
     End Function
-    Public Sub ThemPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO)
-        Dim PBHDAO As New PhieuBanHangDAO
-        PBHDAO.ThemPhieuBanHang(PBHDTO)
-    End Sub
-    Public Sub XoaPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO)
-        Dim PBHDAO As New PhieuBanHangDAO
-        PBHDAO.XoaPhieuBanHang(PBHDTO)
-    End Sub
-    Public Sub SuaPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO)
-        Dim PBHDAO As New PhieuBanHangDAO
-        PBHDAO.SuaPhieuBanHang(PBHDTO)
-    End Sub
+    Public Shared Function ThemPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO) As Boolean
+        Return PhieuBanHangDAO.ThemPhieuBanHang(PBHDTO)
+    End Function
+    Public Shared Function XoaPhieuBanHang(ByVal maphieu As String) As Boolean
+        Return PhieuBanHangDAO.XoaPhieuBanHang(maphieu)
+    End Function
+    Public Shared Function SuaPhieuBanHang(ByVal PBHDTO As PhieuBanHangDTO) As Boolean
+        Return PhieuBanHangDAO.SuaPhieuBanHang(PBHDTO)
+    End Function
 End Class

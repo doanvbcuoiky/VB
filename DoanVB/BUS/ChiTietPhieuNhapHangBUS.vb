@@ -2,16 +2,16 @@
 Imports DTO
 
 Public Class ChiTietPhieuNhapHangBUS
-    Public Function LoadDSChiTietPhieuNhapHang() As DataTable
+    Public Shared Function LoadDSChiTietPhieuNhapHang() As DataTable
         Return ChiTietPhieuNhapHangBUS.LoadDSChiTietPhieuNhapHang()
     End Function
-    Public Sub ThemChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO)
+    Public Shared Function ThemChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO) As Boolean
         Return ChiTietPhieuNhapHangBUS.ThemChiTietPhieuNhapHang(CTPNHDTO)
-    End Sub
-    Public Sub XoaChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO)
-        Return ChiTietPhieuNhapHangBUS.XoaChiTietPhieuNhapHang(CTPNHDTO)
-    End Sub
-    Public Sub SuaChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO)
+    End Function
+    Public Shared Function XoaChiTietPhieuNhapHang(ByVal maphieu As String, ByVal mahanghoa As String) As Boolean
+        Return ChiTietPhieuNhapHangBUS.XoaChiTietPhieuNhapHang(maphieu, mahanghoa)
+    End Function
+    Public Shared Function SuaChiTietPhieuNhapHang(ByVal CTPNHDTO As ChiTietPhieuNhapHangDTO) As Boolean
         Return ChiTietPhieuNhapHangBUS.SuaChiTietPhieuNhapHang(CTPNHDTO)
-    End Sub
+    End Function
 End Class

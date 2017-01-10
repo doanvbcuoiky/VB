@@ -2,22 +2,16 @@
 Imports DTO
 
 Public Class NhanVienBUS
-    Public Function LoadDSNhanVien() As DataTable
-        Dim NVDAO As New NhanVienDAO
-        Dim dt As DataTable
-        dt = NVDAO.LoadDSNhanVien()
-        Return dt
+    Public Shared Function LoadDSNhanVien() As DataTable
+        Return NhanVienDAO.LoadDSNhanVien()
     End Function
-    Public Sub ThemNhanVien(ByVal NVDTO As NhanVienDTO)
-        Dim NVDAO As New NhanVienDAO
-        NVDAO.ThemNhanVien(NVDTO)
-    End Sub
-    Public Sub XoaNhanVien(ByVal NVDTO As NhanVienDTO)
-        Dim NVDAO As New NhanVienDAO
-        NVDAO.XoaNhanVien(NVDTO)
-    End Sub
-    Public Sub SuaNhanVien(ByVal NVDTO As NhanVienDTO)
-        Dim NVDAO As New NhanVienDAO
-        NVDAO.SuaNhanVien(NVDTO)
-    End Sub
+    Public Shared Function ThemNhanVien(ByVal NVDTO As NhanVienDTO) As Boolean
+        Return NhanVienDAO.ThemNhanVien(NVDTO)
+    End Function
+    Public Shared Function XoaNhanVien(ByVal manv As String) As Boolean
+        Return NhanVienDAO.XoaNhanVien(manv)
+    End Function
+    Public Shared Function SuaNhanVien(ByVal NVDTO As NhanVienDTO) As Boolean
+        Return NhanVienDAO.SuaNhanVien(NVDTO)
+    End Function
 End Class

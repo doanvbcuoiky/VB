@@ -73,9 +73,9 @@ Public Class NhaCungCapDAO
         End If
     End Function
 
-    Public Sub SuaNhaCungCap(ByVal NCCDTO As NhaCungCapDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaNhaCungCap(ByVal NCCDTO As NhaCungCapDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaNhaCungCap", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -108,7 +108,11 @@ Public Class NhaCungCapDAO
         cmd.Parameters("@NoHienTai").Value = NCCDTO.NoHienTai1
         cmd.Parameters("@TinhTrang").Value = NCCDTO.TinhTrang1
 
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

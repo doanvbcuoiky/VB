@@ -9,12 +9,10 @@ Public Class KhachHangBUS
     Public Shared Function ThemKhachHang(ByVal KHDTO As KhachHangDTO) As Boolean
         Return KhachHangDAO.ThemKhachHang(KHDTO)
     End Function
-    Public Sub XoaKhachHang(ByVal KHDTO As KhachHangDTO)
-        Dim KHDAO As New KhachHangDAO
-        KHDAO.XoaKhachHang(KHDTO)
-    End Sub
-    Public Sub SuaKhachHang(ByVal KHDTO As KhachHangDTO)
-        Dim KHDAO As New KhachHangDAO
-        KHDAO.SuaKhachHang(KHDTO)
-    End Sub
+    Public Shared Function XoaKhachHang(ByVal makhachhang As String) As Boolean
+        Return KhachHangDAO.XoaKhachHang(makhachhang)
+    End Function
+    Public Shared Function SuaKhachHang(ByVal KHDTO As KhachHangDTO) As Boolean
+        Return KhachHangDAO.SuaKhachHang(KHDTO)
+    End Function
 End Class

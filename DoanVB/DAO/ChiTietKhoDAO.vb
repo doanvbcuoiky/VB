@@ -36,11 +36,11 @@ Public Class ChiTietKhoDAO
         Return False
     End Function
 
-    Public Shared Function XoaChiTietKho(ByVal makhohang As String) As Boolean
+    Public Shared Function XoaChiTietKho(ByVal makhohang As String, ByVal mahanghoa As String) As Boolean
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
-        Dim cmd As New SqlCommand("Delete From CHITIETKHO where MaKhoHang = '" & makhohang & "'", cn)
+        Dim cmd As New SqlCommand("Delete From CHITIETKHO where MaKhoHang = '" & makhohang & "' and MaHangHoa = '" & mahanghoa & "'", cn)
         cmd.CommandType = CommandType.Text
         If cmd.ExecuteNonQuery() > 0 Then
             cn.Close()
@@ -51,9 +51,9 @@ Public Class ChiTietKhoDAO
         End If
     End Function
 
-    Public Sub SuaChiTietKho(ByVal CTKDTO As ChiTietKhoDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaChiTietKho(ByVal CTKDTO As ChiTietKhoDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaChiTietKho", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -64,7 +64,11 @@ Public Class ChiTietKhoDAO
         cmd.Parameters("@MaKhoHang").Value = CTKDTO.MaKhoHang1
         cmd.Parameters("@MaHangHoa").Value = CTKDTO.MaHangHoa1
         cmd.Parameters("@SoLuong").Value = CTKDTO.SoLuong1
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class

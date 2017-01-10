@@ -43,8 +43,8 @@ Public Class ChiTietPhieuNhapHangDAO
         Return False
     End Function
 
-    Public Shared Function XoaChiTietPhieuNhapHang(ByVal maphieunhap As String) As Boolean
-       Dim con As New Connect()
+    Public Shared Function XoaChiTietPhieuNhapHang(ByVal maphieunhap As String, ByVal mahanghoa As String) As Boolean
+        Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("Delete From CHITIETPHIEUNHAPHANG where MaPhieuNhap = '" & maphieunhap & "'", cn)
@@ -58,9 +58,9 @@ Public Class ChiTietPhieuNhapHangDAO
         End If
     End Function
 
-    Public Sub SuaChiTietPhieuNhapHang(ByVal CTPNK As ChiTietPhieuNhapHangDTO)
-        Dim con As Connect
-        Dim cn As SqlConnection
+    Public Shared Function SuaChiTietPhieuNhapHang(ByVal CTPNK As ChiTietPhieuNhapHangDTO) As Boolean
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("SuaChiTietPhieuNhapHang", cn)
         cmd.CommandType = CommandType.StoredProcedure
@@ -77,7 +77,11 @@ Public Class ChiTietPhieuNhapHangDAO
         cmd.Parameters("@SoLuong").Value = CTPNK.SoLuong1
         cmd.Parameters("@DonGia").Value = CTPNK.DonGia1
         cmd.Parameters("@ChietKhau").Value = CTPNK.ChietKhau1
-        cmd.ExecuteNonQuery()
+        If cmd.ExecuteNonQuery() > 0 Then
+            cn.Close()
+            Return True
+        End If
         cn.Close()
-    End Sub
+        Return False
+    End Function
 End Class
