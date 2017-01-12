@@ -2,6 +2,9 @@
 Imports DTO
 
 Public Class NhaCungCapBUS
+    Public Shared Function ThongTinNhaCungCap(ByVal MaNCC As String) As NhaCungCapDTO
+        Return NhaCungCapDAO.ThongTinNhaCungCap(MaNCC)
+    End Function
     Public Shared Function LoadDSNhaCungCap() As DataTable
         Return NhaCungCapDAO.LoadDSNhaCungCap()
     End Function

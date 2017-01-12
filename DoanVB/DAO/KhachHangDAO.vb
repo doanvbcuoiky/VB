@@ -2,6 +2,34 @@
 Imports DTO
 
 Public Class KhachHangDAO
+
+    Public Shared Function ThongTinKhachHang(ByVal makh As String) As KhachHangDTO
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from KHACHHANG where MaKhachHang = '" & makh & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Dim tt As Boolean = dt.Select()(0).Item(columnName:="TinhTrang").ToString()
+        Dim kh As New KhachHangDTO(dt.Select()(0).Item(columnName:="MaKhachHang").ToString(), _
+                                   dt.Select()(0).Item(columnName:="TenKhachHang").ToString(), _
+                                   dt.Select()(0).Item(columnName:="NguoiLienHe").ToString(), _
+                                   dt.Select()(0).Item(columnName:="DiaChi").ToString(), _
+                                   dt.Select()(0).Item(columnName:="LoaiKhachHang").ToString(), _
+                                   dt.Select()(0).Item(columnName:="KhuVuc").ToString(), _
+                                   dt.Select()(0).Item(columnName:="DienThoai").ToString(), _
+                                   dt.Select()(0).Item(columnName:="Fax").ToString(), _
+                                   dt.Select()(0).Item(columnName:="Email").ToString(), _
+                                   dt.Select()(0).Item(columnName:="Website").ToString(), _
+                                   dt.Select()(0).Item(columnName:="MaSoThue").ToString(), _
+                                   dt.Select()(0).Item(columnName:="SoTaiKhoan").ToString(), _
+                                   dt.Select()(0).Item(columnName:="NganHang").ToString(), _
+                                   dt.Select()(0).Item(columnName:="TinhTrang").ToString())
+        Return kh
+    End Function
     Public Shared Function LoadDSKhachHang() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

@@ -2,6 +2,9 @@
 Imports DTO
 
 Public Class KhachHangBUS
+    Public Shared Function ThongTinKhachHang(ByVal makh As String) As KhachHangDTO
+        Return KhachHangDAO.ThongTinKhachHang(makh)
+    End Function
     Public Shared Function LoadDSKhachHang() As DataTable
         Dim dt As DataTable = KhachHangDAO.LoadDSKhachHang()
         Return dt

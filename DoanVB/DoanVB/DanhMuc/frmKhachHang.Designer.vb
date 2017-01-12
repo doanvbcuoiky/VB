@@ -101,6 +101,7 @@ Partial Class frmKhachHang
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colMaKhachHang, Me.colTenKhachHang, Me.colNguoiLienHe, Me.colDiaChi, Me.colLoaiKhachHang, Me.colKhuVuc, Me.colDienThoai, Me.colFax, Me.colEmail, Me.colWebsite, Me.colMaSoThue, Me.colSoTaiKhoan, Me.colNganHang, Me.colTinhTrang})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         '
         'colMaKhachHang
         '

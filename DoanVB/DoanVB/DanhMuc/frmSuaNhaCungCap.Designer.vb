@@ -24,29 +24,29 @@ Partial Class frmSuaNhaCungCap
     Private Sub InitializeComponent()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.ckTinhTrang = New System.Windows.Forms.CheckBox()
+        Me.cboKhuVuc = New System.Windows.Forms.ComboBox()
+        Me.txtNoHienTai = New System.Windows.Forms.TextBox()
+        Me.txtNganHang = New System.Windows.Forms.TextBox()
+        Me.txtTaiKhoan = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtWebSite = New System.Windows.Forms.TextBox()
+        Me.txtDienThoai = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtFax = New System.Windows.Forms.TextBox()
+        Me.txtMaSoThue = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtDiaChi = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtTen = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtMa = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -69,51 +69,51 @@ Partial Class frmSuaNhaCungCap
         Me.Button1.Text = "Đóng"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'ckTinhTrang
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(74, 230)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(82, 17)
-        Me.CheckBox1.TabIndex = 29
-        Me.CheckBox1.Text = "Còn quản lý"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ckTinhTrang.AutoSize = True
+        Me.ckTinhTrang.Location = New System.Drawing.Point(74, 230)
+        Me.ckTinhTrang.Name = "ckTinhTrang"
+        Me.ckTinhTrang.Size = New System.Drawing.Size(82, 17)
+        Me.ckTinhTrang.TabIndex = 29
+        Me.ckTinhTrang.Text = "Còn quản lý"
+        Me.ckTinhTrang.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'cboKhuVuc
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(366, 15)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(216, 21)
-        Me.ComboBox1.TabIndex = 28
+        Me.cboKhuVuc.FormattingEnabled = True
+        Me.cboKhuVuc.Location = New System.Drawing.Point(366, 15)
+        Me.cboKhuVuc.Name = "cboKhuVuc"
+        Me.cboKhuVuc.Size = New System.Drawing.Size(216, 21)
+        Me.cboKhuVuc.TabIndex = 28
         '
-        'TextBox11
+        'txtNoHienTai
         '
-        Me.TextBox11.Location = New System.Drawing.Point(366, 196)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(216, 20)
-        Me.TextBox11.TabIndex = 22
+        Me.txtNoHienTai.Location = New System.Drawing.Point(366, 196)
+        Me.txtNoHienTai.Name = "txtNoHienTai"
+        Me.txtNoHienTai.Size = New System.Drawing.Size(216, 20)
+        Me.txtNoHienTai.TabIndex = 22
         '
-        'TextBox9
+        'txtNganHang
         '
-        Me.TextBox9.Location = New System.Drawing.Point(366, 169)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(216, 20)
-        Me.TextBox9.TabIndex = 21
+        Me.txtNganHang.Location = New System.Drawing.Point(366, 169)
+        Me.txtNganHang.Name = "txtNganHang"
+        Me.txtNganHang.Size = New System.Drawing.Size(216, 20)
+        Me.txtNganHang.TabIndex = 21
         '
-        'TextBox10
+        'txtTaiKhoan
         '
-        Me.TextBox10.Location = New System.Drawing.Point(74, 196)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox10.TabIndex = 24
+        Me.txtTaiKhoan.Location = New System.Drawing.Point(74, 196)
+        Me.txtTaiKhoan.Name = "txtTaiKhoan"
+        Me.txtTaiKhoan.Size = New System.Drawing.Size(204, 20)
+        Me.txtTaiKhoan.TabIndex = 24
         '
-        'TextBox6
+        'txtEmail
         '
-        Me.TextBox6.Location = New System.Drawing.Point(74, 165)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox6.TabIndex = 25
+        Me.txtEmail.Location = New System.Drawing.Point(74, 165)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(204, 20)
+        Me.txtEmail.TabIndex = 25
         '
         'Label10
         '
@@ -133,19 +133,19 @@ Partial Class frmSuaNhaCungCap
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Email"
         '
-        'TextBox8
+        'txtWebSite
         '
-        Me.TextBox8.Location = New System.Drawing.Point(366, 140)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(216, 20)
-        Me.TextBox8.TabIndex = 17
+        Me.txtWebSite.Location = New System.Drawing.Point(366, 140)
+        Me.txtWebSite.Name = "txtWebSite"
+        Me.txtWebSite.Size = New System.Drawing.Size(216, 20)
+        Me.txtWebSite.TabIndex = 17
         '
-        'TextBox5
+        'txtDienThoai
         '
-        Me.TextBox5.Location = New System.Drawing.Point(74, 136)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox5.TabIndex = 26
+        Me.txtDienThoai.Location = New System.Drawing.Point(74, 136)
+        Me.txtDienThoai.Name = "txtDienThoai"
+        Me.txtDienThoai.Size = New System.Drawing.Size(204, 20)
+        Me.txtDienThoai.TabIndex = 26
         '
         'Label12
         '
@@ -174,19 +174,19 @@ Partial Class frmSuaNhaCungCap
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Điện thoại"
         '
-        'TextBox7
+        'txtFax
         '
-        Me.TextBox7.Location = New System.Drawing.Point(366, 110)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(216, 20)
-        Me.TextBox7.TabIndex = 23
+        Me.txtFax.Location = New System.Drawing.Point(366, 110)
+        Me.txtFax.Name = "txtFax"
+        Me.txtFax.Size = New System.Drawing.Size(216, 20)
+        Me.txtFax.TabIndex = 23
         '
-        'TextBox4
+        'txtMaSoThue
         '
-        Me.TextBox4.Location = New System.Drawing.Point(74, 106)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox4.TabIndex = 27
+        Me.txtMaSoThue.Location = New System.Drawing.Point(74, 106)
+        Me.txtMaSoThue.Name = "txtMaSoThue"
+        Me.txtMaSoThue.Size = New System.Drawing.Size(204, 20)
+        Me.txtMaSoThue.TabIndex = 27
         '
         'Label11
         '
@@ -215,12 +215,12 @@ Partial Class frmSuaNhaCungCap
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Mã số thuế"
         '
-        'TextBox3
+        'txtDiaChi
         '
-        Me.TextBox3.Location = New System.Drawing.Point(74, 76)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(508, 20)
-        Me.TextBox3.TabIndex = 20
+        Me.txtDiaChi.Location = New System.Drawing.Point(74, 76)
+        Me.txtDiaChi.Name = "txtDiaChi"
+        Me.txtDiaChi.Size = New System.Drawing.Size(508, 20)
+        Me.txtDiaChi.TabIndex = 20
         '
         'Label3
         '
@@ -231,12 +231,12 @@ Partial Class frmSuaNhaCungCap
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Địa chỉ"
         '
-        'TextBox2
+        'txtTen
         '
-        Me.TextBox2.Location = New System.Drawing.Point(74, 45)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(508, 20)
-        Me.TextBox2.TabIndex = 19
+        Me.txtTen.Location = New System.Drawing.Point(74, 45)
+        Me.txtTen.Name = "txtTen"
+        Me.txtTen.Size = New System.Drawing.Size(508, 20)
+        Me.txtTen.TabIndex = 19
         '
         'Label2
         '
@@ -247,12 +247,12 @@ Partial Class frmSuaNhaCungCap
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Tên"
         '
-        'TextBox1
+        'txtMa
         '
-        Me.TextBox1.Location = New System.Drawing.Point(74, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(204, 20)
-        Me.TextBox1.TabIndex = 18
+        Me.txtMa.Location = New System.Drawing.Point(74, 15)
+        Me.txtMa.Name = "txtMa"
+        Me.txtMa.Size = New System.Drawing.Size(204, 20)
+        Me.txtMa.TabIndex = 18
         '
         'Label7
         '
@@ -279,29 +279,29 @@ Partial Class frmSuaNhaCungCap
         Me.ClientSize = New System.Drawing.Size(592, 273)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.ckTinhTrang)
+        Me.Controls.Add(Me.cboKhuVuc)
+        Me.Controls.Add(Me.txtNoHienTai)
+        Me.Controls.Add(Me.txtNganHang)
+        Me.Controls.Add(Me.txtTaiKhoan)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtWebSite)
+        Me.Controls.Add(Me.txtDienThoai)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtFax)
+        Me.Controls.Add(Me.txtMaSoThue)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtDiaChi)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtTen)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtMa)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmSuaNhaCungCap"
@@ -312,29 +312,29 @@ Partial Class frmSuaNhaCungCap
     End Sub
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents ckTinhTrang As System.Windows.Forms.CheckBox
+    Friend WithEvents cboKhuVuc As System.Windows.Forms.ComboBox
+    Friend WithEvents txtNoHienTai As System.Windows.Forms.TextBox
+    Friend WithEvents txtNganHang As System.Windows.Forms.TextBox
+    Friend WithEvents txtTaiKhoan As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtWebSite As System.Windows.Forms.TextBox
+    Friend WithEvents txtDienThoai As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtFax As System.Windows.Forms.TextBox
+    Friend WithEvents txtMaSoThue As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiaChi As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtTen As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMa As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

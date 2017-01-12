@@ -3,6 +3,7 @@ Imports BUS
 
 Public Class frmNhaCungCap
 
+    Public Shared manhacungcap As String
     Private Sub frmNhaCungCap_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Dim dt As DataTable = NhaCungCapBUS.LoadDSNhaCungCap()
         'Me.GridControl1.DataSource = dt
@@ -19,7 +20,8 @@ Public Class frmNhaCungCap
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaNhaCungCap()
-        frmKhuVuc.lblmakh = Me.lblMaNhaCungCap.Text
+        manhacungcap = Me.lblMaNhaCungCap.Text
+        frmNhaCungCap_Load(sender, e)
         frmSua.ShowDialog()
     End Sub
 

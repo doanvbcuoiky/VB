@@ -73,7 +73,7 @@
     <Reference Include="DevExpress.Data.v16.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Images.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Images.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Printing.v16.1.Core">
@@ -91,16 +91,16 @@
     <Reference Include="DevExpress.XtraEditors.v16.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
     <Reference Include="System">
@@ -212,10 +212,76 @@
     <Compile Include="DanhMuc\frmNhaCungCap.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DanhMuc\frmSuaBoPhan.Designer.vb">
+      <DependentUpon>frmSuaBoPhan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaBoPhan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaDonViTinh.Designer.vb">
+      <DependentUpon>frmSuaDonViTinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaDonViTinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaHangHoa.Designer.vb">
+      <DependentUpon>frmSuaHangHoa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaHangHoa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaKhachHang.Designer.vb">
+      <DependentUpon>frmSuaKhachHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaKhachHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaKhoHang.Designer.vb">
+      <DependentUpon>frmSuaKhoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaKhoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DanhMuc\frmSuaKhuVuc.Designer.vb">
       <DependentUpon>frmSuaKhuVuc.vb</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\frmSuaKhuVuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaNhaCungCap.Designer.vb">
+      <DependentUpon>frmSuaNhaCungCap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaNhaCungCap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaNhanVien.Designer.vb">
+      <DependentUpon>frmSuaNhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaNhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaNhomHang.Designer.vb">
+      <DependentUpon>frmSuaNhomHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaNhomHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemBoPhan.Designer.vb">
+      <DependentUpon>frmThemBoPhan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemBoPhan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemDonViTinh.Designer.vb">
+      <DependentUpon>frmThemDonViTinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemDonViTinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemHangHoa.Designer.vb">
+      <DependentUpon>frmThemHangHoa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemHangHoa.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhMuc\frmThemKhachHang.Designer.vb">
@@ -224,10 +290,34 @@
     <Compile Include="DanhMuc\frmThemKhachHang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DanhMuc\frmThemKhoHang.Designer.vb">
+      <DependentUpon>frmThemKhoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemKhoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DanhMuc\frmThemKhuVuc.Designer.vb">
       <DependentUpon>frmThemKhuVuc.vb</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\frmThemKhuVuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemNhaCungCap.Designer.vb">
+      <DependentUpon>frmThemNhaCungCap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemNhaCungCap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemNhanVien.Designer.vb">
+      <DependentUpon>frmThemNhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemNhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemNhomHang.Designer.vb">
+      <DependentUpon>frmThemNhomHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemNhomHang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDangNhap.Designer.vb">
@@ -419,14 +509,59 @@
     <EmbeddedResource Include="DanhMuc\frmNhapDanhMucTuExel.resx">
       <DependentUpon>frmNhapDanhMucTuExel.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaBoPhan.resx">
+      <DependentUpon>frmSuaBoPhan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaDonViTinh.resx">
+      <DependentUpon>frmSuaDonViTinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaHangHoa.resx">
+      <DependentUpon>frmSuaHangHoa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaKhachHang.resx">
+      <DependentUpon>frmSuaKhachHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaKhoHang.resx">
+      <DependentUpon>frmSuaKhoHang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmSuaKhuVuc.resx">
       <DependentUpon>frmSuaKhuVuc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaNhaCungCap.resx">
+      <DependentUpon>frmSuaNhaCungCap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaNhanVien.resx">
+      <DependentUpon>frmSuaNhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaNhomHang.resx">
+      <DependentUpon>frmSuaNhomHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemBoPhan.resx">
+      <DependentUpon>frmThemBoPhan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemDonViTinh.resx">
+      <DependentUpon>frmThemDonViTinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemHangHoa.resx">
+      <DependentUpon>frmThemHangHoa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemKhoHang.resx">
+      <DependentUpon>frmThemKhoHang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmThemKhuVuc.resx">
       <DependentUpon>frmThemKhuVuc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemNhaCungCap.resx">
+      <DependentUpon>frmThemNhaCungCap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemNhomHang.resx">
+      <DependentUpon>frmThemNhomHang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.vb</DependentUpon>

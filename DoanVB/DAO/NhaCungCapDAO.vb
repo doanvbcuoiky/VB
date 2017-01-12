@@ -2,6 +2,32 @@
 Imports DTO
 
 Public Class NhaCungCapDAO
+
+    Public Shared Function ThongTinNhaCungCap(ByVal ma As String) As NhaCungCapDTO
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from NHACUNGCAP where MaNhacCungCap = '" & ma & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Dim nhacungcap As New NhaCungCapDTO(dt.Select()(0).Item(columnName:="MaNhaCungCap"), _
+                                            dt.Select()(0).Item(columnName:="TenNhaCungCap"), _
+                                            dt.Select()(0).Item(columnName:="DiaChi"), _
+                                            dt.Select()(0).Item(columnName:="KhuVuc"), _
+                                            dt.Select()(0).Item(columnName:="DienThoai"), _
+                                            dt.Select()(0).Item(columnName:="Fax"), _
+                                            dt.Select()(0).Item(columnName:="Email"), _
+                                            dt.Select()(0).Item(columnName:="Website"), _
+                                            dt.Select()(0).Item(columnName:="MaSoThue"), _
+                                            dt.Select()(0).Item(columnName:="SoTaiKhoan"), _
+                                            dt.Select()(0).Item(columnName:="NganHang"), _
+                                            dt.Select()(0).Item(columnName:="NoHienTai"), _
+                                            dt.Select()(0).Item(columnName:="TinhTrang"))
+        Return nhacungcap
+    End Function
     Public Shared Function LoadDSNhaCungCap() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

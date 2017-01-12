@@ -508,8 +508,7 @@ The default maximum height is specified by the Control.MaximumSize.Height proper
         <member name="T:DevExpress.XtraDataLayout.DataLayoutControl">
 
             <summary>
-                <para>Creates and maintains a consistent layout of controls for editing a specific data source's fields. See Data Layout Control.
-
+                <para>A data-bound version of the <see cref="T:DevExpress.XtraLayout.LayoutControl"/>.
 </para>
             </summary>
 
@@ -640,15 +639,12 @@ The default maximum height is specified by the Control.MaximumSize.Height proper
         </member>
         <member name="M:DevExpress.XtraDataLayout.DataLayoutControl.GetLayoutElementsBindingsInfo(System.Collections.ICollection)">
             <summary>
-                <para>Returns the layout element binding information from the specified PropertyDescriptor collection.
-</para>
+                <para> </para>
             </summary>
             <param name="propertyDescriptorCollection">
-		A collection of PropertyDescriptor objects.
-
+		 
             </param>
-            <returns>A value that specifies the layout element binding information.
-</returns>
+            <returns> </returns>
 
 
         </member>
@@ -5758,7 +5754,7 @@ For the root group, its parent is the LayoutControl itself (the LayoutControl's 
         <member name="T:DevExpress.XtraLayout.LayoutControl">
 
             <summary>
-                <para>Creates and maintains a consistent layout of controls. See Layout Manager.
+                <para>The Layout Manager (LayoutControl) allows you to deliver most complex edit forms that can be easily customized at both design and runtime.
 </para>
             </summary>
 

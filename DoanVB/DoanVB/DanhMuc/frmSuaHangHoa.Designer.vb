@@ -22,14 +22,14 @@ Partial Class frmSuaHangHoa
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtMaVach = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.txtMaHang = New System.Windows.Forms.TextBox()
+        Me.cboPhanLoai = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -57,12 +57,12 @@ Partial Class frmSuaHangHoa
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox5
+        'txtMaVach
         '
-        Me.TextBox5.Location = New System.Drawing.Point(334, 38)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(150, 20)
-        Me.TextBox5.TabIndex = 2
+        Me.txtMaVach.Location = New System.Drawing.Point(334, 38)
+        Me.txtMaVach.Name = "txtMaVach"
+        Me.txtMaVach.Size = New System.Drawing.Size(150, 20)
+        Me.txtMaVach.TabIndex = 2
         '
         'TextBox10
         '
@@ -99,20 +99,20 @@ Partial Class frmSuaHangHoa
         Me.TextBox6.Size = New System.Drawing.Size(384, 20)
         Me.TextBox6.TabIndex = 2
         '
-        'TextBox4
+        'txtMaHang
         '
-        Me.TextBox4.Location = New System.Drawing.Point(99, 38)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(144, 20)
-        Me.TextBox4.TabIndex = 2
+        Me.txtMaHang.Location = New System.Drawing.Point(99, 38)
+        Me.txtMaHang.Name = "txtMaHang"
+        Me.txtMaHang.Size = New System.Drawing.Size(144, 20)
+        Me.txtMaHang.TabIndex = 2
         '
-        'ComboBox2
+        'cboPhanLoai
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(99, 13)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(385, 21)
-        Me.ComboBox2.TabIndex = 1
+        Me.cboPhanLoai.FormattingEnabled = True
+        Me.cboPhanLoai.Location = New System.Drawing.Point(99, 13)
+        Me.cboPhanLoai.Name = "cboPhanLoai"
+        Me.cboPhanLoai.Size = New System.Drawing.Size(385, 21)
+        Me.cboPhanLoai.TabIndex = 1
         '
         'Label13
         '
@@ -308,14 +308,14 @@ Partial Class frmSuaHangHoa
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.txtMaVach)
         Me.GroupBox1.Controls.Add(Me.TextBox10)
         Me.GroupBox1.Controls.Add(Me.TextBox9)
         Me.GroupBox1.Controls.Add(Me.TextBox8)
         Me.GroupBox1.Controls.Add(Me.TextBox7)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.txtMaHang)
+        Me.GroupBox1.Controls.Add(Me.cboPhanLoai)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -361,14 +361,14 @@ Partial Class frmSuaHangHoa
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMaVach As System.Windows.Forms.TextBox
     Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtMaHang As System.Windows.Forms.TextBox
+    Friend WithEvents cboPhanLoai As System.Windows.Forms.ComboBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
