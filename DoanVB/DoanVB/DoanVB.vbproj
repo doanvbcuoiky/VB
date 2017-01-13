@@ -320,6 +320,12 @@
     <Compile Include="DanhMuc\frmThemNhomHang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DanhMuc\frmThemTyGia.Designer.vb">
+      <DependentUpon>frmThemTyGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemTyGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDangNhap.Designer.vb">
       <DependentUpon>frmDangNhap.vb</DependentUpon>
     </Compile>
@@ -562,6 +568,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmThemNhomHang.resx">
       <DependentUpon>frmThemNhomHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemTyGia.resx">
+      <DependentUpon>frmThemTyGia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.vb</DependentUpon>

@@ -9,7 +9,7 @@ Public Class frmTyGia
     End Sub
 
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
-        Dim frmThem = New frmTyGia()
+        Dim frmThem = New frmThemTyGia()
         frmThem.ShowDialog()
     End Sub
 
