@@ -26,7 +26,6 @@ Partial Class frmSuaNhaCungCap
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ckTinhTrang = New System.Windows.Forms.CheckBox()
         Me.cboKhuVuc = New System.Windows.Forms.ComboBox()
-        Me.txtNoHienTai = New System.Windows.Forms.TextBox()
         Me.txtNganHang = New System.Windows.Forms.TextBox()
         Me.txtTaiKhoan = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
@@ -49,6 +48,7 @@ Partial Class frmSuaNhaCungCap
         Me.txtMa = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtNoHienTai = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button2
@@ -86,13 +86,6 @@ Partial Class frmSuaNhaCungCap
         Me.cboKhuVuc.Name = "cboKhuVuc"
         Me.cboKhuVuc.Size = New System.Drawing.Size(216, 21)
         Me.cboKhuVuc.TabIndex = 28
-        '
-        'txtNoHienTai
-        '
-        Me.txtNoHienTai.Location = New System.Drawing.Point(366, 196)
-        Me.txtNoHienTai.Name = "txtNoHienTai"
-        Me.txtNoHienTai.Size = New System.Drawing.Size(216, 20)
-        Me.txtNoHienTai.TabIndex = 22
         '
         'txtNganHang
         '
@@ -272,16 +265,23 @@ Partial Class frmSuaNhaCungCap
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Mã"
         '
+        'txtNoHienTai
+        '
+        Me.txtNoHienTai.Location = New System.Drawing.Point(366, 196)
+        Me.txtNoHienTai.Name = "txtNoHienTai"
+        Me.txtNoHienTai.Size = New System.Drawing.Size(214, 20)
+        Me.txtNoHienTai.TabIndex = 32
+        '
         'frmSuaNhaCungCap
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(592, 273)
+        Me.Controls.Add(Me.txtNoHienTai)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ckTinhTrang)
         Me.Controls.Add(Me.cboKhuVuc)
-        Me.Controls.Add(Me.txtNoHienTai)
         Me.Controls.Add(Me.txtNganHang)
         Me.Controls.Add(Me.txtTaiKhoan)
         Me.Controls.Add(Me.txtEmail)
@@ -314,7 +314,6 @@ Partial Class frmSuaNhaCungCap
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ckTinhTrang As System.Windows.Forms.CheckBox
     Friend WithEvents cboKhuVuc As System.Windows.Forms.ComboBox
-    Friend WithEvents txtNoHienTai As System.Windows.Forms.TextBox
     Friend WithEvents txtNganHang As System.Windows.Forms.TextBox
     Friend WithEvents txtTaiKhoan As System.Windows.Forms.TextBox
     Friend WithEvents txtEmail As System.Windows.Forms.TextBox
@@ -337,4 +336,5 @@ Partial Class frmSuaNhaCungCap
     Friend WithEvents txtMa As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtNoHienTai As System.Windows.Forms.TextBox
 End Class

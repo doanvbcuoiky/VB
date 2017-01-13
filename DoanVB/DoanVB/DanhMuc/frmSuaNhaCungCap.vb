@@ -9,7 +9,7 @@ Public Class frmSuaNhaCungCap
         Me.cboKhuVuc.ValueMember = "MaKhuVuc"
         Me.ckTinhTrang.Checked = True
         Me.txtMa.Text = frmNhaCungCap.manhacungcap
-        Dim ncc As NhaCungCapDTO = NhaCungCapBUS.ThongTinNhaCungCap(Me.txtMa.Text)
+        Dim ncc As NhaCungCapDTO = NhaCungCapBUS.ThongTinNhaCungCap(frmNhaCungCap.manhacungcap)
         Me.txtTen.Text = ncc.TenNhaCungCap1
         Me.txtDiaChi.Text = ncc.DiaChi1
         Me.txtDienThoai.Text = ncc.DienTHoai1
@@ -21,6 +21,7 @@ Public Class frmSuaNhaCungCap
         Me.txtMaSoThue.Text = ncc.MaSoThue1
         Me.txtNoHienTai.Text = ncc.NoHienTai1.ToString()
         Me.ckTinhTrang.Checked = ncc.TinhTrang1
+        Me.cboKhuVuc.SelectedValue = ncc.KhuVuc1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

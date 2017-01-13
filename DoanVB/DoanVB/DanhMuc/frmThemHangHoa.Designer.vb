@@ -286,6 +286,7 @@ Partial Class frmThemHangHoa
         '
         'numGiaBanLe
         '
+        Me.numGiaBanLe.DecimalPlaces = 5
         Me.numGiaBanLe.Location = New System.Drawing.Point(335, 106)
         Me.numGiaBanLe.Name = "numGiaBanLe"
         Me.numGiaBanLe.Size = New System.Drawing.Size(141, 20)
@@ -293,6 +294,7 @@ Partial Class frmThemHangHoa
         '
         'numGiaBanSi
         '
+        Me.numGiaBanSi.DecimalPlaces = 5
         Me.numGiaBanSi.Location = New System.Drawing.Point(335, 131)
         Me.numGiaBanSi.Name = "numGiaBanSi"
         Me.numGiaBanSi.Size = New System.Drawing.Size(141, 20)
@@ -300,6 +302,7 @@ Partial Class frmThemHangHoa
         '
         'numGiaMua
         '
+        Me.numGiaMua.DecimalPlaces = 5
         Me.numGiaMua.Location = New System.Drawing.Point(335, 76)
         Me.numGiaMua.Name = "numGiaMua"
         Me.numGiaMua.Size = New System.Drawing.Size(141, 20)
