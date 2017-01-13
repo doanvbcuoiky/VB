@@ -74,6 +74,8 @@ Partial Class frmBanHang
         Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlItem21 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControl3 = New DevExpress.XtraLayout.LayoutControl()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -88,33 +90,31 @@ Partial Class frmBanHang
         Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem22 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.LayoutControlItem24 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem23 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.DotNetBarManager1 = New DevComponents.DotNetBar.DotNetBarManager(Me.components)
-        Me.DockSite1 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite2 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite4 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite5 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite6 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite8 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite1 = New DevComponents.DotNetBar.DockSite()
         Me.Bar1 = New DevComponents.DotNetBar.Bar()
-        Me.DockContainerItem1 = New DevComponents.DotNetBar.DockContainerItem()
         Me.PanelDockContainer1 = New DevComponents.DotNetBar.PanelDockContainer()
         Me.ExplorerBar1 = New DevComponents.DotNetBar.ExplorerBar()
         Me.ExplorerBarGroupItem1 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
-        Me.ExplorerBarGroupItem2 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
-        Me.ExplorerBarGroupItem3 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
         Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ExplorerBarGroupItem2 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
         Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ExplorerBarGroupItem3 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
         Me.ButtonItem4 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem5 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem6 = New DevComponents.DotNetBar.ButtonItem()
-        Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.LayoutControlItem24 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.LayoutControlItem23 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.DockContainerItem1 = New DevComponents.DotNetBar.DockContainerItem()
+        Me.DockSite2 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite8 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite5 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite6 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
         Me.PanelEx1.SuspendLayout()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl1.SuspendLayout()
@@ -169,14 +169,14 @@ Partial Class frmBanHang
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.DockSite1.SuspendLayout()
         CType(Me.Bar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Bar1.SuspendLayout()
         Me.PanelDockContainer1.SuspendLayout()
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelEx1
@@ -713,6 +713,24 @@ Partial Class frmBanHang
         Me.LayoutControl3.TabIndex = 0
         Me.LayoutControl3.Text = "LayoutControl3"
         '
+        'CheckBox2
+        '
+        Me.CheckBox2.Location = New System.Drawing.Point(116, 212)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(124, 20)
+        Me.CheckBox2.TabIndex = 7
+        Me.CheckBox2.Text = "Sử dụng mã vạch"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.Location = New System.Drawing.Point(12, 212)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(100, 20)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "In sau khi lưu"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'GridControl1
         '
         Me.GridControl1.Location = New System.Drawing.Point(12, 12)
@@ -727,6 +745,7 @@ Partial Class frmBanHang
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'GridColumn1
@@ -818,6 +837,32 @@ Partial Class frmBanHang
         Me.LayoutControlItem22.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem22.TextVisible = False
         '
+        'EmptySpaceItem4
+        '
+        Me.EmptySpaceItem4.AllowHotTrack = False
+        Me.EmptySpaceItem4.Location = New System.Drawing.Point(232, 200)
+        Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
+        Me.EmptySpaceItem4.Size = New System.Drawing.Size(569, 24)
+        Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'LayoutControlItem24
+        '
+        Me.LayoutControlItem24.Control = Me.CheckBox1
+        Me.LayoutControlItem24.Location = New System.Drawing.Point(0, 200)
+        Me.LayoutControlItem24.Name = "LayoutControlItem24"
+        Me.LayoutControlItem24.Size = New System.Drawing.Size(104, 24)
+        Me.LayoutControlItem24.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem24.TextVisible = False
+        '
+        'LayoutControlItem23
+        '
+        Me.LayoutControlItem23.Control = Me.CheckBox2
+        Me.LayoutControlItem23.Location = New System.Drawing.Point(104, 200)
+        Me.LayoutControlItem23.Name = "LayoutControlItem23"
+        Me.LayoutControlItem23.Size = New System.Drawing.Size(128, 24)
+        Me.LayoutControlItem23.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem23.TextVisible = False
+        '
         'DotNetBarManager1
         '
         Me.DotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.F1)
@@ -842,40 +887,6 @@ Partial Class frmBanHang
         Me.DotNetBarManager1.ToolbarTopDockSite = Me.DockSite7
         Me.DotNetBarManager1.TopDockSite = Me.DockSite3
         '
-        'DockSite1
-        '
-        Me.DockSite1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite1.Controls.Add(Me.Bar1)
-        Me.DockSite1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.DockSite1.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer(New DevComponents.DotNetBar.DocumentBaseContainer() {CType(New DevComponents.DotNetBar.DocumentBarContainer(Me.Bar1, 121, 451), DevComponents.DotNetBar.DocumentBaseContainer)}, DevComponents.DotNetBar.eOrientation.Horizontal)
-        Me.DockSite1.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite1.Name = "DockSite1"
-        Me.DockSite1.Size = New System.Drawing.Size(124, 451)
-        Me.DockSite1.TabIndex = 4
-        Me.DockSite1.TabStop = False
-        '
-        'DockSite2
-        '
-        Me.DockSite2.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.DockSite2.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
-        Me.DockSite2.Location = New System.Drawing.Point(946, 0)
-        Me.DockSite2.Name = "DockSite2"
-        Me.DockSite2.Size = New System.Drawing.Size(0, 451)
-        Me.DockSite2.TabIndex = 5
-        Me.DockSite2.TabStop = False
-        '
-        'DockSite3
-        '
-        Me.DockSite3.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DockSite3.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
-        Me.DockSite3.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite3.Name = "DockSite3"
-        Me.DockSite3.Size = New System.Drawing.Size(946, 0)
-        Me.DockSite3.TabIndex = 6
-        Me.DockSite3.TabStop = False
-        '
         'DockSite4
         '
         Me.DockSite4.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
@@ -887,45 +898,17 @@ Partial Class frmBanHang
         Me.DockSite4.TabIndex = 7
         Me.DockSite4.TabStop = False
         '
-        'DockSite5
+        'DockSite1
         '
-        Me.DockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.DockSite5.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite5.Name = "DockSite5"
-        Me.DockSite5.Size = New System.Drawing.Size(0, 451)
-        Me.DockSite5.TabIndex = 8
-        Me.DockSite5.TabStop = False
-        '
-        'DockSite6
-        '
-        Me.DockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.DockSite6.Location = New System.Drawing.Point(946, 0)
-        Me.DockSite6.Name = "DockSite6"
-        Me.DockSite6.Size = New System.Drawing.Size(0, 451)
-        Me.DockSite6.TabIndex = 9
-        Me.DockSite6.TabStop = False
-        '
-        'DockSite7
-        '
-        Me.DockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DockSite7.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite7.Name = "DockSite7"
-        Me.DockSite7.Size = New System.Drawing.Size(946, 0)
-        Me.DockSite7.TabIndex = 10
-        Me.DockSite7.TabStop = False
-        '
-        'DockSite8
-        '
-        Me.DockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.DockSite8.Location = New System.Drawing.Point(0, 451)
-        Me.DockSite8.Name = "DockSite8"
-        Me.DockSite8.Size = New System.Drawing.Size(946, 0)
-        Me.DockSite8.TabIndex = 11
-        Me.DockSite8.TabStop = False
+        Me.DockSite1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite1.Controls.Add(Me.Bar1)
+        Me.DockSite1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.DockSite1.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer(New DevComponents.DotNetBar.DocumentBaseContainer() {CType(New DevComponents.DotNetBar.DocumentBarContainer(Me.Bar1, 121, 451), DevComponents.DotNetBar.DocumentBaseContainer)}, DevComponents.DotNetBar.eOrientation.Horizontal)
+        Me.DockSite1.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite1.Name = "DockSite1"
+        Me.DockSite1.Size = New System.Drawing.Size(124, 451)
+        Me.DockSite1.TabIndex = 4
+        Me.DockSite1.TabStop = False
         '
         'Bar1
         '
@@ -947,13 +930,7 @@ Partial Class frmBanHang
         Me.Bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003
         Me.Bar1.TabIndex = 0
         Me.Bar1.TabStop = False
-        Me.Bar1.Text = "Chức Năng"
-        '
-        'DockContainerItem1
-        '
-        Me.DockContainerItem1.Control = Me.PanelDockContainer1
-        Me.DockContainerItem1.Name = "DockContainerItem1"
-        Me.DockContainerItem1.Text = "DockContainerItem1"
+        Me.Bar1.Text = "DockContainerItem1"
         '
         'PanelDockContainer1
         '
@@ -996,20 +973,14 @@ Partial Class frmBanHang
         '
         '
         '
-        Me.ExplorerBarGroupItem1.BackStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground
+        Me.ExplorerBarGroupItem1.BackStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ExplorerBarGroupItem1.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderBottomColor = System.Drawing.SystemColors.Window
         Me.ExplorerBarGroupItem1.BackStyle.BorderBottomWidth = 1
         Me.ExplorerBarGroupItem1.BackStyle.BorderColor = System.Drawing.Color.White
         Me.ExplorerBarGroupItem1.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderLeftColor = System.Drawing.SystemColors.Window
         Me.ExplorerBarGroupItem1.BackStyle.BorderLeftWidth = 1
         Me.ExplorerBarGroupItem1.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderRightColor = System.Drawing.SystemColors.Window
         Me.ExplorerBarGroupItem1.BackStyle.BorderRightWidth = 1
-        Me.ExplorerBarGroupItem1.BackStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderTopColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem1.BackStyle.BorderTopWidth = 1
         Me.ExplorerBarGroupItem1.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ExplorerBarGroupItem1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ExplorerBarGroupItem1.Expanded = True
@@ -1020,117 +991,23 @@ Partial Class frmBanHang
         '
         '
         '
-        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor2 = System.Drawing.SystemColors.InactiveCaption
+        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerDiameter = 3
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem1.TitleHotStyle.TextColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ExplorerBarGroupItem1.TitleHotStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(255, Byte), Integer))
         '
         '
         '
-        Me.ExplorerBarGroupItem1.TitleStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem1.TitleStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2
+        Me.ExplorerBarGroupItem1.TitleStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem1.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ExplorerBarGroupItem1.TitleStyle.CornerDiameter = 3
         Me.ExplorerBarGroupItem1.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ExplorerBarGroupItem1.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
         Me.ExplorerBarGroupItem1.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem1.TitleStyle.TextColor = System.Drawing.SystemColors.ControlText
-        '
-        'ExplorerBarGroupItem2
-        '
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem2.BackStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground
-        Me.ExplorerBarGroupItem2.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderBottomColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderBottomWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.BorderColor = System.Drawing.Color.White
-        Me.ExplorerBarGroupItem2.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderLeftColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderLeftWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderRightColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderRightWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderTopColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderTopWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ExplorerBarGroupItem2.Expanded = True
-        Me.ExplorerBarGroupItem2.Name = "ExplorerBarGroupItem2"
-        Me.ExplorerBarGroupItem2.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
-        Me.ExplorerBarGroupItem2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem2, Me.ButtonItem3})
-        Me.ExplorerBarGroupItem2.Text = "Bảng Kê"
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor2 = System.Drawing.SystemColors.InactiveCaption
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleHotStyle.TextColor = System.Drawing.SystemColors.ActiveCaption
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem2.TitleStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.TitleStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleStyle.TextColor = System.Drawing.SystemColors.ControlText
-        '
-        'ExplorerBarGroupItem3
-        '
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem3.BackStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground
-        Me.ExplorerBarGroupItem3.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderBottomColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderBottomWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.BorderColor = System.Drawing.Color.White
-        Me.ExplorerBarGroupItem3.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderLeftColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderLeftWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderRightColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderRightWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderTopColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderTopWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ExplorerBarGroupItem3.Expanded = True
-        Me.ExplorerBarGroupItem3.Name = "ExplorerBarGroupItem3"
-        Me.ExplorerBarGroupItem3.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
-        Me.ExplorerBarGroupItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4, Me.ButtonItem5, Me.ButtonItem6})
-        Me.ExplorerBarGroupItem3.Text = "Thêm Danh Mục"
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor2 = System.Drawing.SystemColors.InactiveCaption
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleHotStyle.TextColor = System.Drawing.SystemColors.ActiveCaption
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem3.TitleStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.TitleStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleStyle.TextColor = System.Drawing.SystemColors.ControlText
+        Me.ExplorerBarGroupItem1.TitleStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(198, Byte), Integer))
         '
         'ButtonItem1
         '
@@ -1142,6 +1019,47 @@ Partial Class frmBanHang
         Me.ButtonItem1.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
         Me.ButtonItem1.Name = "ButtonItem1"
         Me.ButtonItem1.Text = "Phiếu Bán Hàng"
+        '
+        'ExplorerBarGroupItem2
+        '
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem2.BackStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem2.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem2.BackStyle.BorderBottomWidth = 1
+        Me.ExplorerBarGroupItem2.BackStyle.BorderColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem2.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem2.BackStyle.BorderLeftWidth = 1
+        Me.ExplorerBarGroupItem2.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem2.BackStyle.BorderRightWidth = 1
+        Me.ExplorerBarGroupItem2.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem2.Cursor = System.Windows.Forms.Cursors.Default
+        Me.ExplorerBarGroupItem2.Expanded = True
+        Me.ExplorerBarGroupItem2.Name = "ExplorerBarGroupItem2"
+        Me.ExplorerBarGroupItem2.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
+        Me.ExplorerBarGroupItem2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem2, Me.ButtonItem3})
+        Me.ExplorerBarGroupItem2.Text = "Bảng Kê"
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleHotStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(255, Byte), Integer))
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem2.TitleStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem2.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(198, Byte), Integer))
         '
         'ButtonItem2
         '
@@ -1164,6 +1082,47 @@ Partial Class frmBanHang
         Me.ButtonItem3.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
         Me.ButtonItem3.Name = "ButtonItem3"
         Me.ButtonItem3.Text = "Theo Hàng Hóa"
+        '
+        'ExplorerBarGroupItem3
+        '
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem3.BackStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem3.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem3.BackStyle.BorderBottomWidth = 1
+        Me.ExplorerBarGroupItem3.BackStyle.BorderColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem3.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem3.BackStyle.BorderLeftWidth = 1
+        Me.ExplorerBarGroupItem3.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem3.BackStyle.BorderRightWidth = 1
+        Me.ExplorerBarGroupItem3.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.ExplorerBarGroupItem3.Expanded = True
+        Me.ExplorerBarGroupItem3.Name = "ExplorerBarGroupItem3"
+        Me.ExplorerBarGroupItem3.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
+        Me.ExplorerBarGroupItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4, Me.ButtonItem5, Me.ButtonItem6})
+        Me.ExplorerBarGroupItem3.Text = "Thêm Danh Mục"
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleHotStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(255, Byte), Integer))
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem3.TitleStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem3.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(198, Byte), Integer))
         '
         'ButtonItem4
         '
@@ -1198,49 +1157,73 @@ Partial Class frmBanHang
         Me.ButtonItem6.Name = "ButtonItem6"
         Me.ButtonItem6.Text = "Kho Hàng"
         '
-        'EmptySpaceItem4
+        'DockContainerItem1
         '
-        Me.EmptySpaceItem4.AllowHotTrack = False
-        Me.EmptySpaceItem4.Location = New System.Drawing.Point(232, 200)
-        Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
-        Me.EmptySpaceItem4.Size = New System.Drawing.Size(569, 24)
-        Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
+        Me.DockContainerItem1.Control = Me.PanelDockContainer1
+        Me.DockContainerItem1.Name = "DockContainerItem1"
+        Me.DockContainerItem1.Text = "DockContainerItem1"
         '
-        'CheckBox1
+        'DockSite2
         '
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 212)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(100, 20)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "In sau khi lưu"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.DockSite2.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.DockSite2.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
+        Me.DockSite2.Location = New System.Drawing.Point(946, 0)
+        Me.DockSite2.Name = "DockSite2"
+        Me.DockSite2.Size = New System.Drawing.Size(0, 451)
+        Me.DockSite2.TabIndex = 5
+        Me.DockSite2.TabStop = False
         '
-        'LayoutControlItem24
+        'DockSite8
         '
-        Me.LayoutControlItem24.Control = Me.CheckBox1
-        Me.LayoutControlItem24.Location = New System.Drawing.Point(0, 200)
-        Me.LayoutControlItem24.Name = "LayoutControlItem24"
-        Me.LayoutControlItem24.Size = New System.Drawing.Size(104, 24)
-        Me.LayoutControlItem24.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem24.TextVisible = False
+        Me.DockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite8.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DockSite8.Location = New System.Drawing.Point(0, 451)
+        Me.DockSite8.Name = "DockSite8"
+        Me.DockSite8.Size = New System.Drawing.Size(946, 0)
+        Me.DockSite8.TabIndex = 11
+        Me.DockSite8.TabStop = False
         '
-        'CheckBox2
+        'DockSite5
         '
-        Me.CheckBox2.Location = New System.Drawing.Point(116, 212)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(124, 20)
-        Me.CheckBox2.TabIndex = 7
-        Me.CheckBox2.Text = "Sử dụng mã vạch"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.DockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.DockSite5.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite5.Name = "DockSite5"
+        Me.DockSite5.Size = New System.Drawing.Size(0, 451)
+        Me.DockSite5.TabIndex = 8
+        Me.DockSite5.TabStop = False
         '
-        'LayoutControlItem23
+        'DockSite6
         '
-        Me.LayoutControlItem23.Control = Me.CheckBox2
-        Me.LayoutControlItem23.Location = New System.Drawing.Point(104, 200)
-        Me.LayoutControlItem23.Name = "LayoutControlItem23"
-        Me.LayoutControlItem23.Size = New System.Drawing.Size(128, 24)
-        Me.LayoutControlItem23.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem23.TextVisible = False
+        Me.DockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite6.Dock = System.Windows.Forms.DockStyle.Right
+        Me.DockSite6.Location = New System.Drawing.Point(946, 0)
+        Me.DockSite6.Name = "DockSite6"
+        Me.DockSite6.Size = New System.Drawing.Size(0, 451)
+        Me.DockSite6.TabIndex = 9
+        Me.DockSite6.TabStop = False
+        '
+        'DockSite7
+        '
+        Me.DockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DockSite7.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite7.Name = "DockSite7"
+        Me.DockSite7.Size = New System.Drawing.Size(946, 0)
+        Me.DockSite7.TabIndex = 10
+        Me.DockSite7.TabStop = False
+        '
+        'DockSite3
+        '
+        Me.DockSite3.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DockSite3.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
+        Me.DockSite3.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite3.Name = "DockSite3"
+        Me.DockSite3.Size = New System.Drawing.Size(946, 0)
+        Me.DockSite3.TabIndex = 6
+        Me.DockSite3.TabStop = False
         '
         'frmBanHang
         '
@@ -1312,14 +1295,14 @@ Partial Class frmBanHang
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).EndInit()
         Me.DockSite1.ResumeLayout(False)
         CType(Me.Bar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Bar1.ResumeLayout(False)
         Me.PanelDockContainer1.ResumeLayout(False)
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

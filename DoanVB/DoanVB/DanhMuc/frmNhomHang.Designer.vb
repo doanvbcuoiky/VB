@@ -57,9 +57,9 @@ Partial Class frmNhomHang
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 24)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(646, 368)
+        Me.PanelEx1.Size = New System.Drawing.Size(646, 344)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -77,7 +77,7 @@ Partial Class frmNhomHang
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl1.Size = New System.Drawing.Size(646, 368)
+        Me.GridControl1.Size = New System.Drawing.Size(646, 344)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -93,6 +93,7 @@ Partial Class frmNhomHang
         'GridColumn1
         '
         Me.GridColumn1.Caption = "Mã"
+        Me.GridColumn1.FieldName = "MaNhomHang"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
@@ -100,6 +101,7 @@ Partial Class frmNhomHang
         'GridColumn2
         '
         Me.GridColumn2.Caption = "Tên"
+        Me.GridColumn2.FieldName = "TenNhomHang"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
@@ -107,6 +109,7 @@ Partial Class frmNhomHang
         'GridColumn3
         '
         Me.GridColumn3.Caption = "Ghi Chú"
+        Me.GridColumn3.FieldName = "GhiChu"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 2
@@ -115,6 +118,7 @@ Partial Class frmNhomHang
         '
         Me.GridColumn4.Caption = "Còn Quản Lý"
         Me.GridColumn4.ColumnEdit = Me.RepositoryItemCheckEdit1
+        Me.GridColumn4.FieldName = "TinhTrang"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
@@ -208,7 +212,7 @@ Partial Class frmNhomHang
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(646, 0)
+        Me.barDockControlTop.Size = New System.Drawing.Size(646, 24)
         '
         'barDockControlBottom
         '
@@ -221,15 +225,15 @@ Partial Class frmNhomHang
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 368)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 344)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(646, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 368)
+        Me.barDockControlRight.Location = New System.Drawing.Point(646, 24)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 344)
         '
         'lblMaNhomHang
         '
