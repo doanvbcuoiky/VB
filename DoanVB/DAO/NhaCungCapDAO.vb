@@ -8,7 +8,7 @@ Public Class NhaCungCapDAO
         Dim cn As New SqlConnection()
         cn = con.connect()
         Dim dt As New DataTable()
-        Dim cmd As New SqlCommand("Select * from NHACUNGCAP where MaNhacCungCap = '" & ma & "'", cn)
+        Dim cmd As New SqlCommand("Select * from NHACUNGCAP where MaNhaCungCap = '" & ma & "'", cn)
         cmd.CommandType = CommandType.Text
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)

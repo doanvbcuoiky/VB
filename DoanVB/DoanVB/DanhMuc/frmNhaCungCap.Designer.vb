@@ -70,9 +70,9 @@ Partial Class frmNhaCungCap
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 31)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(640, 390)
+        Me.PanelEx1.Size = New System.Drawing.Size(640, 359)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -90,7 +90,7 @@ Partial Class frmNhaCungCap
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(640, 390)
+        Me.GridControl1.Size = New System.Drawing.Size(640, 359)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -221,7 +221,7 @@ Partial Class frmNhaCungCap
         '
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlTop.Location = New System.Drawing.Point(0, 31)
         Me.barDockControlTop.Size = New System.Drawing.Size(640, 0)
         '
         'barDockControlBottom
@@ -235,15 +235,15 @@ Partial Class frmNhaCungCap
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 390)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 31)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 359)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(640, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 390)
+        Me.barDockControlRight.Location = New System.Drawing.Point(640, 31)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 359)
         '
         'BarManager2
         '
@@ -326,7 +326,7 @@ Partial Class frmNhaCungCap
         Me.BarDockControl1.CausesValidation = False
         Me.BarDockControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.BarDockControl1.Location = New System.Drawing.Point(0, 0)
-        Me.BarDockControl1.Size = New System.Drawing.Size(640, 0)
+        Me.BarDockControl1.Size = New System.Drawing.Size(640, 31)
         '
         'BarDockControl2
         '
@@ -339,15 +339,15 @@ Partial Class frmNhaCungCap
         '
         Me.BarDockControl3.CausesValidation = False
         Me.BarDockControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BarDockControl3.Location = New System.Drawing.Point(0, 0)
-        Me.BarDockControl3.Size = New System.Drawing.Size(0, 390)
+        Me.BarDockControl3.Location = New System.Drawing.Point(0, 31)
+        Me.BarDockControl3.Size = New System.Drawing.Size(0, 359)
         '
         'BarDockControl4
         '
         Me.BarDockControl4.CausesValidation = False
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl4.Location = New System.Drawing.Point(640, 0)
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 390)
+        Me.BarDockControl4.Location = New System.Drawing.Point(640, 31)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 359)
         '
         'lblMaNhaCungCap
         '
