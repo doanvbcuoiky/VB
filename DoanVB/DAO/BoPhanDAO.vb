@@ -7,8 +7,8 @@ Public Class BoPhanDAO
         Dim cn As New SqlConnection()
         cn = con.connect()
         Dim dt As New DataTable()
-        Dim cmd As New SqlCommand("LoadDSBoPhan", cn)
-        cmd.CommandType = CommandType.StoredProcedure
+        Dim cmd As New SqlCommand("Select * from BOPHAN", cn)
+        cmd.CommandType = CommandType.Text
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)
         cn.Close()

@@ -7,8 +7,8 @@ Public Class NhanVienDAO
         Dim cn As New SqlConnection()
         cn = con.connect()
         Dim dt As New DataTable()
-        Dim cmd As New SqlCommand("LoadDSNhanVien", cn)
-        cmd.CommandType = CommandType.StoredProcedure
+        Dim cmd As New SqlCommand("Select * from NHANVIEN", cn)
+        cmd.CommandType = CommandType.Text
         Dim da As New SqlDataAdapter(cmd)
         da.Fill(dt)
         cn.Close()
