@@ -6,7 +6,7 @@ Public Class frmDoiMatKhau
         If (txtMkMoi.Text <> txtXacNhan.Text) Then
             MessageBox.Show("Mật khẩu mới không khớp")
         ElseIf NguoiDungBUS.LayMatKhau(frmMain.USER) <> txtMkCu.Text Then
-            MessageBox.Show("Maatk khẩu cũ không đúng.")
+            MessageBox.Show("Mật khẩu cũ không đúng.")
         Else
             NguoiDungBUS.CapNhatMatKhau(frmMain.USER, txtMkMoi.Text)
             MessageBox.Show("Cập nhật thành công.")

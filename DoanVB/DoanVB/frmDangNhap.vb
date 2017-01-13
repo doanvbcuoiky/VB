@@ -24,7 +24,7 @@ Public Class frmDangNhap
         ElseIf NguoiDungBUS.KiemTraDangNhap(Me.cboTaiKhoan.SelectedValue.ToString(), Me.txtMatKhau.Text.ToString()) Then
             MessageBox.Show("Đăng nhập thành công.")
             'Kiem tra check box ghi nhớ thông tin đăng nhập.
-            If Me.ckGhiNho.Checked = False Then
+            If Me.ckGhiNho.Checked = True Then
                 NguoiDungBUS.LuuThongTinDangNhap(Me.cboTaiKhoan.SelectedValue.ToString())
             End If
             frmMain.USER = cboTaiKhoan.SelectedValue.ToString()
