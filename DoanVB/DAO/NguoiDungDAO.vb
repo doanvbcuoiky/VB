@@ -37,28 +37,28 @@ Public Class NguoiDungDAO
         Return dt
     End Function
     Public Shared Function LayMatKhau(ByVal manguoidung As String) As String
-        'Try
-        Dim con As Connect = New Connect()
-        Dim cn As SqlConnection = New SqlConnection()
-        cn = con.connect()
-        Dim dt As DataTable = New DataTable()
+        Try
+            Dim con As Connect = New Connect()
+            Dim cn As SqlConnection = New SqlConnection()
+            cn = con.connect()
+            Dim dt As DataTable = New DataTable()
 
-        Dim cmd As New SqlCommand("LayMatKhau", cn)
-        cmd.Parameters.Add("@manguoidung", SqlDbType.VarChar)
-        cmd.Parameters.Item("@manguoidung").Value = manguoidung
-        cmd.CommandType = CommandType.StoredProcedure
+            Dim cmd As New SqlCommand("LayMatKhau", cn)
+            cmd.Parameters.Add("@manguoidung", SqlDbType.VarChar)
+            cmd.Parameters.Item("@manguoidung").Value = manguoidung
+            cmd.CommandType = CommandType.StoredProcedure
 
-        Dim da As New SqlDataAdapter(cmd)
-        da.Fill(dt)
-        Dim matkhau As String = ""
-        If (dt.Select().Count() <> 0) Then
-            matkhau = dt.Select()(0).Item(columnName:="MatKhau").ToString()
-        End If
-        cn.Close()
-        Return matkhau
-        ' Catch ex As Exception
-        '     Return ""
-        ' End Try
+            Dim da As New SqlDataAdapter(cmd)
+            da.Fill(dt)
+            Dim matkhau As String = ""
+            If (dt.Select().Count() <> 0) Then
+                matkhau = dt.Select()(0).Item(columnName:="MatKhau").ToString()
+            End If
+            cn.Close()
+            Return matkhau
+        Catch ex As Exception
+            Return ""
+        End Try
 
     End Function
 

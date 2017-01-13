@@ -56,9 +56,9 @@ Partial Class frmTyGia
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 24)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(497, 291)
+        Me.PanelEx1.Size = New System.Drawing.Size(497, 315)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -76,7 +76,7 @@ Partial Class frmTyGia
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl1.Size = New System.Drawing.Size(497, 291)
+        Me.GridControl1.Size = New System.Drawing.Size(497, 315)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -85,6 +85,7 @@ Partial Class frmTyGia
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
@@ -198,7 +199,7 @@ Partial Class frmTyGia
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(497, 24)
+        Me.barDockControlTop.Size = New System.Drawing.Size(497, 0)
         '
         'barDockControlBottom
         '
@@ -211,15 +212,15 @@ Partial Class frmTyGia
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 291)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 315)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(497, 24)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 291)
+        Me.barDockControlRight.Location = New System.Drawing.Point(497, 0)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 315)
         '
         'lblMaTienTe
         '
@@ -242,7 +243,7 @@ Partial Class frmTyGia
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
         Me.Name = "frmTyGia"
-        Me.Text = "frmTyGia"
+        Me.Text = "Tỷ Giá"
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -252,25 +253,25 @@ Partial Class frmTyGia
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
-    Friend WithEvents Bar2 As DevExpress.XtraBars.Bar
-    Friend WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
-    Friend WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents lblMaTienTe As System.Windows.Forms.Label
+    Private WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
+    Private WithEvents BarManager1 As DevExpress.XtraBars.BarManager
+    Private WithEvents Bar2 As DevExpress.XtraBars.Bar
+    Private WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
+    Private WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
+    Private WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Private WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Private WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
 End Class

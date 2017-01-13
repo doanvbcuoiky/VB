@@ -148,7 +148,7 @@ Partial Class frmHangHoa
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(583, 24)
+        Me.barDockControlTop.Size = New System.Drawing.Size(583, 0)
         '
         'barDockControlBottom
         '
@@ -161,25 +161,25 @@ Partial Class frmHangHoa
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 309)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 333)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(583, 24)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 309)
+        Me.barDockControlRight.Location = New System.Drawing.Point(583, 0)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 333)
         '
         'GridControl1
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.Location = New System.Drawing.Point(0, 24)
+        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl1.Size = New System.Drawing.Size(583, 309)
+        Me.GridControl1.Size = New System.Drawing.Size(583, 333)
         Me.GridControl1.TabIndex = 8
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -188,6 +188,7 @@ Partial Class frmHangHoa
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10, Me.GridColumn11, Me.GridColumn12, Me.GridColumn13, Me.GridColumn14, Me.GridColumn15})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         '
         'GridColumn1
@@ -350,7 +351,7 @@ Partial Class frmHangHoa
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
         Me.Name = "frmHangHoa"
-        Me.Text = "frmHangHoa"
+        Me.Text = "Hàng Hóa"
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -381,20 +382,20 @@ Partial Class frmHangHoa
     Friend WithEvents QuanLyBanHangDataSet As DoanVB.QuanLyBanHangDataSet
     Friend WithEvents HANGHOABindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents HANGHOATableAdapter As DoanVB.QuanLyBanHangDataSetTableAdapters.HANGHOATableAdapter
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lblMaHangHoa As System.Windows.Forms.Label
+    Private WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

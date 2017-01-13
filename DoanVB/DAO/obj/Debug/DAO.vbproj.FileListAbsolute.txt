@@ -63,3 +63,15 @@ C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DAO\obj\Debug\DAO.vbproj.GenerateResourc
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DAO\obj\Debug\DAO.dll
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DAO\obj\Debug\DAO.xml
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DAO\obj\Debug\DAO.pdb
+D:\Documents\234\VB\DoanVB\DAO\bin\Debug\DAO.dll
+D:\Documents\234\VB\DoanVB\DAO\bin\Debug\DAO.pdb
+D:\Documents\234\VB\DoanVB\DAO\bin\Debug\DAO.xml
+D:\Documents\234\VB\DoanVB\DAO\bin\Debug\DTO.dll
+D:\Documents\234\VB\DoanVB\DAO\bin\Debug\DTO.pdb
+D:\Documents\234\VB\DoanVB\DAO\bin\Debug\DTO.xml
+D:\Documents\234\VB\DoanVB\DAO\obj\Debug\DAO.vbprojResolveAssemblyReference.cache
+D:\Documents\234\VB\DoanVB\DAO\obj\Debug\DAO.Resources.resources
+D:\Documents\234\VB\DoanVB\DAO\obj\Debug\DAO.vbproj.GenerateResource.Cache
+D:\Documents\234\VB\DoanVB\DAO\obj\Debug\DAO.dll
+D:\Documents\234\VB\DoanVB\DAO\obj\Debug\DAO.xml
+D:\Documents\234\VB\DoanVB\DAO\obj\Debug\DAO.pdb

@@ -70,9 +70,9 @@ Partial Class frmNhaCungCap
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 31)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(640, 359)
+        Me.PanelEx1.Size = New System.Drawing.Size(640, 390)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -90,7 +90,7 @@ Partial Class frmNhaCungCap
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(640, 359)
+        Me.GridControl1.Size = New System.Drawing.Size(640, 390)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -221,7 +221,7 @@ Partial Class frmNhaCungCap
         '
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.barDockControlTop.Location = New System.Drawing.Point(0, 31)
+        Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Size = New System.Drawing.Size(640, 0)
         '
         'barDockControlBottom
@@ -235,15 +235,15 @@ Partial Class frmNhaCungCap
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 31)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 359)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 390)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(640, 31)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 359)
+        Me.barDockControlRight.Location = New System.Drawing.Point(640, 0)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 390)
         '
         'BarManager2
         '
@@ -326,7 +326,7 @@ Partial Class frmNhaCungCap
         Me.BarDockControl1.CausesValidation = False
         Me.BarDockControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.BarDockControl1.Location = New System.Drawing.Point(0, 0)
-        Me.BarDockControl1.Size = New System.Drawing.Size(640, 31)
+        Me.BarDockControl1.Size = New System.Drawing.Size(640, 0)
         '
         'BarDockControl2
         '
@@ -339,15 +339,15 @@ Partial Class frmNhaCungCap
         '
         Me.BarDockControl3.CausesValidation = False
         Me.BarDockControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BarDockControl3.Location = New System.Drawing.Point(0, 31)
-        Me.BarDockControl3.Size = New System.Drawing.Size(0, 359)
+        Me.BarDockControl3.Location = New System.Drawing.Point(0, 0)
+        Me.BarDockControl3.Size = New System.Drawing.Size(0, 390)
         '
         'BarDockControl4
         '
         Me.BarDockControl4.CausesValidation = False
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl4.Location = New System.Drawing.Point(640, 31)
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 359)
+        Me.BarDockControl4.Location = New System.Drawing.Point(640, 0)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 390)
         '
         'lblMaNhaCungCap
         '
@@ -374,7 +374,7 @@ Partial Class frmNhaCungCap
         Me.Controls.Add(Me.BarDockControl2)
         Me.Controls.Add(Me.BarDockControl1)
         Me.Name = "frmNhaCungCap"
-        Me.Text = "frmNhaCungCap"
+        Me.Text = "Nhà Cung Cấp"
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -384,39 +384,39 @@ Partial Class frmNhaCungCap
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
-    Friend WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl3 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl4 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl2 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl1 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarManager2 As DevExpress.XtraBars.BarManager
-    Friend WithEvents Bar1 As DevExpress.XtraBars.Bar
-    Friend WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem7 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn16 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lblMaNhaCungCap As System.Windows.Forms.Label
+    Private WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
+    Private WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
+    Private WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Private WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents BarManager1 As DevExpress.XtraBars.BarManager
+    Private WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl3 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl4 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl2 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl1 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarManager2 As DevExpress.XtraBars.BarManager
+    Private WithEvents Bar1 As DevExpress.XtraBars.Bar
+    Private WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem7 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn14 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn15 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn16 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

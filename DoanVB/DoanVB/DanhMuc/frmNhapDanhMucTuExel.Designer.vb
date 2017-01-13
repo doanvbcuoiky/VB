@@ -31,7 +31,7 @@ Partial Class frmNhapDanhMucTuExel
         Me.MinimizeBox = False
         Me.Name = "frmNhapDanhMucTuExel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmNhapDanhMucTuExel"
+        Me.Text = "Nhập Danh Mục Từ File Exel"
         Me.ResumeLayout(False)
 
     End Sub

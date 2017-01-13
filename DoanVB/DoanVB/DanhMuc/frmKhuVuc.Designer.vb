@@ -82,9 +82,9 @@ Partial Class frmKhuVuc
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 24)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(658, 363)
+        Me.PanelEx1.Size = New System.Drawing.Size(658, 387)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -101,7 +101,7 @@ Partial Class frmKhuVuc
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(658, 363)
+        Me.GridControl1.Size = New System.Drawing.Size(658, 387)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -165,7 +165,7 @@ Partial Class frmKhuVuc
         '
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.barDockControlTop.Location = New System.Drawing.Point(0, 24)
+        Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Size = New System.Drawing.Size(658, 0)
         '
         'barDockControlBottom
@@ -179,15 +179,15 @@ Partial Class frmKhuVuc
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 363)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 387)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(658, 24)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 363)
+        Me.barDockControlRight.Location = New System.Drawing.Point(658, 0)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 387)
         '
         'BarButtonItem1
         '
@@ -304,7 +304,7 @@ Partial Class frmKhuVuc
         Me.BarDockControl1.CausesValidation = False
         Me.BarDockControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.BarDockControl1.Location = New System.Drawing.Point(0, 0)
-        Me.BarDockControl1.Size = New System.Drawing.Size(658, 24)
+        Me.BarDockControl1.Size = New System.Drawing.Size(658, 0)
         '
         'BarDockControl2
         '
@@ -317,15 +317,15 @@ Partial Class frmKhuVuc
         '
         Me.BarDockControl3.CausesValidation = False
         Me.BarDockControl3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BarDockControl3.Location = New System.Drawing.Point(0, 24)
-        Me.BarDockControl3.Size = New System.Drawing.Size(0, 363)
+        Me.BarDockControl3.Location = New System.Drawing.Point(0, 0)
+        Me.BarDockControl3.Size = New System.Drawing.Size(0, 387)
         '
         'BarDockControl4
         '
         Me.BarDockControl4.CausesValidation = False
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BarDockControl4.Location = New System.Drawing.Point(658, 24)
-        Me.BarDockControl4.Size = New System.Drawing.Size(0, 363)
+        Me.BarDockControl4.Location = New System.Drawing.Point(658, 0)
+        Me.BarDockControl4.Size = New System.Drawing.Size(0, 387)
         '
         'BarButtonItem7
         '
@@ -417,7 +417,7 @@ Partial Class frmKhuVuc
         Me.Controls.Add(Me.BarDockControl2)
         Me.Controls.Add(Me.BarDockControl1)
         Me.Name = "frmKhuVuc"
-        Me.Text = "frmKhuVuc"
+        Me.Text = "Khu Vực"
         CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -428,45 +428,45 @@ Partial Class frmKhuVuc
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
-    Friend WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl3 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl4 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl2 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarDockControl1 As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarManager2 As DevExpress.XtraBars.BarManager
-    Friend WithEvents Bar2 As DevExpress.XtraBars.Bar
-    Friend WithEvents BarButtonItem13 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem14 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem15 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents b As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem17 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem18 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem7 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarLargeButtonItem1 As DevExpress.XtraBars.BarLargeButtonItem
-    Friend WithEvents BarButtonItem8 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarLargeButtonItem2 As DevExpress.XtraBars.BarLargeButtonItem
-    Friend WithEvents BarButtonItem9 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem10 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem11 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarLargeButtonItem3 As DevExpress.XtraBars.BarLargeButtonItem
-    Friend WithEvents BarButtonItem12 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents lblMaKhuVuc As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
+    Private WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
+    Private WithEvents BarManager1 As DevExpress.XtraBars.BarManager
+    Private WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl3 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl4 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl2 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarDockControl1 As DevExpress.XtraBars.BarDockControl
+    Private WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarManager2 As DevExpress.XtraBars.BarManager
+    Private WithEvents Bar2 As DevExpress.XtraBars.Bar
+    Private WithEvents BarButtonItem13 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem14 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem15 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents b As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem17 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem18 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem7 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarLargeButtonItem1 As DevExpress.XtraBars.BarLargeButtonItem
+    Private WithEvents BarButtonItem8 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarLargeButtonItem2 As DevExpress.XtraBars.BarLargeButtonItem
+    Private WithEvents BarButtonItem9 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem10 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem11 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarLargeButtonItem3 As DevExpress.XtraBars.BarLargeButtonItem
+    Private WithEvents BarButtonItem12 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
+    Private WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Private WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents lblMaKhuVuc As DevExpress.XtraEditors.LabelControl
+    Private WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
 End Class

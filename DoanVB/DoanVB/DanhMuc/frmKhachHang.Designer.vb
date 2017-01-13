@@ -73,9 +73,9 @@ Partial Class frmKhachHang
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 24)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(722, 363)
+        Me.PanelEx1.Size = New System.Drawing.Size(722, 387)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -92,7 +92,7 @@ Partial Class frmKhachHang
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(722, 363)
+        Me.GridControl1.Size = New System.Drawing.Size(722, 387)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -287,7 +287,7 @@ Partial Class frmKhachHang
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(722, 24)
+        Me.barDockControlTop.Size = New System.Drawing.Size(722, 0)
         '
         'barDockControlBottom
         '
@@ -300,15 +300,15 @@ Partial Class frmKhachHang
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 363)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 387)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(722, 24)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 363)
+        Me.barDockControlRight.Location = New System.Drawing.Point(722, 0)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 387)
         '
         'GridColumn13
         '
@@ -355,7 +355,7 @@ Partial Class frmKhachHang
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
         Me.Name = "frmKhachHang"
-        Me.Text = "frmKhachHang"
+        Me.Text = "Khách Hàng"
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -366,41 +366,41 @@ Partial Class frmKhachHang
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
-    Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
-    Friend WithEvents Bar2 As DevExpress.XtraBars.Bar
-    Friend WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
-    Friend WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents QuanLyBanHangDataSet1 As DoanVB.QuanLyBanHangDataSet1
     Friend WithEvents KHACHHANGBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents KHACHHANGTableAdapter As DoanVB.QuanLyBanHangDataSet1TableAdapters.KHACHHANGTableAdapter
-    Friend WithEvents colMaKhachHang As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colTenKhachHang As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colNguoiLienHe As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colDiaChi As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colLoaiKhachHang As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colKhuVuc As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colDienThoai As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colFax As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colEmail As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colWebsite As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colMaSoThue As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colSoTaiKhoan As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colNganHang As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colTinhTrang As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lblMaKhachHang As System.Windows.Forms.Label
+    Private WithEvents PanelEx1 As DevComponents.DotNetBar.PanelEx
+    Private WithEvents BarManager1 As DevExpress.XtraBars.BarManager
+    Private WithEvents Bar2 As DevExpress.XtraBars.Bar
+    Private WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
+    Private WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
+    Private WithEvents btnThem As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents btnSua As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents btnXoa As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem4 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem5 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents BarButtonItem6 As DevExpress.XtraBars.BarButtonItem
+    Private WithEvents GridColumn13 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
+    Private WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Private WithEvents colMaKhachHang As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colTenKhachHang As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colNguoiLienHe As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colDiaChi As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colLoaiKhachHang As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colKhuVuc As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colDienThoai As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colFax As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colEmail As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colWebsite As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colMaSoThue As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colSoTaiKhoan As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colNganHang As DevExpress.XtraGrid.Columns.GridColumn
+    Private WithEvents colTinhTrang As DevExpress.XtraGrid.Columns.GridColumn
 End Class
