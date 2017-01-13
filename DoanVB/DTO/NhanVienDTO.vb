@@ -9,6 +9,17 @@
     Private NguoiQuanLi As String
     Private TinhTrang As Boolean
 
+    Public Sub New()
+        Me.MaNhanVien = ""
+        Me.TenNhanVien = ""
+        Me.ChucVu = ""
+        Me.DiaChi = ""
+        Me.Email = ""
+        Me.DienThoai = ""
+        Me.BoPhan = ""
+        Me.NguoiQuanLi = ""
+        Me.TinhTrang = False
+    End Sub
     Public Sub New(ByVal maNhanVien As String, ByVal tenNhanVien As String, ByVal chucVu As String, ByVal diaChi As String, ByVal email As String, ByVal dienThoai As String, ByVal boPhan As String, ByVal nguoiQuanLi As String, ByVal tinhTrang As Boolean)
         Me.MaNhanVien = maNhanVien
         Me.TenNhanVien = tenNhanVien

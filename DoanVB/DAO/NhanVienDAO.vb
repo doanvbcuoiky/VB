@@ -2,6 +2,19 @@
 Imports DTO
 
 Public Class NhanVienDAO
+
+    Public Shared Function ThongTinNhanVien(ByVal MaNhanVien As String) As DataTable
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from NHANVIEN where MaNhanVien = '" & MaNhanVien & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
     Public Shared Function LoadDSNhanVien() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

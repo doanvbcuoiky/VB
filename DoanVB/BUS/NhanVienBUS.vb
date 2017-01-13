@@ -2,6 +2,25 @@
 Imports DTO
 
 Public Class NhanVienBUS
+
+    Public Shared Function ThongTinNhanVien(ByVal MaNhanVien As String) As NhanVienDTO
+        Dim dt As DataTable = NhanVienDAO.ThongTinNhanVien(MaNhanVien)
+        If dt.Select().Count() > 0 Then
+
+            Dim nhanvien As New NhanVienDTO(dt.Select()(0).Item(columnName:="MaNhanVien").ToString(), _
+                                            dt.Select()(0).Item(columnName:="TenNhanVien").ToString(), _
+                                            dt.Select()(0).Item(columnName:="ChucVu").ToString(), _
+                                            dt.Select()(0).Item(columnName:="DiaChi").ToString(), _
+                                            dt.Select()(0).Item(columnName:="Emai").ToString(), _
+                                            dt.Select()(0).Item(columnName:="DienThoai").ToString(), _
+                                            dt.Select()(0).Item(columnName:="BoPhan").ToString(), _
+                                            dt.Select()(0).Item(columnName:="NguoiQuanLi").ToString(), _
+                                            False)
+            Return nhanvien
+        End If
+        Dim nhanvien2 As New NhanVienDTO()
+        Return nhanvien2
+    End Function
     Public Shared Function LoadDSNhanVien() As DataTable
         Return NhanVienDAO.LoadDSNhanVien()
     End Function
