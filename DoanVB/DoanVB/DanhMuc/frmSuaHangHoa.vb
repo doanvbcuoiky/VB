@@ -36,4 +36,26 @@ Public Class frmSuaHangHoa
         Me.ckTinhTrang.Checked = hanghoa.TinhTrang1
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim hanghoa As New HangHoaDTO(Me.txtMaHangHoa.Text, Me.txtTenHangHoa.Text, Me.txtKieuHangHoa.Text, _
+                                     Me.cboNhomHang.SelectedValue.ToString(), Me.txtMaVach.Text, _
+                                     Me.cboDonVi.SelectedValue.ToString(), Me.txtXuatXu.Text, _
+                                     System.Convert.ToInt32(Me.numTonKhoToiThieu.Value.ToString()), _
+                                     System.Convert.ToInt32(Me.numTonKhoHienTai.Value.ToString()), _
+                                     Me.cboNhaCungCap.SelectedValue.ToString(), _
+                                     System.Convert.ToDouble(Me.numGiaMua.Value.ToString()), _
+                                     System.Convert.ToDouble(Me.numGiaBanLe.Value.ToString()), _
+                                     System.Convert.ToDouble(Me.numGiaBanSi.Value.ToString()), _
+                                     Me.cboLoaiTien.SelectedValue.ToString(), "", Me.ckTinhTrang.Checked)
+        If HangHoaBUS.SuaHangHoa(hanghoa) = True Then
+            MessageBox.Show("Sửa thành công.")
+        Else
+            MessageBox.Show("Không sửa đưuọc")
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+    End Sub
 End Class

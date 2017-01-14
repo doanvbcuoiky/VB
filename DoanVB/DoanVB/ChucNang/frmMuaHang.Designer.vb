@@ -27,38 +27,35 @@ Partial Class frmMuaHang
         Me.SplitContainerControl2 = New DevExpress.XtraEditors.SplitContainerControl()
         Me.LayoutControl2 = New DevExpress.XtraLayout.LayoutControl()
         Me.SplitContainerControl3 = New DevExpress.XtraEditors.SplitContainerControl()
-        Me.LayoutControl3 = New DevExpress.XtraLayout.LayoutControl()
+        Me.numSoLuong = New System.Windows.Forms.NumericUpDown()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.btnThem = New System.Windows.Forms.Button()
+        Me.cboTenHang = New System.Windows.Forms.ComboBox()
+        Me.cboMaHang = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextEdit4 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit3 = New DevExpress.XtraEditors.TextEdit()
-        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
-        Me.LookUpEdit4 = New DevExpress.XtraEditors.LookUpEdit()
-        Me.LookUpEdit3 = New DevExpress.XtraEditors.LookUpEdit()
-        Me.LookUpEdit2 = New DevExpress.XtraEditors.LookUpEdit()
-        Me.RichTextBoxEx1 = New DevComponents.DotNetBar.Controls.RichTextBoxEx()
-        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.LookUpEdit1 = New DevExpress.XtraEditors.LookUpEdit()
-        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem8 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem9 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem16 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem21 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControl4 = New DevExpress.XtraLayout.LayoutControl()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cboMaNCC = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cboTenNCC = New System.Windows.Forms.ComboBox()
+        Me.txtGhiChu = New System.Windows.Forms.RichTextBox()
+        Me.txtDienThoai = New System.Windows.Forms.TextBox()
+        Me.txtDiaChi = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.LookUpEdit7 = New DevExpress.XtraEditors.LookUpEdit()
-        Me.LookUpEdit6 = New DevExpress.XtraEditors.LookUpEdit()
-        Me.TextEdit5 = New DevExpress.XtraEditors.TextEdit()
-        Me.LayoutControlGroup4 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem19 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.cboKhoNhap = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cboNhanVien = New System.Windows.Forms.ComboBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
@@ -82,29 +79,36 @@ Partial Class frmMuaHang
         Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
+        Me.RepositoryItemComboBox2 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
+        Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.RepositoryItemCalcEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
+        Me.RepositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
+        Me.RepositoryItemLookUpEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
         Me.DotNetBarManager1 = New DevComponents.DotNetBar.DotNetBarManager(Me.components)
-        Me.DockSite1 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite2 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite4 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite5 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite6 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
-        Me.DockSite8 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite1 = New DevComponents.DotNetBar.DockSite()
         Me.Bar1 = New DevComponents.DotNetBar.Bar()
-        Me.DockContainerItem1 = New DevComponents.DotNetBar.DockContainerItem()
         Me.PanelDockContainer1 = New DevComponents.DotNetBar.PanelDockContainer()
         Me.ExplorerBar1 = New DevComponents.DotNetBar.ExplorerBar()
         Me.ExplorerBarGroupItem1 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
-        Me.ExplorerBarGroupItem2 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
-        Me.ExplorerBarGroupItem3 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
         Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ExplorerBarGroupItem2 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
         Me.ButtonItem2 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem3 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ExplorerBarGroupItem3 = New DevComponents.DotNetBar.ExplorerBarGroupItem()
         Me.ButtonItem4 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem5 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem6 = New DevComponents.DotNetBar.ButtonItem()
+        Me.DockContainerItem1 = New DevComponents.DotNetBar.DockContainerItem()
+        Me.DockSite2 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite8 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite5 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite6 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
+        Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelEx1.SuspendLayout()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl1.SuspendLayout()
@@ -116,37 +120,7 @@ Partial Class frmMuaHang
         Me.LayoutControl2.SuspendLayout()
         CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl3.SuspendLayout()
-        CType(Me.LayoutControl3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LayoutControl3.SuspendLayout()
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LookUpEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LookUpEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LookUpEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControl4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LayoutControl4.SuspendLayout()
-        CType(Me.LookUpEdit7.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LookUpEdit6.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -158,6 +132,13 @@ Partial Class frmMuaHang
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.DockSite1.SuspendLayout()
         CType(Me.Bar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Bar1.SuspendLayout()
@@ -174,7 +155,7 @@ Partial Class frmMuaHang
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(916, 446)
+        Me.PanelEx1.Size = New System.Drawing.Size(1154, 446)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -194,7 +175,7 @@ Partial Class frmMuaHang
         Me.SplitContainerControl1.Panel1.Text = "Panel1"
         Me.SplitContainerControl1.Panel2.Controls.Add(Me.SplitContainerControl2)
         Me.SplitContainerControl1.Panel2.Text = "Panel2"
-        Me.SplitContainerControl1.Size = New System.Drawing.Size(916, 446)
+        Me.SplitContainerControl1.Size = New System.Drawing.Size(1154, 446)
         Me.SplitContainerControl1.SplitterPosition = 121
         Me.SplitContainerControl1.TabIndex = 0
         Me.SplitContainerControl1.Text = "SplitContainerControl1"
@@ -229,7 +210,7 @@ Partial Class frmMuaHang
         Me.SplitContainerControl2.Panel1.Text = "Panel1"
         Me.SplitContainerControl2.Panel2.Controls.Add(Me.GridControl1)
         Me.SplitContainerControl2.Panel2.Text = "Panel2"
-        Me.SplitContainerControl2.Size = New System.Drawing.Size(790, 446)
+        Me.SplitContainerControl2.Size = New System.Drawing.Size(1028, 446)
         Me.SplitContainerControl2.SplitterPosition = 226
         Me.SplitContainerControl2.TabIndex = 0
         Me.SplitContainerControl2.Text = "SplitContainerControl2"
@@ -248,7 +229,7 @@ Partial Class frmMuaHang
         Me.LayoutControl2.Name = "LayoutControl2"
         Me.LayoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(847, 75, 250, 350)
         Me.LayoutControl2.Root = Me.LayoutControlGroup2
-        Me.LayoutControl2.Size = New System.Drawing.Size(790, 226)
+        Me.LayoutControl2.Size = New System.Drawing.Size(1028, 226)
         Me.LayoutControl2.TabIndex = 0
         Me.LayoutControl2.Text = "LayoutControl2"
         '
@@ -256,350 +237,315 @@ Partial Class frmMuaHang
         '
         Me.SplitContainerControl3.Location = New System.Drawing.Point(12, 67)
         Me.SplitContainerControl3.Name = "SplitContainerControl3"
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.LayoutControl3)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.numSoLuong)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label15)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.btnThem)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboTenHang)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboMaHang)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label14)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label13)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.DateTimePicker1)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.TextBox3)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label8)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label7)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label6)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboMaNCC)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label5)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboTenNCC)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtGhiChu)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtDienThoai)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtDiaChi)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label4)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label3)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label2)
         Me.SplitContainerControl3.Panel1.Text = "Panel1"
-        Me.SplitContainerControl3.Panel2.Controls.Add(Me.LayoutControl4)
+        Me.SplitContainerControl3.Panel2.AutoScroll = True
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.DateTimePicker2)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label12)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label11)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboKhoNhap)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label10)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label9)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboNhanVien)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.TextBox4)
         Me.SplitContainerControl3.Panel2.Text = "Panel2"
-        Me.SplitContainerControl3.Size = New System.Drawing.Size(766, 147)
-        Me.SplitContainerControl3.SplitterPosition = 636
+        Me.SplitContainerControl3.Size = New System.Drawing.Size(1004, 147)
+        Me.SplitContainerControl3.SplitterPosition = 737
         Me.SplitContainerControl3.TabIndex = 10
         Me.SplitContainerControl3.Text = "SplitContainerControl3"
         '
-        'LayoutControl3
+        'numSoLuong
         '
-        Me.LayoutControl3.Controls.Add(Me.DateTimePicker1)
-        Me.LayoutControl3.Controls.Add(Me.TextEdit4)
-        Me.LayoutControl3.Controls.Add(Me.TextEdit3)
-        Me.LayoutControl3.Controls.Add(Me.TextEdit2)
-        Me.LayoutControl3.Controls.Add(Me.LookUpEdit4)
-        Me.LayoutControl3.Controls.Add(Me.LookUpEdit3)
-        Me.LayoutControl3.Controls.Add(Me.LookUpEdit2)
-        Me.LayoutControl3.Controls.Add(Me.RichTextBoxEx1)
-        Me.LayoutControl3.Controls.Add(Me.TextEdit1)
-        Me.LayoutControl3.Controls.Add(Me.LookUpEdit1)
-        Me.LayoutControl3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LayoutControl3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControl3.Name = "LayoutControl3"
-        Me.LayoutControl3.Root = Me.LayoutControlGroup3
-        Me.LayoutControl3.Size = New System.Drawing.Size(636, 147)
-        Me.LayoutControl3.TabIndex = 0
-        Me.LayoutControl3.Text = "LayoutControl3"
+        Me.numSoLuong.Location = New System.Drawing.Point(653, 89)
+        Me.numSoLuong.Name = "numSoLuong"
+        Me.numSoLuong.Size = New System.Drawing.Size(75, 21)
+        Me.numSoLuong.TabIndex = 21
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(650, 65)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(49, 13)
+        Me.Label15.TabIndex = 20
+        Me.Label15.Text = "Số lượng"
+        '
+        'btnThem
+        '
+        Me.btnThem.Location = New System.Drawing.Point(653, 119)
+        Me.btnThem.Name = "btnThem"
+        Me.btnThem.Size = New System.Drawing.Size(75, 23)
+        Me.btnThem.TabIndex = 19
+        Me.btnThem.Text = "Thêm"
+        Me.btnThem.UseVisualStyleBackColor = True
+        '
+        'cboTenHang
+        '
+        Me.cboTenHang.FormattingEnabled = True
+        Me.cboTenHang.Location = New System.Drawing.Point(489, 88)
+        Me.cboTenHang.Name = "cboTenHang"
+        Me.cboTenHang.Size = New System.Drawing.Size(133, 21)
+        Me.cboTenHang.TabIndex = 18
+        '
+        'cboMaHang
+        '
+        Me.cboMaHang.FormattingEnabled = True
+        Me.cboMaHang.Location = New System.Drawing.Point(489, 62)
+        Me.cboMaHang.Name = "cboMaHang"
+        Me.cboMaHang.Size = New System.Drawing.Size(133, 21)
+        Me.cboMaHang.TabIndex = 17
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(425, 91)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(52, 13)
+        Me.Label14.TabIndex = 16
+        Me.Label14.Text = "Tên hàng"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(425, 66)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(48, 13)
+        Me.Label13.TabIndex = 15
+        Me.Label13.Text = "Mã hàng"
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(558, 108)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(428, 119)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(66, 21)
-        Me.DateTimePicker1.TabIndex = 13
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
+        Me.DateTimePicker1.TabIndex = 14
         '
-        'TextEdit4
+        'TextBox3
         '
-        Me.TextEdit4.Location = New System.Drawing.Point(558, 84)
-        Me.TextEdit4.Name = "TextEdit4"
-        Me.TextEdit4.Size = New System.Drawing.Size(66, 20)
-        Me.TextEdit4.StyleController = Me.LayoutControl3
-        Me.TextEdit4.TabIndex = 12
+        Me.TextBox3.Location = New System.Drawing.Point(129, 119)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(166, 21)
+        Me.TextBox3.TabIndex = 12
         '
-        'TextEdit3
+        'Label8
         '
-        Me.TextEdit3.Location = New System.Drawing.Point(558, 60)
-        Me.TextEdit3.Name = "TextEdit3"
-        Me.TextEdit3.Size = New System.Drawing.Size(66, 20)
-        Me.TextEdit3.StyleController = Me.LayoutControl3
-        Me.TextEdit3.TabIndex = 11
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(343, 122)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(82, 13)
+        Me.Label8.TabIndex = 11
+        Me.Label8.Text = "Hạn thanh toán"
         '
-        'TextEdit2
+        'Label7
         '
-        Me.TextEdit2.Location = New System.Drawing.Point(558, 36)
-        Me.TextEdit2.Name = "TextEdit2"
-        Me.TextEdit2.Size = New System.Drawing.Size(66, 20)
-        Me.TextEdit2.StyleController = Me.LayoutControl3
-        Me.TextEdit2.TabIndex = 10
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(14, 122)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(109, 13)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "Hình thức thanh toán"
         '
-        'LookUpEdit4
+        'Label6
         '
-        Me.LookUpEdit4.Location = New System.Drawing.Point(558, 12)
-        Me.LookUpEdit4.Name = "LookUpEdit4"
-        Me.LookUpEdit4.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit4.Size = New System.Drawing.Size(66, 20)
-        Me.LookUpEdit4.StyleController = Me.LayoutControl3
-        Me.LookUpEdit4.TabIndex = 9
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(425, 38)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(56, 13)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Điện thoại"
         '
-        'LookUpEdit3
+        'cboMaNCC
         '
-        Me.LookUpEdit3.Location = New System.Drawing.Point(362, 108)
-        Me.LookUpEdit3.Name = "LookUpEdit3"
-        Me.LookUpEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit3.Size = New System.Drawing.Size(104, 20)
-        Me.LookUpEdit3.StyleController = Me.LayoutControl3
-        Me.LookUpEdit3.TabIndex = 8
+        Me.cboMaNCC.FormattingEnabled = True
+        Me.cboMaNCC.Location = New System.Drawing.Point(489, 8)
+        Me.cboMaNCC.Name = "cboMaNCC"
+        Me.cboMaNCC.Size = New System.Drawing.Size(133, 21)
+        Me.cboMaNCC.TabIndex = 8
         '
-        'LookUpEdit2
+        'Label5
         '
-        Me.LookUpEdit2.Location = New System.Drawing.Point(100, 108)
-        Me.LookUpEdit2.Name = "LookUpEdit2"
-        Me.LookUpEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit2.Size = New System.Drawing.Size(170, 20)
-        Me.LookUpEdit2.StyleController = Me.LayoutControl3
-        Me.LookUpEdit2.TabIndex = 7
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(425, 11)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(45, 13)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Mã NCC"
         '
-        'RichTextBoxEx1
+        'cboTenNCC
         '
+        Me.cboTenNCC.FormattingEnabled = True
+        Me.cboTenNCC.Location = New System.Drawing.Point(76, 8)
+        Me.cboTenNCC.Name = "cboTenNCC"
+        Me.cboTenNCC.Size = New System.Drawing.Size(343, 21)
+        Me.cboTenNCC.TabIndex = 6
         '
+        'txtGhiChu
         '
+        Me.txtGhiChu.Location = New System.Drawing.Point(76, 63)
+        Me.txtGhiChu.Name = "txtGhiChu"
+        Me.txtGhiChu.Size = New System.Drawing.Size(343, 46)
+        Me.txtGhiChu.TabIndex = 5
+        Me.txtGhiChu.Text = ""
         '
-        Me.RichTextBoxEx1.BackgroundStyle.Class = "RichTextBoxBorder"
-        Me.RichTextBoxEx1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RichTextBoxEx1.Location = New System.Drawing.Point(100, 60)
-        Me.RichTextBoxEx1.Name = "RichTextBoxEx1"
-        Me.RichTextBoxEx1.Rtf = "{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "{\colortbl ;\red32\green" & _
-    "31\blue53;}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "\viewkind4\uc1\pard\cf1\lang1033\f0\fs17 RichTextBoxEx1\par" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "}" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.RichTextBoxEx1.Size = New System.Drawing.Size(366, 44)
-        Me.RichTextBoxEx1.TabIndex = 6
-        Me.RichTextBoxEx1.Text = "RichTextBoxEx1"
+        'txtDienThoai
         '
-        'TextEdit1
+        Me.txtDienThoai.Location = New System.Drawing.Point(489, 35)
+        Me.txtDienThoai.Name = "txtDienThoai"
+        Me.txtDienThoai.Size = New System.Drawing.Size(133, 21)
+        Me.txtDienThoai.TabIndex = 4
         '
-        Me.TextEdit1.Location = New System.Drawing.Point(100, 36)
-        Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(366, 20)
-        Me.TextEdit1.StyleController = Me.LayoutControl3
-        Me.TextEdit1.TabIndex = 5
+        'txtDiaChi
         '
-        'LookUpEdit1
+        Me.txtDiaChi.Location = New System.Drawing.Point(76, 35)
+        Me.txtDiaChi.Name = "txtDiaChi"
+        Me.txtDiaChi.Size = New System.Drawing.Size(343, 21)
+        Me.txtDiaChi.TabIndex = 3
         '
-        Me.LookUpEdit1.Location = New System.Drawing.Point(100, 12)
-        Me.LookUpEdit1.Name = "LookUpEdit1"
-        Me.LookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit1.Size = New System.Drawing.Size(366, 20)
-        Me.LookUpEdit1.StyleController = Me.LayoutControl3
-        Me.LookUpEdit1.TabIndex = 4
+        'Label4
         '
-        'LayoutControlGroup3
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(14, 66)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(42, 13)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Ghi chú"
         '
-        Me.LayoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup3.GroupBordersVisible = False
-        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem13, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem16, Me.LayoutControlItem12, Me.LayoutControlItem21, Me.LayoutControlItem11})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(636, 147)
-        Me.LayoutControlGroup3.TextVisible = False
+        'Label3
         '
-        'LayoutControlItem8
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(14, 38)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Địa chỉ"
         '
-        Me.LayoutControlItem8.Control = Me.LookUpEdit1
-        Me.LayoutControlItem8.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem8.Name = "LayoutControlItem8"
-        Me.LayoutControlItem8.Size = New System.Drawing.Size(458, 24)
-        Me.LayoutControlItem8.Text = "Tên NCC"
-        Me.LayoutControlItem8.TextSize = New System.Drawing.Size(85, 13)
+        'Label2
         '
-        'LayoutControlItem9
-        '
-        Me.LayoutControlItem9.Control = Me.TextEdit1
-        Me.LayoutControlItem9.Location = New System.Drawing.Point(0, 24)
-        Me.LayoutControlItem9.Name = "LayoutControlItem9"
-        Me.LayoutControlItem9.Size = New System.Drawing.Size(458, 24)
-        Me.LayoutControlItem9.Text = "Địa Chỉ"
-        Me.LayoutControlItem9.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem10
-        '
-        Me.LayoutControlItem10.Control = Me.RichTextBoxEx1
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 48)
-        Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(458, 48)
-        Me.LayoutControlItem10.Text = "Ghi Chú"
-        Me.LayoutControlItem10.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem13
-        '
-        Me.LayoutControlItem13.Control = Me.LookUpEdit4
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(458, 0)
-        Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(158, 24)
-        Me.LayoutControlItem13.Text = "Mã NCC"
-        Me.LayoutControlItem13.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem14
-        '
-        Me.LayoutControlItem14.Control = Me.TextEdit2
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(458, 24)
-        Me.LayoutControlItem14.Name = "LayoutControlItem14"
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(158, 24)
-        Me.LayoutControlItem14.Text = "Điện Thoại"
-        Me.LayoutControlItem14.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem15
-        '
-        Me.LayoutControlItem15.Control = Me.TextEdit3
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(458, 48)
-        Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(158, 24)
-        Me.LayoutControlItem15.Text = "Số Hóa Đơn VAT"
-        Me.LayoutControlItem15.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem16
-        '
-        Me.LayoutControlItem16.Control = Me.TextEdit4
-        Me.LayoutControlItem16.Location = New System.Drawing.Point(458, 72)
-        Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Size = New System.Drawing.Size(158, 24)
-        Me.LayoutControlItem16.Text = "Số phiếu viết tay"
-        Me.LayoutControlItem16.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem12
-        '
-        Me.LayoutControlItem12.Control = Me.LookUpEdit3
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(262, 96)
-        Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(196, 31)
-        Me.LayoutControlItem12.Text = "Hình Thức T.Toán"
-        Me.LayoutControlItem12.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem21
-        '
-        Me.LayoutControlItem21.Control = Me.DateTimePicker1
-        Me.LayoutControlItem21.Location = New System.Drawing.Point(458, 96)
-        Me.LayoutControlItem21.Name = "LayoutControlItem21"
-        Me.LayoutControlItem21.Size = New System.Drawing.Size(158, 31)
-        Me.LayoutControlItem21.Text = "Hạn T.Toán"
-        Me.LayoutControlItem21.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControlItem11
-        '
-        Me.LayoutControlItem11.Control = Me.LookUpEdit2
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 96)
-        Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(262, 31)
-        Me.LayoutControlItem11.Text = "Đ.Khoản T.Toán"
-        Me.LayoutControlItem11.TextSize = New System.Drawing.Size(85, 13)
-        '
-        'LayoutControl4
-        '
-        Me.LayoutControl4.Controls.Add(Me.DateTimePicker2)
-        Me.LayoutControl4.Controls.Add(Me.LookUpEdit7)
-        Me.LayoutControl4.Controls.Add(Me.LookUpEdit6)
-        Me.LayoutControl4.Controls.Add(Me.TextEdit5)
-        Me.LayoutControl4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LayoutControl4.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControl4.Name = "LayoutControl4"
-        Me.LayoutControl4.Root = Me.LayoutControlGroup4
-        Me.LayoutControl4.Size = New System.Drawing.Size(125, 147)
-        Me.LayoutControl4.TabIndex = 0
-        Me.LayoutControl4.Text = "LayoutControl4"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(14, 14)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Tên NCC"
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(63, 36)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(59, 35)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(50, 21)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(191, 21)
         Me.DateTimePicker2.TabIndex = 8
         '
-        'LookUpEdit7
+        'Label12
         '
-        Me.LookUpEdit7.Location = New System.Drawing.Point(63, 84)
-        Me.LookUpEdit7.Name = "LookUpEdit7"
-        Me.LookUpEdit7.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit7.Size = New System.Drawing.Size(50, 20)
-        Me.LookUpEdit7.StyleController = Me.LayoutControl4
-        Me.LookUpEdit7.TabIndex = 7
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(4, 91)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(52, 13)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "Kho nhập"
         '
-        'LookUpEdit6
+        'Label11
         '
-        Me.LookUpEdit6.Location = New System.Drawing.Point(63, 60)
-        Me.LookUpEdit6.Name = "LookUpEdit6"
-        Me.LookUpEdit6.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.LookUpEdit6.Size = New System.Drawing.Size(50, 20)
-        Me.LookUpEdit6.StyleController = Me.LayoutControl4
-        Me.LookUpEdit6.TabIndex = 6
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(4, 66)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(55, 13)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Nhân viên"
         '
-        'TextEdit5
+        'cboKhoNhap
         '
-        Me.TextEdit5.Location = New System.Drawing.Point(63, 12)
-        Me.TextEdit5.Name = "TextEdit5"
-        Me.TextEdit5.Size = New System.Drawing.Size(50, 20)
-        Me.TextEdit5.StyleController = Me.LayoutControl4
-        Me.TextEdit5.TabIndex = 4
+        Me.cboKhoNhap.FormattingEnabled = True
+        Me.cboKhoNhap.Location = New System.Drawing.Point(59, 87)
+        Me.cboKhoNhap.Name = "cboKhoNhap"
+        Me.cboKhoNhap.Size = New System.Drawing.Size(191, 21)
+        Me.cboKhoNhap.TabIndex = 7
         '
-        'LayoutControlGroup4
+        'Label10
         '
-        Me.LayoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup4.GroupBordersVisible = False
-        Me.LayoutControlGroup4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem17, Me.LayoutControlItem19, Me.LayoutControlItem20, Me.LayoutControlItem18})
-        Me.LayoutControlGroup4.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup4.Name = "LayoutControlGroup4"
-        Me.LayoutControlGroup4.Size = New System.Drawing.Size(125, 147)
-        Me.LayoutControlGroup4.TextVisible = False
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(4, 41)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(32, 13)
+        Me.Label10.TabIndex = 2
+        Me.Label10.Text = "Ngày"
         '
-        'LayoutControlItem17
+        'Label9
         '
-        Me.LayoutControlItem17.Control = Me.TextEdit5
-        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem17.Name = "LayoutControlItem17"
-        Me.LayoutControlItem17.Size = New System.Drawing.Size(105, 24)
-        Me.LayoutControlItem17.Text = "Phiếu"
-        Me.LayoutControlItem17.TextSize = New System.Drawing.Size(48, 13)
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(4, 11)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(33, 13)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "Phiếu"
         '
-        'LayoutControlItem19
+        'cboNhanVien
         '
-        Me.LayoutControlItem19.Control = Me.LookUpEdit6
-        Me.LayoutControlItem19.Location = New System.Drawing.Point(0, 48)
-        Me.LayoutControlItem19.Name = "LayoutControlItem19"
-        Me.LayoutControlItem19.Size = New System.Drawing.Size(105, 24)
-        Me.LayoutControlItem19.Text = "Nhân Viên"
-        Me.LayoutControlItem19.TextSize = New System.Drawing.Size(48, 13)
+        Me.cboNhanVien.FormattingEnabled = True
+        Me.cboNhanVien.Location = New System.Drawing.Point(59, 62)
+        Me.cboNhanVien.Name = "cboNhanVien"
+        Me.cboNhanVien.Size = New System.Drawing.Size(191, 21)
+        Me.cboNhanVien.TabIndex = 6
         '
-        'LayoutControlItem20
+        'TextBox4
         '
-        Me.LayoutControlItem20.Control = Me.LookUpEdit7
-        Me.LayoutControlItem20.Location = New System.Drawing.Point(0, 72)
-        Me.LayoutControlItem20.Name = "LayoutControlItem20"
-        Me.LayoutControlItem20.Size = New System.Drawing.Size(105, 55)
-        Me.LayoutControlItem20.Text = "Kho Nhập"
-        Me.LayoutControlItem20.TextSize = New System.Drawing.Size(48, 13)
-        '
-        'LayoutControlItem18
-        '
-        Me.LayoutControlItem18.Control = Me.DateTimePicker2
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 24)
-        Me.LayoutControlItem18.Name = "LayoutControlItem18"
-        Me.LayoutControlItem18.Size = New System.Drawing.Size(105, 24)
-        Me.LayoutControlItem18.Text = "Ngày"
-        Me.LayoutControlItem18.TextSize = New System.Drawing.Size(48, 13)
+        Me.TextBox4.Location = New System.Drawing.Point(59, 8)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(191, 21)
+        Me.TextBox4.TabIndex = 1
         '
         'SimpleButton5
         '
-        Me.SimpleButton5.Location = New System.Drawing.Point(216, 41)
+        Me.SimpleButton5.Location = New System.Drawing.Point(249, 41)
         Me.SimpleButton5.Name = "SimpleButton5"
-        Me.SimpleButton5.Size = New System.Drawing.Size(64, 22)
+        Me.SimpleButton5.Size = New System.Drawing.Size(75, 22)
         Me.SimpleButton5.StyleController = Me.LayoutControl2
         Me.SimpleButton5.TabIndex = 9
         Me.SimpleButton5.Text = "Nạp Lại"
         '
         'SimpleButton4
         '
-        Me.SimpleButton4.Location = New System.Drawing.Point(284, 41)
+        Me.SimpleButton4.Location = New System.Drawing.Point(328, 41)
         Me.SimpleButton4.Name = "SimpleButton4"
-        Me.SimpleButton4.Size = New System.Drawing.Size(56, 22)
+        Me.SimpleButton4.Size = New System.Drawing.Size(66, 22)
         Me.SimpleButton4.StyleController = Me.LayoutControl2
         Me.SimpleButton4.TabIndex = 8
         Me.SimpleButton4.Text = "Đóng"
         '
         'SimpleButton3
         '
-        Me.SimpleButton3.Location = New System.Drawing.Point(88, 41)
+        Me.SimpleButton3.Location = New System.Drawing.Point(100, 41)
         Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(77, 22)
+        Me.SimpleButton3.Size = New System.Drawing.Size(90, 22)
         Me.SimpleButton3.StyleController = Me.LayoutControl2
         Me.SimpleButton3.TabIndex = 7
         Me.SimpleButton3.Text = "Lưu và Thêm"
         '
         'SimpleButton2
         '
-        Me.SimpleButton2.Location = New System.Drawing.Point(169, 41)
+        Me.SimpleButton2.Location = New System.Drawing.Point(194, 41)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(43, 22)
+        Me.SimpleButton2.Size = New System.Drawing.Size(51, 22)
         Me.SimpleButton2.StyleController = Me.LayoutControl2
         Me.SimpleButton2.TabIndex = 6
         Me.SimpleButton2.Text = "In "
@@ -608,7 +554,7 @@ Partial Class frmMuaHang
         '
         Me.SimpleButton1.Location = New System.Drawing.Point(12, 41)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(72, 22)
+        Me.SimpleButton1.Size = New System.Drawing.Size(84, 22)
         Me.SimpleButton1.StyleController = Me.LayoutControl2
         Me.SimpleButton1.TabIndex = 5
         Me.SimpleButton1.Text = "Tạo Mới"
@@ -617,7 +563,7 @@ Partial Class frmMuaHang
         '
         Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(766, 25)
+        Me.Label1.Size = New System.Drawing.Size(1004, 25)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Phiếu Nhập Hàng"
         '
@@ -628,7 +574,7 @@ Partial Class frmMuaHang
         Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.EmptySpaceItem3, Me.LayoutControlItem2, Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem6, Me.LayoutControlItem7})
         Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup2.Name = "Root"
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(790, 226)
+        Me.LayoutControlGroup2.Size = New System.Drawing.Size(1028, 226)
         Me.LayoutControlGroup2.TextVisible = False
         '
         'LayoutControlItem1
@@ -636,16 +582,16 @@ Partial Class frmMuaHang
         Me.LayoutControlItem1.Control = Me.Label1
         Me.LayoutControlItem1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(770, 29)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(1008, 29)
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem1.TextVisible = False
         '
         'EmptySpaceItem3
         '
         Me.EmptySpaceItem3.AllowHotTrack = False
-        Me.EmptySpaceItem3.Location = New System.Drawing.Point(332, 29)
+        Me.EmptySpaceItem3.Location = New System.Drawing.Point(386, 29)
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(438, 26)
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(622, 26)
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem2
@@ -653,43 +599,43 @@ Partial Class frmMuaHang
         Me.LayoutControlItem2.Control = Me.SimpleButton1
         Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 29)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(76, 26)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(88, 26)
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem2.TextVisible = False
         '
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.SimpleButton2
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(157, 29)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(182, 29)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(47, 26)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(55, 26)
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem3.TextVisible = False
         '
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.Control = Me.SimpleButton3
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(76, 29)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(88, 29)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(81, 26)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(94, 26)
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem4.TextVisible = False
         '
         'LayoutControlItem5
         '
         Me.LayoutControlItem5.Control = Me.SimpleButton4
-        Me.LayoutControlItem5.Location = New System.Drawing.Point(272, 29)
+        Me.LayoutControlItem5.Location = New System.Drawing.Point(316, 29)
         Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Size = New System.Drawing.Size(60, 26)
+        Me.LayoutControlItem5.Size = New System.Drawing.Size(70, 26)
         Me.LayoutControlItem5.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem5.TextVisible = False
         '
         'LayoutControlItem6
         '
         Me.LayoutControlItem6.Control = Me.SimpleButton5
-        Me.LayoutControlItem6.Location = New System.Drawing.Point(204, 29)
+        Me.LayoutControlItem6.Location = New System.Drawing.Point(237, 29)
         Me.LayoutControlItem6.Name = "LayoutControlItem6"
-        Me.LayoutControlItem6.Size = New System.Drawing.Size(68, 26)
+        Me.LayoutControlItem6.Size = New System.Drawing.Size(79, 26)
         Me.LayoutControlItem6.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem6.TextVisible = False
         '
@@ -698,7 +644,7 @@ Partial Class frmMuaHang
         Me.LayoutControlItem7.Control = Me.SplitContainerControl3
         Me.LayoutControlItem7.Location = New System.Drawing.Point(0, 55)
         Me.LayoutControlItem7.Name = "LayoutControlItem7"
-        Me.LayoutControlItem7.Size = New System.Drawing.Size(770, 151)
+        Me.LayoutControlItem7.Size = New System.Drawing.Size(1008, 151)
         Me.LayoutControlItem7.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem7.TextVisible = False
         '
@@ -708,7 +654,8 @@ Partial Class frmMuaHang
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(790, 215)
+        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemCalcEdit1, Me.RepositoryItemCalcEdit2, Me.RepositoryItemLookUpEdit1, Me.RepositoryItemLookUpEdit2, Me.RepositoryItemLookUpEdit3})
+        Me.GridControl1.Size = New System.Drawing.Size(1028, 215)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -717,57 +664,101 @@ Partial Class frmMuaHang
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'GridColumn1
         '
-        Me.GridColumn1.Caption = "Mã Hàng"
+        Me.GridColumn1.Caption = "Mã hàng"
+        Me.GridColumn1.FieldName = "MaHangHoa"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
         '
         'GridColumn2
         '
-        Me.GridColumn2.Caption = "Tên Hàng"
+        Me.GridColumn2.Caption = "Tên hàng hóa"
+        Me.GridColumn2.FieldName = "TenHangHoa"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
         '
         'GridColumn3
         '
-        Me.GridColumn3.Caption = "Đơn Vị"
+        Me.GridColumn3.Caption = "Đơn vị"
+        Me.GridColumn3.FieldName = "DonVi"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 2
         '
         'GridColumn4
         '
-        Me.GridColumn4.Caption = "Số Lượng"
+        Me.GridColumn4.Caption = "Số lượng"
+        Me.GridColumn4.FieldName = "SoLuong"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
         '
         'GridColumn5
         '
-        Me.GridColumn5.Caption = "Đơn Giá"
+        Me.GridColumn5.Caption = "Đơn giá"
+        Me.GridColumn5.FieldName = "DonGia"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
         Me.GridColumn5.VisibleIndex = 4
         '
         'GridColumn6
         '
-        Me.GridColumn6.Caption = "Thành Tiền"
+        Me.GridColumn6.Caption = "Thành tiền"
+        Me.GridColumn6.FieldName = "ThanhTien"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
         Me.GridColumn6.VisibleIndex = 5
         '
-        'GridColumn7
+        'RepositoryItemComboBox1
         '
-        Me.GridColumn7.Caption = "Ghi Chú"
-        Me.GridColumn7.Name = "GridColumn7"
-        Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 6
+        Me.RepositoryItemComboBox1.AutoHeight = False
+        Me.RepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemComboBox1.Name = "RepositoryItemComboBox1"
+        '
+        'RepositoryItemComboBox2
+        '
+        Me.RepositoryItemComboBox2.AutoHeight = False
+        Me.RepositoryItemComboBox2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemComboBox2.Name = "RepositoryItemComboBox2"
+        '
+        'RepositoryItemCalcEdit1
+        '
+        Me.RepositoryItemCalcEdit1.AutoHeight = False
+        Me.RepositoryItemCalcEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit1.Name = "RepositoryItemCalcEdit1"
+        '
+        'RepositoryItemCalcEdit2
+        '
+        Me.RepositoryItemCalcEdit2.AutoHeight = False
+        Me.RepositoryItemCalcEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit2.Name = "RepositoryItemCalcEdit2"
+        '
+        'RepositoryItemLookUpEdit1
+        '
+        Me.RepositoryItemLookUpEdit1.AutoHeight = False
+        Me.RepositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit1.Name = "RepositoryItemLookUpEdit1"
+        '
+        'RepositoryItemLookUpEdit2
+        '
+        Me.RepositoryItemLookUpEdit2.AutoHeight = False
+        Me.RepositoryItemLookUpEdit2.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
+        Me.RepositoryItemLookUpEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit2.Name = "RepositoryItemLookUpEdit2"
+        '
+        'RepositoryItemLookUpEdit3
+        '
+        Me.RepositoryItemLookUpEdit3.AutoHeight = False
+        Me.RepositoryItemLookUpEdit3.BestFitMode = DevExpress.XtraEditors.Controls.BestFitMode.BestFitResizePopup
+        Me.RepositoryItemLookUpEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit3.Name = "RepositoryItemLookUpEdit3"
         '
         'DotNetBarManager1
         '
@@ -793,6 +784,17 @@ Partial Class frmMuaHang
         Me.DotNetBarManager1.ToolbarTopDockSite = Me.DockSite7
         Me.DotNetBarManager1.TopDockSite = Me.DockSite3
         '
+        'DockSite4
+        '
+        Me.DockSite4.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite4.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DockSite4.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
+        Me.DockSite4.Location = New System.Drawing.Point(0, 446)
+        Me.DockSite4.Name = "DockSite4"
+        Me.DockSite4.Size = New System.Drawing.Size(1154, 0)
+        Me.DockSite4.TabIndex = 7
+        Me.DockSite4.TabStop = False
+        '
         'DockSite1
         '
         Me.DockSite1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
@@ -804,79 +806,6 @@ Partial Class frmMuaHang
         Me.DockSite1.Size = New System.Drawing.Size(126, 446)
         Me.DockSite1.TabIndex = 4
         Me.DockSite1.TabStop = False
-        '
-        'DockSite2
-        '
-        Me.DockSite2.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.DockSite2.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
-        Me.DockSite2.Location = New System.Drawing.Point(916, 0)
-        Me.DockSite2.Name = "DockSite2"
-        Me.DockSite2.Size = New System.Drawing.Size(0, 446)
-        Me.DockSite2.TabIndex = 5
-        Me.DockSite2.TabStop = False
-        '
-        'DockSite3
-        '
-        Me.DockSite3.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DockSite3.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
-        Me.DockSite3.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite3.Name = "DockSite3"
-        Me.DockSite3.Size = New System.Drawing.Size(916, 0)
-        Me.DockSite3.TabIndex = 6
-        Me.DockSite3.TabStop = False
-        '
-        'DockSite4
-        '
-        Me.DockSite4.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.DockSite4.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
-        Me.DockSite4.Location = New System.Drawing.Point(0, 446)
-        Me.DockSite4.Name = "DockSite4"
-        Me.DockSite4.Size = New System.Drawing.Size(916, 0)
-        Me.DockSite4.TabIndex = 7
-        Me.DockSite4.TabStop = False
-        '
-        'DockSite5
-        '
-        Me.DockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.DockSite5.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite5.Name = "DockSite5"
-        Me.DockSite5.Size = New System.Drawing.Size(0, 446)
-        Me.DockSite5.TabIndex = 8
-        Me.DockSite5.TabStop = False
-        '
-        'DockSite6
-        '
-        Me.DockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.DockSite6.Location = New System.Drawing.Point(916, 0)
-        Me.DockSite6.Name = "DockSite6"
-        Me.DockSite6.Size = New System.Drawing.Size(0, 446)
-        Me.DockSite6.TabIndex = 9
-        Me.DockSite6.TabStop = False
-        '
-        'DockSite7
-        '
-        Me.DockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.DockSite7.Location = New System.Drawing.Point(0, 0)
-        Me.DockSite7.Name = "DockSite7"
-        Me.DockSite7.Size = New System.Drawing.Size(916, 0)
-        Me.DockSite7.TabIndex = 10
-        Me.DockSite7.TabStop = False
-        '
-        'DockSite8
-        '
-        Me.DockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
-        Me.DockSite8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.DockSite8.Location = New System.Drawing.Point(0, 446)
-        Me.DockSite8.Name = "DockSite8"
-        Me.DockSite8.Size = New System.Drawing.Size(916, 0)
-        Me.DockSite8.TabIndex = 11
-        Me.DockSite8.TabStop = False
         '
         'Bar1
         '
@@ -898,13 +827,7 @@ Partial Class frmMuaHang
         Me.Bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013
         Me.Bar1.TabIndex = 0
         Me.Bar1.TabStop = False
-        Me.Bar1.Text = "Chức Năng"
-        '
-        'DockContainerItem1
-        '
-        Me.DockContainerItem1.Control = Me.PanelDockContainer1
-        Me.DockContainerItem1.Name = "DockContainerItem1"
-        Me.DockContainerItem1.Text = "DockContainerItem1"
+        Me.Bar1.Text = "DockContainerItem1"
         '
         'PanelDockContainer1
         '
@@ -948,20 +871,14 @@ Partial Class frmMuaHang
         '
         '
         '
-        Me.ExplorerBarGroupItem1.BackStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground
+        Me.ExplorerBarGroupItem1.BackStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ExplorerBarGroupItem1.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderBottomColor = System.Drawing.SystemColors.Window
         Me.ExplorerBarGroupItem1.BackStyle.BorderBottomWidth = 1
         Me.ExplorerBarGroupItem1.BackStyle.BorderColor = System.Drawing.Color.White
         Me.ExplorerBarGroupItem1.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderLeftColor = System.Drawing.SystemColors.Window
         Me.ExplorerBarGroupItem1.BackStyle.BorderLeftWidth = 1
         Me.ExplorerBarGroupItem1.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderRightColor = System.Drawing.SystemColors.Window
         Me.ExplorerBarGroupItem1.BackStyle.BorderRightWidth = 1
-        Me.ExplorerBarGroupItem1.BackStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem1.BackStyle.BorderTopColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem1.BackStyle.BorderTopWidth = 1
         Me.ExplorerBarGroupItem1.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ExplorerBarGroupItem1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ExplorerBarGroupItem1.Expanded = True
@@ -972,117 +889,23 @@ Partial Class frmMuaHang
         '
         '
         '
-        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor2 = System.Drawing.SystemColors.InactiveCaption
+        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem1.TitleHotStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerDiameter = 3
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
         Me.ExplorerBarGroupItem1.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem1.TitleHotStyle.TextColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ExplorerBarGroupItem1.TitleHotStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(255, Byte), Integer))
         '
         '
         '
-        Me.ExplorerBarGroupItem1.TitleStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem1.TitleStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2
+        Me.ExplorerBarGroupItem1.TitleStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem1.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ExplorerBarGroupItem1.TitleStyle.CornerDiameter = 3
         Me.ExplorerBarGroupItem1.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ExplorerBarGroupItem1.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
         Me.ExplorerBarGroupItem1.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem1.TitleStyle.TextColor = System.Drawing.SystemColors.ControlText
-        '
-        'ExplorerBarGroupItem2
-        '
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem2.BackStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground
-        Me.ExplorerBarGroupItem2.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderBottomColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderBottomWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.BorderColor = System.Drawing.Color.White
-        Me.ExplorerBarGroupItem2.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderLeftColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderLeftWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderRightColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderRightWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem2.BackStyle.BorderTopColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.BackStyle.BorderTopWidth = 1
-        Me.ExplorerBarGroupItem2.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ExplorerBarGroupItem2.Expanded = True
-        Me.ExplorerBarGroupItem2.Name = "ExplorerBarGroupItem2"
-        Me.ExplorerBarGroupItem2.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
-        Me.ExplorerBarGroupItem2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem2, Me.ButtonItem3})
-        Me.ExplorerBarGroupItem2.Text = "Bảng Kê"
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor2 = System.Drawing.SystemColors.InactiveCaption
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleHotStyle.TextColor = System.Drawing.SystemColors.ActiveCaption
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem2.TitleStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem2.TitleStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem2.TitleStyle.TextColor = System.Drawing.SystemColors.ControlText
-        '
-        'ExplorerBarGroupItem3
-        '
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem3.BackStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground
-        Me.ExplorerBarGroupItem3.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderBottomColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderBottomWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.BorderColor = System.Drawing.Color.White
-        Me.ExplorerBarGroupItem3.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderLeftColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderLeftWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderRightColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderRightWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid
-        Me.ExplorerBarGroupItem3.BackStyle.BorderTopColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.BackStyle.BorderTopWidth = 1
-        Me.ExplorerBarGroupItem3.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ExplorerBarGroupItem3.Expanded = True
-        Me.ExplorerBarGroupItem3.Name = "ExplorerBarGroupItem3"
-        Me.ExplorerBarGroupItem3.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
-        Me.ExplorerBarGroupItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4, Me.ButtonItem5, Me.ButtonItem6})
-        Me.ExplorerBarGroupItem3.Text = "Thêm Danh Mục"
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor2 = System.Drawing.SystemColors.InactiveCaption
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleHotStyle.TextColor = System.Drawing.SystemColors.ActiveCaption
-        '
-        '
-        '
-        Me.ExplorerBarGroupItem3.TitleStyle.BackColor = System.Drawing.SystemColors.Window
-        Me.ExplorerBarGroupItem3.TitleStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerDiameter = 3
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
-        Me.ExplorerBarGroupItem3.TitleStyle.TextColor = System.Drawing.SystemColors.ControlText
+        Me.ExplorerBarGroupItem1.TitleStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(198, Byte), Integer))
         '
         'ButtonItem1
         '
@@ -1094,6 +917,47 @@ Partial Class frmMuaHang
         Me.ButtonItem1.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
         Me.ButtonItem1.Name = "ButtonItem1"
         Me.ButtonItem1.Text = "Phiếu Nhập Hàng"
+        '
+        'ExplorerBarGroupItem2
+        '
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem2.BackStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem2.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem2.BackStyle.BorderBottomWidth = 1
+        Me.ExplorerBarGroupItem2.BackStyle.BorderColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem2.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem2.BackStyle.BorderLeftWidth = 1
+        Me.ExplorerBarGroupItem2.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem2.BackStyle.BorderRightWidth = 1
+        Me.ExplorerBarGroupItem2.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem2.Cursor = System.Windows.Forms.Cursors.Default
+        Me.ExplorerBarGroupItem2.Expanded = True
+        Me.ExplorerBarGroupItem2.Name = "ExplorerBarGroupItem2"
+        Me.ExplorerBarGroupItem2.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
+        Me.ExplorerBarGroupItem2.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem2, Me.ButtonItem3})
+        Me.ExplorerBarGroupItem2.Text = "Bảng Kê"
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem2.TitleHotStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleHotStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(255, Byte), Integer))
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem2.TitleStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem2.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem2.TitleStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(198, Byte), Integer))
         '
         'ButtonItem2
         '
@@ -1116,6 +980,47 @@ Partial Class frmMuaHang
         Me.ButtonItem3.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None
         Me.ButtonItem3.Name = "ButtonItem3"
         Me.ButtonItem3.Text = "Theo Hàng Hóa"
+        '
+        'ExplorerBarGroupItem3
+        '
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem3.BackStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem3.BackStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem3.BackStyle.BorderBottomWidth = 1
+        Me.ExplorerBarGroupItem3.BackStyle.BorderColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem3.BackStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem3.BackStyle.BorderLeftWidth = 1
+        Me.ExplorerBarGroupItem3.BackStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid
+        Me.ExplorerBarGroupItem3.BackStyle.BorderRightWidth = 1
+        Me.ExplorerBarGroupItem3.BackStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.ExplorerBarGroupItem3.Expanded = True
+        Me.ExplorerBarGroupItem3.Name = "ExplorerBarGroupItem3"
+        Me.ExplorerBarGroupItem3.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors
+        Me.ExplorerBarGroupItem3.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem4, Me.ButtonItem5, Me.ButtonItem6})
+        Me.ExplorerBarGroupItem3.Text = "Thêm Danh Mục"
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem3.TitleHotStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleHotStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleHotStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(255, Byte), Integer))
+        '
+        '
+        '
+        Me.ExplorerBarGroupItem3.TitleStyle.BackColor = System.Drawing.Color.White
+        Me.ExplorerBarGroupItem3.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerDiameter = 3
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded
+        Me.ExplorerBarGroupItem3.TitleStyle.TextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(198, Byte), Integer))
         '
         'ButtonItem4
         '
@@ -1150,11 +1055,87 @@ Partial Class frmMuaHang
         Me.ButtonItem6.Name = "ButtonItem6"
         Me.ButtonItem6.Text = "Kho Hàng"
         '
+        'DockContainerItem1
+        '
+        Me.DockContainerItem1.Control = Me.PanelDockContainer1
+        Me.DockContainerItem1.Name = "DockContainerItem1"
+        Me.DockContainerItem1.Text = "DockContainerItem1"
+        '
+        'DockSite2
+        '
+        Me.DockSite2.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.DockSite2.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
+        Me.DockSite2.Location = New System.Drawing.Point(1154, 0)
+        Me.DockSite2.Name = "DockSite2"
+        Me.DockSite2.Size = New System.Drawing.Size(0, 446)
+        Me.DockSite2.TabIndex = 5
+        Me.DockSite2.TabStop = False
+        '
+        'DockSite8
+        '
+        Me.DockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite8.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DockSite8.Location = New System.Drawing.Point(0, 446)
+        Me.DockSite8.Name = "DockSite8"
+        Me.DockSite8.Size = New System.Drawing.Size(1154, 0)
+        Me.DockSite8.TabIndex = 11
+        Me.DockSite8.TabStop = False
+        '
+        'DockSite5
+        '
+        Me.DockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.DockSite5.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite5.Name = "DockSite5"
+        Me.DockSite5.Size = New System.Drawing.Size(0, 446)
+        Me.DockSite5.TabIndex = 8
+        Me.DockSite5.TabStop = False
+        '
+        'DockSite6
+        '
+        Me.DockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite6.Dock = System.Windows.Forms.DockStyle.Right
+        Me.DockSite6.Location = New System.Drawing.Point(1154, 0)
+        Me.DockSite6.Name = "DockSite6"
+        Me.DockSite6.Size = New System.Drawing.Size(0, 446)
+        Me.DockSite6.TabIndex = 9
+        Me.DockSite6.TabStop = False
+        '
+        'DockSite7
+        '
+        Me.DockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DockSite7.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite7.Name = "DockSite7"
+        Me.DockSite7.Size = New System.Drawing.Size(1154, 0)
+        Me.DockSite7.TabIndex = 10
+        Me.DockSite7.TabStop = False
+        '
+        'DockSite3
+        '
+        Me.DockSite3.AccessibleRole = System.Windows.Forms.AccessibleRole.Window
+        Me.DockSite3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DockSite3.DocumentDockContainer = New DevComponents.DotNetBar.DocumentDockContainer()
+        Me.DockSite3.Location = New System.Drawing.Point(0, 0)
+        Me.DockSite3.Name = "DockSite3"
+        Me.DockSite3.Size = New System.Drawing.Size(1154, 0)
+        Me.DockSite3.TabIndex = 6
+        Me.DockSite3.TabStop = False
+        '
+        'GridColumn7
+        '
+        Me.GridColumn7.Caption = "Chiết khấu"
+        Me.GridColumn7.FieldName = "ChietKhau"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 6
+        '
         'frmMuaHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(916, 446)
+        Me.ClientSize = New System.Drawing.Size(1154, 446)
         Me.Controls.Add(Me.DockSite2)
         Me.Controls.Add(Me.DockSite1)
         Me.Controls.Add(Me.PanelEx1)
@@ -1177,37 +1158,7 @@ Partial Class frmMuaHang
         Me.LayoutControl2.ResumeLayout(False)
         CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerControl3.ResumeLayout(False)
-        CType(Me.LayoutControl3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LayoutControl3.ResumeLayout(False)
-        CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LookUpEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LookUpEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LookUpEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControl4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LayoutControl4.ResumeLayout(False)
-        CType(Me.LookUpEdit7.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LookUpEdit6.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmptySpaceItem3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1219,6 +1170,13 @@ Partial Class frmMuaHang
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.DockSite1.ResumeLayout(False)
         CType(Me.Bar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Bar1.ResumeLayout(False)
@@ -1238,7 +1196,6 @@ Partial Class frmMuaHang
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents EmptySpaceItem3 As DevExpress.XtraLayout.EmptySpaceItem
     Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents SimpleButton5 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton4 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
@@ -1250,46 +1207,7 @@ Partial Class frmMuaHang
     Friend WithEvents LayoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents SplitContainerControl3 As DevExpress.XtraEditors.SplitContainerControl
-    Friend WithEvents LayoutControl3 As DevExpress.XtraLayout.LayoutControl
-    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents LookUpEdit1 As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents LayoutControlGroup3 As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents LayoutControlItem8 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem9 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LookUpEdit3 As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents LookUpEdit2 As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents RichTextBoxEx1 As DevComponents.DotNetBar.Controls.RichTextBoxEx
-    Friend WithEvents LayoutControlItem10 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem11 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem12 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TextEdit4 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit3 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents LookUpEdit4 As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents LayoutControlItem13 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem14 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem15 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem16 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem21 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControl4 As DevExpress.XtraLayout.LayoutControl
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents LookUpEdit7 As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents LookUpEdit6 As DevExpress.XtraEditors.LookUpEdit
-    Friend WithEvents TextEdit5 As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents LayoutControlGroup4 As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents LayoutControlItem17 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem19 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem20 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlItem18 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents DotNetBarManager1 As DevComponents.DotNetBar.DotNetBarManager
     Friend WithEvents DockSite4 As DevComponents.DotNetBar.DockSite
     Friend WithEvents DockSite1 As DevComponents.DotNetBar.DockSite
@@ -1312,4 +1230,48 @@ Partial Class frmMuaHang
     Friend WithEvents DockSite6 As DevComponents.DotNetBar.DockSite
     Friend WithEvents DockSite7 As DevComponents.DotNetBar.DockSite
     Friend WithEvents DockSite8 As DevComponents.DotNetBar.DockSite
+    Friend WithEvents RepositoryItemComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
+    Friend WithEvents RepositoryItemComboBox2 As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
+    Friend WithEvents RepositoryItemCalcEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
+    Friend WithEvents RepositoryItemCalcEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents cboMaNCC As System.Windows.Forms.ComboBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents cboTenNCC As System.Windows.Forms.ComboBox
+    Friend WithEvents txtGhiChu As System.Windows.Forms.RichTextBox
+    Friend WithEvents txtDienThoai As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiaChi As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cboKhoNhap As System.Windows.Forms.ComboBox
+    Friend WithEvents cboNhanVien As System.Windows.Forms.ComboBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents RepositoryItemLookUpEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents RepositoryItemLookUpEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents cboTenHang As System.Windows.Forms.ComboBox
+    Friend WithEvents cboMaHang As System.Windows.Forms.ComboBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents numSoLuong As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents btnThem As System.Windows.Forms.Button
+    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
 End Class

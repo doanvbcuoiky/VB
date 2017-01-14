@@ -28,4 +28,21 @@ Public Class frmSuaNhanVien
         Me.cboNguoiQuanLi.SelectedValue = nhanvien.NguoiQuanLi1
 
     End Sub
+
+    Private Sub btnDong_Click(sender As Object, e As EventArgs) Handles btnDong.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
+        Dim nv As New NhanVienDTO(Me.txtMa.Text, Me.txtTen.Text, Me.txtChucVu.Text, _
+                                  Me.txtDiaChi.Text, Me.txtEmail.Text, Me.txtDienThoai.Text, _
+                                  Me.cboBoPhan.SelectedValue.ToString(), Me.cboNguoiQuanLi.SelectedValue.ToString(), _
+                                  Me.ckTinhTrang.Checked)
+        Dim kq As Boolean = NhanVienBUS.SuaNhanVien(nv)
+        If kq = True Then
+            MessageBox.Show("Sửa thành công")
+        Else
+            MessageBox.Show("Không sửa được")
+        End If
+    End Sub
 End Class

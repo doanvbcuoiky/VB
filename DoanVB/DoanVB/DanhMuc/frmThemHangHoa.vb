@@ -46,4 +46,8 @@ Public Class frmThemHangHoa
             MessageBox.Show("Không thêm đưuọc")
         End If
     End Sub
+
+    Private Sub btndong_Click(sender As Object, e As EventArgs) Handles btndong.Click
+        Me.Close()
+    End Sub
 End Class

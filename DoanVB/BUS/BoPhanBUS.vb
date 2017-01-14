@@ -31,7 +31,7 @@ Public Class BoPhanBUS
     Public Shared Function XoaBoPhan(ByVal mabophan As String) As Boolean
         Return BoPhanDAO.XoaBoPhan(mabophan)
     End Function
-    Public Function SuaBoPhan(ByVal BPDTO As BoPhanDTO) As Boolean
+    Public Shared Function SuaBoPhan(ByVal BPDTO As BoPhanDTO) As Boolean
         Return BoPhanDAO.SuaBoPhan(BPDTO)
     End Function
 

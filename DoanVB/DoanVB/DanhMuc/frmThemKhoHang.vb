@@ -41,4 +41,8 @@ Public Class frmThemKhoHang
             MessageBox.Show("Không thêm được.")
         End If
     End Sub
+
+    Private Sub btnDong_Click(sender As Object, e As EventArgs) Handles btnDong.Click
+        Me.Close()
+    End Sub
 End Class

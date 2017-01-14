@@ -31,4 +31,8 @@ Public Class frmThemNhanVien
         Me.cboBoPhan.SelectedIndex = 0
         Me.cboNguoiQuanLi.SelectedIndex = 0
     End Sub
+
+    Private Sub btnDong_Click(sender As Object, e As EventArgs) Handles btnDong.Click
+        Me.Close()
+    End Sub
 End Class

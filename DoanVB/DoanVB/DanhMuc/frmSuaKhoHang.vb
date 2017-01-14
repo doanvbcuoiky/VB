@@ -30,4 +30,21 @@ Public Class frmSuaKhoHang
         Me.ckTinhTrang.Checked = khohang.TinhTrang1
 
     End Sub
+
+    Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
+        Dim khohang As New KhoHangDTO(Me.txtMaKhoHang.Text, Me.txtKiHieu.Text, Me.txtTenKhoHang.Text, _
+                                      Me.cboNguoiQuanLi.SelectedValue.ToString(), _
+                                      Me.cboNguoiLienHe.SelectedValue.ToString(), _
+                                      Me.txtDiaChi.Text, Me.txtDienThoai.Text, Me.txtFax.Text, _
+                                      Me.txtEmail.Text, Me.txtDienGiai.Text, Me.ckTinhTrang.Checked)
+        If KhoHangBUS.SuaKhoHang(khohang) = True Then
+            MessageBox.Show("Sửa thành công.")
+        Else
+            MessageBox.Show("Không sửa được.")
+        End If
+    End Sub
+
+    Private Sub btnDong_Click(sender As Object, e As EventArgs) Handles btnDong.Click
+        Me.Close()
+    End Sub
 End Class
