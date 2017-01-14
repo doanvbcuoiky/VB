@@ -2,6 +2,18 @@
 Imports DTO
 
 Public Class KhoHangDAO
+    Public Shared Function ThongTinKhoHang(ByVal ma As String)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from KHOHANG where MaKhoHang = '" & ma & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
     Public Shared Function LoadDSKhoHang() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()
@@ -55,7 +67,7 @@ Public Class KhoHangDAO
     End Function
 
     Public Shared Function XoaKhoHang(ByVal makhohang As String) As Boolean
-       Dim con As New Connect()
+        Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
         Dim cmd As New SqlCommand("Delete From KHOHANG where MaKhoHang = '" & makhohang & "'", cn)

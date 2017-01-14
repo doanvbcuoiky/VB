@@ -52,6 +52,7 @@ Partial Class frmSuaHangHoa
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ckTinhTrang = New System.Windows.Forms.CheckBox()
         CType(Me.numGiaMua, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numGiaBanSi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numGiaBanLe, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,7 +69,6 @@ Partial Class frmSuaHangHoa
         Me.numGiaMua.Size = New System.Drawing.Size(141, 20)
         Me.numGiaMua.TabIndex = 68
         Me.numGiaMua.ThousandsSeparator = True
-        Me.numGiaMua.Value = New Decimal(New Integer() {128, 0, 0, 65536})
         '
         'numGiaBanSi
         '
@@ -295,7 +295,7 @@ Partial Class frmSuaHangHoa
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(275, 207)
+        Me.Button2.Location = New System.Drawing.Point(277, 223)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(82, 23)
         Me.Button2.TabIndex = 40
@@ -304,18 +304,29 @@ Partial Class frmSuaHangHoa
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(395, 207)
+        Me.Button1.Location = New System.Drawing.Point(397, 223)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(82, 23)
         Me.Button1.TabIndex = 39
         Me.Button1.Text = "Đóng"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ckTinhTrang
+        '
+        Me.ckTinhTrang.AutoSize = True
+        Me.ckTinhTrang.Location = New System.Drawing.Point(259, 187)
+        Me.ckTinhTrang.Name = "ckTinhTrang"
+        Me.ckTinhTrang.Size = New System.Drawing.Size(101, 17)
+        Me.ckTinhTrang.TabIndex = 69
+        Me.ckTinhTrang.Text = "Còn kinh doanh"
+        Me.ckTinhTrang.UseVisualStyleBackColor = True
+        '
         'frmSuaHangHoa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(503, 245)
+        Me.ClientSize = New System.Drawing.Size(503, 258)
+        Me.Controls.Add(Me.ckTinhTrang)
         Me.Controls.Add(Me.numGiaMua)
         Me.Controls.Add(Me.numGiaBanSi)
         Me.Controls.Add(Me.numGiaBanLe)
@@ -387,4 +398,5 @@ Partial Class frmSuaHangHoa
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ckTinhTrang As System.Windows.Forms.CheckBox
 End Class

@@ -4,6 +4,12 @@
     Private GhiChu As String
     Private TinhTrang As Boolean
 
+    Public Sub New()
+        Me.MaNhomHang = ""
+        Me.TenNhomHang = ""
+        Me.GhiChu = ""
+        Me.TinhTrang = True
+    End Sub
     Public Sub New(ByVal maNhomHang As String, ByVal tenNhomHang As String, ByVal ghiChu As String, ByVal tinhTrang As Boolean)
         Me.MaNhomHang = maNhomHang
         Me.TenNhomHang = tenNhomHang

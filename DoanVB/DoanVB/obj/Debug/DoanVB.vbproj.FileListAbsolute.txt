@@ -990,3 +990,4 @@ D:\Documents\234\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmTTin.resources
 D:\Documents\234\VB\DoanVB\DoanVB\obj\Debug\DoanVB.vbproj.GenerateResource.Cache
 D:\Documents\234\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe.licenses
 C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmThemTyGia.resources
+C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmSuaTyGia.resources

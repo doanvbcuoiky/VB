@@ -2,6 +2,7 @@
 Imports DTO
 Public Class frmKhoHang
 
+    Public Shared makhohang As String
     Private Sub frmKhoHang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Dim dt As DataTable = KhoHangBUS.LoadDSKhoHang()
         ' Me.GridControl1.DataSource = dt
@@ -18,7 +19,7 @@ Public Class frmKhoHang
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaKhoHang()
-        frmKhuVuc.lblmakh = Me.lblMaKhoHang.Text
+        makhohang = Me.lblMaKhoHang.Text
         frmSua.ShowDialog()
     End Sub
 

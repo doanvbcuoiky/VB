@@ -1,6 +1,7 @@
 ﻿Imports BUS
 Public Class frmTyGia
 
+    Public Shared matiente As String
     Private Sub frmTyGia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dt As DataTable = TyGiaBUS.LoadDSTyGia()
         Me.GridControl1.DataSource = dt
@@ -14,8 +15,8 @@ Public Class frmTyGia
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
-        Dim frmSua = New frmTyGia()
-        frmKhuVuc.lblmakh = Me.lblMaTienTe.Text
+        Dim frmSua = New frmSuaTyGia()
+        matiente = Me.lblMaTienTe.Text
         frmSua.ShowDialog()
     End Sub
 

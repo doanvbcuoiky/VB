@@ -16,6 +16,24 @@
     Private HinhAnh As String
     Private TinhTrang As Boolean
 
+    Public Sub New()
+        Me.MaHangHoa = ""
+        Me.TenHangHoa = ""
+        Me.KieuHangHoa = ""
+        Me.NhomHang = ""
+        Me.MaVach = ""
+        Me.DonVi = ""
+        Me.XuatXu = ""
+        Me.TonKhoToiThieu = 0
+        Me.TonHienTai = 0
+        Me.NhaCungCap = ""
+        Me.GiaMua = 0
+        Me.GiaBanLe = 0
+        Me.GiaBanSi = 0
+        Me.LoaiTien = ""
+        Me.HinhAnh = ""
+        Me.TinhTrang = True
+    End Sub
     Public Sub New(ByVal maHangHoa As String, ByVal tenHangHoa As String, ByVal kieuHangHoa As String, ByVal nhomHang As String, ByVal maVach As String, ByVal donVi As String, ByVal xuatXu As String, ByVal tonKhoToiThieu As Integer, ByVal tonHienTai As Integer, ByVal nhaCungCap As String, ByVal giaMua As Double, ByVal giaBanLe As Double, ByVal giaBanSi As Double, ByVal loaiTien As String, ByVal hinhAnh As String, ByVal tinhTrang As Boolean)
         Me.MaHangHoa = maHangHoa
         Me.TenHangHoa = tenHangHoa

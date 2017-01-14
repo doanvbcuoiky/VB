@@ -1,6 +1,7 @@
 ﻿Imports BUS
 Public Class frmNhomHang
 
+    Public Shared manhomhang As String
     Private Sub frmNhomHang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dt As DataTable = NhomHangHoaBUS.LoadDSNhomHangHoa()
         Me.GridControl1.DataSource = dt
@@ -15,7 +16,7 @@ Public Class frmNhomHang
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaNhomHang()
-        frmKhuVuc.lblmakh = Me.lblMaNhomHang.Text
+        manhomhang = Me.lblMaNhomHang.Text
         frmSua.ShowDialog()
     End Sub
 

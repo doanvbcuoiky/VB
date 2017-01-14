@@ -266,6 +266,12 @@
     <Compile Include="DanhMuc\frmSuaNhomHang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DanhMuc\frmSuaTyGia.Designer.vb">
+      <DependentUpon>frmSuaTyGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaTyGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DanhMuc\frmThemBoPhan.Designer.vb">
       <DependentUpon>frmThemBoPhan.vb</DependentUpon>
     </Compile>
@@ -541,6 +547,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmSuaNhomHang.resx">
       <DependentUpon>frmSuaNhomHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaTyGia.resx">
+      <DependentUpon>frmSuaTyGia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmThemBoPhan.resx">
       <DependentUpon>frmThemBoPhan.vb</DependentUpon>

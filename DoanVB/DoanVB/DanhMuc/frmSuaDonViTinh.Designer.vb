@@ -22,65 +22,65 @@ Partial Class frmSuaDonViTinh
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnLuu = New System.Windows.Forms.Button()
+        Me.btnDong = New System.Windows.Forms.Button()
+        Me.ckTinhTrang = New System.Windows.Forms.CheckBox()
+        Me.txtGhiChu = New System.Windows.Forms.TextBox()
+        Me.txtTenDonVi = New System.Windows.Forms.TextBox()
+        Me.txtMaDonVi = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnLuu
         '
-        Me.Button2.Location = New System.Drawing.Point(101, 113)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(83, 28)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Lưu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnLuu.Location = New System.Drawing.Point(101, 113)
+        Me.btnLuu.Name = "btnLuu"
+        Me.btnLuu.Size = New System.Drawing.Size(83, 28)
+        Me.btnLuu.TabIndex = 11
+        Me.btnLuu.Text = "Lưu"
+        Me.btnLuu.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnDong
         '
-        Me.Button1.Location = New System.Drawing.Point(190, 113)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(83, 28)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Đóng"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnDong.Location = New System.Drawing.Point(190, 113)
+        Me.btnDong.Name = "btnDong"
+        Me.btnDong.Size = New System.Drawing.Size(83, 28)
+        Me.btnDong.TabIndex = 12
+        Me.btnDong.Text = "Đóng"
+        Me.btnDong.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'ckTinhTrang
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(73, 91)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(82, 17)
-        Me.CheckBox1.TabIndex = 10
-        Me.CheckBox1.Text = "Còn quản lý"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ckTinhTrang.AutoSize = True
+        Me.ckTinhTrang.Location = New System.Drawing.Point(73, 91)
+        Me.ckTinhTrang.Name = "ckTinhTrang"
+        Me.ckTinhTrang.Size = New System.Drawing.Size(82, 17)
+        Me.ckTinhTrang.TabIndex = 10
+        Me.ckTinhTrang.Text = "Còn quản lý"
+        Me.ckTinhTrang.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'txtGhiChu
         '
-        Me.TextBox3.Location = New System.Drawing.Point(73, 65)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox3.TabIndex = 7
+        Me.txtGhiChu.Location = New System.Drawing.Point(73, 65)
+        Me.txtGhiChu.Name = "txtGhiChu"
+        Me.txtGhiChu.Size = New System.Drawing.Size(200, 20)
+        Me.txtGhiChu.TabIndex = 7
         '
-        'TextBox2
+        'txtTenDonVi
         '
-        Me.TextBox2.Location = New System.Drawing.Point(73, 40)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox2.TabIndex = 8
+        Me.txtTenDonVi.Location = New System.Drawing.Point(73, 40)
+        Me.txtTenDonVi.Name = "txtTenDonVi"
+        Me.txtTenDonVi.Size = New System.Drawing.Size(200, 20)
+        Me.txtTenDonVi.TabIndex = 8
         '
-        'TextBox1
+        'txtMaDonVi
         '
-        Me.TextBox1.Location = New System.Drawing.Point(73, 12)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox1.TabIndex = 9
+        Me.txtMaDonVi.Location = New System.Drawing.Point(73, 12)
+        Me.txtMaDonVi.Name = "txtMaDonVi"
+        Me.txtMaDonVi.Size = New System.Drawing.Size(200, 20)
+        Me.txtMaDonVi.TabIndex = 9
         '
         'Label3
         '
@@ -114,12 +114,12 @@ Partial Class frmSuaDonViTinh
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 152)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnLuu)
+        Me.Controls.Add(Me.btnDong)
+        Me.Controls.Add(Me.ckTinhTrang)
+        Me.Controls.Add(Me.txtGhiChu)
+        Me.Controls.Add(Me.txtTenDonVi)
+        Me.Controls.Add(Me.txtMaDonVi)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -129,12 +129,12 @@ Partial Class frmSuaDonViTinh
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents btnLuu As System.Windows.Forms.Button
+    Friend WithEvents btnDong As System.Windows.Forms.Button
+    Friend WithEvents ckTinhTrang As System.Windows.Forms.CheckBox
+    Friend WithEvents txtGhiChu As System.Windows.Forms.TextBox
+    Friend WithEvents txtTenDonVi As System.Windows.Forms.TextBox
+    Friend WithEvents txtMaDonVi As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label

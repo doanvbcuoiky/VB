@@ -4,6 +4,12 @@
     Private TyGiaQuyDoi As Double
     Private TinhTrang As Boolean
 
+    Public Sub New()
+        Me.MaTienTe = ""
+        Me.TenTienTe = ""
+        Me.TyGiaQuyDoi = 0
+        Me.TinhTrang = True
+    End Sub
     Public Sub New(ByVal maTienTe As String, ByVal tenTienTe As String, ByVal tyGiaQuyDoi As Double, ByVal tinhTrang As Boolean)
         Me.MaTienTe = maTienTe
         Me.TenTienTe = tenTienTe

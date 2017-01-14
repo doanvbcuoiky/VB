@@ -2,6 +2,18 @@
 Imports DTO
 
 Public Class NhomHangHoaDAO
+    Public Shared Function ThongTinNhomHang(ByVal ma As String) As DataTable
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("select * from NHOMHANGHOA where MaNhomHang = '" & ma & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
     Public Shared Function LoadDSNhomHangHoa() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

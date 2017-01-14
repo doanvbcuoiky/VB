@@ -1,7 +1,7 @@
 ﻿Imports BUS
 Imports DTO
 Public Class frmDonViTinh
-
+    Public Shared madonvi As String
     Private Sub frmDonViTinh_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Dim dt As DataTable = DonViTinhBUS.LoadDSDonViTinh()
         'Me.GridControl1.DataSource = dt
@@ -18,7 +18,7 @@ Public Class frmDonViTinh
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaDonViTinh()
-        frmKhuVuc.lblmakh = Me.lblMaDonVi.Text
+        madonvi = Me.lblMaDonVi.Text
         frmSua.ShowDialog()
     End Sub
 
