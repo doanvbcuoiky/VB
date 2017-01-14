@@ -31,7 +31,6 @@ Partial Class frmSuaBoPhan
         Me.txtMa = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblMaBoPhan = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label3
@@ -110,21 +109,11 @@ Partial Class frmSuaBoPhan
         Me.Label1.TabIndex = 18
         Me.Label1.Text = "Mã"
         '
-        'lblMaBoPhan
-        '
-        Me.lblMaBoPhan.AutoSize = True
-        Me.lblMaBoPhan.Location = New System.Drawing.Point(76, 3)
-        Me.lblMaBoPhan.Name = "lblMaBoPhan"
-        Me.lblMaBoPhan.Size = New System.Drawing.Size(70, 13)
-        Me.lblMaBoPhan.TabIndex = 27
-        Me.lblMaBoPhan.Text = "lblMaBoPhan"
-        '
         'frmSuaBoPhan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 180)
-        Me.Controls.Add(Me.lblMaBoPhan)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnDong)
         Me.Controls.Add(Me.btbLuu)
@@ -149,5 +138,4 @@ Partial Class frmSuaBoPhan
     Friend WithEvents txtMa As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents lblMaBoPhan As System.Windows.Forms.Label
 End Class

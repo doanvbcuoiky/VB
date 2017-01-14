@@ -2,6 +2,18 @@
 Imports DTO
 
 Public Class BoPhanDAO
+    Public Shared Function ThongTinBoPhan(ByVal ma As String) As DataTable
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("Select * from BOPHAN where MaBoPhan = '" & ma & "'", cn)
+        cmd.CommandType = CommandType.Text
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
     Public Shared Function LoadDSBoPhan() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

@@ -1,6 +1,7 @@
 ﻿Imports BUS
 Public Class frmNhanVien
 
+    Public Shared manhanvien As String
     Private Sub frmNhanVien_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dt As DataTable = NhanVienBUS.LoadDSNhanVien()
         Me.GridControl1.DataSource = dt
@@ -13,8 +14,8 @@ Public Class frmNhanVien
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
-        Dim frmSua = New frmSuaKhuVuc()
-        frmKhuVuc.lblmakh = Me.lblMaNhanVien.Text
+        Dim frmSua = New frmSuaNhanVien()
+        manhanvien = Me.lblMaNhanVien.Text
         frmSua.ShowDialog()
     End Sub
 

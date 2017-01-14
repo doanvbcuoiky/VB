@@ -1,6 +1,7 @@
 ﻿Imports BUS
 Public Class frmBoPhan
 
+    Public Shared mabophan As String
     Private Sub frmBoPhan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dt As DataTable = BoPhanBUS.LoadDSBoPhan()
         Me.GridControl1.DataSource = dt
@@ -15,7 +16,7 @@ Public Class frmBoPhan
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaBoPhan()
-        frmKhuVuc.lblmakh = Me.lblMaBoPhan.Text
+        mabophan = Me.lblMaBoPhan.Text
         frmSua.ShowDialog()
     End Sub
 

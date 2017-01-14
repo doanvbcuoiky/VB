@@ -22,261 +22,232 @@ Partial Class frmSuaNhanVien
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.cboNguoiQuanLi = New System.Windows.Forms.ComboBox()
+        Me.cboBoPhan = New System.Windows.Forms.ComboBox()
+        Me.txtDienThoai = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtDiaChi = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtChucVu = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtTen = New System.Windows.Forms.TextBox()
+        Me.txtMa = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnDong = New System.Windows.Forms.Button()
+        Me.btnLuu = New System.Windows.Forms.Button()
+        Me.ckTinhTrang = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'cboNguoiQuanLi
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(428, 82)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Cơ Bản"
+        Me.cboNguoiQuanLi.FormattingEnabled = True
+        Me.cboNguoiQuanLi.Location = New System.Drawing.Point(98, 220)
+        Me.cboNguoiQuanLi.Name = "cboNguoiQuanLi"
+        Me.cboNguoiQuanLi.Size = New System.Drawing.Size(211, 21)
+        Me.cboNguoiQuanLi.TabIndex = 39
         '
-        'GroupBox2
+        'cboBoPhan
         '
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
-        Me.GroupBox2.Controls.Add(Me.ComboBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Location = New System.Drawing.Point(3, 100)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(428, 212)
-        Me.GroupBox2.TabIndex = 0
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Quản Lý"
+        Me.cboBoPhan.FormattingEnabled = True
+        Me.cboBoPhan.Location = New System.Drawing.Point(79, 189)
+        Me.cboBoPhan.Name = "cboBoPhan"
+        Me.cboBoPhan.Size = New System.Drawing.Size(230, 21)
+        Me.cboBoPhan.TabIndex = 40
         '
-        'Label1
+        'txtDienThoai
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(10, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(22, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Mã"
+        Me.txtDienThoai.Location = New System.Drawing.Point(79, 158)
+        Me.txtDienThoai.Name = "txtDienThoai"
+        Me.txtDienThoai.Size = New System.Drawing.Size(230, 20)
+        Me.txtDienThoai.TabIndex = 35
         '
-        'TextBox1
+        'txtEmail
         '
-        Me.TextBox1.Location = New System.Drawing.Point(71, 17)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(230, 20)
-        Me.TextBox1.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 49)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(26, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Tên"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(336, 20)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(82, 17)
-        Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "Còn quản lý"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(71, 46)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(347, 20)
-        Me.TextBox2.TabIndex = 1
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 22)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 13)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Chức Vụ"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(71, 19)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(347, 20)
-        Me.TextBox3.TabIndex = 1
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(10, 53)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 13)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Địa Chỉ"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(71, 50)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(347, 20)
-        Me.TextBox4.TabIndex = 1
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(10, 84)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(32, 13)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Email"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(71, 81)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(347, 20)
-        Me.TextBox5.TabIndex = 1
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(10, 115)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(59, 13)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Điện Thoại"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(71, 112)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(347, 20)
-        Me.TextBox6.TabIndex = 1
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(10, 146)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(48, 13)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Bộ Phận"
+        Me.txtEmail.Location = New System.Drawing.Point(79, 127)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(230, 20)
+        Me.txtEmail.TabIndex = 36
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 177)
+        Me.Label9.Location = New System.Drawing.Point(18, 223)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(47, 13)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Quản Lý"
+        Me.Label9.Size = New System.Drawing.Size(71, 13)
+        Me.Label9.TabIndex = 29
+        Me.Label9.Text = "Người quản lí"
         '
-        'Button1
+        'Label8
         '
-        Me.Button1.Location = New System.Drawing.Point(3, 319)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(153, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Lưu"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(18, 192)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(48, 13)
+        Me.Label8.TabIndex = 30
+        Me.Label8.Text = "Bộ Phận"
         '
-        'Button2
+        'Label6
         '
-        Me.Button2.Location = New System.Drawing.Point(162, 319)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(153, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Đóng"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(18, 161)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(59, 13)
+        Me.Label6.TabIndex = 31
+        Me.Label6.Text = "Điện Thoại"
         '
-        'ComboBox1
+        'Label5
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(71, 143)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(347, 21)
-        Me.ComboBox1.TabIndex = 2
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(18, 130)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(32, 13)
+        Me.Label5.TabIndex = 32
+        Me.Label5.Text = "Email"
         '
-        'ComboBox2
+        'txtDiaChi
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(71, 174)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(347, 21)
-        Me.ComboBox2.TabIndex = 2
+        Me.txtDiaChi.Location = New System.Drawing.Point(79, 96)
+        Me.txtDiaChi.Name = "txtDiaChi"
+        Me.txtDiaChi.Size = New System.Drawing.Size(230, 20)
+        Me.txtDiaChi.TabIndex = 37
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(18, 99)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 13)
+        Me.Label4.TabIndex = 33
+        Me.Label4.Text = "Địa Chỉ"
+        '
+        'txtChucVu
+        '
+        Me.txtChucVu.Location = New System.Drawing.Point(79, 67)
+        Me.txtChucVu.Name = "txtChucVu"
+        Me.txtChucVu.Size = New System.Drawing.Size(230, 20)
+        Me.txtChucVu.TabIndex = 38
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(18, 70)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(48, 13)
+        Me.Label3.TabIndex = 34
+        Me.Label3.Text = "Chức Vụ"
+        '
+        'txtTen
+        '
+        Me.txtTen.Location = New System.Drawing.Point(79, 41)
+        Me.txtTen.Name = "txtTen"
+        Me.txtTen.Size = New System.Drawing.Size(230, 20)
+        Me.txtTen.TabIndex = 27
+        '
+        'txtMa
+        '
+        Me.txtMa.Location = New System.Drawing.Point(79, 12)
+        Me.txtMa.Name = "txtMa"
+        Me.txtMa.Size = New System.Drawing.Size(230, 20)
+        Me.txtMa.TabIndex = 28
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(18, 44)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(26, 13)
+        Me.Label2.TabIndex = 25
+        Me.Label2.Text = "Tên"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(18, 15)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(22, 13)
+        Me.Label1.TabIndex = 26
+        Me.Label1.Text = "Mã"
+        '
+        'btnDong
+        '
+        Me.btnDong.Location = New System.Drawing.Point(239, 258)
+        Me.btnDong.Name = "btnDong"
+        Me.btnDong.Size = New System.Drawing.Size(70, 23)
+        Me.btnDong.TabIndex = 23
+        Me.btnDong.Text = "Đóng"
+        Me.btnDong.UseVisualStyleBackColor = True
+        '
+        'btnLuu
+        '
+        Me.btnLuu.Location = New System.Drawing.Point(144, 258)
+        Me.btnLuu.Name = "btnLuu"
+        Me.btnLuu.Size = New System.Drawing.Size(75, 23)
+        Me.btnLuu.TabIndex = 24
+        Me.btnLuu.Text = "Lưu"
+        Me.btnLuu.UseVisualStyleBackColor = True
+        '
+        'ckTinhTrang
+        '
+        Me.ckTinhTrang.AutoSize = True
+        Me.ckTinhTrang.Location = New System.Drawing.Point(39, 258)
+        Me.ckTinhTrang.Name = "ckTinhTrang"
+        Me.ckTinhTrang.Size = New System.Drawing.Size(81, 17)
+        Me.ckTinhTrang.TabIndex = 41
+        Me.ckTinhTrang.Text = "Còn quản lí"
+        Me.ckTinhTrang.UseVisualStyleBackColor = True
         '
         'frmSuaNhanVien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(434, 351)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(336, 296)
+        Me.Controls.Add(Me.ckTinhTrang)
+        Me.Controls.Add(Me.cboNguoiQuanLi)
+        Me.Controls.Add(Me.cboBoPhan)
+        Me.Controls.Add(Me.txtDienThoai)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtDiaChi)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txtChucVu)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtTen)
+        Me.Controls.Add(Me.txtMa)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnDong)
+        Me.Controls.Add(Me.btnLuu)
         Me.Name = "frmSuaNhanVien"
         Me.Text = "frmSuaNhanVien"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents cboNguoiQuanLi As System.Windows.Forms.ComboBox
+    Friend WithEvents cboBoPhan As System.Windows.Forms.ComboBox
+    Friend WithEvents txtDienThoai As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiaChi As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtChucVu As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txtTen As System.Windows.Forms.TextBox
+    Friend WithEvents txtMa As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnDong As System.Windows.Forms.Button
+    Friend WithEvents btnLuu As System.Windows.Forms.Button
+    Friend WithEvents ckTinhTrang As System.Windows.Forms.CheckBox
 End Class
