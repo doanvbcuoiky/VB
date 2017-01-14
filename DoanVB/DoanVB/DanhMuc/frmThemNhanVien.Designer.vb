@@ -57,7 +57,7 @@ Partial Class frmThemNhanVien
         Me.btnLuu.Name = "btnLuu"
         Me.btnLuu.Size = New System.Drawing.Size(112, 23)
         Me.btnLuu.TabIndex = 5
-        Me.btnLuu.Text = "Lưu"
+        Me.btnLuu.Text = "Thêm"
         Me.btnLuu.UseVisualStyleBackColor = True
         '
         'txtTen

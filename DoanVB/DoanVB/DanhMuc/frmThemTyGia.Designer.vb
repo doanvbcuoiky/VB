@@ -25,11 +25,12 @@ Partial Class frmThemTyGia
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtMa = New System.Windows.Forms.TextBox()
+        Me.txtTen = New System.Windows.Forms.TextBox()
+        Me.btnThem = New System.Windows.Forms.Button()
+        Me.btnHuy = New System.Windows.Forms.Button()
+        Me.numTyGia = New System.Windows.Forms.NumericUpDown()
+        CType(Me.numTyGia, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,66 +54,68 @@ Partial Class frmThemTyGia
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 95)
+        Me.Label3.Location = New System.Drawing.Point(12, 90)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(74, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Tỷ giá quy đổi"
         '
-        'TextBox1
+        'txtMa
         '
-        Me.TextBox1.Location = New System.Drawing.Point(92, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtMa.Location = New System.Drawing.Point(92, 15)
+        Me.txtMa.Name = "txtMa"
+        Me.txtMa.Size = New System.Drawing.Size(180, 20)
+        Me.txtMa.TabIndex = 3
         '
-        'TextBox2
+        'txtTen
         '
-        Me.TextBox2.Location = New System.Drawing.Point(92, 53)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtTen.Location = New System.Drawing.Point(92, 53)
+        Me.txtTen.Name = "txtTen"
+        Me.txtTen.Size = New System.Drawing.Size(180, 20)
+        Me.txtTen.TabIndex = 4
         '
-        'TextBox3
+        'btnThem
         '
-        Me.TextBox3.Location = New System.Drawing.Point(92, 92)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.btnThem.Location = New System.Drawing.Point(90, 123)
+        Me.btnThem.Name = "btnThem"
+        Me.btnThem.Size = New System.Drawing.Size(75, 23)
+        Me.btnThem.TabIndex = 6
+        Me.btnThem.Text = "Thêm"
+        Me.btnThem.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnHuy
         '
-        Me.Button1.Location = New System.Drawing.Point(80, 138)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Thêm"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnHuy.Location = New System.Drawing.Point(197, 123)
+        Me.btnHuy.Name = "btnHuy"
+        Me.btnHuy.Size = New System.Drawing.Size(75, 23)
+        Me.btnHuy.TabIndex = 7
+        Me.btnHuy.Text = "Hủy"
+        Me.btnHuy.UseVisualStyleBackColor = True
         '
-        'Button2
+        'numTyGia
         '
-        Me.Button2.Location = New System.Drawing.Point(187, 138)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Hủy"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.numTyGia.DecimalPlaces = 5
+        Me.numTyGia.Location = New System.Drawing.Point(92, 88)
+        Me.numTyGia.Name = "numTyGia"
+        Me.numTyGia.Size = New System.Drawing.Size(180, 20)
+        Me.numTyGia.TabIndex = 8
         '
         'frmThemTyGia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 180)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(284, 162)
+        Me.Controls.Add(Me.numTyGia)
+        Me.Controls.Add(Me.btnHuy)
+        Me.Controls.Add(Me.btnThem)
+        Me.Controls.Add(Me.txtTen)
+        Me.Controls.Add(Me.txtMa)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmThemTyGia"
         Me.Text = "frmThemTyGia"
+        CType(Me.numTyGia, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -120,9 +123,9 @@ Partial Class frmThemTyGia
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txtMa As System.Windows.Forms.TextBox
+    Friend WithEvents txtTen As System.Windows.Forms.TextBox
+    Friend WithEvents btnThem As System.Windows.Forms.Button
+    Friend WithEvents btnHuy As System.Windows.Forms.Button
+    Friend WithEvents numTyGia As System.Windows.Forms.NumericUpDown
 End Class

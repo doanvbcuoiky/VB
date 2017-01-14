@@ -52,7 +52,7 @@ Partial Class frmThemKhoHang
         Me.btnLuu.Name = "btnLuu"
         Me.btnLuu.Size = New System.Drawing.Size(90, 31)
         Me.btnLuu.TabIndex = 6
-        Me.btnLuu.Text = "Lưu"
+        Me.btnLuu.Text = "Thêm"
         Me.btnLuu.UseVisualStyleBackColor = True
         '
         'btnDong

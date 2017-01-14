@@ -22,8 +22,8 @@ Partial Class frmThemHangHoa
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btndong = New System.Windows.Forms.Button()
+        Me.btnThem = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -59,23 +59,23 @@ Partial Class frmThemHangHoa
         CType(Me.numGiaMua, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btndong
         '
-        Me.Button1.Location = New System.Drawing.Point(394, 205)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(82, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Đóng"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btndong.Location = New System.Drawing.Point(394, 205)
+        Me.btndong.Name = "btndong"
+        Me.btndong.Size = New System.Drawing.Size(82, 23)
+        Me.btndong.TabIndex = 2
+        Me.btndong.Text = "Đóng"
+        Me.btndong.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnThem
         '
-        Me.Button2.Location = New System.Drawing.Point(274, 205)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(82, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Lưu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnThem.Location = New System.Drawing.Point(274, 205)
+        Me.btnThem.Name = "btnThem"
+        Me.btnThem.Size = New System.Drawing.Size(82, 23)
+        Me.btnThem.TabIndex = 2
+        Me.btnThem.Text = "Thêm"
+        Me.btnThem.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -341,8 +341,8 @@ Partial Class frmThemHangHoa
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnThem)
+        Me.Controls.Add(Me.btndong)
         Me.Name = "frmThemHangHoa"
         Me.Text = "frmThemHangHoa"
         CType(Me.numTonKhoToiThieu, System.ComponentModel.ISupportInitialize).EndInit()
@@ -354,8 +354,8 @@ Partial Class frmThemHangHoa
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btndong As System.Windows.Forms.Button
+    Friend WithEvents btnThem As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label

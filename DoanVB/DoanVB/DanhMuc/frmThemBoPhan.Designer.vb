@@ -25,7 +25,6 @@ Partial Class frmThemBoPhan
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnDong = New System.Windows.Forms.Button()
         Me.btbLuu = New System.Windows.Forms.Button()
-        Me.ckTinhTrang = New System.Windows.Forms.CheckBox()
         Me.txtGhiChu = New System.Windows.Forms.TextBox()
         Me.txtTen = New System.Windows.Forms.TextBox()
         Me.txtMa = New System.Windows.Forms.TextBox()
@@ -44,7 +43,7 @@ Partial Class frmThemBoPhan
         '
         'btnDong
         '
-        Me.btnDong.Location = New System.Drawing.Point(197, 135)
+        Me.btnDong.Location = New System.Drawing.Point(197, 121)
         Me.btnDong.Name = "btnDong"
         Me.btnDong.Size = New System.Drawing.Size(75, 23)
         Me.btnDong.TabIndex = 25
@@ -53,22 +52,12 @@ Partial Class frmThemBoPhan
         '
         'btbLuu
         '
-        Me.btbLuu.Location = New System.Drawing.Point(104, 135)
+        Me.btbLuu.Location = New System.Drawing.Point(104, 121)
         Me.btbLuu.Name = "btbLuu"
         Me.btbLuu.Size = New System.Drawing.Size(75, 23)
         Me.btbLuu.TabIndex = 24
         Me.btbLuu.Text = "Lưu"
         Me.btbLuu.UseVisualStyleBackColor = True
-        '
-        'ckTinhTrang
-        '
-        Me.ckTinhTrang.AutoSize = True
-        Me.ckTinhTrang.Location = New System.Drawing.Point(62, 112)
-        Me.ckTinhTrang.Name = "ckTinhTrang"
-        Me.ckTinhTrang.Size = New System.Drawing.Size(81, 17)
-        Me.ckTinhTrang.TabIndex = 23
-        Me.ckTinhTrang.Text = "Còn quản lí"
-        Me.ckTinhTrang.UseVisualStyleBackColor = True
         '
         'txtGhiChu
         '
@@ -113,11 +102,10 @@ Partial Class frmThemBoPhan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 180)
+        Me.ClientSize = New System.Drawing.Size(284, 156)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnDong)
         Me.Controls.Add(Me.btbLuu)
-        Me.Controls.Add(Me.ckTinhTrang)
         Me.Controls.Add(Me.txtGhiChu)
         Me.Controls.Add(Me.txtTen)
         Me.Controls.Add(Me.txtMa)
@@ -132,7 +120,6 @@ Partial Class frmThemBoPhan
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnDong As System.Windows.Forms.Button
     Friend WithEvents btbLuu As System.Windows.Forms.Button
-    Friend WithEvents ckTinhTrang As System.Windows.Forms.CheckBox
     Friend WithEvents txtGhiChu As System.Windows.Forms.TextBox
     Friend WithEvents txtTen As System.Windows.Forms.TextBox
     Friend WithEvents txtMa As System.Windows.Forms.TextBox

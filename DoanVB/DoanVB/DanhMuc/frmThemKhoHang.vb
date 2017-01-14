@@ -28,4 +28,17 @@ Public Class frmThemKhoHang
         Me.txtDienThoai.Text = nhanvien.DienThoai1
         Me.txtEmail.Text = nhanvien.Email1
     End Sub
+
+    Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
+        Dim khohang As New KhoHangDTO(Me.txtMaKhoHang.Text, Me.txtKiHieu.Text, Me.txtTenKhoHang.Text, _
+                                      Me.cboNguoiQuanLi.SelectedValue.ToString(), _
+                                      Me.cboNguoiLienHe.SelectedValue.ToString(), _
+                                      Me.txtDiaChi.Text, Me.txtDienThoai.Text, Me.txtFax.Text, _
+                                      Me.txtEmail.Text, Me.txtDienGiai.Text, True)
+        If KhoHangBUS.ThemKhoHang(khohang) = True Then
+            MessageBox.Show("Thêm thành công.")
+        Else
+            MessageBox.Show("Không thêm được.")
+        End If
+    End Sub
 End Class

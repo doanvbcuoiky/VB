@@ -279,7 +279,7 @@ Partial Class frmThemKhachHang
         Me.btnLuu.Name = "btnLuu"
         Me.btnLuu.Size = New System.Drawing.Size(75, 23)
         Me.btnLuu.TabIndex = 27
-        Me.btnLuu.Text = "Lưu"
+        Me.btnLuu.Text = "Thêm"
         Me.btnLuu.UseVisualStyleBackColor = True
         '
         'btnDong

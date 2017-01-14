@@ -22,25 +22,24 @@ Partial Class frmThemNhomHang
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnThem = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtGhiChu = New System.Windows.Forms.TextBox()
+        Me.txtTen = New System.Windows.Forms.TextBox()
+        Me.txtMa = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnThem
         '
-        Me.Button2.Location = New System.Drawing.Point(101, 109)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(83, 28)
-        Me.Button2.TabIndex = 20
-        Me.Button2.Text = "Lưu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnThem.Location = New System.Drawing.Point(101, 109)
+        Me.btnThem.Name = "btnThem"
+        Me.btnThem.Size = New System.Drawing.Size(83, 28)
+        Me.btnThem.TabIndex = 20
+        Me.btnThem.Text = "Thêm"
+        Me.btnThem.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -51,36 +50,26 @@ Partial Class frmThemNhomHang
         Me.Button1.Text = "Đóng"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'txtGhiChu
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(73, 87)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(82, 17)
-        Me.CheckBox1.TabIndex = 19
-        Me.CheckBox1.Text = "Còn quản lý"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.txtGhiChu.Location = New System.Drawing.Point(73, 61)
+        Me.txtGhiChu.Name = "txtGhiChu"
+        Me.txtGhiChu.Size = New System.Drawing.Size(200, 20)
+        Me.txtGhiChu.TabIndex = 16
         '
-        'TextBox3
+        'txtTen
         '
-        Me.TextBox3.Location = New System.Drawing.Point(73, 61)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox3.TabIndex = 16
+        Me.txtTen.Location = New System.Drawing.Point(73, 36)
+        Me.txtTen.Name = "txtTen"
+        Me.txtTen.Size = New System.Drawing.Size(200, 20)
+        Me.txtTen.TabIndex = 17
         '
-        'TextBox2
+        'txtMa
         '
-        Me.TextBox2.Location = New System.Drawing.Point(73, 36)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox2.TabIndex = 17
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(73, 8)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox1.TabIndex = 18
+        Me.txtMa.Location = New System.Drawing.Point(73, 8)
+        Me.txtMa.Name = "txtMa"
+        Me.txtMa.Size = New System.Drawing.Size(200, 20)
+        Me.txtMa.TabIndex = 18
         '
         'Label3
         '
@@ -114,12 +103,11 @@ Partial Class frmThemNhomHang
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 145)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnThem)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtGhiChu)
+        Me.Controls.Add(Me.txtTen)
+        Me.Controls.Add(Me.txtMa)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -129,12 +117,11 @@ Partial Class frmThemNhomHang
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnThem As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtGhiChu As System.Windows.Forms.TextBox
+    Friend WithEvents txtTen As System.Windows.Forms.TextBox
+    Friend WithEvents txtMa As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label

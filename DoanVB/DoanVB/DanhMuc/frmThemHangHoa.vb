@@ -28,4 +28,22 @@ Public Class frmThemHangHoa
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+        Dim hanghoa As New HangHoaDTO(Me.txtMaHangHoa.Text, Me.txtTenHangHoa.Text, Me.txtKieuHangHoa.Text, _
+                                      Me.cboNhomHang.SelectedValue.ToString(), Me.txtMaVach.Text, _
+                                      Me.cboDonVi.SelectedValue.ToString(), Me.txtXuatXu.Text, _
+                                      System.Convert.ToInt32(Me.numTonKhoToiThieu.Value.ToString()), _
+                                      System.Convert.ToInt32(Me.numTonKhoHienTai.Value.ToString()), _
+                                      Me.cboNhaCungCap.SelectedValue.ToString(), _
+                                      System.Convert.ToDouble(Me.numGiaMua.Value.ToString()), _
+                                      System.Convert.ToDouble(Me.numGiaBanLe.Value.ToString()), _
+                                      System.Convert.ToDouble(Me.numGiaBanSi.Value.ToString()), _
+                                      Me.cboLoaiTien.SelectedValue.ToString(), "", True)
+        If HangHoaBUS.ThemHangHoa(hanghoa) = True Then
+            MessageBox.Show("Thêm thành công.")
+        Else
+            MessageBox.Show("Không thêm đưuọc")
+        End If
+    End Sub
 End Class

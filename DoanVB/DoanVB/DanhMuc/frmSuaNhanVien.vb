@@ -27,6 +27,5 @@ Public Class frmSuaNhanVien
         Me.cboBoPhan.SelectedValue = nhanvien.BoPhan1
         Me.cboNguoiQuanLi.SelectedValue = nhanvien.NguoiQuanLi1
 
-
     End Sub
 End Class
