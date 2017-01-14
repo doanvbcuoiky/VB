@@ -269,7 +269,7 @@ Partial Class frmThemNhaCungCap
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(95, 27)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Lưu"
+        Me.Button2.Text = "Thêm"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'frmThemNhaCungCap
