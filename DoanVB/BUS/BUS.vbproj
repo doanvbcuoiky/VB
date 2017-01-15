@@ -99,6 +99,7 @@
     <Compile Include="PhieuBanHangBUS.vb" />
     <Compile Include="PhieuChuyenKhoBUS.vb" />
     <Compile Include="PhieuNhapHangBUS.vb" />
+    <Compile Include="SaoLuuPhucHoiBUS.vb" />
     <Compile Include="TyGiaBUS.vb" />
   </ItemGroup>
   <ItemGroup>

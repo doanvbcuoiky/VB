@@ -100,6 +100,7 @@
     <Compile Include="PhieuBanHangDAO.vb" />
     <Compile Include="PhieuChuyenKhoDAO.vb" />
     <Compile Include="PhieuNhapHangDAO.vb" />
+    <Compile Include="SaoLuuPhucHoiDAO.vb" />
     <Compile Include="TyGiaDAO.vb" />
   </ItemGroup>
   <ItemGroup>

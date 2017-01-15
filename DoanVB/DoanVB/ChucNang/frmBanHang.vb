@@ -139,7 +139,7 @@ Public Class frmBanHang
                     'Cập nhật số lượng tồn kho hiện tại.
                     HangHoaBUS.CapNhatSoLuong_Giam(ma, sl)
                     'Tính tổng tiền
-                    TongTien += 1.0 * sl * dongia * (ck / 100.0)
+                    TongTien += 1.0 * sl * dongia * ((100 - ck) / 100.0)
 
                     'Cập nhật chi tiết kho hàng.
                     Dim ctkho As New ChiTietKhoDTO(cboKhoXuat.SelectedValue.ToString(), ma, sl)

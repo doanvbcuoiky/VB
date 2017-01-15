@@ -20,16 +20,18 @@ Partial Class frmSaoLuu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
-        Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.btnSetPath = New DevComponents.DotNetBar.ButtonX()
+        Me.txtPath = New System.Windows.Forms.TextBox()
+        Me.btnCreate = New DevComponents.DotNetBar.ButtonX()
+        Me.btnClose = New DevComponents.DotNetBar.ButtonX()
         Me.ProgressBarX1 = New DevComponents.DotNetBar.Controls.ProgressBarX()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.btnLocal = New DevComponents.DotNetBar.ButtonX()
         Me.PanelEx1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -37,16 +39,17 @@ Partial Class frmSaoLuu
         '
         Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
         Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx1.Controls.Add(Me.ButtonX2)
-        Me.PanelEx1.Controls.Add(Me.ButtonX1)
-        Me.PanelEx1.Controls.Add(Me.CheckBox1)
-        Me.PanelEx1.Controls.Add(Me.TextBox2)
+        Me.PanelEx1.Controls.Add(Me.btnLocal)
+        Me.PanelEx1.Controls.Add(Me.btnSetPath)
+        Me.PanelEx1.Controls.Add(Me.txtPath)
+        Me.PanelEx1.Controls.Add(Me.btnCreate)
+        Me.PanelEx1.Controls.Add(Me.btnClose)
         Me.PanelEx1.Controls.Add(Me.ProgressBarX1)
         Me.PanelEx1.Controls.Add(Me.Label4)
         Me.PanelEx1.Controls.Add(Me.Label3)
         Me.PanelEx1.Controls.Add(Me.Label2)
         Me.PanelEx1.Controls.Add(Me.Label1)
-        Me.PanelEx1.Controls.Add(Me.TextBox1)
+        Me.PanelEx1.Controls.Add(Me.txtName)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
@@ -61,44 +64,46 @@ Partial Class frmSaoLuu
         Me.PanelEx1.Style.GradientAngle = 90
         Me.PanelEx1.TabIndex = 0
         '
-        'ButtonX2
+        'btnSetPath
         '
-        Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX2.Location = New System.Drawing.Point(307, 143)
-        Me.ButtonX2.Name = "ButtonX2"
-        Me.ButtonX2.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX2.TabIndex = 6
-        Me.ButtonX2.Text = "Thực hiện"
+        Me.btnSetPath.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnSetPath.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnSetPath.Location = New System.Drawing.Point(388, 114)
+        Me.btnSetPath.Name = "btnSetPath"
+        Me.btnSetPath.Size = New System.Drawing.Size(75, 23)
+        Me.btnSetPath.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnSetPath.TabIndex = 8
+        Me.btnSetPath.Text = "SetPath"
         '
-        'ButtonX1
+        'txtPath
         '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Location = New System.Drawing.Point(388, 143)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 6
-        Me.ButtonX1.Text = "Đóng"
+        Me.txtPath.Location = New System.Drawing.Point(119, 116)
+        Me.txtPath.Name = "txtPath"
+        Me.txtPath.ReadOnly = True
+        Me.txtPath.Size = New System.Drawing.Size(263, 21)
+        Me.txtPath.TabIndex = 7
         '
-        'CheckBox1
+        'btnCreate
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(119, 149)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(104, 17)
-        Me.CheckBox1.TabIndex = 5
-        Me.CheckBox1.Text = "Ghi đè tập tin cũ"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.btnCreate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnCreate.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnCreate.Location = New System.Drawing.Point(307, 143)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(75, 23)
+        Me.btnCreate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnCreate.TabIndex = 6
+        Me.btnCreate.Text = "Thực hiện"
         '
-        'TextBox2
+        'btnClose
         '
-        Me.TextBox2.Location = New System.Drawing.Point(119, 116)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(344, 21)
-        Me.TextBox2.TabIndex = 4
+        Me.btnClose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnClose.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnClose.Location = New System.Drawing.Point(388, 143)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnClose.TabIndex = 6
+        Me.btnClose.Text = "Đóng"
         '
         'ProgressBarX1
         '
@@ -150,12 +155,24 @@ Partial Class frmSaoLuu
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Sao lưu dự phòng dữ liệu."
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(119, 84)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(344, 21)
-        Me.TextBox1.TabIndex = 0
+        Me.txtName.Location = New System.Drawing.Point(119, 84)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(344, 21)
+        Me.txtName.TabIndex = 0
+        '
+        'btnLocal
+        '
+        Me.btnLocal.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.btnLocal.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnLocal.Enabled = False
+        Me.btnLocal.Location = New System.Drawing.Point(119, 143)
+        Me.btnLocal.Name = "btnLocal"
+        Me.btnLocal.Size = New System.Drawing.Size(102, 23)
+        Me.btnLocal.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.btnLocal.TabIndex = 9
+        Me.btnLocal.Text = "Thư mục chứa"
         '
         'frmSaoLuu
         '
@@ -180,9 +197,11 @@ Partial Class frmSaoLuu
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents ButtonX2 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents btnCreate As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents btnClose As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents btnSetPath As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents txtPath As TextBox
+    Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
+    Friend WithEvents btnLocal As DevComponents.DotNetBar.ButtonX
 End Class

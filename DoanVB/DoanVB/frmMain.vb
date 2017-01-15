@@ -337,6 +337,6 @@ Partial Public Class frmMain
     End Sub
 
     Private Sub bbtHuongDanSuDung_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbtHuongDanSuDung.ItemClick
-
+        Help.ShowHelp(Me, System.IO.Path.Combine(Application.StartupPath, "Huong Dan Su Dung.chm"))
     End Sub
 End Class
