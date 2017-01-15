@@ -107,6 +107,9 @@
     <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
+    <Reference Include="Spire.Barcode">
+      <HintPath>F:\BarCode\Bin\NET4.0\Spire.Barcode.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
@@ -340,6 +343,12 @@
       <DependentUpon>frmXuat.vb</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\frmXuat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\InMaVach\InMaVach.Designer.vb">
+      <DependentUpon>InMaVach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\InMaVach\InMaVach.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDangNhap.Designer.vb">
@@ -593,6 +602,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmXuat.resx">
       <DependentUpon>frmXuat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\InMaVach\InMaVach.resx">
+      <DependentUpon>InMaVach.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.vb</DependentUpon>

@@ -1159,3 +1159,6 @@ C:\Users\buing\Desktop\VB\DoanVB\DoanVB\bin\Debug\ru\DevExpress.Office.v16.2.Cor
 C:\Users\buing\Desktop\VB\DoanVB\DoanVB\obj\Debug\DoanVB.frmXuat.resources
 C:\Users\buing\Desktop\VB\DoanVB\DoanVB\obj\Debug\DoanVB.exe
 C:\Users\buing\Desktop\VB\DoanVB\DoanVB\obj\Debug\DoanVB.pdb
+C:\Users\buing\Desktop\VB\DoanVB\DoanVB\bin\Debug\Spire.Barcode.dll
+C:\Users\buing\Desktop\VB\DoanVB\DoanVB\bin\Debug\Spire.Barcode.xml
+C:\Users\buing\Desktop\VB\DoanVB\DoanVB\obj\Debug\DoanVB.InMaVach.resources
