@@ -5,4 +5,8 @@ Public Class frmNhatKyHeThong
         Dim dt As DataTable = NhatKyHeThongBUS.LoadDSNhatKy()
         Me.GridControl1.DataSource = dt
     End Sub
+
+    Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        frmNhatKyHeThong_Load(sender, e)
+    End Sub
 End Class
