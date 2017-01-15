@@ -2,6 +2,15 @@
 Imports DTO
 
 Public Class PhieuNhapHangDAO
+    Public Shared Sub CapnhatTongTien(ByVal maphieu As String, ByVal TongTien As Double)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim cmd As New SqlCommand("Update PHIEUNHAPHANG set TongTien = " & TongTien.ToString() & " where MaPhieuNhap = '" & maphieu & "'", cn)
+        cmd.CommandType = CommandType.Text
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
     Public Shared Function LoadDSPhieuNhapHang() As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

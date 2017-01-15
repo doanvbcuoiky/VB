@@ -34,8 +34,8 @@ Partial Class frmMuaHang
         Me.cboMaHang = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.dtHanThanhToan = New System.Windows.Forms.DateTimePicker()
+        Me.txtHinhThucThanhToan = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -48,14 +48,14 @@ Partial Class frmMuaHang
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.dtNgayNhap = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.cboKhoNhap = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cboNhanVien = New System.Windows.Forms.ComboBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtMaPhieu = New System.Windows.Forms.TextBox()
         Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
@@ -77,12 +77,14 @@ Partial Class frmMuaHang
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCalcEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCalcEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.RepositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
         Me.RepositoryItemComboBox2 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
-        Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
-        Me.RepositoryItemCalcEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
         Me.RepositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
         Me.RepositoryItemLookUpEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
@@ -108,7 +110,7 @@ Partial Class frmMuaHang
         Me.DockSite6 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
-        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCalcEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.PanelEx1.SuspendLayout()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl1.SuspendLayout()
@@ -132,10 +134,11 @@ Partial Class frmMuaHang
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemLookUpEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,6 +147,7 @@ Partial Class frmMuaHang
         Me.Bar1.SuspendLayout()
         Me.PanelDockContainer1.SuspendLayout()
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelEx1
@@ -244,8 +248,8 @@ Partial Class frmMuaHang
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboMaHang)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label14)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label13)
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.DateTimePicker1)
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.TextBox3)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.dtHanThanhToan)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtHinhThucThanhToan)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label8)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label7)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label6)
@@ -260,14 +264,14 @@ Partial Class frmMuaHang
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label2)
         Me.SplitContainerControl3.Panel1.Text = "Panel1"
         Me.SplitContainerControl3.Panel2.AutoScroll = True
-        Me.SplitContainerControl3.Panel2.Controls.Add(Me.DateTimePicker2)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.dtNgayNhap)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label12)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label11)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboKhoNhap)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label10)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label9)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboNhanVien)
-        Me.SplitContainerControl3.Panel2.Controls.Add(Me.TextBox4)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.txtMaPhieu)
         Me.SplitContainerControl3.Panel2.Text = "Panel2"
         Me.SplitContainerControl3.Size = New System.Drawing.Size(1004, 147)
         Me.SplitContainerControl3.SplitterPosition = 737
@@ -333,19 +337,19 @@ Partial Class frmMuaHang
         Me.Label13.TabIndex = 15
         Me.Label13.Text = "Mã hàng"
         '
-        'DateTimePicker1
+        'dtHanThanhToan
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(428, 119)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
-        Me.DateTimePicker1.TabIndex = 14
+        Me.dtHanThanhToan.Location = New System.Drawing.Point(428, 119)
+        Me.dtHanThanhToan.Name = "dtHanThanhToan"
+        Me.dtHanThanhToan.Size = New System.Drawing.Size(200, 21)
+        Me.dtHanThanhToan.TabIndex = 14
         '
-        'TextBox3
+        'txtHinhThucThanhToan
         '
-        Me.TextBox3.Location = New System.Drawing.Point(129, 119)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(166, 21)
-        Me.TextBox3.TabIndex = 12
+        Me.txtHinhThucThanhToan.Location = New System.Drawing.Point(129, 119)
+        Me.txtHinhThucThanhToan.Name = "txtHinhThucThanhToan"
+        Me.txtHinhThucThanhToan.Size = New System.Drawing.Size(166, 21)
+        Me.txtHinhThucThanhToan.TabIndex = 12
         '
         'Label8
         '
@@ -448,12 +452,12 @@ Partial Class frmMuaHang
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Tên NCC"
         '
-        'DateTimePicker2
+        'dtNgayNhap
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(59, 35)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(191, 21)
-        Me.DateTimePicker2.TabIndex = 8
+        Me.dtNgayNhap.Location = New System.Drawing.Point(59, 35)
+        Me.dtNgayNhap.Name = "dtNgayNhap"
+        Me.dtNgayNhap.Size = New System.Drawing.Size(191, 21)
+        Me.dtNgayNhap.TabIndex = 8
         '
         'Label12
         '
@@ -507,12 +511,12 @@ Partial Class frmMuaHang
         Me.cboNhanVien.Size = New System.Drawing.Size(191, 21)
         Me.cboNhanVien.TabIndex = 6
         '
-        'TextBox4
+        'txtMaPhieu
         '
-        Me.TextBox4.Location = New System.Drawing.Point(59, 8)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(191, 21)
-        Me.TextBox4.TabIndex = 1
+        Me.txtMaPhieu.Location = New System.Drawing.Point(59, 8)
+        Me.txtMaPhieu.Name = "txtMaPhieu"
+        Me.txtMaPhieu.Size = New System.Drawing.Size(191, 21)
+        Me.txtMaPhieu.TabIndex = 1
         '
         'SimpleButton5
         '
@@ -654,7 +658,7 @@ Partial Class frmMuaHang
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemCalcEdit1, Me.RepositoryItemCalcEdit2, Me.RepositoryItemLookUpEdit1, Me.RepositoryItemLookUpEdit2, Me.RepositoryItemLookUpEdit3})
+        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemComboBox1, Me.RepositoryItemComboBox2, Me.RepositoryItemCalcEdit1, Me.RepositoryItemCalcEdit2, Me.RepositoryItemLookUpEdit1, Me.RepositoryItemLookUpEdit2, Me.RepositoryItemLookUpEdit3, Me.RepositoryItemCalcEdit3, Me.RepositoryItemCalcEdit4})
         Me.GridControl1.Size = New System.Drawing.Size(1028, 215)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -695,14 +699,22 @@ Partial Class frmMuaHang
         'GridColumn4
         '
         Me.GridColumn4.Caption = "Số lượng"
+        Me.GridColumn4.ColumnEdit = Me.RepositoryItemCalcEdit1
         Me.GridColumn4.FieldName = "SoLuong"
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 3
         '
+        'RepositoryItemCalcEdit1
+        '
+        Me.RepositoryItemCalcEdit1.AutoHeight = False
+        Me.RepositoryItemCalcEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit1.Name = "RepositoryItemCalcEdit1"
+        '
         'GridColumn5
         '
         Me.GridColumn5.Caption = "Đơn giá"
+        Me.GridColumn5.ColumnEdit = Me.RepositoryItemCalcEdit4
         Me.GridColumn5.FieldName = "DonGia"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
@@ -711,10 +723,32 @@ Partial Class frmMuaHang
         'GridColumn6
         '
         Me.GridColumn6.Caption = "Thành tiền"
+        Me.GridColumn6.ColumnEdit = Me.RepositoryItemCalcEdit2
         Me.GridColumn6.FieldName = "ThanhTien"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 5
+        Me.GridColumn6.VisibleIndex = 6
+        '
+        'RepositoryItemCalcEdit2
+        '
+        Me.RepositoryItemCalcEdit2.AutoHeight = False
+        Me.RepositoryItemCalcEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit2.Name = "RepositoryItemCalcEdit2"
+        '
+        'GridColumn7
+        '
+        Me.GridColumn7.Caption = "Chiết khấu"
+        Me.GridColumn7.ColumnEdit = Me.RepositoryItemCalcEdit3
+        Me.GridColumn7.FieldName = "ChietKhau"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 5
+        '
+        'RepositoryItemCalcEdit3
+        '
+        Me.RepositoryItemCalcEdit3.AutoHeight = False
+        Me.RepositoryItemCalcEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit3.Name = "RepositoryItemCalcEdit3"
         '
         'RepositoryItemComboBox1
         '
@@ -727,18 +761,6 @@ Partial Class frmMuaHang
         Me.RepositoryItemComboBox2.AutoHeight = False
         Me.RepositoryItemComboBox2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.RepositoryItemComboBox2.Name = "RepositoryItemComboBox2"
-        '
-        'RepositoryItemCalcEdit1
-        '
-        Me.RepositoryItemCalcEdit1.AutoHeight = False
-        Me.RepositoryItemCalcEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemCalcEdit1.Name = "RepositoryItemCalcEdit1"
-        '
-        'RepositoryItemCalcEdit2
-        '
-        Me.RepositoryItemCalcEdit2.AutoHeight = False
-        Me.RepositoryItemCalcEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemCalcEdit2.Name = "RepositoryItemCalcEdit2"
         '
         'RepositoryItemLookUpEdit1
         '
@@ -1123,13 +1145,11 @@ Partial Class frmMuaHang
         Me.DockSite3.TabIndex = 6
         Me.DockSite3.TabStop = False
         '
-        'GridColumn7
+        'RepositoryItemCalcEdit4
         '
-        Me.GridColumn7.Caption = "Chiết khấu"
-        Me.GridColumn7.FieldName = "ChietKhau"
-        Me.GridColumn7.Name = "GridColumn7"
-        Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 6
+        Me.RepositoryItemCalcEdit4.AutoHeight = False
+        Me.RepositoryItemCalcEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit4.Name = "RepositoryItemCalcEdit4"
         '
         'frmMuaHang
         '
@@ -1170,10 +1190,11 @@ Partial Class frmMuaHang
         CType(Me.LayoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemComboBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemLookUpEdit3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1182,6 +1203,7 @@ Partial Class frmMuaHang
         Me.Bar1.ResumeLayout(False)
         Me.PanelDockContainer1.ResumeLayout(False)
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1234,8 +1256,8 @@ Partial Class frmMuaHang
     Friend WithEvents RepositoryItemComboBox2 As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
     Friend WithEvents RepositoryItemCalcEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
     Friend WithEvents RepositoryItemCalcEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents dtHanThanhToan As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtHinhThucThanhToan As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -1253,9 +1275,9 @@ Partial Class frmMuaHang
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMaPhieu As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtNgayNhap As System.Windows.Forms.DateTimePicker
     Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents RepositoryItemLookUpEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents RepositoryItemLookUpEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
@@ -1274,4 +1296,6 @@ Partial Class frmMuaHang
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents btnThem As System.Windows.Forms.Button
     Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemCalcEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
+    Friend WithEvents RepositoryItemCalcEdit4 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
 End Class

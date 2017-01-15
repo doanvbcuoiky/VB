@@ -60,6 +60,7 @@ Public Class frmMuaHang
         Me.ChiTietNhapHang.Columns.Add("SoLuong")
         Me.ChiTietNhapHang.Columns.Add("DonGia")
         Me.ChiTietNhapHang.Columns.Add("ChietKhau")
+        Me.ChiTietNhapHang.Columns.Add("ThanhTien")
         Me.GridControl1.DataSource = Me.ChiTietNhapHang
     End Sub
 
@@ -104,6 +105,12 @@ Public Class frmMuaHang
     End Sub
 
     Private Sub btnThem_Click(sender As Object, e As EventArgs) Handles btnThem.Click
+        Dim n As Integer = Me.ChiTietNhapHang.Select().Count() - 1
+        For i As Integer = 0 To n Step 1
+            If Me.ChiTietNhapHang.Select()(i).Item("MaHangHoa").ToString() = Me.cboMaHang.Text.ToString() Then
+                Return
+            End If
+        Next
         Dim dr As DataRow = Me.ChiTietNhapHang.NewRow()
         dr("MaHangHoa") = Me.cboMaHang.Text.ToString()
         dr("TenHangHoa") = Me.cboTenHang.Text.ToString()
@@ -116,26 +123,37 @@ Public Class frmMuaHang
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-        Dim n As Integer = Me.ChiTietNhapHang.Select().Count()
-        Dim phieunhap As New PhieuNhapHangDTO("maphieu", _
-                                              "ngayfnhap", _
-                                              "nhanvien", _
-                                              "kho", _
-                                              "hanthanhtoan", _
-                                              "nhacungcap", _
-                                              "hinhthuc", _
-                                              "tongtien", _
-                                              "tinhtrang")
+        Dim n As Integer = Me.ChiTietNhapHang.Select().Count() - 1
+        Dim phieunhap As New PhieuNhapHangDTO(Me.txtMaPhieu.Text, _
+                                              Me.dtNgayNhap.Value, _
+                                              Me.cboNhanVien.SelectedValue.ToString(), _
+                                              Me.cboKhoNhap.SelectedValue.ToString(), _
+                                              Me.dtHanThanhToan.Value, _
+                                              Me.cboMaNCC.Text, _
+                                              Me.txtHinhThucThanhToan.Text, _
+                                              0, _
+                                              False)
         If PhieuNhapHangBUS.ThemPhieuNhapHang(phieunhap) = True Then
+            Dim TongTien As Double = 0
             For i As Integer = 0 To n Step 1
-                Dim ct As New ChiTietPhieuNhapHangDTO("ma", _
-                                                      "Mahang", _
-                                                      "Donvi", _
-                                                      "soluong", _
-                                                      "dongia", _
-                                                      "chietkhau")
-                ChiTietPhieuNhapHangBUS.ThemChiTietPhieuNhapHang(ct)
+                Dim sl As Integer = System.Convert.ToInt32(Me.ChiTietNhapHang.Select()(0).Item("SoLuong").ToString())
+                Dim dongia As Double = System.Convert.ToDouble(Me.ChiTietNhapHang.Select()(0).Item("DonGia").ToString())
+                Dim ck As Double = System.Convert.ToDouble(Me.ChiTietNhapHang.Select()(0).Item("ChietKhau").ToString())
+                Dim ma As String = Me.ChiTietNhapHang.Select()(0).Item("MaHangHoa").ToString()
+                Dim dv As String = Me.ChiTietNhapHang.Select()(i).Item("DonVi").ToString()
+                Dim ct As New ChiTietPhieuNhapHangDTO(Me.txtMaPhieu.Text, _
+                                                      ma, _
+                                                      dv, _
+                                                      sl, dongia, ck)
+                Dim kq As Boolean = ChiTietPhieuNhapHangBUS.ThemChiTietPhieuNhapHang(ct)
+                'Cập nhật số lượng tồn kho hiện tại.
+                HangHoaBUS.CapNhatSoLuong_Tang(ma, sl)
+                'Tính tổng tiền
+                TongTien += 1.0 * sl * dongia * ck
             Next
+            'Cập nhật tổng tiền cho phiếu nhập.
+            PhieuNhapHangBUS.CapNhatTongTien(Me.txtMaPhieu.Text, TongTien)
+            MessageBox.Show("Đã duyệt xong. Cập nhật tổng tiền.")
         Else
             MessageBox.Show("Không lưu đưuọc.")
         End If

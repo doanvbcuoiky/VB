@@ -2,6 +2,16 @@
 Imports DTO
 
 Public Class HangHoaDAO
+
+    Public Shared Sub CapNhatSoLuong_Tang(ByVal ma As String, ByVal sl As Integer)
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim cmd As New SqlCommand("Update HANGHOA set TonHienTai = TonHienTai + " & sl.ToString() & " where MaHangHoa = '" & ma & "'", cn)
+        cmd.CommandType = CommandType.Text
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
     Public Shared Function ThongTinHangHoa(ByVal mahang As String) As DataTable
         Dim con As New Connect()
         Dim cn As New SqlConnection()

@@ -32,7 +32,7 @@ Public Class ChiTietPhieuNhapHangDAO
         cmd.Parameters("@MaHangHoa").Value = CTPNK.MaHangHoa1
         cmd.Parameters("@DonVi").Value = CTPNK.DonVi1
         cmd.Parameters("@SoLuong").Value = CTPNK.SoLuong1
-        cmd.Parameters("@DonGia").Value = CTPNK.DonGia1
+        cmd.Parameters("@DonGia").Value = CTPNK.DonGia1.ToString()
         cmd.Parameters("@ChietKhau").Value = CTPNK.ChietKhau1
 
         If cmd.ExecuteNonQuery() > 0 Then
