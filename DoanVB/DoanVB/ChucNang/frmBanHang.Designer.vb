@@ -49,13 +49,9 @@ Partial Class frmBanHang
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn10 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
@@ -73,14 +69,12 @@ Partial Class frmBanHang
         Me.cboMaHang = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.dtHanThanhToan = New System.Windows.Forms.DateTimePicker()
         Me.txtHinhThucThanhToan = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.cboMaNCC = New System.Windows.Forms.ComboBox()
+        Me.cboMaKh = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cboTenNCC = New System.Windows.Forms.ComboBox()
+        Me.cboTenKH = New System.Windows.Forms.ComboBox()
         Me.txtGhiChu = New System.Windows.Forms.RichTextBox()
         Me.txtDienThoai = New System.Windows.Forms.TextBox()
         Me.txtDiaChi = New System.Windows.Forms.TextBox()
@@ -90,7 +84,7 @@ Partial Class frmBanHang
         Me.dtNgayNhap = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.cboKhoNhap = New System.Windows.Forms.ComboBox()
+        Me.cboKhoXuat = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cboNhanVien = New System.Windows.Forms.ComboBox()
@@ -101,6 +95,9 @@ Partial Class frmBanHang
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.RepositoryItemCalcEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.RepositoryItemCalcEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.DockSite1.SuspendLayout()
         CType(Me.Bar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Bar1.SuspendLayout()
@@ -123,6 +120,9 @@ Partial Class frmBanHang
         Me.SplitContainerControl1.SuspendLayout()
         Me.PanelEx1.SuspendLayout()
         CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DotNetBarManager1
@@ -521,13 +521,14 @@ Partial Class frmBanHang
         Me.GridControl1.Location = New System.Drawing.Point(12, 12)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
+        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCalcEdit1, Me.RepositoryItemCalcEdit2, Me.RepositoryItemCalcEdit3})
         Me.GridControl1.Size = New System.Drawing.Size(990, 188)
         Me.GridControl1.TabIndex = 4
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn5, Me.GridColumn6, Me.GridColumn9})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
@@ -536,6 +537,7 @@ Partial Class frmBanHang
         'GridColumn1
         '
         Me.GridColumn1.Caption = "Mã Hàng"
+        Me.GridColumn1.FieldName = "MaHangHoa"
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
@@ -543,6 +545,7 @@ Partial Class frmBanHang
         'GridColumn2
         '
         Me.GridColumn2.Caption = "Tên Hàng"
+        Me.GridColumn2.FieldName = "TenHangHoa"
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
@@ -550,58 +553,37 @@ Partial Class frmBanHang
         'GridColumn3
         '
         Me.GridColumn3.Caption = "Đơn Vị"
+        Me.GridColumn3.FieldName = "DonVi"
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 2
         '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "Loại Giá"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 3
-        '
         'GridColumn5
         '
         Me.GridColumn5.Caption = "Số Lượng"
+        Me.GridColumn5.ColumnEdit = Me.RepositoryItemCalcEdit1
+        Me.GridColumn5.FieldName = "SoLuong"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 4
+        Me.GridColumn5.VisibleIndex = 3
         '
         'GridColumn6
         '
         Me.GridColumn6.Caption = "Đơn Giá"
+        Me.GridColumn6.ColumnEdit = Me.RepositoryItemCalcEdit2
+        Me.GridColumn6.FieldName = "DonGia"
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 5
-        '
-        'GridColumn7
-        '
-        Me.GridColumn7.Caption = "Thành Tiền"
-        Me.GridColumn7.Name = "GridColumn7"
-        Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 6
-        '
-        'GridColumn8
-        '
-        Me.GridColumn8.Caption = "CK (%)"
-        Me.GridColumn8.Name = "GridColumn8"
-        Me.GridColumn8.Visible = True
-        Me.GridColumn8.VisibleIndex = 7
+        Me.GridColumn6.VisibleIndex = 4
         '
         'GridColumn9
         '
-        Me.GridColumn9.Caption = "Chiết Khấu"
+        Me.GridColumn9.Caption = "Chiết Khấu(%)"
+        Me.GridColumn9.ColumnEdit = Me.RepositoryItemCalcEdit3
+        Me.GridColumn9.FieldName = "ChietKhau"
         Me.GridColumn9.Name = "GridColumn9"
         Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 8
-        '
-        'GridColumn10
-        '
-        Me.GridColumn10.Caption = "Thanh Toán"
-        Me.GridColumn10.Name = "GridColumn10"
-        Me.GridColumn10.Visible = True
-        Me.GridColumn10.VisibleIndex = 9
+        Me.GridColumn9.VisibleIndex = 5
         '
         'CheckBox1
         '
@@ -652,9 +634,9 @@ Partial Class frmBanHang
         'EmptySpaceItem4
         '
         Me.EmptySpaceItem4.AllowHotTrack = False
-        Me.EmptySpaceItem4.Location = New System.Drawing.Point(286, 200)
+        Me.EmptySpaceItem4.Location = New System.Drawing.Point(288, 192)
         Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
-        Me.EmptySpaceItem4.Size = New System.Drawing.Size(701, 24)
+        Me.EmptySpaceItem4.Size = New System.Drawing.Size(706, 24)
         Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem22
@@ -684,14 +666,12 @@ Partial Class frmBanHang
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboMaHang)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label14)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label13)
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.dtHanThanhToan)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtHinhThucThanhToan)
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label8)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label7)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label6)
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboMaNCC)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboMaKh)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.Label5)
-        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboTenNCC)
+        Me.SplitContainerControl3.Panel1.Controls.Add(Me.cboTenKH)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtGhiChu)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtDienThoai)
         Me.SplitContainerControl3.Panel1.Controls.Add(Me.txtDiaChi)
@@ -702,7 +682,7 @@ Partial Class frmBanHang
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.dtNgayNhap)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label12)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label11)
-        Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboKhoNhap)
+        Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboKhoXuat)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label10)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.Label9)
         Me.SplitContainerControl3.Panel2.Controls.Add(Me.cboNhanVien)
@@ -748,7 +728,7 @@ Partial Class frmBanHang
         '
         'numSoLuong
         '
-        Me.numSoLuong.Location = New System.Drawing.Point(660, 134)
+        Me.numSoLuong.Location = New System.Drawing.Point(660, 132)
         Me.numSoLuong.Name = "numSoLuong"
         Me.numSoLuong.Size = New System.Drawing.Size(75, 21)
         Me.numSoLuong.TabIndex = 42
@@ -774,7 +754,7 @@ Partial Class frmBanHang
         'cboTenHang
         '
         Me.cboTenHang.FormattingEnabled = True
-        Me.cboTenHang.Location = New System.Drawing.Point(499, 154)
+        Me.cboTenHang.Location = New System.Drawing.Point(512, 154)
         Me.cboTenHang.Name = "cboTenHang"
         Me.cboTenHang.Size = New System.Drawing.Size(133, 21)
         Me.cboTenHang.TabIndex = 39
@@ -782,7 +762,7 @@ Partial Class frmBanHang
         'cboMaHang
         '
         Me.cboMaHang.FormattingEnabled = True
-        Me.cboMaHang.Location = New System.Drawing.Point(499, 128)
+        Me.cboMaHang.Location = New System.Drawing.Point(512, 128)
         Me.cboMaHang.Name = "cboMaHang"
         Me.cboMaHang.Size = New System.Drawing.Size(133, 21)
         Me.cboMaHang.TabIndex = 38
@@ -805,28 +785,12 @@ Partial Class frmBanHang
         Me.Label13.TabIndex = 36
         Me.Label13.Text = "Mã hàng"
         '
-        'dtHanThanhToan
-        '
-        Me.dtHanThanhToan.Location = New System.Drawing.Point(432, 184)
-        Me.dtHanThanhToan.Name = "dtHanThanhToan"
-        Me.dtHanThanhToan.Size = New System.Drawing.Size(200, 21)
-        Me.dtHanThanhToan.TabIndex = 35
-        '
         'txtHinhThucThanhToan
         '
         Me.txtHinhThucThanhToan.Location = New System.Drawing.Point(139, 184)
         Me.txtHinhThucThanhToan.Name = "txtHinhThucThanhToan"
         Me.txtHinhThucThanhToan.Size = New System.Drawing.Size(166, 21)
         Me.txtHinhThucThanhToan.TabIndex = 34
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(347, 187)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(82, 13)
-        Me.Label8.TabIndex = 33
-        Me.Label8.Text = "Hạn thanh toán"
         '
         'Label7
         '
@@ -846,30 +810,30 @@ Partial Class frmBanHang
         Me.Label6.TabIndex = 31
         Me.Label6.Text = "Điện thoại"
         '
-        'cboMaNCC
+        'cboMaKh
         '
-        Me.cboMaNCC.FormattingEnabled = True
-        Me.cboMaNCC.Location = New System.Drawing.Point(499, 74)
-        Me.cboMaNCC.Name = "cboMaNCC"
-        Me.cboMaNCC.Size = New System.Drawing.Size(133, 21)
-        Me.cboMaNCC.TabIndex = 30
+        Me.cboMaKh.FormattingEnabled = True
+        Me.cboMaKh.Location = New System.Drawing.Point(512, 74)
+        Me.cboMaKh.Name = "cboMaKh"
+        Me.cboMaKh.Size = New System.Drawing.Size(133, 21)
+        Me.cboMaKh.TabIndex = 30
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(435, 77)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 13)
+        Me.Label5.Size = New System.Drawing.Size(79, 13)
         Me.Label5.TabIndex = 29
-        Me.Label5.Text = "Mã NCC"
+        Me.Label5.Text = "Mã khách hàng"
         '
-        'cboTenNCC
+        'cboTenKH
         '
-        Me.cboTenNCC.FormattingEnabled = True
-        Me.cboTenNCC.Location = New System.Drawing.Point(86, 73)
-        Me.cboTenNCC.Name = "cboTenNCC"
-        Me.cboTenNCC.Size = New System.Drawing.Size(343, 21)
-        Me.cboTenNCC.TabIndex = 28
+        Me.cboTenKH.FormattingEnabled = True
+        Me.cboTenKH.Location = New System.Drawing.Point(86, 73)
+        Me.cboTenKH.Name = "cboTenKH"
+        Me.cboTenKH.Size = New System.Drawing.Size(343, 21)
+        Me.cboTenKH.TabIndex = 28
         '
         'txtGhiChu
         '
@@ -881,7 +845,7 @@ Partial Class frmBanHang
         '
         'txtDienThoai
         '
-        Me.txtDienThoai.Location = New System.Drawing.Point(499, 101)
+        Me.txtDienThoai.Location = New System.Drawing.Point(512, 101)
         Me.txtDienThoai.Name = "txtDienThoai"
         Me.txtDienThoai.Size = New System.Drawing.Size(133, 21)
         Me.txtDienThoai.TabIndex = 26
@@ -916,9 +880,9 @@ Partial Class frmBanHang
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(24, 79)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.Size = New System.Drawing.Size(63, 13)
         Me.Label2.TabIndex = 22
-        Me.Label2.Text = "Tên NCC"
+        Me.Label2.Text = "Khách hàng"
         '
         'dtNgayNhap
         '
@@ -945,13 +909,13 @@ Partial Class frmBanHang
         Me.Label11.TabIndex = 12
         Me.Label11.Text = "Nhân viên"
         '
-        'cboKhoNhap
+        'cboKhoXuat
         '
-        Me.cboKhoNhap.FormattingEnabled = True
-        Me.cboKhoNhap.Location = New System.Drawing.Point(61, 129)
-        Me.cboKhoNhap.Name = "cboKhoNhap"
-        Me.cboKhoNhap.Size = New System.Drawing.Size(191, 21)
-        Me.cboKhoNhap.TabIndex = 15
+        Me.cboKhoXuat.FormattingEnabled = True
+        Me.cboKhoXuat.Location = New System.Drawing.Point(61, 129)
+        Me.cboKhoXuat.Name = "cboKhoXuat"
+        Me.cboKhoXuat.Size = New System.Drawing.Size(191, 21)
+        Me.cboKhoXuat.TabIndex = 15
         '
         'Label10
         '
@@ -1035,6 +999,24 @@ Partial Class frmBanHang
         Me.Label1.TabIndex = 48
         Me.Label1.Text = "Phiếu bán hàng"
         '
+        'RepositoryItemCalcEdit1
+        '
+        Me.RepositoryItemCalcEdit1.AutoHeight = False
+        Me.RepositoryItemCalcEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit1.Name = "RepositoryItemCalcEdit1"
+        '
+        'RepositoryItemCalcEdit2
+        '
+        Me.RepositoryItemCalcEdit2.AutoHeight = False
+        Me.RepositoryItemCalcEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit2.Name = "RepositoryItemCalcEdit2"
+        '
+        'RepositoryItemCalcEdit3
+        '
+        Me.RepositoryItemCalcEdit3.AutoHeight = False
+        Me.RepositoryItemCalcEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit3.Name = "RepositoryItemCalcEdit3"
+        '
         'frmBanHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1073,6 +1055,9 @@ Partial Class frmBanHang
         Me.SplitContainerControl1.ResumeLayout(False)
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1110,13 +1095,9 @@ Partial Class frmBanHang
     Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn7 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents LayoutControlGroup3 As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlItem22 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents EmptySpaceItem4 As DevExpress.XtraLayout.EmptySpaceItem
@@ -1129,14 +1110,12 @@ Partial Class frmBanHang
     Friend WithEvents cboMaHang As System.Windows.Forms.ComboBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents dtHanThanhToan As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtHinhThucThanhToan As System.Windows.Forms.TextBox
-    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents cboMaNCC As System.Windows.Forms.ComboBox
+    Friend WithEvents cboMaKh As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents cboTenNCC As System.Windows.Forms.ComboBox
+    Friend WithEvents cboTenKH As System.Windows.Forms.ComboBox
     Friend WithEvents txtGhiChu As System.Windows.Forms.RichTextBox
     Friend WithEvents txtDienThoai As System.Windows.Forms.TextBox
     Friend WithEvents txtDiaChi As System.Windows.Forms.TextBox
@@ -1146,7 +1125,7 @@ Partial Class frmBanHang
     Friend WithEvents dtNgayNhap As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents cboKhoNhap As System.Windows.Forms.ComboBox
+    Friend WithEvents cboKhoXuat As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents cboNhanVien As System.Windows.Forms.ComboBox
@@ -1157,4 +1136,7 @@ Partial Class frmBanHang
     Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents RepositoryItemCalcEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
+    Friend WithEvents RepositoryItemCalcEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
+    Friend WithEvents RepositoryItemCalcEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit
 End Class

@@ -153,7 +153,7 @@ Public Class frmMuaHang
             Next
             'Cập nhật tổng tiền cho phiếu nhập.
             PhieuNhapHangBUS.CapNhatTongTien(Me.txtMaPhieu.Text, TongTien)
-            MessageBox.Show("Đã duyệt xong. Cập nhật tổng tiền.")
+            MessageBox.Show("Đã lưu hóa đơn.")
         Else
             MessageBox.Show("Không lưu đưuọc.")
         End If

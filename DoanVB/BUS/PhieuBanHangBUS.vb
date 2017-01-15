@@ -2,6 +2,9 @@
 Imports DTO
 
 Public Class PhieuBanHangBUS
+    Public Shared Sub CapNhatTongTien(ByVal maphieu As String, ByVal TongTien As Double)
+        PhieuBanHangDAO.CapnhatTongTien(maphieu, TongTien)
+    End Sub
     Public Shared Function LoadDSPhieuBanHang() As DataTable
         Return PhieuBanHangDAO.LoadDSPhieuBanHang()
     End Function

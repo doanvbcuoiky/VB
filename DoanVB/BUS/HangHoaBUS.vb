@@ -6,6 +6,9 @@ Public Class HangHoaBUS
     Public Shared Sub CapNhatSoLuong_Tang(ByVal ma As String, ByVal sl As Integer)
         HangHoaDAO.CapNhatSoLuong_Tang(ma, sl)
     End Sub
+    Public Shared Sub CapNhatSoLuong_Giam(ByVal ma As String, ByVal sl As Integer)
+        HangHoaDAO.CapNhatSoLuong_Giam(ma, sl)
+    End Sub
     Public Shared Function ThongTinHangHoa(ByVal mahang As String) As HangHoaDTO
         Dim dt As DataTable = HangHoaDAO.ThongTinHangHoa(mahang)
         If dt.Select().Count() > 0 Then
