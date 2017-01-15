@@ -23,7 +23,6 @@ Partial Class frmPhanQuyen
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPhanQuyen))
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
-        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem4 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem5 = New DevExpress.XtraBars.BarButtonItem()
@@ -32,9 +31,11 @@ Partial Class frmPhanQuyen
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
+        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
         Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.SplitContainerControl1 = New DevExpress.XtraEditors.SplitContainerControl()
+        Me.TreeList1 = New DevExpress.XtraTreeList.TreeList()
         Me.SplitContainerControl2 = New DevExpress.XtraEditors.SplitContainerControl()
         Me.SplitContainerControl3 = New DevExpress.XtraEditors.SplitContainerControl()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -58,12 +59,12 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn11 = New DevExpress.XtraTreeList.Columns.TreeListColumn()
         Me.TreeListColumn12 = New DevExpress.XtraTreeList.Columns.TreeListColumn()
         Me.RepositoryItemCheckEdit10 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
-        Me.TreeList1 = New DevExpress.XtraTreeList.TreeList()
         Me.TreeListColumn1 = New DevExpress.XtraTreeList.Columns.TreeListColumn()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEx1.SuspendLayout()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl1.SuspendLayout()
+        CType(Me.TreeList1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainerControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl2.SuspendLayout()
         CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,7 +79,6 @@ Partial Class frmPhanQuyen
         CType(Me.RepositoryItemCheckEdit8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckEdit9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckEdit10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TreeList1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BarManager1
@@ -103,14 +103,6 @@ Partial Class frmPhanQuyen
         Me.Bar2.OptionsBar.MultiLine = True
         Me.Bar2.OptionsBar.UseWholeRow = True
         Me.Bar2.Text = "Main menu"
-        '
-        'BarButtonItem1
-        '
-        Me.BarButtonItem1.Caption = "Thêm Vai Trò"
-        Me.BarButtonItem1.Glyph = CType(resources.GetObject("BarButtonItem1.Glyph"), System.Drawing.Image)
-        Me.BarButtonItem1.Id = 0
-        Me.BarButtonItem1.LargeGlyph = CType(resources.GetObject("BarButtonItem1.LargeGlyph"), System.Drawing.Image)
-        Me.BarButtonItem1.Name = "BarButtonItem1"
         '
         'BarButtonItem3
         '
@@ -172,6 +164,14 @@ Partial Class frmPhanQuyen
         Me.barDockControlRight.Location = New System.Drawing.Point(714, 24)
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 352)
         '
+        'BarButtonItem1
+        '
+        Me.BarButtonItem1.Caption = "Thêm Vai Trò"
+        Me.BarButtonItem1.Glyph = CType(resources.GetObject("BarButtonItem1.Glyph"), System.Drawing.Image)
+        Me.BarButtonItem1.Id = 0
+        Me.BarButtonItem1.LargeGlyph = CType(resources.GetObject("BarButtonItem1.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem1.Name = "BarButtonItem1"
+        '
         'BarButtonItem2
         '
         Me.BarButtonItem2.Caption = "BarButtonItem2"
@@ -210,6 +210,27 @@ Partial Class frmPhanQuyen
         Me.SplitContainerControl1.SplitterPosition = 124
         Me.SplitContainerControl1.TabIndex = 0
         Me.SplitContainerControl1.Text = "SplitContainerControl1"
+        '
+        'TreeList1
+        '
+        Me.TreeList1.Caption = "MaNguoiDung"
+        Me.TreeList1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TreeList1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TreeList1.Location = New System.Drawing.Point(0, 0)
+        Me.TreeList1.Name = "TreeList1"
+        Me.TreeList1.BeginUnboundLoad()
+        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
+        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
+        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
+        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
+        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
+        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
+        Me.TreeList1.EndUnboundLoad()
+        Me.TreeList1.OptionsBehavior.Editable = False
+        Me.TreeList1.OptionsBehavior.ReadOnly = True
+        Me.TreeList1.ParentFieldName = "MaNguoiDung"
+        Me.TreeList1.Size = New System.Drawing.Size(124, 352)
+        Me.TreeList1.TabIndex = 0
         '
         'SplitContainerControl2
         '
@@ -299,8 +320,6 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn3.FieldName = "TatCa"
         Me.TreeListColumn3.MinWidth = 52
         Me.TreeListColumn3.Name = "TreeListColumn3"
-        Me.TreeListColumn3.Visible = True
-        Me.TreeListColumn3.VisibleIndex = 0
         '
         'RepositoryItemCheckEdit2
         '
@@ -313,8 +332,7 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn4.ColumnEdit = Me.RepositoryItemCheckEdit3
         Me.TreeListColumn4.FieldName = "TruyCap"
         Me.TreeListColumn4.Name = "TreeListColumn4"
-        Me.TreeListColumn4.Visible = True
-        Me.TreeListColumn4.VisibleIndex = 1
+        Me.TreeListColumn4.Width = 117
         '
         'RepositoryItemCheckEdit3
         '
@@ -327,8 +345,7 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn5.ColumnEdit = Me.RepositoryItemCheckEdit4
         Me.TreeListColumn5.FieldName = "Them"
         Me.TreeListColumn5.Name = "TreeListColumn5"
-        Me.TreeListColumn5.Visible = True
-        Me.TreeListColumn5.VisibleIndex = 2
+        Me.TreeListColumn5.Width = 125
         '
         'RepositoryItemCheckEdit4
         '
@@ -341,8 +358,7 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn6.ColumnEdit = Me.RepositoryItemCheckEdit5
         Me.TreeListColumn6.FieldName = "Sua"
         Me.TreeListColumn6.Name = "TreeListColumn6"
-        Me.TreeListColumn6.Visible = True
-        Me.TreeListColumn6.VisibleIndex = 3
+        Me.TreeListColumn6.Width = 143
         '
         'RepositoryItemCheckEdit5
         '
@@ -355,8 +371,7 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn7.ColumnEdit = Me.RepositoryItemCheckEdit6
         Me.TreeListColumn7.FieldName = "Xoa"
         Me.TreeListColumn7.Name = "TreeListColumn7"
-        Me.TreeListColumn7.Visible = True
-        Me.TreeListColumn7.VisibleIndex = 4
+        Me.TreeListColumn7.Width = 169
         '
         'RepositoryItemCheckEdit6
         '
@@ -369,8 +384,7 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn8.ColumnEdit = Me.RepositoryItemCheckEdit7
         Me.TreeListColumn8.FieldName = "In"
         Me.TreeListColumn8.Name = "TreeListColumn8"
-        Me.TreeListColumn8.Visible = True
-        Me.TreeListColumn8.VisibleIndex = 5
+        Me.TreeListColumn8.Width = 214
         '
         'RepositoryItemCheckEdit7
         '
@@ -413,34 +427,12 @@ Partial Class frmPhanQuyen
         Me.TreeListColumn12.ColumnEdit = Me.RepositoryItemCheckEdit10
         Me.TreeListColumn12.FieldName = "TinhTrang"
         Me.TreeListColumn12.Name = "TreeListColumn12"
-        Me.TreeListColumn12.Visible = True
-        Me.TreeListColumn12.VisibleIndex = 6
+        Me.TreeListColumn12.Width = 300
         '
         'RepositoryItemCheckEdit10
         '
         Me.RepositoryItemCheckEdit10.AutoHeight = False
         Me.RepositoryItemCheckEdit10.Name = "RepositoryItemCheckEdit10"
-        '
-        'TreeList1
-        '
-        Me.TreeList1.Caption = "MaNguoiDung"
-        Me.TreeList1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.TreeList1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TreeList1.Location = New System.Drawing.Point(0, 0)
-        Me.TreeList1.Name = "TreeList1"
-        Me.TreeList1.BeginUnboundLoad()
-        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
-        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
-        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
-        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
-        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
-        Me.TreeList1.AppendNode(New Object(-1) {}, -1)
-        Me.TreeList1.EndUnboundLoad()
-        Me.TreeList1.OptionsBehavior.Editable = False
-        Me.TreeList1.OptionsBehavior.ReadOnly = True
-        Me.TreeList1.ParentFieldName = "MaNguoiDung"
-        Me.TreeList1.Size = New System.Drawing.Size(124, 352)
-        Me.TreeList1.TabIndex = 0
         '
         'TreeListColumn1
         '
@@ -465,6 +457,7 @@ Partial Class frmPhanQuyen
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerControl1.ResumeLayout(False)
+        CType(Me.TreeList1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SplitContainerControl2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerControl2.ResumeLayout(False)
         CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -479,7 +472,6 @@ Partial Class frmPhanQuyen
         CType(Me.RepositoryItemCheckEdit8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckEdit9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckEdit10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TreeList1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

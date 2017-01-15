@@ -27,6 +27,7 @@ Public Class frmNhaCungCap
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Nhà cung cấp", "Xóa")
         Dim dlgresult = MessageBox.Show("Bạn muốn xóa nhân viên có mã  " & Me.lblMaNhaCungCap.Text & " không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If dlgresult = Windows.Forms.DialogResult.Yes Then
             If NhaCungCapBUS.XoaNhaCungCap(Me.lblMaNhaCungCap.Text) = True Then

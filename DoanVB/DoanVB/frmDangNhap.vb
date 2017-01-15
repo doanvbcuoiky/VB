@@ -30,9 +30,11 @@ Public Class frmDangNhap
                 NguoiDungBUS.KhongLuuThongTinDangNhap(Me.cboTaiKhoan.SelectedValue.ToString())
             End If
             frmMain.USER = cboTaiKhoan.SelectedValue.ToString()
+            NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Đăng nhập", "Đăng nhập")
             Me.Close()
         Else
             MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.")
+            NhatKyHeThongBUS.ThemNhatKy("", "Đăng nhập", "Cố gắng Đăng nhập")
         End If
     End Sub
 

@@ -23,6 +23,7 @@ Public Class frmBoPhan
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bộ Phận", "Xóa")
         Dim dlgresult = MessageBox.Show("Bạn muốn xóa nhân viên có mã  " & Me.lblMaBoPhan.Text & " không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If dlgresult = Windows.Forms.DialogResult.Yes Then
             If BoPhanBUS.XoaBoPhan(Me.lblMaBoPhan.Text) = True Then
@@ -33,6 +34,7 @@ Public Class frmBoPhan
     End Sub
 
     Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bộ phận", "Đóng")
         Me.Close()
     End Sub
 

@@ -13,6 +13,7 @@ Public Class frmSuaBoPhan
     End Sub
 
     Private Sub btbLuu_Click(sender As Object, e As EventArgs) Handles btbLuu.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bộ phận", "thêm bộ phận")
         Dim bophan As New BoPhanDTO(Me.txtMa.Text, Me.txtTen.Text, Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         If BoPhanBUS.SuaBoPhan(bophan) = True Then
             MessageBox.Show("Sửa thành công")

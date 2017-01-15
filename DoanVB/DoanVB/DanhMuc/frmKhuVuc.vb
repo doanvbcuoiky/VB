@@ -18,6 +18,7 @@ Public Class frmKhuVuc
     End Sub
     'Xoa khu vuc
     Private Sub BarButtonItem15_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem15.ItemClick
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Khu vực", "Xóa")
         Dim dlgresult = MessageBox.Show("Bạn muốn xóa nhân viên có mã  " & Me.lblMaKhuVuc.Text & " không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If dlgresult = Windows.Forms.DialogResult.Yes Then
             If KhuVucBUS.XoaKhuVuc(Me.lblMaKhuVuc.Text) = True Then

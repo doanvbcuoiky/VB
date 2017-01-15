@@ -38,6 +38,7 @@ Public Class frmSuaHangHoa
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Hàng hóa", "Sửa hàng : " & Me.txtMaHangHoa.Text.ToString())
         Dim hanghoa As New HangHoaDTO(Me.txtMaHangHoa.Text, Me.txtTenHangHoa.Text, Me.txtKieuHangHoa.Text, _
                                      Me.cboNhomHang.SelectedValue.ToString(), Me.txtMaVach.Text, _
                                      Me.cboDonVi.SelectedValue.ToString(), Me.txtXuatXu.Text, _

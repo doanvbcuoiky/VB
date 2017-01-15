@@ -25,6 +25,7 @@ Public Class frmDonViTinh
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Đơn vị tính", "Xóa")
         Dim dlgresult = MessageBox.Show("Bạn muốn xóa nhân viên có mã  " & Me.lblMaDonVi.Text & " không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If dlgresult = Windows.Forms.DialogResult.Yes Then
             If DonViTinhBUS.XoaDonViTinh(Me.lblMaDonVi.Text) = True Then
@@ -35,6 +36,7 @@ Public Class frmDonViTinh
     End Sub
 
     Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Xóa", "Đóng")
         Me.Close()
     End Sub
 

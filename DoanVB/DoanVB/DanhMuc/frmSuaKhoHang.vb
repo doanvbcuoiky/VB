@@ -32,6 +32,7 @@ Public Class frmSuaKhoHang
     End Sub
 
     Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Kho hàng", "Sửa kho hàng: " & Me.txtMaKhoHang.Text.ToString())
         Dim khohang As New KhoHangDTO(Me.txtMaKhoHang.Text, Me.txtKiHieu.Text, Me.txtTenKhoHang.Text, _
                                       Me.cboNguoiQuanLi.SelectedValue.ToString(), _
                                       Me.cboNguoiLienHe.SelectedValue.ToString(), _

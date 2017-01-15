@@ -79,6 +79,7 @@ Partial Class frmMuaHang
         Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCalcEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCalcEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -110,7 +111,6 @@ Partial Class frmMuaHang
         Me.DockSite6 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
-        Me.RepositoryItemCalcEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
         Me.PanelEx1.SuspendLayout()
         CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl1.SuspendLayout()
@@ -135,6 +135,7 @@ Partial Class frmMuaHang
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCalcEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,7 +148,6 @@ Partial Class frmMuaHang
         Me.Bar1.SuspendLayout()
         Me.PanelDockContainer1.SuspendLayout()
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCalcEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelEx1
@@ -720,6 +720,12 @@ Partial Class frmMuaHang
         Me.GridColumn5.Visible = True
         Me.GridColumn5.VisibleIndex = 4
         '
+        'RepositoryItemCalcEdit4
+        '
+        Me.RepositoryItemCalcEdit4.AutoHeight = False
+        Me.RepositoryItemCalcEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemCalcEdit4.Name = "RepositoryItemCalcEdit4"
+        '
         'GridColumn6
         '
         Me.GridColumn6.Caption = "Thành tiền"
@@ -1145,12 +1151,6 @@ Partial Class frmMuaHang
         Me.DockSite3.TabIndex = 6
         Me.DockSite3.TabStop = False
         '
-        'RepositoryItemCalcEdit4
-        '
-        Me.RepositoryItemCalcEdit4.AutoHeight = False
-        Me.RepositoryItemCalcEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.RepositoryItemCalcEdit4.Name = "RepositoryItemCalcEdit4"
-        '
         'frmMuaHang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1191,6 +1191,7 @@ Partial Class frmMuaHang
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCalcEdit4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1203,7 +1204,6 @@ Partial Class frmMuaHang
         Me.Bar1.ResumeLayout(False)
         Me.PanelDockContainer1.ResumeLayout(False)
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCalcEdit4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

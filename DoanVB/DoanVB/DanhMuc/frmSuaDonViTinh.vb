@@ -13,6 +13,7 @@ Public Class frmSuaDonViTinh
     End Sub
 
     Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Đơn vụi tính", "Sửa đơn vị" & Me.txtMaDonVi.Text.ToString())
         Dim donvitinh As New DonViTinhDTO(Me.txtMaDonVi.Text, Me.txtTenDonVi.Text, Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         If DonViTinhBUS.SuaDonViTinh(donvitinh) = True Then
             MessageBox.Show("Sửa thành công.")

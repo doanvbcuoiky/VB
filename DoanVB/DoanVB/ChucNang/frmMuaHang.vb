@@ -123,6 +123,7 @@ Public Class frmMuaHang
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Mua hàng", "Lưu và thêm")
         Dim n As Integer = Me.ChiTietNhapHang.Select().Count() - 1
         Dim phieunhap As New PhieuNhapHangDTO(Me.txtMaPhieu.Text, _
                                               Me.dtNgayNhap.Value, _
@@ -174,10 +175,16 @@ Public Class frmMuaHang
     End Sub
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Mua hàng", "Tạo mới")
         frmMuaHang_Load(sender, e)
     End Sub
 
     Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles SimpleButton4.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Mua hàng", "Đóng")
         Me.Close()
+    End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Mua hàng", "In")
     End Sub
 End Class

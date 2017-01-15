@@ -14,9 +14,11 @@ Public Class frmDoiMatKhau
             txtMkMoi.Text = ""
             txtXacNhan.Text = ""
         End If
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Đổi mật khẩu", "click button Lưu")
     End Sub
 
     Private Sub ButtonX1_Click(sender As Object, e As EventArgs) Handles ButtonX1.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Đổi mật khẩu", "")
         Me.Close()
     End Sub
 

@@ -110,6 +110,7 @@ Public Class frmBanHang
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bán hàng", "Lưu và thêm")
         If Me.txtMaPhieu.Text.ToString() = "" Then
             MessageBox.Show("Mã phiếu không đưuọc để trống.")
         Else
@@ -165,6 +166,7 @@ Public Class frmBanHang
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
         frmBanHang_Load(sender, e)
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bán hàng", "tạo mới")
     End Sub
 
     Private Sub cboTenKH_SelectedValueChanged(sender As Object, e As EventArgs) Handles cboTenKH.SelectedValueChanged
@@ -202,10 +204,15 @@ Public Class frmBanHang
     End Sub
 
     Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles SimpleButton4.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bán hàng", "Đóng")
         Me.Close()
     End Sub
 
     Private Sub SimpleButton5_Click(sender As Object, e As EventArgs) Handles SimpleButton5.Click
         frmBanHang_Load(sender, e)
+    End Sub
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        NhatKyHeThongBUS.ThemNhatKy(frmMain.USER, "Bán hàng", "in")
     End Sub
 End Class
