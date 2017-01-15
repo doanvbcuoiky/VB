@@ -149,7 +149,7 @@ Public Class frmMuaHang
                 'Cập nhật số lượng tồn kho hiện tại.
                 HangHoaBUS.CapNhatSoLuong_Tang(ma, sl)
                 'Tính tổng tiền
-                TongTien += 1.0 * sl * dongia * ck
+                TongTien += 1.0 * sl * dongia * (ck / 100.0)
             Next
             'Cập nhật tổng tiền cho phiếu nhập.
             PhieuNhapHangBUS.CapNhatTongTien(Me.txtMaPhieu.Text, TongTien)
