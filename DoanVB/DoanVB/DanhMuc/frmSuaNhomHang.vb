@@ -20,6 +20,7 @@ Public Class frmSuaNhomHang
                                            Me.txtGhiChu.Text, True)
         If NhomHangHoaBUS.SuaNhomHangHoa(nhomhang) = True Then
             MessageBox.Show("Sửa thành công")
+            frmSuaNhomHang_Load(sender, e)
         Else
             MessageBox.Show("Không sửa đưuọc")
         End If

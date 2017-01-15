@@ -90,7 +90,7 @@ Public Class KhoHangDAO
         cmd.Parameters.Add("@MaKhoHang", SqlDbType.NVarChar)
         cmd.Parameters.Add("@KiHieu", SqlDbType.NVarChar)
         cmd.Parameters.Add("@TenKhoHang", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@NguoiQuanLy", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiQuanLi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@NguoiLienHe", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DienThoai", SqlDbType.NVarChar)

@@ -50,7 +50,7 @@ Public Class HangHoaDAO
         cmd.Parameters.Add("@MaVach", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DonVi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@XuatXu", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@TonKhoToiThieu", SqlDbType.Int)
+        cmd.Parameters.Add("@TonKho", SqlDbType.Int) 'TonKhoToiThieu
         cmd.Parameters.Add("@TonHienTai", SqlDbType.Int)
         cmd.Parameters.Add("@NhaCungCap", SqlDbType.NVarChar)
         cmd.Parameters.Add("@GiaMua", SqlDbType.Money)

@@ -55,7 +55,7 @@ Public Class NhomHangHoaDAO
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
-        Dim cmd As New SqlCommand("Delete From NHOMHANGHOA where MaKhuVuc = '" & manhomhang & "'", cn)
+        Dim cmd As New SqlCommand("Delete From NHOMHANGHOA where MaNhomHang = '" & manhomhang & "'", cn)
         cmd.CommandType = CommandType.Text
         If cmd.ExecuteNonQuery() > 0 Then
             cn.Close()

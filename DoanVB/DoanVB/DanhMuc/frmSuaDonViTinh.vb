@@ -16,6 +16,7 @@ Public Class frmSuaDonViTinh
         Dim donvitinh As New DonViTinhDTO(Me.txtMaDonVi.Text, Me.txtTenDonVi.Text, Me.txtGhiChu.Text, True)
         If DonViTinhBUS.SuaDonViTinh(donvitinh) = True Then
             MessageBox.Show("Sửa thành công.")
+            frmSuaDonViTinh_Load(sender, e)
         Else
             MessageBox.Show("Không sửa được.")
         End If

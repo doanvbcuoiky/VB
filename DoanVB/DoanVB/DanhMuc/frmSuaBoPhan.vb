@@ -15,7 +15,8 @@ Public Class frmSuaBoPhan
     Private Sub btbLuu_Click(sender As Object, e As EventArgs) Handles btbLuu.Click
         Dim bophan As New BoPhanDTO(Me.txtMa.Text, Me.txtTen.Text, Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         If BoPhanBUS.SuaBoPhan(bophan) = True Then
-            MessageBox.Show("Thêm thành công")
+            MessageBox.Show("Sửa thành công")
+            frmSuaBoPhan_Load(sender, e)
         Else
             MessageBox.Show("Không thêm được")
         End If
