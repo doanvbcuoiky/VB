@@ -157,6 +157,15 @@ Public Class frmMuaHang
         Else
             MessageBox.Show("Không lưu đưuọc.")
         End If
-        
+        Me.ChiTietNhapHang.Clear()
+        Me.ChiTietNhapHang = New DataTable()
+        Me.ChiTietNhapHang.Columns.Add("MaHangHoa")
+        Me.ChiTietNhapHang.Columns.Add("TenHangHoa")
+        Me.ChiTietNhapHang.Columns.Add("DonVi")
+        Me.ChiTietNhapHang.Columns.Add("SoLuong")
+        Me.ChiTietNhapHang.Columns.Add("DonGia")
+        Me.ChiTietNhapHang.Columns.Add("ChietKhau")
+        Me.ChiTietNhapHang.Columns.Add("ThanhTien")
+        Me.GridControl1.DataSource = Me.ChiTietNhapHang
     End Sub
 End Class

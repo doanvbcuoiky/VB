@@ -103,7 +103,7 @@ Public Class KhoHangDAO
         cmd.Parameters("@MaKhoHang").Value = KHDTO.MaKhoHang1
         cmd.Parameters("@KiHieu").Value = KHDTO.KiHieu1
         cmd.Parameters("@TenKhoHang").Value = KHDTO.TenKhoHang1
-        cmd.Parameters("@NguoiQuanLy").Value = KHDTO.NguoiQuanLi1
+        cmd.Parameters("@NguoiQuanLi").Value = KHDTO.NguoiQuanLi1
         cmd.Parameters("@NguoiLienHe").Value = KHDTO.NguoiLienHe1
         cmd.Parameters("@DiaChi").Value = KHDTO.DiaChi1
         cmd.Parameters("@DienThoai").Value = KHDTO.DienThoai1

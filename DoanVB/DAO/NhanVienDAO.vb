@@ -38,7 +38,7 @@ Public Class NhanVienDAO
         cmd.Parameters.Add("@TenNhanVien", SqlDbType.NVarChar)
         cmd.Parameters.Add("@ChucVu", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@Email", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@Emai", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DienThoai", SqlDbType.NVarChar)
         cmd.Parameters.Add("@BoPhan", SqlDbType.NVarChar)
         cmd.Parameters.Add("@NguoiQuanLi", SqlDbType.NVarChar)
@@ -48,7 +48,7 @@ Public Class NhanVienDAO
         cmd.Parameters("@TenNhanVien").Value = NVDTO.TenNhanVien1
         cmd.Parameters("@ChucVu").Value = NVDTO.ChucVu1
         cmd.Parameters("@DiaChi").Value = NVDTO.DiaChi1
-        cmd.Parameters("@Email").Value = NVDTO.Email1
+        cmd.Parameters("@Emai").Value = NVDTO.Email1
         cmd.Parameters("@DienThoai").Value = NVDTO.DienThoai1
         cmd.Parameters("@BoPhan").Value = NVDTO.BoPhan1
         cmd.Parameters("@NguoiQuanLi").Value = NVDTO.NguoiQuanLi1
@@ -87,7 +87,7 @@ Public Class NhanVienDAO
         cmd.Parameters.Add("@TenNhanVien", SqlDbType.NVarChar)
         cmd.Parameters.Add("@ChucVu", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@Email", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@Emai", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DienThoai", SqlDbType.NVarChar)
         cmd.Parameters.Add("@BoPhan", SqlDbType.NVarChar)
         cmd.Parameters.Add("@NguoiQuanLi", SqlDbType.NVarChar)
@@ -97,7 +97,7 @@ Public Class NhanVienDAO
         cmd.Parameters("@TenNhanVien").Value = NVDTO.TenNhanVien1
         cmd.Parameters("@ChucVu").Value = NVDTO.ChucVu1
         cmd.Parameters("@DiaChi").Value = NVDTO.DiaChi1
-        cmd.Parameters("@Email").Value = NVDTO.Email1
+        cmd.Parameters("@Emai").Value = NVDTO.Email1
         cmd.Parameters("@DienThoai").Value = NVDTO.DienThoai1
         cmd.Parameters("@BoPhan").Value = NVDTO.BoPhan1
         cmd.Parameters("@NguoiQuanLi").Value = NVDTO.NguoiQuanLi1

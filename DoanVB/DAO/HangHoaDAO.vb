@@ -68,7 +68,7 @@ Public Class HangHoaDAO
         cmd.Parameters("@MaVach").Value = HHDTO.MaVach1
         cmd.Parameters("@DonVi").Value = HHDTO.DonVi1
         cmd.Parameters("@XuatXu").Value = HHDTO.XuatXu1
-        cmd.Parameters("@TonKhoToiThieu").Value = HHDTO.TonKhoToiThieu1
+        cmd.Parameters("@TonKho").Value = HHDTO.TonKhoToiThieu1 'Tồn kho tối thiểu
         cmd.Parameters("@TonHienTai").Value = HHDTO.TonHienTai1
         cmd.Parameters("@NhaCungCap").Value = HHDTO.NhaCungCap1
         cmd.Parameters("@GiaMua").Value = HHDTO.GiaMua1
