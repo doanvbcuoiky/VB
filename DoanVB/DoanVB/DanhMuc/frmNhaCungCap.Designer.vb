@@ -100,7 +100,6 @@ Partial Class frmNhaCungCap
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.GroupCount = 1
         Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
         Me.GridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         Me.GridView1.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.GridColumn11, DevExpress.Data.ColumnSortOrder.Ascending)})
         '
@@ -222,6 +221,7 @@ Partial Class frmNhaCungCap
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 31)
+        Me.barDockControlTop.Manager = Me.BarManager1
         Me.barDockControlTop.Size = New System.Drawing.Size(640, 0)
         '
         'barDockControlBottom
@@ -229,6 +229,7 @@ Partial Class frmNhaCungCap
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.Location = New System.Drawing.Point(0, 390)
+        Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(640, 0)
         '
         'barDockControlLeft
@@ -236,6 +237,7 @@ Partial Class frmNhaCungCap
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 31)
+        Me.barDockControlLeft.Manager = Me.BarManager1
         Me.barDockControlLeft.Size = New System.Drawing.Size(0, 359)
         '
         'barDockControlRight
@@ -243,6 +245,7 @@ Partial Class frmNhaCungCap
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(640, 31)
+        Me.barDockControlRight.Manager = Me.BarManager1
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 359)
         '
         'BarManager2
@@ -268,57 +271,57 @@ Partial Class frmNhaCungCap
         'btnThem
         '
         Me.btnThem.Caption = "Thêm"
-        Me.btnThem.Glyph = CType(resources.GetObject("btnThem.Glyph"), System.Drawing.Image)
         Me.btnThem.Id = 0
-        Me.btnThem.LargeGlyph = CType(resources.GetObject("btnThem.LargeGlyph"), System.Drawing.Image)
+        Me.btnThem.ImageOptions.Image = CType(resources.GetObject("btnThem.ImageOptions.Image"), System.Drawing.Image)
+        Me.btnThem.ImageOptions.LargeImage = CType(resources.GetObject("btnThem.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.btnThem.Name = "btnThem"
         '
         'btnSua
         '
         Me.btnSua.Caption = "Sửa Chữa"
-        Me.btnSua.Glyph = CType(resources.GetObject("btnSua.Glyph"), System.Drawing.Image)
         Me.btnSua.Id = 1
-        Me.btnSua.LargeGlyph = CType(resources.GetObject("btnSua.LargeGlyph"), System.Drawing.Image)
+        Me.btnSua.ImageOptions.Image = CType(resources.GetObject("btnSua.ImageOptions.Image"), System.Drawing.Image)
+        Me.btnSua.ImageOptions.LargeImage = CType(resources.GetObject("btnSua.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.btnSua.Name = "btnSua"
         '
         'btnXoa
         '
         Me.btnXoa.Caption = "Xóa"
-        Me.btnXoa.Glyph = CType(resources.GetObject("btnXoa.Glyph"), System.Drawing.Image)
         Me.btnXoa.Id = 2
-        Me.btnXoa.LargeGlyph = CType(resources.GetObject("btnXoa.LargeGlyph"), System.Drawing.Image)
+        Me.btnXoa.ImageOptions.Image = CType(resources.GetObject("btnXoa.ImageOptions.Image"), System.Drawing.Image)
+        Me.btnXoa.ImageOptions.LargeImage = CType(resources.GetObject("btnXoa.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.btnXoa.Name = "btnXoa"
         '
         'BarButtonItem4
         '
         Me.BarButtonItem4.Caption = "Nạp Lại"
-        Me.BarButtonItem4.Glyph = CType(resources.GetObject("BarButtonItem4.Glyph"), System.Drawing.Image)
         Me.BarButtonItem4.Id = 3
-        Me.BarButtonItem4.LargeGlyph = CType(resources.GetObject("BarButtonItem4.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem4.ImageOptions.Image = CType(resources.GetObject("BarButtonItem4.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem4.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem4.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.BarButtonItem4.Name = "BarButtonItem4"
         '
         'BarButtonItem5
         '
         Me.BarButtonItem5.Caption = "Xuất"
-        Me.BarButtonItem5.Glyph = CType(resources.GetObject("BarButtonItem5.Glyph"), System.Drawing.Image)
         Me.BarButtonItem5.Id = 4
-        Me.BarButtonItem5.LargeGlyph = CType(resources.GetObject("BarButtonItem5.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem5.ImageOptions.Image = CType(resources.GetObject("BarButtonItem5.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem5.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem5.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.BarButtonItem5.Name = "BarButtonItem5"
         '
         'BarButtonItem6
         '
         Me.BarButtonItem6.Caption = "Nhập"
-        Me.BarButtonItem6.Glyph = CType(resources.GetObject("BarButtonItem6.Glyph"), System.Drawing.Image)
         Me.BarButtonItem6.Id = 5
-        Me.BarButtonItem6.LargeGlyph = CType(resources.GetObject("BarButtonItem6.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem6.ImageOptions.Image = CType(resources.GetObject("BarButtonItem6.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem6.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem6.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.BarButtonItem6.Name = "BarButtonItem6"
         '
         'BarButtonItem7
         '
         Me.BarButtonItem7.Caption = "Đóng"
-        Me.BarButtonItem7.Glyph = CType(resources.GetObject("BarButtonItem7.Glyph"), System.Drawing.Image)
         Me.BarButtonItem7.Id = 6
-        Me.BarButtonItem7.LargeGlyph = CType(resources.GetObject("BarButtonItem7.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem7.ImageOptions.Image = CType(resources.GetObject("BarButtonItem7.ImageOptions.Image"), System.Drawing.Image)
+        Me.BarButtonItem7.ImageOptions.LargeImage = CType(resources.GetObject("BarButtonItem7.ImageOptions.LargeImage"), System.Drawing.Image)
         Me.BarButtonItem7.Name = "BarButtonItem7"
         '
         'BarDockControl1
@@ -326,6 +329,7 @@ Partial Class frmNhaCungCap
         Me.BarDockControl1.CausesValidation = False
         Me.BarDockControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.BarDockControl1.Location = New System.Drawing.Point(0, 0)
+        Me.BarDockControl1.Manager = Me.BarManager2
         Me.BarDockControl1.Size = New System.Drawing.Size(640, 31)
         '
         'BarDockControl2
@@ -333,6 +337,7 @@ Partial Class frmNhaCungCap
         Me.BarDockControl2.CausesValidation = False
         Me.BarDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BarDockControl2.Location = New System.Drawing.Point(0, 390)
+        Me.BarDockControl2.Manager = Me.BarManager2
         Me.BarDockControl2.Size = New System.Drawing.Size(640, 0)
         '
         'BarDockControl3
@@ -340,6 +345,7 @@ Partial Class frmNhaCungCap
         Me.BarDockControl3.CausesValidation = False
         Me.BarDockControl3.Dock = System.Windows.Forms.DockStyle.Left
         Me.BarDockControl3.Location = New System.Drawing.Point(0, 31)
+        Me.BarDockControl3.Manager = Me.BarManager2
         Me.BarDockControl3.Size = New System.Drawing.Size(0, 359)
         '
         'BarDockControl4
@@ -347,6 +353,7 @@ Partial Class frmNhaCungCap
         Me.BarDockControl4.CausesValidation = False
         Me.BarDockControl4.Dock = System.Windows.Forms.DockStyle.Right
         Me.BarDockControl4.Location = New System.Drawing.Point(640, 31)
+        Me.BarDockControl4.Manager = Me.BarManager2
         Me.BarDockControl4.Size = New System.Drawing.Size(0, 359)
         '
         'lblMaNhaCungCap

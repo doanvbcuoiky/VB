@@ -50,4 +50,14 @@ Public Class frmKhuVuc
     Private Sub BarButtonItem18_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem18.ItemClick
         Me.Close()
     End Sub
+
+    Private Sub PanelEx1_Click(sender As Object, e As EventArgs) Handles PanelEx1.Click
+
+    End Sub
+
+    Private Sub BarButtonItem17_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem17.ItemClick
+        Dim f As New frmXuat
+        f.name = "KHUVUC"
+        f.ShowDialog()
+    End Sub
 End Class

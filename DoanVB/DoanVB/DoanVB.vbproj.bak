@@ -33,7 +33,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -73,7 +73,8 @@
     <Reference Include="DevExpress.Data.v16.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Images.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Printing.v16.1.Core">
@@ -82,25 +83,28 @@
     <Reference Include="DevExpress.Utils.v16.1">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v16.1">
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Sparkline.v16.1.Core">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v16.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
     <Reference Include="System">
@@ -149,69 +153,47 @@
     <Compile Include="ChucNang\frmBanHang.Designer.vb">
       <DependentUpon>frmBanHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmBanHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmBanHang.vb" />
     <Compile Include="ChucNang\frmBaoCaoBanHang.Designer.vb">
       <DependentUpon>frmBaoCaoBanHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmBaoCaoBanHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmBaoCaoBanHang.vb" />
     <Compile Include="ChucNang\frmBaoCaoKhoHang.Designer.vb">
       <DependentUpon>frmBaoCaoKhoHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmBaoCaoKhoHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmBaoCaoKhoHang.vb" />
     <Compile Include="ChucNang\frmChungTu.Designer.vb">
       <DependentUpon>frmChungTu.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmChungTu.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmChungTu.vb" />
     <Compile Include="ChucNang\frmChuyenKho.Designer.vb">
       <DependentUpon>frmChuyenKho.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmChuyenKho.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmChuyenKho.vb" />
     <Compile Include="ChucNang\frmTraTien.Designer.vb">
       <DependentUpon>frmTraTien.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmTraTien.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmTraTien.vb" />
     <Compile Include="ChucNang\frmMuaHang.Designer.vb">
       <DependentUpon>frmMuaHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmMuaHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmMuaHang.vb" />
     <Compile Include="ChucNang\frmNhapSoDuDauKy.Designer.vb">
       <DependentUpon>frmNhapSoDuDauKy.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmNhapSoDuDauKy.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmNhapSoDuDauKy.vb" />
     <Compile Include="ChucNang\frmThuTien.Designer.vb">
       <DependentUpon>frmThuTien.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmThuTien.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmThuTien.vb" />
     <Compile Include="ChucNang\frmTonKho.Designer.vb">
       <DependentUpon>frmTonKho.vb</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\frmTonKho.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ChucNang\frmTonKho.vb" />
     <Compile Include="DanhMuc\frmNhaCungCap.Designer.vb">
       <DependentUpon>frmNhaCungCap.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmNhaCungCap.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmNhaCungCap.vb" />
     <Compile Include="DanhMuc\frmSuaBoPhan.Designer.vb">
       <DependentUpon>frmSuaBoPhan.vb</DependentUpon>
     </Compile>
@@ -264,6 +246,12 @@
       <DependentUpon>frmSuaNhomHang.vb</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\frmSuaNhomHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaTyGia.Designer.vb">
+      <DependentUpon>frmSuaTyGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmSuaTyGia.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhMuc\frmThemBoPhan.Designer.vb">
@@ -320,6 +308,12 @@
     <Compile Include="DanhMuc\frmThemNhomHang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DanhMuc\frmThemTyGia.Designer.vb">
+      <DependentUpon>frmThemTyGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmThemTyGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDangNhap.Designer.vb">
       <DependentUpon>frmDangNhap.vb</DependentUpon>
     </Compile>
@@ -329,114 +323,76 @@
     <Compile Include="HeThong\frmDoiMatKhau.Designer.vb">
       <DependentUpon>frmDoiMatKhau.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmDoiMatKhau.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmDoiMatKhau.vb" />
     <Compile Include="HeThong\frmNhatKyHeThong.Designer.vb">
       <DependentUpon>frmNhatKyHeThong.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmNhatKyHeThong.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmNhatKyHeThong.vb" />
     <Compile Include="HeThong\frmPhanQuyen.Designer.vb">
       <DependentUpon>frmPhanQuyen.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmPhanQuyen.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmPhanQuyen.vb" />
     <Compile Include="HeThong\frmPhucHoi.Designer.vb">
       <DependentUpon>frmPhucHoi.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmPhucHoi.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmPhucHoi.vb" />
     <Compile Include="HeThong\frmSaoLuu.Designer.vb">
       <DependentUpon>frmSaoLuu.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmSaoLuu.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmSaoLuu.vb" />
     <Compile Include="HeThong\frmSuaChua.Designer.vb">
       <DependentUpon>frmSuaChua.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmSuaChua.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmSuaChua.vb" />
     <Compile Include="HeThong\frmThongTin.Designer.vb">
       <DependentUpon>frmThongTin.vb</DependentUpon>
     </Compile>
-    <Compile Include="HeThong\frmThongTin.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="HeThong\frmThongTin.vb" />
     <Compile Include="DanhMuc\frmBoPhan.Designer.vb">
       <DependentUpon>frmBoPhan.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmBoPhan.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmBoPhan.vb" />
     <Compile Include="DanhMuc\frmDonViTinh.Designer.vb">
       <DependentUpon>frmDonViTinh.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmDonViTinh.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmDonViTinh.vb" />
     <Compile Include="DanhMuc\frmHangHoa.Designer.vb">
       <DependentUpon>frmHangHoa.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmHangHoa.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmHangHoa.vb" />
     <Compile Include="DanhMuc\frmInMaVach.Designer.vb">
       <DependentUpon>frmInMaVach.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmInMaVach.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmInMaVach.vb" />
     <Compile Include="DanhMuc\frmKhachHang.Designer.vb">
       <DependentUpon>frmKhachHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmKhachHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmKhachHang.vb" />
     <Compile Include="DanhMuc\frmKhoHang.Designer.vb">
       <DependentUpon>frmKhoHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmKhoHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmKhoHang.vb" />
     <Compile Include="DanhMuc\frmKhuVuc.Designer.vb">
       <DependentUpon>frmKhuVuc.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmKhuVuc.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmKhuVuc.vb" />
     <Compile Include="DanhMuc\frmNhanVien.Designer.vb">
       <DependentUpon>frmNhanVien.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmNhanVien.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmNhanVien.vb" />
     <Compile Include="DanhMuc\frmNhapDanhMucTuExel.Designer.vb">
       <DependentUpon>frmNhapDanhMucTuExel.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmNhapDanhMucTuExel.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmNhapDanhMucTuExel.vb" />
     <Compile Include="DanhMuc\frmNhomHang.Designer.vb">
       <DependentUpon>frmNhomHang.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmNhomHang.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmNhomHang.vb" />
     <Compile Include="DanhMuc\frmTyGia.Designer.vb">
       <DependentUpon>frmTyGia.vb</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\frmTyGia.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMain.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DanhMuc\frmTyGia.vb" />
+    <Compile Include="frmMain.vb" />
     <Compile Include="frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -458,21 +414,15 @@
     <Compile Include="TroGiup\frmDangKy.Designer.vb">
       <DependentUpon>frmDangKy.vb</DependentUpon>
     </Compile>
-    <Compile Include="TroGiup\frmDangKy.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="TroGiup\frmDangKy.vb" />
     <Compile Include="TroGiup\frmLienHe.Designer.vb">
       <DependentUpon>frmLienHe.vb</DependentUpon>
     </Compile>
-    <Compile Include="TroGiup\frmLienHe.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="TroGiup\frmLienHe.vb" />
     <Compile Include="TroGiup\frmTTin.Designer.vb">
       <DependentUpon>frmTTin.vb</DependentUpon>
     </Compile>
-    <Compile Include="TroGiup\frmTTin.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="TroGiup\frmTTin.vb" />
     <EmbeddedResource Include="ChucNang\frmBanHang.resx">
       <DependentUpon>frmBanHang.vb</DependentUpon>
     </EmbeddedResource>
@@ -536,6 +486,9 @@
     <EmbeddedResource Include="DanhMuc\frmSuaNhomHang.resx">
       <DependentUpon>frmSuaNhomHang.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmSuaTyGia.resx">
+      <DependentUpon>frmSuaTyGia.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmThemBoPhan.resx">
       <DependentUpon>frmThemBoPhan.vb</DependentUpon>
     </EmbeddedResource>
@@ -562,6 +515,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\frmThemNhomHang.resx">
       <DependentUpon>frmThemNhomHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmThemTyGia.resx">
+      <DependentUpon>frmThemTyGia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.vb</DependentUpon>

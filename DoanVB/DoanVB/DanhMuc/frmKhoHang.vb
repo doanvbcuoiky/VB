@@ -43,4 +43,10 @@ Public Class frmKhoHang
     Private Sub BarButtonItem4_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
         frmKhoHang_Load(sender, e)
     End Sub
+
+    Private Sub BarButtonItem5_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem5.ItemClick
+        Dim f As New frmXuat
+        f.name = "khohang"
+        f.ShowDialog()
+    End Sub
 End Class

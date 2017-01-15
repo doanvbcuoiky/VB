@@ -39,4 +39,10 @@ Public Class frmNhanVien
     Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
         Me.Close()
     End Sub
+
+    Private Sub BarButtonItem5_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem5.ItemClick
+        Dim f As New frmXuat
+        f.name = "nhanvien"
+        f.ShowDialog()
+    End Sub
 End Class

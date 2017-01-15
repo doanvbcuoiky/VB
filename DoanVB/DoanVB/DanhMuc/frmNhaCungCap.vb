@@ -44,4 +44,10 @@ Public Class frmNhaCungCap
     Private Sub BarButtonItem7_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem7.ItemClick
         Me.Close()
     End Sub
+
+    Private Sub BarButtonItem5_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem5.ItemClick
+        Dim f As New frmXuat
+        f.name = "nhacungcap"
+        f.ShowDialog()
+    End Sub
 End Class

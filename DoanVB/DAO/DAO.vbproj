@@ -102,6 +102,7 @@
     <Compile Include="PhieuNhapHangDAO.vb" />
     <Compile Include="SaoLuuPhucHoiDAO.vb" />
     <Compile Include="TyGiaDAO.vb" />
+    <Compile Include="xuatDAO.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

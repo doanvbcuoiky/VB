@@ -101,6 +101,7 @@
     <Compile Include="PhieuNhapHangBUS.vb" />
     <Compile Include="SaoLuuPhucHoiBUS.vb" />
     <Compile Include="TyGiaBUS.vb" />
+    <Compile Include="xuatBUS.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
