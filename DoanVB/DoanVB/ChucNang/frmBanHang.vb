@@ -126,10 +126,10 @@ Public Class frmBanHang
             If PhieuBanHangBUS.ThemPhieuBanHang(phieuban) = True Then
                 Dim TongTien As Double = 0
                 For i As Integer = 0 To n Step 1
-                    Dim sl As Integer = System.Convert.ToInt32(Me.chitietbanhang.Select()(0).Item("SoLuong").ToString())
-                    Dim dongia As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(0).Item("DonGia").ToString())
-                    Dim ck As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(0).Item("ChietKhau").ToString())
-                    Dim ma As String = Me.chitietbanhang.Select()(0).Item("MaHangHoa").ToString()
+                    Dim sl As Integer = System.Convert.ToInt32(Me.chitietbanhang.Select()(i).Item("SoLuong").ToString())
+                    Dim dongia As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(i).Item("DonGia").ToString())
+                    Dim ck As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(i).Item("ChietKhau").ToString())
+                    Dim ma As String = Me.chitietbanhang.Select()(i).Item("MaHangHoa").ToString()
                     Dim dv As String = Me.chitietbanhang.Select()(i).Item("DonVi").ToString()
                     Dim ct As New ChiTietPhieuBanHangDTO(Me.txtMaPhieu.Text, _
                                                           ma, _

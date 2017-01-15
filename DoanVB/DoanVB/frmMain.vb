@@ -335,4 +335,8 @@ Partial Public Class frmMain
         frmDN.ShowDialog()
         Me.Text = Me.Text & "-" & frmMain.USER
     End Sub
+
+    Private Sub bbtHuongDanSuDung_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles bbtHuongDanSuDung.ItemClick
+
+    End Sub
 End Class

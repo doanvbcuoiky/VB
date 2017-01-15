@@ -30,11 +30,3 @@ D:\Documents\234\VB\DoanVB\DTO\obj\Debug\DTO.vbproj.GenerateResource.Cache
 D:\Documents\234\VB\DoanVB\DTO\obj\Debug\DTO.dll
 D:\Documents\234\VB\DoanVB\DTO\obj\Debug\DTO.xml
 D:\Documents\234\VB\DoanVB\DTO\obj\Debug\DTO.pdb
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\bin\Debug\DTO.dll
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\bin\Debug\DTO.pdb
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\bin\Debug\DTO.xml
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\obj\Debug\DTO.Resources.resources
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\obj\Debug\DTO.vbproj.GenerateResource.Cache
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\obj\Debug\DTO.dll
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\obj\Debug\DTO.xml
-C:\Users\Nguye\Desktop\DoanVB\VB\DoanVB\DTO\obj\Debug\DTO.pdb
