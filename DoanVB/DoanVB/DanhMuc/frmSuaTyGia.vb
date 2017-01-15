@@ -19,9 +19,10 @@ Public Class frmSuaTyGia
 
     Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
         Dim tygia As New TyGiaDTO(Me.txtMatienTe.Text, Me.txtTenTienTe.Text, _
-                                 System.Convert.ToDouble(Me.numTyGia.Value.ToString()), True)
+                                 System.Convert.ToDouble(Me.numTyGia.Value.ToString()), Me.ckTinhTrang.Checked)
         If TyGiaBUS.SuaTyGia(tygia) = True Then
             MessageBox.Show("Sửa thành công")
+            Me.Close()
         Else
             MessageBox.Show("Không sửa đưuọc")
         End If

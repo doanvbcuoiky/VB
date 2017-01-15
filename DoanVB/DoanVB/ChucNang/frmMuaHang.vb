@@ -168,4 +168,12 @@ Public Class frmMuaHang
         Me.ChiTietNhapHang.Columns.Add("ThanhTien")
         Me.GridControl1.DataSource = Me.ChiTietNhapHang
     End Sub
+
+    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+        frmMuaHang_Load(sender, e)
+    End Sub
+
+    Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles SimpleButton4.Click
+        Me.Close()
+    End Sub
 End Class

@@ -15,12 +15,14 @@ Public Class frmKhoHang
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmThem = New frmThemKhoHang()
         frmThem.ShowDialog()
+        frmKhoHang_Load(sender, e)
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaKhoHang()
         makhohang = Me.lblMaKhoHang.Text
         frmSua.ShowDialog()
+        frmKhoHang_Load(sender, e)
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick

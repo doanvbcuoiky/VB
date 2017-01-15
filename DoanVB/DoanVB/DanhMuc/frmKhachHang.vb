@@ -28,6 +28,7 @@ Public Class frmKhachHang
     Private Sub bbtThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmkh As New frmThemKhachHang()
         frmkh.ShowDialog()
+        frmKhachHang_Load_1(sender, e)
     End Sub
 
     Private Sub BarButtonItem2_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick

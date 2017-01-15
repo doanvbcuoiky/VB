@@ -13,10 +13,10 @@ Public Class frmSuaDonViTinh
     End Sub
 
     Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
-        Dim donvitinh As New DonViTinhDTO(Me.txtMaDonVi.Text, Me.txtTenDonVi.Text, Me.txtGhiChu.Text, True)
+        Dim donvitinh As New DonViTinhDTO(Me.txtMaDonVi.Text, Me.txtTenDonVi.Text, Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         If DonViTinhBUS.SuaDonViTinh(donvitinh) = True Then
             MessageBox.Show("Sửa thành công.")
-            frmSuaDonViTinh_Load(sender, e)
+            Me.Close()
         Else
             MessageBox.Show("Không sửa được.")
         End If

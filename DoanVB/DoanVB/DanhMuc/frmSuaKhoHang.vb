@@ -39,6 +39,7 @@ Public Class frmSuaKhoHang
                                       Me.txtEmail.Text, Me.txtDienGiai.Text, Me.ckTinhTrang.Checked)
         If KhoHangBUS.SuaKhoHang(khohang) = True Then
             MessageBox.Show("Sửa thành công.")
+            Me.Close()
         Else
             MessageBox.Show("Không sửa được.")
         End If

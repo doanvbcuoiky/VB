@@ -24,6 +24,15 @@ Public Class NguoiDungDAO
         cmd.ExecuteNonQuery()
         cn.Close()
     End Sub
+    Public Shared Sub KhongLuuThongTinDangNhap(ByVal manguoidung As String)
+        Dim con As Connect = New Connect()
+        Dim cn As SqlConnection
+        cn = con.connect()
+        Dim cmd As New SqlCommand("update NguoiDung set NhoMatKhau = 0 where MaNguoiDung = '" & manguoidung & "'", cn)
+        cmd.CommandType = CommandType.Text
+        cmd.ExecuteNonQuery()
+        cn.Close()
+    End Sub
     Public Shared Function LoadDSNguoiDung() As DataTable
         Dim con As Connect = New Connect()
         Dim cn As SqlConnection

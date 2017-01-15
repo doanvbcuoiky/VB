@@ -14,6 +14,7 @@ Public Class frmKhuVuc
     Private Sub BarButtonItem13_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem13.ItemClick
         Dim frmThem = New frmThemKhuVuc()
         frmThem.ShowDialog()
+        frmKhuVuc_Load(sender, e)
     End Sub
     'Xoa khu vuc
     Private Sub BarButtonItem15_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem15.ItemClick
@@ -30,6 +31,7 @@ Public Class frmKhuVuc
         Dim frmSua = New frmSuaKhuVuc()
         lblmakh = Me.lblMaKhuVuc.Text
         frmSua.ShowDialog()
+        frmKhuVuc_Load(sender, e)
     End Sub
     Private Sub GridControl1_Click(sender As Object, e As EventArgs) Handles GridControl1.Click
 

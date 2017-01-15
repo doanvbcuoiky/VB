@@ -12,12 +12,14 @@ Public Class frmBoPhan
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmThem = New frmThemBoPhan()
         frmThem.ShowDialog()
+        frmBoPhan_Load(sender, e)
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaBoPhan()
         mabophan = Me.lblMaBoPhan.Text
         frmSua.ShowDialog()
+        frmBoPhan_Load(sender, e)
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick

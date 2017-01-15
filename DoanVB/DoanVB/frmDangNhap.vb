@@ -26,6 +26,8 @@ Public Class frmDangNhap
             'Kiem tra check box ghi nhớ thông tin đăng nhập.
             If Me.ckGhiNho.Checked = True Then
                 NguoiDungBUS.LuuThongTinDangNhap(Me.cboTaiKhoan.SelectedValue.ToString())
+            Else
+                NguoiDungBUS.KhongLuuThongTinDangNhap(Me.cboTaiKhoan.SelectedValue.ToString())
             End If
             frmMain.USER = cboTaiKhoan.SelectedValue.ToString()
             Me.Close()

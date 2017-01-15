@@ -11,12 +11,14 @@ Public Class frmNhanVien
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmThem = New frmThemNhanVien()
         frmThem.ShowDialog()
+        frmNhanVien_Load(sender, e)
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaNhanVien()
         manhanvien = Me.lblMaNhanVien.Text
         frmSua.ShowDialog()
+        frmNhanVien_Load(sender, e)
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick

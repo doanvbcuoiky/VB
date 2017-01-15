@@ -16,13 +16,14 @@ Public Class frmNhaCungCap
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmThem = New frmThemNhaCungCap()
         frmThem.ShowDialog()
+        frmNhaCungCap_Load(sender, e)
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaNhaCungCap()
         manhacungcap = Me.lblMaNhaCungCap.Text
-        frmNhaCungCap_Load(sender, e)
         frmSua.ShowDialog()
+        frmNhaCungCap_Load(sender, e)
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick

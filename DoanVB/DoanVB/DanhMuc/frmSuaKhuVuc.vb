@@ -7,6 +7,7 @@ Public Class frmSuaKhuVuc
         Dim kq As Boolean = KhuVucBUS.SuaKhuVuc(khuvuc)
         If kq = True Then
             MessageBox.Show("Lưu thành công")
+            Me.Close()
         Else
             MessageBox.Show("Không Lưu được")
         End If

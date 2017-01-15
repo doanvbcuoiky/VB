@@ -9,6 +9,9 @@ Public Class NguoiDungBUS
     Public Shared Sub LuuThongTinDangNhap(ByVal manguoidung As String)
         NguoiDungDAO.LuuThongTinDangNhap(manguoidung)
     End Sub
+    Public Shared Sub KhongLuuThongTinDangNhap(ByVal manguoidung As String)
+        NguoiDungDAO.KhongLuuThongTinDangNhap(manguoidung)
+    End Sub
     Public Shared Function KiemTraDangNhap(ByVal manguoidung As String, ByVal matkhau As String) As Boolean
         Return NguoiDungDAO.KiemTraDangNhap(manguoidung, matkhau)
     End Function

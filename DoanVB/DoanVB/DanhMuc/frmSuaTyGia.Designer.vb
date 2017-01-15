@@ -101,7 +101,6 @@ Partial Class frmSuaTyGia
         Me.numTyGia.Name = "numTyGia"
         Me.numTyGia.Size = New System.Drawing.Size(180, 20)
         Me.numTyGia.TabIndex = 16
-        Me.numTyGia.Value = New Decimal(New Integer() {12456, 0, 0, 196608})
         '
         'ckTinhTrang
         '

@@ -14,12 +14,14 @@ Public Class frmDonViTinh
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmThem = New frmThemDonViTinh()
         frmThem.ShowDialog()
+        frmDonViTinh_Load(sender, e)
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaDonViTinh()
         madonvi = Me.lblMaDonVi.Text
         frmSua.ShowDialog()
+        frmDonViTinh_Load(sender, e)
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick

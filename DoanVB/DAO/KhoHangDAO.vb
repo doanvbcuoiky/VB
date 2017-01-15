@@ -36,7 +36,7 @@ Public Class KhoHangDAO
         cmd.Parameters.Add("@MaKhoHang", SqlDbType.NVarChar)
         cmd.Parameters.Add("@KiHieu", SqlDbType.NVarChar)
         cmd.Parameters.Add("@TenKhoHang", SqlDbType.NVarChar)
-        cmd.Parameters.Add("@NguoiQuanLy", SqlDbType.NVarChar)
+        cmd.Parameters.Add("@NguoiQuanLi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@NguoiLienHe", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@DienThoai", SqlDbType.NVarChar)
@@ -49,7 +49,7 @@ Public Class KhoHangDAO
         cmd.Parameters("@MaKhoHang").Value = KHDTO.MaKhoHang1
         cmd.Parameters("@KiHieu").Value = KHDTO.KiHieu1
         cmd.Parameters("@TenKhoHang").Value = KHDTO.TenKhoHang1
-        cmd.Parameters("@NguoiQuanLy").Value = KHDTO.NguoiQuanLi1
+        cmd.Parameters("@NguoiQuanLi").Value = KHDTO.NguoiQuanLi1
         cmd.Parameters("@NguoiLienHe").Value = KHDTO.NguoiLienHe1
         cmd.Parameters("@DiaChi").Value = KHDTO.DiaChi1
         cmd.Parameters("@DienThoai").Value = KHDTO.DienThoai1

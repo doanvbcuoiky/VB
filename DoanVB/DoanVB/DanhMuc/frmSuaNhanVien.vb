@@ -41,6 +41,7 @@ Public Class frmSuaNhanVien
         Dim kq As Boolean = NhanVienBUS.SuaNhanVien(nv)
         If kq = True Then
             MessageBox.Show("Sửa thành công")
+            Me.Close()
         Else
             MessageBox.Show("Không sửa được")
         End If

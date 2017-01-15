@@ -16,9 +16,9 @@ Public Class frmSuaBoPhan
         Dim bophan As New BoPhanDTO(Me.txtMa.Text, Me.txtTen.Text, Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         If BoPhanBUS.SuaBoPhan(bophan) = True Then
             MessageBox.Show("Sửa thành công")
-            frmSuaBoPhan_Load(sender, e)
+            Me.Close()
         Else
-            MessageBox.Show("Không thêm được")
+            MessageBox.Show("Không sửa được")
         End If
     End Sub
 

@@ -41,6 +41,7 @@ Public Class frmSuaNhaCungCap
         Dim kq As Boolean = NhaCungCapBUS.SuaNhaCungCap(nhacungcap)
         If kq = True Then
             MessageBox.Show("Sửa thành công")
+            Me.Close()
         Else
             MessageBox.Show("Không sửa được")
         End If

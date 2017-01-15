@@ -130,7 +130,7 @@ Partial Class frmNhanVien
         'GridColumn5
         '
         Me.GridColumn5.Caption = "Email"
-        Me.GridColumn5.FieldName = "Email"
+        Me.GridColumn5.FieldName = "Emai"
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
         Me.GridColumn5.VisibleIndex = 4

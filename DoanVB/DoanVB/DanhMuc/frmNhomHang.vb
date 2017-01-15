@@ -12,12 +12,14 @@ Public Class frmNhomHang
     Private Sub btnThem_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnThem.ItemClick
         Dim frmThem = New frmThemNhomHang()
         frmThem.ShowDialog()
+        frmNhomHang_Load(sender, e)
     End Sub
 
     Private Sub btnSua_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSua.ItemClick
         Dim frmSua = New frmSuaNhomHang()
         manhomhang = Me.lblMaNhomHang.Text
         frmSua.ShowDialog()
+        frmNhomHang_Load(sender, e)
     End Sub
 
     Private Sub btnXoa_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnXoa.ItemClick

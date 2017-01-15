@@ -17,10 +17,10 @@ Public Class frmSuaNhomHang
 
     Private Sub btnLuu_Click(sender As Object, e As EventArgs) Handles btnLuu.Click
         Dim nhomhang As New NhomHangHoaDTO(Me.txtMaNhomHang.Text, Me.txtTenNhomHang.Text, _
-                                           Me.txtGhiChu.Text, True)
+                                           Me.txtGhiChu.Text, Me.ckTinhTrang.Checked)
         If NhomHangHoaBUS.SuaNhomHangHoa(nhomhang) = True Then
             MessageBox.Show("Sửa thành công")
-            frmSuaNhomHang_Load(sender, e)
+            Me.Close()
         Else
             MessageBox.Show("Không sửa đưuọc")
         End If

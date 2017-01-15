@@ -50,7 +50,7 @@ Public Class frmSuaHangHoa
                                      Me.cboLoaiTien.SelectedValue.ToString(), "", Me.ckTinhTrang.Checked)
         If HangHoaBUS.SuaHangHoa(hanghoa) = True Then
             MessageBox.Show("Sửa thành công.")
-            frmSuaHangHoa_Load(sender, e)
+            Me.Close()
         Else
             MessageBox.Show("Không sửa đưuọc")
         End If
