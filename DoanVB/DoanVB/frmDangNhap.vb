@@ -9,6 +9,7 @@ Public Class frmDangNhap
         Me.cboTaiKhoan.DataSource = dt
         Me.cboTaiKhoan.DisplayMember = "TenNguoiDung"
         Me.cboTaiKhoan.ValueMember = "MaNguoiDung"
+        Me.ckGhiNho.Checked = True
         'Me.txtMatKhau.Text = dt.Select()(1).Item(columnName:="MatKhau").ToString()
     End Sub
 
