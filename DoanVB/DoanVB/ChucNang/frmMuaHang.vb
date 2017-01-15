@@ -150,6 +150,10 @@ Public Class frmMuaHang
                 HangHoaBUS.CapNhatSoLuong_Tang(ma, sl)
                 'Tính tổng tiền
                 TongTien += 1.0 * sl * dongia * (ck / 100.0)
+
+                'Thêm vào chi tiết kho hàng.
+                Dim ctkho As New ChiTietKhoDTO(cboKhoNhap.SelectedValue.ToString(), ma, sl)
+                ChiTietKhoBUS.ThemChiTietKho(ctkho)
             Next
             'Cập nhật tổng tiền cho phiếu nhập.
             PhieuNhapHangBUS.CapNhatTongTien(Me.txtMaPhieu.Text, TongTien)

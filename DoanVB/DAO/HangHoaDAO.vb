@@ -45,6 +45,18 @@ Public Class HangHoaDAO
         cn.Close()
         Return dt
     End Function
+    Public Shared Function LoadDSHangHoaBan() As DataTable
+        Dim con As New Connect()
+        Dim cn As New SqlConnection()
+        cn = con.connect()
+        Dim dt As New DataTable()
+        Dim cmd As New SqlCommand("LoadDSHangHoaBan", cn)
+        cmd.CommandType = CommandType.StoredProcedure
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        cn.Close()
+        Return dt
+    End Function
     Public Shared Function ThemHangHoa(ByVal HHDTO As HangHoaDTO) As Boolean
         Dim con As New Connect()
         Dim cn As New SqlConnection()

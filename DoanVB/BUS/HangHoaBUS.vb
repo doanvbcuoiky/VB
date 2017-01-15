@@ -42,6 +42,11 @@ Public Class HangHoaBUS
         Dim dt As DataTable = HangHoaDAO.LoadDSHangHoa()
         Return dt
     End Function
+
+    Public Shared Function LoadDSHangHoaBan() As DataTable
+        Dim dt As DataTable = HangHoaDAO.LoadDSHangHoaBan()
+        Return dt
+    End Function
     Public Shared Function ThemHangHoa(ByVal HHDTO As HangHoaDTO) As Boolean
         Return HangHoaDAO.ThemHangHoa(HHDTO)
     End Function

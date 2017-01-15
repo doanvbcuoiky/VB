@@ -43,25 +43,13 @@ Partial Class frmBanHang
         Me.DockSite7 = New DevComponents.DotNetBar.DockSite()
         Me.DockSite3 = New DevComponents.DotNetBar.DockSite()
         Me.SplitContainerControl2 = New DevExpress.XtraEditors.SplitContainerControl()
-        Me.LayoutControl3 = New DevExpress.XtraLayout.LayoutControl()
-        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem23 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem24 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
-        Me.LayoutControlItem22 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.SplitContainerControl3 = New DevExpress.XtraEditors.SplitContainerControl()
-        Me.SplitContainerControl1 = New DevExpress.XtraEditors.SplitContainerControl()
-        Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.numSoLuong = New System.Windows.Forms.NumericUpDown()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.btnThem = New System.Windows.Forms.Button()
@@ -89,15 +77,27 @@ Partial Class frmBanHang
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cboNhanVien = New System.Windows.Forms.ComboBox()
         Me.txtMaPhieu = New System.Windows.Forms.TextBox()
-        Me.SimpleButton5 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton4 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LayoutControl3 = New DevExpress.XtraLayout.LayoutControl()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCalcEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCalcEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemCalcEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit()
+        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem22 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.EmptySpaceItem4 = New DevExpress.XtraLayout.EmptySpaceItem()
+        Me.LayoutControlItem24 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem23 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.SplitContainerControl1 = New DevExpress.XtraEditors.SplitContainerControl()
+        Me.PanelEx1 = New DevComponents.DotNetBar.PanelEx()
         Me.DockSite1.SuspendLayout()
         CType(Me.Bar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Bar1.SuspendLayout()
@@ -105,24 +105,24 @@ Partial Class frmBanHang
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainerControl2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainerControl2.SuspendLayout()
+        CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainerControl3.SuspendLayout()
+        CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl3.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainerControl3.SuspendLayout()
-        CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SplitContainerControl1.SuspendLayout()
-        Me.PanelEx1.SuspendLayout()
-        CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainerControl1.SuspendLayout()
+        Me.PanelEx1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DotNetBarManager1
@@ -502,152 +502,6 @@ Partial Class frmBanHang
         Me.SplitContainerControl2.TabIndex = 0
         Me.SplitContainerControl2.Text = "SplitContainerControl2"
         '
-        'LayoutControl3
-        '
-        Me.LayoutControl3.Controls.Add(Me.CheckBox2)
-        Me.LayoutControl3.Controls.Add(Me.CheckBox1)
-        Me.LayoutControl3.Controls.Add(Me.GridControl1)
-        Me.LayoutControl3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LayoutControl3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControl3.Name = "LayoutControl3"
-        Me.LayoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(1049, 135, 250, 350)
-        Me.LayoutControl3.Root = Me.LayoutControlGroup3
-        Me.LayoutControl3.Size = New System.Drawing.Size(1014, 236)
-        Me.LayoutControl3.TabIndex = 0
-        Me.LayoutControl3.Text = "LayoutControl3"
-        '
-        'GridControl1
-        '
-        Me.GridControl1.Location = New System.Drawing.Point(12, 12)
-        Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCalcEdit1, Me.RepositoryItemCalcEdit2, Me.RepositoryItemCalcEdit3})
-        Me.GridControl1.Size = New System.Drawing.Size(990, 188)
-        Me.GridControl1.TabIndex = 4
-        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
-        '
-        'GridView1
-        '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn5, Me.GridColumn6, Me.GridColumn9})
-        Me.GridView1.GridControl = Me.GridControl1
-        Me.GridView1.Name = "GridView1"
-        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
-        Me.GridView1.OptionsView.ShowGroupPanel = False
-        '
-        'GridColumn1
-        '
-        Me.GridColumn1.Caption = "Mã Hàng"
-        Me.GridColumn1.FieldName = "MaHangHoa"
-        Me.GridColumn1.Name = "GridColumn1"
-        Me.GridColumn1.Visible = True
-        Me.GridColumn1.VisibleIndex = 0
-        '
-        'GridColumn2
-        '
-        Me.GridColumn2.Caption = "Tên Hàng"
-        Me.GridColumn2.FieldName = "TenHangHoa"
-        Me.GridColumn2.Name = "GridColumn2"
-        Me.GridColumn2.Visible = True
-        Me.GridColumn2.VisibleIndex = 1
-        '
-        'GridColumn3
-        '
-        Me.GridColumn3.Caption = "Đơn Vị"
-        Me.GridColumn3.FieldName = "DonVi"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 2
-        '
-        'GridColumn5
-        '
-        Me.GridColumn5.Caption = "Số Lượng"
-        Me.GridColumn5.ColumnEdit = Me.RepositoryItemCalcEdit1
-        Me.GridColumn5.FieldName = "SoLuong"
-        Me.GridColumn5.Name = "GridColumn5"
-        Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 3
-        '
-        'GridColumn6
-        '
-        Me.GridColumn6.Caption = "Đơn Giá"
-        Me.GridColumn6.ColumnEdit = Me.RepositoryItemCalcEdit2
-        Me.GridColumn6.FieldName = "DonGia"
-        Me.GridColumn6.Name = "GridColumn6"
-        Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 4
-        '
-        'GridColumn9
-        '
-        Me.GridColumn9.Caption = "Chiết Khấu(%)"
-        Me.GridColumn9.ColumnEdit = Me.RepositoryItemCalcEdit3
-        Me.GridColumn9.FieldName = "ChietKhau"
-        Me.GridColumn9.Name = "GridColumn9"
-        Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 5
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 204)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(125, 20)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "In sau khi lưu"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.Location = New System.Drawing.Point(141, 204)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(155, 20)
-        Me.CheckBox2.TabIndex = 7
-        Me.CheckBox2.Text = "Sử dụng mã vạch"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'LayoutControlGroup3
-        '
-        Me.LayoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup3.GroupBordersVisible = False
-        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem22, Me.EmptySpaceItem4, Me.LayoutControlItem24, Me.LayoutControlItem23})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup3.Name = "Root"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(1014, 236)
-        Me.LayoutControlGroup3.TextVisible = False
-        '
-        'LayoutControlItem23
-        '
-        Me.LayoutControlItem23.Control = Me.CheckBox2
-        Me.LayoutControlItem23.Location = New System.Drawing.Point(129, 192)
-        Me.LayoutControlItem23.Name = "LayoutControlItem23"
-        Me.LayoutControlItem23.Size = New System.Drawing.Size(159, 24)
-        Me.LayoutControlItem23.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem23.TextVisible = False
-        '
-        'LayoutControlItem24
-        '
-        Me.LayoutControlItem24.Control = Me.CheckBox1
-        Me.LayoutControlItem24.Location = New System.Drawing.Point(0, 192)
-        Me.LayoutControlItem24.Name = "LayoutControlItem24"
-        Me.LayoutControlItem24.Size = New System.Drawing.Size(129, 24)
-        Me.LayoutControlItem24.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem24.TextVisible = False
-        '
-        'EmptySpaceItem4
-        '
-        Me.EmptySpaceItem4.AllowHotTrack = False
-        Me.EmptySpaceItem4.Location = New System.Drawing.Point(288, 192)
-        Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
-        Me.EmptySpaceItem4.Size = New System.Drawing.Size(706, 24)
-        Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
-        '
-        'LayoutControlItem22
-        '
-        Me.LayoutControlItem22.Control = Me.GridControl1
-        Me.LayoutControlItem22.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem22.Name = "LayoutControlItem22"
-        Me.LayoutControlItem22.Size = New System.Drawing.Size(994, 192)
-        Me.LayoutControlItem22.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem22.TextVisible = False
-        '
         'SplitContainerControl3
         '
         Me.SplitContainerControl3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -693,38 +547,54 @@ Partial Class frmBanHang
         Me.SplitContainerControl3.TabIndex = 0
         Me.SplitContainerControl3.Text = "SplitContainerControl3"
         '
-        'SplitContainerControl1
+        'Label1
         '
-        Me.SplitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainerControl1.Location = New System.Drawing.Point(0, 0)
-        Me.SplitContainerControl1.Name = "SplitContainerControl1"
-        Me.SplitContainerControl1.Panel1.Text = "Panel1"
-        Me.SplitContainerControl1.Panel2.Controls.Add(Me.SplitContainerControl2)
-        Me.SplitContainerControl1.Panel2.Text = "Panel2"
-        Me.SplitContainerControl1.Size = New System.Drawing.Size(1139, 451)
-        Me.SplitContainerControl1.SplitterPosition = 120
-        Me.SplitContainerControl1.TabIndex = 0
-        Me.SplitContainerControl1.Text = "SplitContainerControl1"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(21, 18)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(81, 13)
+        Me.Label1.TabIndex = 48
+        Me.Label1.Text = "Phiếu bán hàng"
         '
-        'PanelEx1
+        'SimpleButton5
         '
-        Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
-        Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PanelEx1.Controls.Add(Me.SplitContainerControl1)
-        Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
-        Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(1139, 451)
-        Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
-        Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
-        Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
-        Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
-        Me.PanelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
-        Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
-        Me.PanelEx1.Style.GradientAngle = 90
-        Me.PanelEx1.TabIndex = 0
-        Me.PanelEx1.Text = "PanelEx1"
+        Me.SimpleButton5.Location = New System.Drawing.Point(258, 43)
+        Me.SimpleButton5.Name = "SimpleButton5"
+        Me.SimpleButton5.Size = New System.Drawing.Size(75, 22)
+        Me.SimpleButton5.TabIndex = 47
+        Me.SimpleButton5.Text = "Nạp Lại"
+        '
+        'SimpleButton4
+        '
+        Me.SimpleButton4.Location = New System.Drawing.Point(337, 43)
+        Me.SimpleButton4.Name = "SimpleButton4"
+        Me.SimpleButton4.Size = New System.Drawing.Size(66, 22)
+        Me.SimpleButton4.TabIndex = 46
+        Me.SimpleButton4.Text = "Đóng"
+        '
+        'SimpleButton3
+        '
+        Me.SimpleButton3.Location = New System.Drawing.Point(109, 43)
+        Me.SimpleButton3.Name = "SimpleButton3"
+        Me.SimpleButton3.Size = New System.Drawing.Size(90, 22)
+        Me.SimpleButton3.TabIndex = 45
+        Me.SimpleButton3.Text = "Lưu và Thêm"
+        '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.Location = New System.Drawing.Point(203, 43)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(51, 22)
+        Me.SimpleButton2.TabIndex = 44
+        Me.SimpleButton2.Text = "In "
+        '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.Location = New System.Drawing.Point(21, 43)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(84, 22)
+        Me.SimpleButton1.TabIndex = 43
+        Me.SimpleButton1.Text = "Tạo Mới"
         '
         'numSoLuong
         '
@@ -950,54 +820,88 @@ Partial Class frmBanHang
         Me.txtMaPhieu.Size = New System.Drawing.Size(191, 21)
         Me.txtMaPhieu.TabIndex = 10
         '
-        'SimpleButton5
+        'LayoutControl3
         '
-        Me.SimpleButton5.Location = New System.Drawing.Point(258, 43)
-        Me.SimpleButton5.Name = "SimpleButton5"
-        Me.SimpleButton5.Size = New System.Drawing.Size(75, 22)
-        Me.SimpleButton5.TabIndex = 47
-        Me.SimpleButton5.Text = "Nạp Lại"
+        Me.LayoutControl3.Controls.Add(Me.CheckBox2)
+        Me.LayoutControl3.Controls.Add(Me.CheckBox1)
+        Me.LayoutControl3.Controls.Add(Me.GridControl1)
+        Me.LayoutControl3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LayoutControl3.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControl3.Name = "LayoutControl3"
+        Me.LayoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(1049, 135, 250, 350)
+        Me.LayoutControl3.Root = Me.LayoutControlGroup3
+        Me.LayoutControl3.Size = New System.Drawing.Size(1014, 236)
+        Me.LayoutControl3.TabIndex = 0
+        Me.LayoutControl3.Text = "LayoutControl3"
         '
-        'SimpleButton4
+        'CheckBox2
         '
-        Me.SimpleButton4.Location = New System.Drawing.Point(337, 43)
-        Me.SimpleButton4.Name = "SimpleButton4"
-        Me.SimpleButton4.Size = New System.Drawing.Size(66, 22)
-        Me.SimpleButton4.TabIndex = 46
-        Me.SimpleButton4.Text = "Đóng"
+        Me.CheckBox2.Location = New System.Drawing.Point(141, 204)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(155, 20)
+        Me.CheckBox2.TabIndex = 7
+        Me.CheckBox2.Text = "Sử dụng mã vạch"
+        Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'SimpleButton3
+        'CheckBox1
         '
-        Me.SimpleButton3.Location = New System.Drawing.Point(109, 43)
-        Me.SimpleButton3.Name = "SimpleButton3"
-        Me.SimpleButton3.Size = New System.Drawing.Size(90, 22)
-        Me.SimpleButton3.TabIndex = 45
-        Me.SimpleButton3.Text = "Lưu và Thêm"
+        Me.CheckBox1.Location = New System.Drawing.Point(12, 204)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(125, 20)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "In sau khi lưu"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'SimpleButton2
+        'GridControl1
         '
-        Me.SimpleButton2.Location = New System.Drawing.Point(203, 43)
-        Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(51, 22)
-        Me.SimpleButton2.TabIndex = 44
-        Me.SimpleButton2.Text = "In "
+        Me.GridControl1.Location = New System.Drawing.Point(12, 12)
+        Me.GridControl1.MainView = Me.GridView1
+        Me.GridControl1.Name = "GridControl1"
+        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCalcEdit1, Me.RepositoryItemCalcEdit2, Me.RepositoryItemCalcEdit3})
+        Me.GridControl1.Size = New System.Drawing.Size(990, 188)
+        Me.GridControl1.TabIndex = 4
+        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
-        'SimpleButton1
+        'GridView1
         '
-        Me.SimpleButton1.Location = New System.Drawing.Point(21, 43)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(84, 22)
-        Me.SimpleButton1.TabIndex = 43
-        Me.SimpleButton1.Text = "Tạo Mới"
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn5, Me.GridColumn6, Me.GridColumn9})
+        Me.GridView1.GridControl = Me.GridControl1
+        Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.[Default]
+        Me.GridView1.OptionsView.ShowGroupPanel = False
         '
-        'Label1
+        'GridColumn1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 13)
-        Me.Label1.TabIndex = 48
-        Me.Label1.Text = "Phiếu bán hàng"
+        Me.GridColumn1.Caption = "Mã Hàng"
+        Me.GridColumn1.FieldName = "MaHangHoa"
+        Me.GridColumn1.Name = "GridColumn1"
+        Me.GridColumn1.Visible = True
+        Me.GridColumn1.VisibleIndex = 0
+        '
+        'GridColumn2
+        '
+        Me.GridColumn2.Caption = "Tên Hàng"
+        Me.GridColumn2.FieldName = "TenHangHoa"
+        Me.GridColumn2.Name = "GridColumn2"
+        Me.GridColumn2.Visible = True
+        Me.GridColumn2.VisibleIndex = 1
+        '
+        'GridColumn3
+        '
+        Me.GridColumn3.Caption = "Đơn Vị"
+        Me.GridColumn3.FieldName = "DonVi"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 2
+        '
+        'GridColumn5
+        '
+        Me.GridColumn5.Caption = "Số Lượng"
+        Me.GridColumn5.ColumnEdit = Me.RepositoryItemCalcEdit1
+        Me.GridColumn5.FieldName = "SoLuong"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 3
         '
         'RepositoryItemCalcEdit1
         '
@@ -1005,17 +909,113 @@ Partial Class frmBanHang
         Me.RepositoryItemCalcEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.RepositoryItemCalcEdit1.Name = "RepositoryItemCalcEdit1"
         '
+        'GridColumn6
+        '
+        Me.GridColumn6.Caption = "Đơn Giá"
+        Me.GridColumn6.ColumnEdit = Me.RepositoryItemCalcEdit2
+        Me.GridColumn6.FieldName = "DonGia"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.Visible = True
+        Me.GridColumn6.VisibleIndex = 4
+        '
         'RepositoryItemCalcEdit2
         '
         Me.RepositoryItemCalcEdit2.AutoHeight = False
         Me.RepositoryItemCalcEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.RepositoryItemCalcEdit2.Name = "RepositoryItemCalcEdit2"
         '
+        'GridColumn9
+        '
+        Me.GridColumn9.Caption = "Chiết Khấu(%)"
+        Me.GridColumn9.ColumnEdit = Me.RepositoryItemCalcEdit3
+        Me.GridColumn9.FieldName = "ChietKhau"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 5
+        '
         'RepositoryItemCalcEdit3
         '
         Me.RepositoryItemCalcEdit3.AutoHeight = False
         Me.RepositoryItemCalcEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.RepositoryItemCalcEdit3.Name = "RepositoryItemCalcEdit3"
+        '
+        'LayoutControlGroup3
+        '
+        Me.LayoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+        Me.LayoutControlGroup3.GroupBordersVisible = False
+        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem22, Me.EmptySpaceItem4, Me.LayoutControlItem24, Me.LayoutControlItem23})
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlGroup3.Name = "Root"
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(1014, 236)
+        Me.LayoutControlGroup3.TextVisible = False
+        '
+        'LayoutControlItem22
+        '
+        Me.LayoutControlItem22.Control = Me.GridControl1
+        Me.LayoutControlItem22.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem22.Name = "LayoutControlItem22"
+        Me.LayoutControlItem22.Size = New System.Drawing.Size(994, 192)
+        Me.LayoutControlItem22.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem22.TextVisible = False
+        '
+        'EmptySpaceItem4
+        '
+        Me.EmptySpaceItem4.AllowHotTrack = False
+        Me.EmptySpaceItem4.Location = New System.Drawing.Point(288, 192)
+        Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
+        Me.EmptySpaceItem4.Size = New System.Drawing.Size(706, 24)
+        Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
+        '
+        'LayoutControlItem24
+        '
+        Me.LayoutControlItem24.Control = Me.CheckBox1
+        Me.LayoutControlItem24.Location = New System.Drawing.Point(0, 192)
+        Me.LayoutControlItem24.Name = "LayoutControlItem24"
+        Me.LayoutControlItem24.Size = New System.Drawing.Size(129, 24)
+        Me.LayoutControlItem24.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem24.TextVisible = False
+        '
+        'LayoutControlItem23
+        '
+        Me.LayoutControlItem23.Control = Me.CheckBox2
+        Me.LayoutControlItem23.Location = New System.Drawing.Point(129, 192)
+        Me.LayoutControlItem23.Name = "LayoutControlItem23"
+        Me.LayoutControlItem23.Size = New System.Drawing.Size(159, 24)
+        Me.LayoutControlItem23.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem23.TextVisible = False
+        '
+        'SplitContainerControl1
+        '
+        Me.SplitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainerControl1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainerControl1.Name = "SplitContainerControl1"
+        Me.SplitContainerControl1.Panel1.Text = "Panel1"
+        Me.SplitContainerControl1.Panel2.Controls.Add(Me.SplitContainerControl2)
+        Me.SplitContainerControl1.Panel2.Text = "Panel2"
+        Me.SplitContainerControl1.Size = New System.Drawing.Size(1139, 451)
+        Me.SplitContainerControl1.SplitterPosition = 120
+        Me.SplitContainerControl1.TabIndex = 0
+        Me.SplitContainerControl1.Text = "SplitContainerControl1"
+        '
+        'PanelEx1
+        '
+        Me.PanelEx1.CanvasColor = System.Drawing.SystemColors.Control
+        Me.PanelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.PanelEx1.Controls.Add(Me.SplitContainerControl1)
+        Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
+        Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEx1.Name = "PanelEx1"
+        Me.PanelEx1.Size = New System.Drawing.Size(1139, 451)
+        Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
+        Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
+        Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
+        Me.PanelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
+        Me.PanelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder
+        Me.PanelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText
+        Me.PanelEx1.Style.GradientAngle = 90
+        Me.PanelEx1.TabIndex = 0
+        Me.PanelEx1.Text = "PanelEx1"
         '
         'frmBanHang
         '
@@ -1040,24 +1040,24 @@ Partial Class frmBanHang
         CType(Me.ExplorerBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SplitContainerControl2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainerControl2.ResumeLayout(False)
+        CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainerControl3.ResumeLayout(False)
+        CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl3.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SplitContainerControl3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SplitContainerControl3.ResumeLayout(False)
-        CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SplitContainerControl1.ResumeLayout(False)
-        Me.PanelEx1.ResumeLayout(False)
-        CType(Me.numSoLuong, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCalcEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmptySpaceItem4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SplitContainerControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainerControl1.ResumeLayout(False)
+        Me.PanelEx1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

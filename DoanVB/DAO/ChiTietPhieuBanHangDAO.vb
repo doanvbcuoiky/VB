@@ -15,6 +15,7 @@ Public Class ChiTietPhieuBanHangDAO
         Return dt
     End Function
     Public Shared Function ThemChiTietPhieuBanHang(ByVal CTPBH As ChiTietPhieuBanHangDTO) As Boolean
+
         Dim con As New Connect()
         Dim cn As New SqlConnection()
         cn = con.connect()
@@ -26,20 +27,23 @@ Public Class ChiTietPhieuBanHangDAO
         cmd.Parameters.Add("@DonVi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@SoLuong", SqlDbType.Int)
         cmd.Parameters.Add("@DonGia", SqlDbType.Money)
-        cmd.Parameters.Add("@ChieuKhau", SqlDbType.Float)
+        cmd.Parameters.Add("@ChietKhau", SqlDbType.Float)
 
         cmd.Parameters("@MaPhieuBan").Value = CTPBH.MaPhieuBan1
         cmd.Parameters("@MaHangHoa").Value = CTPBH.MaHangHoa1
         cmd.Parameters("@DonVi").Value = CTPBH.DonVi1
         cmd.Parameters("@SoLuong").Value = CTPBH.SoLuong1
         cmd.Parameters("@DonGia").Value = CTPBH.DonGia1
-        cmd.Parameters("@ChieuKhau").Value = CTPBH.ChietKhau1
-
-        If cmd.ExecuteNonQuery() > 0 Then
+        cmd.Parameters("@ChietKhau").Value = CTPBH.ChietKhau1
+        Try
+            If cmd.ExecuteNonQuery() > 0 Then
+                cn.Close()
+                Return True
+            End If
             cn.Close()
-            Return True
-        End If
-        cn.Close()
+        Catch ex As Exception
+            Return False
+        End Try
         Return False
     End Function
 
@@ -69,14 +73,14 @@ Public Class ChiTietPhieuBanHangDAO
         cmd.Parameters.Add("@DonVi", SqlDbType.NVarChar)
         cmd.Parameters.Add("@SoLuong", SqlDbType.Int)
         cmd.Parameters.Add("@DonGia", SqlDbType.Money)
-        cmd.Parameters.Add("@ChieuKhau", SqlDbType.Float)
+        cmd.Parameters.Add("@ChietKhau", SqlDbType.Float)
 
         cmd.Parameters("@MaPhieuBan").Value = CTPBH.MaPhieuBan1
         cmd.Parameters("@MaHangHoa").Value = CTPBH.MaHangHoa1
         cmd.Parameters("@DonVi").Value = CTPBH.DonVi1
         cmd.Parameters("@SoLuong").Value = CTPBH.SoLuong1
         cmd.Parameters("@DonGia").Value = CTPBH.DonGia1
-        cmd.Parameters("@ChieuKhau").Value = CTPBH.ChietKhau1
+        cmd.Parameters("@ChietKhau").Value = CTPBH.ChietKhau1
 
         If cmd.ExecuteNonQuery() > 0 Then
             cn.Close()

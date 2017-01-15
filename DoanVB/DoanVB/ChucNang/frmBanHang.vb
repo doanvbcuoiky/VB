@@ -65,8 +65,8 @@ Public Class frmBanHang
         Me.txtDienThoai.DataBindings.Add("Text", KH, "DienThoai")
 
 
-        Dim hanghoa As DataTable = HangHoaBUS.LoadDSHangHoa()
-        Dim hanghoa2 As DataTable = HangHoaBUS.LoadDSHangHoa()
+        Dim hanghoa As DataTable = HangHoaBUS.LoadDSHangHoaBan()
+        Dim hanghoa2 As DataTable = HangHoaBUS.LoadDSHangHoaBan()
 
         Me.cboMaHang.DataSource = hanghoa
         Me.cboTenHang.DataSource = hanghoa2
@@ -76,8 +76,8 @@ Public Class frmBanHang
         Me.cboTenHang.DisplayMember = "TenHangHoa"
         Me.cboTenHang.ValueMember = "MaHangHoa"
 
-        Me.cboMaHang.SelectedIndex = 0
-        Me.cboMaHang.SelectedIndex = 0
+        Me.cboMaHang.Text = ""
+        Me.cboTenHang.Text = ""
 
         'khởi tạo chitietphieunhap
         Me.chitietbanhang = New DataTable()
@@ -110,48 +110,57 @@ Public Class frmBanHang
     End Sub
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-        Dim n As Integer = Me.chitietbanhang.Select().Count() - 1
-        Dim phieuban As New PhieuBanHangDTO(Me.txtMaPhieu.Text, _
-                                             Me.cboMaKh.Text.ToString(), _
-                                             Me.dtNgayNhap.Value, _
-                                             Me.cboNhanVien.SelectedValue.ToString(), _
-                                             Me.cboKhoXuat.SelectedValue.ToString(), _
-                                             Me.txtHinhThucThanhToan.Text, _
-                                             0, _
-                                             False)
-        If PhieuBanHangBUS.ThemPhieuBanHang(phieuban) = True Then
-            Dim TongTien As Double = 0
-            For i As Integer = 0 To n Step 1
-                Dim sl As Integer = System.Convert.ToInt32(Me.chitietbanhang.Select()(0).Item("SoLuong").ToString())
-                Dim dongia As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(0).Item("DonGia").ToString())
-                Dim ck As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(0).Item("ChietKhau").ToString())
-                Dim ma As String = Me.chitietbanhang.Select()(0).Item("MaHangHoa").ToString()
-                Dim dv As String = Me.chitietbanhang.Select()(i).Item("DonVi").ToString()
-                Dim ct As New ChiTietPhieuBanHangDTO(Me.txtMaPhieu.Text, _
-                                                      ma, _
-                                                      dv, _
-                                                      sl, dongia, ck)
-                Dim kq As Boolean = ChiTietPhieuBanHangBUS.ThemChiTietPhieuBanHang(ct)
-                'Cập nhật số lượng tồn kho hiện tại.
-                HangHoaBUS.CapNhatSoLuong_Giam(ma, sl)
-                'Tính tổng tiền
-                TongTien += 1.0 * sl * dongia * (ck / 100.0)
-            Next
-            'Cập nhật tổng tiền cho phiếu nhập.
-            PhieuBanHangBUS.CapNhatTongTien(Me.txtMaPhieu.Text, TongTien)
-            MessageBox.Show("Đã lưu hóa đơn.")
+        If Me.txtMaPhieu.Text.ToString() = "" Then
+            MessageBox.Show("Mã phiếu không đưuọc để trống.")
         Else
-            MessageBox.Show("Không lưu đưuọc.")
+            Dim n As Integer = Me.chitietbanhang.Select().Count() - 1
+            Dim phieuban As New PhieuBanHangDTO(Me.txtMaPhieu.Text, _
+                                                 Me.cboMaKh.Text.ToString(), _
+                                                 Me.dtNgayNhap.Value, _
+                                                 Me.cboNhanVien.SelectedValue.ToString(), _
+                                                 Me.cboKhoXuat.SelectedValue.ToString(), _
+                                                 Me.txtHinhThucThanhToan.Text, _
+                                                 0, _
+                                                 False)
+            If PhieuBanHangBUS.ThemPhieuBanHang(phieuban) = True Then
+                Dim TongTien As Double = 0
+                For i As Integer = 0 To n Step 1
+                    Dim sl As Integer = System.Convert.ToInt32(Me.chitietbanhang.Select()(0).Item("SoLuong").ToString())
+                    Dim dongia As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(0).Item("DonGia").ToString())
+                    Dim ck As Double = System.Convert.ToDouble(Me.chitietbanhang.Select()(0).Item("ChietKhau").ToString())
+                    Dim ma As String = Me.chitietbanhang.Select()(0).Item("MaHangHoa").ToString()
+                    Dim dv As String = Me.chitietbanhang.Select()(i).Item("DonVi").ToString()
+                    Dim ct As New ChiTietPhieuBanHangDTO(Me.txtMaPhieu.Text, _
+                                                          ma, _
+                                                          dv, _
+                                                          sl, dongia, ck)
+                    Dim kq As Boolean = ChiTietPhieuBanHangBUS.ThemChiTietPhieuBanHang(ct)
+                    'Cập nhật số lượng tồn kho hiện tại.
+                    HangHoaBUS.CapNhatSoLuong_Giam(ma, sl)
+                    'Tính tổng tiền
+                    TongTien += 1.0 * sl * dongia * (ck / 100.0)
+
+                    'Cập nhật chi tiết kho hàng.
+                    Dim ctkho As New ChiTietKhoDTO(cboKhoXuat.SelectedValue.ToString(), ma, sl)
+                    ChiTietKhoBUS.GiamChiTietKho(ctkho)
+
+                Next
+                'Cập nhật tổng tiền cho phiếu nhập.
+                PhieuBanHangBUS.CapNhatTongTien(Me.txtMaPhieu.Text, TongTien)
+                MessageBox.Show("Đã lưu hóa đơn.")
+            Else
+                MessageBox.Show("Không lưu đưuọc.")
+            End If
+            Me.chitietbanhang.Clear()
+            Me.chitietbanhang = New DataTable()
+            Me.chitietbanhang.Columns.Add("MaHangHoa")
+            Me.chitietbanhang.Columns.Add("TenHangHoa")
+            Me.chitietbanhang.Columns.Add("DonVi")
+            Me.chitietbanhang.Columns.Add("SoLuong")
+            Me.chitietbanhang.Columns.Add("DonGia")
+            Me.chitietbanhang.Columns.Add("ChietKhau")
+            Me.GridControl1.DataSource = Me.chitietbanhang
         End If
-        Me.chitietbanhang.Clear()
-        Me.chitietbanhang = New DataTable()
-        Me.chitietbanhang.Columns.Add("MaHangHoa")
-        Me.chitietbanhang.Columns.Add("TenHangHoa")
-        Me.chitietbanhang.Columns.Add("DonVi")
-        Me.chitietbanhang.Columns.Add("SoLuong")
-        Me.chitietbanhang.Columns.Add("DonGia")
-        Me.chitietbanhang.Columns.Add("ChietKhau")
-        Me.GridControl1.DataSource = Me.chitietbanhang
     End Sub
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
@@ -194,5 +203,9 @@ Public Class frmBanHang
 
     Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles SimpleButton4.Click
         Me.Close()
+    End Sub
+
+    Private Sub SimpleButton5_Click(sender As Object, e As EventArgs) Handles SimpleButton5.Click
+        frmBanHang_Load(sender, e)
     End Sub
 End Class
