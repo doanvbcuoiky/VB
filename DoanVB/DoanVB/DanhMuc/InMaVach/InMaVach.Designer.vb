@@ -19,6 +19,7 @@ Partial Class InMaVach
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InMaVach))
         Me.txtSetPath = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -26,6 +27,7 @@ Partial Class InMaVach
         Me.btnSetPath = New DevComponents.DotNetBar.ButtonX()
         Me.btnIn = New DevComponents.DotNetBar.ButtonX()
         Me.cbbMa = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.img1 = New DevComponents.DotNetBar.Controls.ReflectionImage()
         Me.SuspendLayout()
         '
         'txtSetPath
@@ -105,12 +107,26 @@ Partial Class InMaVach
         Me.cbbMa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.cbbMa.TabIndex = 17
         '
+        'img1
+        '
+        '
+        '
+        '
+        Me.img1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.img1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center
+        Me.img1.Image = CType(resources.GetObject("img1.Image"), System.Drawing.Image)
+        Me.img1.Location = New System.Drawing.Point(67, 109)
+        Me.img1.Name = "img1"
+        Me.img1.Size = New System.Drawing.Size(251, 67)
+        Me.img1.TabIndex = 18
+        '
         'InMaVach
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(432, 188)
+        Me.Controls.Add(Me.img1)
         Me.Controls.Add(Me.cbbMa)
         Me.Controls.Add(Me.txtSetPath)
         Me.Controls.Add(Me.Label2)
@@ -132,4 +148,5 @@ Partial Class InMaVach
     Friend WithEvents btnSetPath As DevComponents.DotNetBar.ButtonX
     Friend WithEvents btnIn As DevComponents.DotNetBar.ButtonX
     Friend WithEvents cbbMa As DevComponents.DotNetBar.Controls.ComboBoxEx
+    Friend WithEvents img1 As DevComponents.DotNetBar.Controls.ReflectionImage
 End Class

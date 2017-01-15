@@ -9,6 +9,8 @@ Public Class InMaVach
             barcode.Data2D = cbbMa.Text
             barcode.Type = Spire.Barcode.BarCodeType.Code128
             barcode.SaveToFile(txtSetPath.Text + "\" + cbbMa.Text + ".png")
+            Dim img As Image = Image.FromFile(txtSetPath.Text + "\" + cbbMa.Text + ".png")
+            img1.Image = img
             Process.Start(txtSetPath.Text + "\" + cbbMa.Text + ".png")
         End If
     End Sub
