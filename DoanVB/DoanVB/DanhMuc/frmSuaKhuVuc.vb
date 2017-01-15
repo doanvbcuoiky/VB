@@ -24,7 +24,7 @@ Public Class frmSuaKhuVuc
         If dt.Select()(0).Item(columnName:="TinhTrang").ToString() = "True" Then
             Me.ckTinhTrang.Checked = True
         Else
-            Me.ckTinhTrang.Checked = True
+            Me.ckTinhTrang.Checked = False
         End If
     End Sub
 End Class

@@ -29,4 +29,12 @@ Public Class frmBoPhan
             End If
         End If
     End Sub
+
+    Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
+        Me.Close()
+    End Sub
+
+    Private Sub BarButtonItem4_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
+        frmBoPhan_Load(sender, e)
+    End Sub
 End Class

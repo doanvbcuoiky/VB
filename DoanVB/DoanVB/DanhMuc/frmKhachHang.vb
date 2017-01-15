@@ -46,4 +46,12 @@ Public Class frmKhachHang
             End If
         End If
     End Sub
+
+    Private Sub BarButtonItem6_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem6.ItemClick
+        Me.Close()
+    End Sub
+
+    Private Sub BarButtonItem3_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem3.ItemClick
+        frmKhachHang_Load_1(sender, e)
+    End Sub
 End Class

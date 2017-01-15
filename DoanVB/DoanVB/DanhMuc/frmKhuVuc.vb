@@ -40,4 +40,11 @@ Public Class frmKhuVuc
 
     End Sub
    
+    Private Sub b_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles b.ItemClick
+        frmKhuVuc_Load(sender, e)
+    End Sub
+
+    Private Sub BarButtonItem18_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem18.ItemClick
+        Me.Close()
+    End Sub
 End Class

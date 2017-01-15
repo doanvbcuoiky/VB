@@ -56,9 +56,9 @@ Partial Class frmDonViTinh
         Me.PanelEx1.Controls.Add(Me.GridControl1)
         Me.PanelEx1.DisabledBackColor = System.Drawing.Color.Empty
         Me.PanelEx1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEx1.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEx1.Location = New System.Drawing.Point(0, 24)
         Me.PanelEx1.Name = "PanelEx1"
-        Me.PanelEx1.Size = New System.Drawing.Size(697, 394)
+        Me.PanelEx1.Size = New System.Drawing.Size(697, 370)
         Me.PanelEx1.Style.Alignment = System.Drawing.StringAlignment.Center
         Me.PanelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground
         Me.PanelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2
@@ -76,7 +76,7 @@ Partial Class frmDonViTinh
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl1.Size = New System.Drawing.Size(697, 394)
+        Me.GridControl1.Size = New System.Drawing.Size(697, 370)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -203,7 +203,7 @@ Partial Class frmDonViTinh
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(697, 0)
+        Me.barDockControlTop.Size = New System.Drawing.Size(697, 24)
         '
         'barDockControlBottom
         '
@@ -216,15 +216,15 @@ Partial Class frmDonViTinh
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 394)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 370)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(697, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 394)
+        Me.barDockControlRight.Location = New System.Drawing.Point(697, 24)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 370)
         '
         'lblMaDonVi
         '

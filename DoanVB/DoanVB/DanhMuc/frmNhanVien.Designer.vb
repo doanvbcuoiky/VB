@@ -26,7 +26,13 @@ Partial Class frmNhanVien
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
+        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar2 = New DevExpress.XtraBars.Bar()
         Me.btnThem = New DevExpress.XtraBars.BarButtonItem()
@@ -39,19 +45,13 @@ Partial Class frmNhanVien
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
+        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
         Me.lblMaNhanVien = New System.Windows.Forms.Label()
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn7 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelEx1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelEx1
@@ -111,10 +111,61 @@ Partial Class frmNhanVien
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
         '
-        'RepositoryItemCheckEdit1
+        'GridColumn3
         '
-        Me.RepositoryItemCheckEdit1.AutoHeight = False
-        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
+        Me.GridColumn3.Caption = "Chức vụ"
+        Me.GridColumn3.FieldName = "ChucVu"
+        Me.GridColumn3.Name = "GridColumn3"
+        Me.GridColumn3.Visible = True
+        Me.GridColumn3.VisibleIndex = 2
+        '
+        'GridColumn4
+        '
+        Me.GridColumn4.Caption = "Địa chỉ"
+        Me.GridColumn4.FieldName = "DiaChi"
+        Me.GridColumn4.Name = "GridColumn4"
+        Me.GridColumn4.Visible = True
+        Me.GridColumn4.VisibleIndex = 3
+        '
+        'GridColumn5
+        '
+        Me.GridColumn5.Caption = "Email"
+        Me.GridColumn5.FieldName = "Email"
+        Me.GridColumn5.Name = "GridColumn5"
+        Me.GridColumn5.Visible = True
+        Me.GridColumn5.VisibleIndex = 4
+        '
+        'GridColumn6
+        '
+        Me.GridColumn6.Caption = "Điện Thoại"
+        Me.GridColumn6.FieldName = "DienThoai"
+        Me.GridColumn6.Name = "GridColumn6"
+        Me.GridColumn6.Visible = True
+        Me.GridColumn6.VisibleIndex = 5
+        '
+        'GridColumn7
+        '
+        Me.GridColumn7.Caption = "Bộ phận"
+        Me.GridColumn7.FieldName = "BoPhan"
+        Me.GridColumn7.Name = "GridColumn7"
+        Me.GridColumn7.Visible = True
+        Me.GridColumn7.VisibleIndex = 6
+        '
+        'GridColumn8
+        '
+        Me.GridColumn8.Caption = "Người quản lí"
+        Me.GridColumn8.FieldName = "NguoiQuanLi"
+        Me.GridColumn8.Name = "GridColumn8"
+        Me.GridColumn8.Visible = True
+        Me.GridColumn8.VisibleIndex = 7
+        '
+        'GridColumn9
+        '
+        Me.GridColumn9.Caption = "Tình trạng"
+        Me.GridColumn9.FieldName = "TinhTrang"
+        Me.GridColumn9.Name = "GridColumn9"
+        Me.GridColumn9.Visible = True
+        Me.GridColumn9.VisibleIndex = 8
         '
         'BarManager1
         '
@@ -215,6 +266,11 @@ Partial Class frmNhanVien
         Me.barDockControlRight.Location = New System.Drawing.Point(607, 24)
         Me.barDockControlRight.Size = New System.Drawing.Size(0, 346)
         '
+        'RepositoryItemCheckEdit1
+        '
+        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
+        '
         'lblMaNhanVien
         '
         Me.lblMaNhanVien.AutoSize = True
@@ -223,62 +279,6 @@ Partial Class frmNhanVien
         Me.lblMaNhanVien.Size = New System.Drawing.Size(76, 13)
         Me.lblMaNhanVien.TabIndex = 8
         Me.lblMaNhanVien.Text = "lblMaNhanVien"
-        '
-        'GridColumn3
-        '
-        Me.GridColumn3.Caption = "Chức vụ"
-        Me.GridColumn3.FieldName = "ChucVu"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 2
-        '
-        'GridColumn4
-        '
-        Me.GridColumn4.Caption = "Địa chỉ"
-        Me.GridColumn4.FieldName = "DiaChi"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 3
-        '
-        'GridColumn5
-        '
-        Me.GridColumn5.Caption = "Email"
-        Me.GridColumn5.FieldName = "Email"
-        Me.GridColumn5.Name = "GridColumn5"
-        Me.GridColumn5.Visible = True
-        Me.GridColumn5.VisibleIndex = 4
-        '
-        'GridColumn6
-        '
-        Me.GridColumn6.Caption = "Điện Thoại"
-        Me.GridColumn6.FieldName = "DienThoai"
-        Me.GridColumn6.Name = "GridColumn6"
-        Me.GridColumn6.Visible = True
-        Me.GridColumn6.VisibleIndex = 5
-        '
-        'GridColumn7
-        '
-        Me.GridColumn7.Caption = "Bộ phận"
-        Me.GridColumn7.FieldName = "BoPhan"
-        Me.GridColumn7.Name = "GridColumn7"
-        Me.GridColumn7.Visible = True
-        Me.GridColumn7.VisibleIndex = 6
-        '
-        'GridColumn8
-        '
-        Me.GridColumn8.Caption = "Người quản lí"
-        Me.GridColumn8.FieldName = "NguoiQuanLi"
-        Me.GridColumn8.Name = "GridColumn8"
-        Me.GridColumn8.Visible = True
-        Me.GridColumn8.VisibleIndex = 7
-        '
-        'GridColumn9
-        '
-        Me.GridColumn9.Caption = "Tình trạng"
-        Me.GridColumn9.FieldName = "TinhTrang"
-        Me.GridColumn9.Name = "GridColumn9"
-        Me.GridColumn9.Visible = True
-        Me.GridColumn9.VisibleIndex = 8
         '
         'frmNhanVien
         '
@@ -296,8 +296,8 @@ Partial Class frmNhanVien
         Me.PanelEx1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

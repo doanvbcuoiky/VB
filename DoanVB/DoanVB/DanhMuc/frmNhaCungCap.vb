@@ -34,4 +34,12 @@ Public Class frmNhaCungCap
             End If
         End If
     End Sub
+
+    Private Sub BarButtonItem4_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
+        frmNhaCungCap_Load(sender, e)
+    End Sub
+
+    Private Sub BarButtonItem7_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem7.ItemClick
+        Me.Close()
+    End Sub
 End Class

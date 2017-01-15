@@ -148,7 +148,7 @@ Partial Class frmHangHoa
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(583, 0)
+        Me.barDockControlTop.Size = New System.Drawing.Size(583, 24)
         '
         'barDockControlBottom
         '
@@ -161,25 +161,25 @@ Partial Class frmHangHoa
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 333)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 309)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(583, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 333)
+        Me.barDockControlRight.Location = New System.Drawing.Point(583, 24)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 309)
         '
         'GridControl1
         '
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl1.Location = New System.Drawing.Point(0, 0)
+        Me.GridControl1.Location = New System.Drawing.Point(0, 24)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.MenuManager = Me.BarManager1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
-        Me.GridControl1.Size = New System.Drawing.Size(583, 333)
+        Me.GridControl1.Size = New System.Drawing.Size(583, 309)
         Me.GridControl1.TabIndex = 8
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
